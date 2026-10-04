@@ -32,10 +32,13 @@ upstream 或 fork；Cell review 只挑出對未來 2D／3D AI agent workspace �
 - Runtime、sandbox、branches 和 permissions 如何被管理。
 - 進度、狀態、diffs 和 artifacts 如何呈現。
 - 使用者如何委派、比較、介入和驗證。
-- 哪些 pattern 適合 2D，哪些真的能從 3D 空間得到額外價值。
+- 它在 2D workspace 和 3D workspace 裡分別會變成什麼。
 
-不需要把每個產品都塞進 3D。若 2D canvas、graph、timeline 或 panel 更清楚，
-就應直接記錄 2D 較適合。
+2D 和 3D 都是 workspace：
+
+- 2D：平面工作空間，例如 pixel 風格辦公室、地圖或樓層。
+- 3D：可走進的辦公室介面，例如 Agent Office。
+- 都不是在做 3D 物件、立體圖譜，也不是 ADE dashboard。
 
 ## Optional follow-up
 
@@ -49,3 +52,7 @@ upstream 或 fork；Cell review 只挑出對未來 2D／3D AI agent workspace �
 - `tried`：已經實際體驗過。
 
 使用 [`_template.md`](_template.md) 建立新的產品 review。
+
+若要把一個 GitHub repo 或產品網址整理成 Cell 並開獨立 PR，呼叫
+[`/create-cell-pr`](../.cursor/skills/create-cell-pr/SKILL.md)。一個來源只
+建立一個 Cell PR；多個來源請平行呼叫多次。

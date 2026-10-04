@@ -1,8 +1,8 @@
 # gstack
 
-> Status：`untried`
->
 > Cell ID：[https://github.com/garrytan/gstack](https://github.com/garrytan/gstack)
+>
+> Status：`untried`
 >
 > Category：Agent workflow skills
 >
@@ -10,8 +10,9 @@
 
 ## 產品介紹
 
-gstack 是一套為 coding agents 準備的 open-source skills。它把產品開發拆成
-不同角色和階段，例如釐清需求、規劃、code review、瀏覽器 QA 和 shipping。
+gstack 是一套為 coding agents 準備的 open-source skills。它比較像一組不同
+專長的員工：產品、CEO、工程、設計、QA、發佈，而不是一個新的 workspace
+畫面。每個 skill 代表一種人會怎麼看問題、檢查工作和交接。
 
 它不是 Conductor 的內建 workflow。Conductor Quick Start 可以協助初始化
 gstack，但 gstack 本身是 Garry Tan 維護的獨立 MIT repository。
@@ -25,8 +26,8 @@ retro`，讓不同階段有明確目的，而不是只靠一個長 prompt。
 
 ### 不同專業角色
 
-提供 product、CEO、engineering、design、QA 和 release 等 skills，讓 agent
-在每個階段採用不同的檢查角度。
+提供 product、CEO、engineering、design、QA 和 release 等 skills。每個 skill
+比較像一位專長不同的員工，用自己的檢查清單和工作習慣來看同一件事。
 
 ### Browser QA
 
@@ -40,14 +41,20 @@ retro`，讓不同階段有明確目的，而不是只靠一個長 prompt。
 
 ### 第二意見
 
-`/codex` 可以請 Codex review 或挑戰目前做法，提供不同 context 或 runtime
-的觀點。
+`/codex` 不是 gstack 的預設工作方式。gstack 主要跑在 **Claude Code** 這個
+runtime 上；`/codex` 是從 Claude Code 裡再叫 OpenAI Codex CLI，用另一套
+runtime 做 review、challenge 或諮詢。
+
+所以「第二意見」指的是：原本由 Claude Code 做的事，再請 Codex 用不同
+context 和不同 agent system 檢查一次。gstack 自己也把這個 skill 標成
+Claude wrapper，因此它不會在 Codex host 上再呼叫自己。
 
 ## 主打賣點
 
-- 重點不是新的 model，而是把開發經驗和檢查清單包成可重複使用的 skills。
+- 重點不是新的 model 或新的 UI，而是把開發經驗包成可重複僱用的專業員工。
 - 從產品構想到 QA 和發佈提供一套 opinionated workflow。
 - 可以與 Conductor 等 workspace 工具搭配，但不依賴特定 workspace UI。
+- 和 [gbrain](https://github.com/garrytan/gbrain) 互補：gstack 管流程與角色，gbrain 管跨 session 記憶。兩者應視為不同 Cell。
 
 ## 使用情境
 
@@ -65,19 +72,28 @@ retro`，讓不同階段有明確目的，而不是只靠一個長 prompt。
 
 ## 我們可以學什麼
 
-- Skills 可以作為 workspace 中可重用的 workflow blocks，而不只是 prompt
-  shortcuts。
-- 不同角色可以共享同一份 artifact，例如產品規劃產生的內容再交給
-  engineering review 和 QA。
-- 2D workspace 可以把 skills 呈現為 pipeline、stage cards 或可組合節點。
-- 3D 不一定有明顯優勢；除非需要同時觀看多條 workflow 和 artifacts 的空間
-  關係，否則 2D pipeline 會更清楚。
-- 我們應學習階段與 handoff 的設計，而不是直接複製所有 skill 名稱。
+- gstack 比較像員工，不是 dashboard，也不是房間本身。每個 skill 是一位有
+  專長的人：誰來想、誰來做、誰來查、誰來發佈。
+- 不同員工可以交接同一份 artifact，例如產品員工寫完規劃，再交給工程和 QA。
+- 2D 可以把這些員工畫成角色卡或團隊列表；那仍然只是名冊，不是辦公室。
+- 這裡說的 3D，不是去做 3D 模型或立體物件，也不是 Firstmate、Maestro 或
+  Conductor 那種 ADE 分頁加上象徵性 team orchestration。那些本質上仍是
+  agent dashboard。
+  3D 指的是可以走進辦公室、看到員工在場的介面。
+- 比較接近的 3D 方向是
+  [Agent Office](https://github.com/AgentSystemLabs/agent-office)：辦公室是
+  空間，gstack 則是走進這個空間裡的員工。Agent Office 目前偏陽春，但已經
+  把「誰坐在哪、正在做什麼」放進 3D。
+- 未來升級版不該再做一個 ADE，而是讓這些不同技能的員工真的出現在 office
+  裡，需要時才被叫來，做完就把東西交給下一位。
+- 我們應學習角色、專長和交接，而不是直接複製所有 skill 名稱。
 
 ## 初步看法
 
-- 最有價值的部分：把軟體開發方法變成 agents 可重複執行的角色和流程。
+- 最有價值的部分：把軟體開發方法變成一組可重複僱用的專業員工。
 - 最大限制或疑問：skills 很多，可能增加 context、輸出長度和使用者理解成本。
+  這也是未來 3D office 的 improvement gap：不該讓整間公司同時站在面前，
+  而要只叫目前真正需要的那位員工進來。
 - 是否值得進一步研究或親自體驗：值得先研究 workflow 設計；不必立即測完每個
   skill。
 
@@ -90,4 +106,6 @@ retro`，讓不同階段有明確目的，而不是只靠一個長 prompt。
 
 - [gstack repository](https://github.com/garrytan/gstack)
 - [gstack skills reference](https://github.com/garrytan/gstack/blob/main/docs/skills.md)
+- [/codex skill](https://github.com/garrytan/gstack/blob/main/codex/SKILL.md)
 - [Conductor Quick Start reference](https://www.conductor.build/changelog/0.43.0-codex-skills-plan-mode-fast-mode)
+- [Agent Office](https://github.com/AgentSystemLabs/agent-office)

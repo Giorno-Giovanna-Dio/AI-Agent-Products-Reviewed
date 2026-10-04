@@ -30,6 +30,33 @@ projects:
     discovery:
       source: user evaluation
       rationale: Compare native coding-agent runtimes and parallel approaches
+  - id: gstack
+    name: gstack
+    upstream:
+      url: https://github.com/garrytan/gstack
+      repository: https://github.com/garrytan/gstack
+      license: MIT
+    fork:
+      url: null
+    checkout:
+      directory: gstack
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Agent skills suite; discovered through Conductor Quick Start
+    evaluation:
+      status: backlog
+      review: reviews/gstack.md
+      verdict: undecided
+      tested_at: null
+      updated_at: 2026-10-04
+    discovery:
+      source: Conductor Quick Start
+      rationale: Evaluate a structured end-to-end agent development workflow
 
 # 新增專案時複製以下範本並移除行首的註解符號：
 #

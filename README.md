@@ -29,6 +29,7 @@ clone 到本 repository 以外的獨立實驗區；這裡只保存可重現的�
 | Project | Source | Tested revision | Runtime | Status | Verdict |
 | --- | --- | --- | --- | --- | --- |
 | [Conductor](reviews/conductor.md) | [Website](https://www.conductor.build/) | 未記錄 | macOS native | `testing` | `undecided` |
+| [gstack](reviews/gstack.md) | [GitHub](https://github.com/garrytan/gstack) | 尚未測試 | Agent skills | `backlog` | `undecided` |
 
 狀態值：
 

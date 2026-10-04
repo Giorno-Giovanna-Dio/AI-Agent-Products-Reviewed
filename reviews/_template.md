@@ -1,49 +1,66 @@
-# Project name
+# Product name
 
-## Metadata
+> Status：`untried`
+>
+> Source：
+>
+> Category：
+>
+> Last updated：
 
-- Project ID:
-- Upstream:
-- Fork:
-- Tested commit:
-- Tested date:
-- Runtime:
-- Status:
+## 產品介紹
 
-## Why evaluate it?
+用一至兩段簡單說明：
 
-它解決什麼問題？我們希望驗證哪些假設？
+- 這是什麼產品？
+- 它主要幫誰解決什麼問題？
+- 使用者大致如何使用它？
 
-## Test scope
+## 主要 Features
 
-- 實際執行的流程：
-- 未涵蓋的功能：
-- 使用的資料與環境限制：
+只列出影響產品定位或 workflow 的重要功能，不需要複製完整 feature list。
 
-## Experience
+### Feature name
 
-記錄安裝、初次使用、核心工作流程、穩定性及資源需求。區分實際觀察與
-尚未驗證的推測。
+用簡單的話說明它做什麼，以及為什麼對使用者有用。
 
-## Strengths
+## 主打賣點
 
--
+- 它最想讓使用者記住什麼？
+- 與常見替代方案相比，真正不同的地方是什麼？
+- 哪些只是既有能力的不同包裝？
 
-## Weaknesses
+## 使用情境
 
--
+### Scenario name
 
-## Integration notes
+- 適合誰：
+- 在什麼情況使用：
+- 帶來的價值：
 
-- 值得採用或參考的能力：
-- 可能的整合方式：
-- 技術風險：
-- License 與來源標示要求：
+## 我們可以學什麼
 
-## Verdict
+- 值得借鑑的 product idea：
+- 值得借鑑的 interaction / workflow：
+- 對 2D AI agent workspace 的啟示：
+- 對 3D AI agent workspace 的啟示：
+- 不值得照搬或需要重新設計的地方：
 
-`adopt`、`reference`、`pause` 或 `reject`，以及做出判斷的原因。
+如果 3D 沒有帶來更好的理解、操作或協作，直接寫「2D 較適合」。
 
-## Next actions
+## 初步看法
 
--
+- 最有價值的部分：
+- 最大限制或疑問：
+- 是否值得進一步研究或親自體驗：
+
+## 後續補充（選填）
+
+只有需要時才加入 hands-on experience、source analysis、比較、技術細節或
+prototype 結果。
+
+## Sources
+
+- Official website：
+- Repository：
+- Documentation：

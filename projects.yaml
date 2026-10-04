@@ -24,7 +24,6 @@ projects:
     evaluation:
       status: tried
       review: reviews/conductor.md
-      verdict: undecided
       tested_at: 2026-10-04
       updated_at: 2026-10-04
     discovery:
@@ -51,7 +50,6 @@ projects:
     evaluation:
       status: untried
       review: reviews/gstack.md
-      verdict: undecided
       tested_at: null
       updated_at: 2026-10-04
     discovery:
@@ -81,7 +79,6 @@ projects:
 #    evaluation:
 #      status: untried # untried | tried
 #      review: reviews/example-project.md
-#      verdict: undecided # undecided | adopt | reference | pause | reject
 #      tested_at: null
 #      updated_at: YYYY-MM-DD
 #    discovery:

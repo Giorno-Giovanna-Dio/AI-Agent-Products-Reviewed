@@ -42,7 +42,10 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 
 ## 評測流程
 
-1. 將候選產品加入 `projects.yaml`，狀態設為 `untried`。
+1. 將候選產品加入 `projects.yaml`，狀態設為 `untried`。若來源是 GitHub
+   repo 或官方網址，可呼叫
+   [`/create-cell-pr`](.cursor/skills/create-cell-pr/SKILL.md) 讓 sub-agent
+   寫洞察筆記並開獨立 PR。
 2. 若有公開原始碼，clone 到獨立實驗區並記錄實際測試的完整 commit SHA；
    否則記錄產品版本。
 3. 依照 [`reviews/README.md`](reviews/README.md) 的方法，使用

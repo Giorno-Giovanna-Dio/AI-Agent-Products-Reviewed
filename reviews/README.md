@@ -48,3 +48,7 @@ upstream 或 fork；review 只挑出對未來 2D／3D AI agent workspace 有幫�
 - `tried`：已經實際體驗過。
 
 使用 [`_template.md`](_template.md) 建立新的產品 review。
+
+若要把一個 GitHub repo 或產品網址整理成 Cell 並開獨立 PR，呼叫
+[`/create-cell-pr`](../.cursor/skills/create-cell-pr/SKILL.md)。一個來源只
+建立一個 Cell PR；多個來源請平行呼叫多次。

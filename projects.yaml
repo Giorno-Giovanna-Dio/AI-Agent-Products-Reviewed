@@ -1,8 +1,62 @@
 schema_version: 1
 
-# 每個 entry 使用穩定、URL-safe 的 id。請記錄實際測試的完整 commit SHA，
-# 不要只填入會移動的 branch 名稱。
-projects: []
+# 每個 entry 使用穩定、URL-safe 的 id。若有公開 repository，請記錄實際
+# 測試的完整 commit SHA，不要只填入會移動的 branch 名稱。
+projects:
+  - id: conductor
+    name: Conductor
+    upstream:
+      url: https://www.conductor.build/
+      repository: null
+      license: unknown
+    fork:
+      url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: macOS application; local agents run with the current user's permissions
+    evaluation:
+      status: testing
+      review: reviews/conductor.md
+      verdict: undecided
+      tested_at: 2026-10-04
+      updated_at: 2026-10-04
+    discovery:
+      source: user evaluation
+      rationale: Compare native coding-agent runtimes and parallel approaches
+  - id: gstack
+    name: gstack
+    upstream:
+      url: https://github.com/garrytan/gstack
+      repository: https://github.com/garrytan/gstack
+      license: MIT
+    fork:
+      url: null
+    checkout:
+      directory: gstack
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Agent skills suite; discovered through Conductor Quick Start
+    evaluation:
+      status: backlog
+      review: reviews/gstack.md
+      verdict: undecided
+      tested_at: null
+      updated_at: 2026-10-04
+    discovery:
+      source: Conductor Quick Start
+      rationale: Evaluate a structured end-to-end agent development workflow
 
 # 新增專案時複製以下範本並移除行首的註解符號：
 #
@@ -10,6 +64,7 @@ projects: []
 #    name: Example Project
 #    upstream:
 #      url: https://github.com/example/example-project
+#      repository: https://github.com/example/example-project
 #      license: unknown
 #    fork:
 #      url: null

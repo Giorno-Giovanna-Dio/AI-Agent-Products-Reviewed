@@ -1,8 +1,9 @@
 # Product Review Guide
 
-這個 repository 保存的是產品洞察，不是其他專案 README 的副本。原始碼留在
-upstream 或 fork；review 只挑出對未來 2D／3D AI agent workspace 有幫助的
-概念。
+這個 repository 保存的是產品洞察，不是其他專案 README 的副本。每個產品
+或 repository 是一個 Cell，以 canonical source URL 作為 ID。原始碼留在
+upstream 或 fork；Cell review 只挑出對未來 2D／3D AI agent workspace 有
+幫助的概念。
 
 每份 review 先回答五個問題：
 

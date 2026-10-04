@@ -1,16 +1,15 @@
 schema_version: 1
 
-# 每個 entry 使用穩定、URL-safe 的 id。若有公開 repository，請記錄實際
-# 測試的完整 commit SHA，不要只填入會移動的 branch 名稱。
-projects:
-  - id: conductor
+# 一個 Cell 是一個獨立的產品研究單元。id 使用 canonical source URL：
+# repository-backed Cell 使用 GitHub repository URL；沒有公開 repository
+# 的產品使用官方 canonical URL。舊網址或轉址記錄在 aliases。
+cells:
+  - id: https://www.conductor.build/
     name: Conductor
-    upstream:
-      url: https://www.conductor.build/
-      repository: null
-      license: unknown
-    fork:
-      url: null
+    source_type: product
+    aliases: []
+    license: unknown
+    fork_url: null
     checkout:
       directory: null
       tested_commit: null
@@ -33,12 +32,8 @@ projects:
     name: gstack
     source_type: repository
     aliases: []
-    upstream:
-      url: https://github.com/garrytan/gstack
-      repository: https://github.com/garrytan/gstack
-      license: MIT
-    fork:
-      url: null
+    license: MIT
+    fork_url: null
     checkout:
       directory: gstack
       tested_commit: null
@@ -61,12 +56,8 @@ projects:
     name: gbrain
     source_type: repository
     aliases: []
-    upstream:
-      url: https://github.com/garrytan/gbrain
-      repository: https://github.com/garrytan/gbrain
-      license: MIT
-    fork:
-      url: null
+    license: MIT
+    fork_url: null
     checkout:
       directory: gbrain
       tested_commit: null
@@ -86,16 +77,14 @@ projects:
       source: related gstack cell
       rationale: Understand persistent memory, synthesis, and knowledge-graph patterns
 
-# 新增專案時複製以下範本並移除行首的註解符號：
+# 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
-#  - id: example-project
+#  - id: https://github.com/example/example-project
 #    name: Example Project
-#    upstream:
-#      url: https://github.com/example/example-project
-#      repository: https://github.com/example/example-project
-#      license: unknown
-#    fork:
-#      url: null
+#    source_type: repository # repository | product
+#    aliases: []
+#    license: unknown
+#    fork_url: null
 #    checkout:
 #      directory: example-project
 #      tested_commit: null

@@ -49,8 +49,9 @@ Agent 可以把決定、學習和人物資料寫進 brain。重開一個新 sess
 
 - 核心主張是：agent 不該每次都從空白開始，而應先查自己已經知道的事。
 - 與一般筆記搜尋不同，它強調綜合回答、知識關係和「目前還不知道什麼」。
-- 與 [gstack](https://github.com/garrytan/gstack) 不同：gstack 管開發
-  流程和角色，gbrain 管記憶與知識。兩者可以搭配，但應分開理解。
+- 與 [gstack](https://github.com/garrytan/gstack) 不同：gstack 比較像不同
+  專長的員工，gbrain 比較像整間辦公室共用的記憶。兩者可以搭配，但應分開
+  理解。
 - 它可以是輕量的 coding-agent memory，也可以是一直在吸收資訊的個人或
   公司 brain。
 
@@ -77,13 +78,21 @@ Agent 可以把決定、學習和人物資料寫進 brain。重開一個新 sess
 
 ## 我們可以學什麼
 
-- Agent workspace 需要把「這次對話」和「長期記憶」分開顯示。記憶不應
-  只藏在 prompt 裡。
+- Agent workspace 需要把「這次對話」和「長期記憶」分開。記憶不該只藏在
+  prompt 裡，而該是辦公室裡大家都能去查的東西。
 - 搜尋結果和綜合答案是兩種不同物件：一個是來源，一個是整理後的判斷。
-- 知識圖譜很適合 2D：人物、公司、任務、決定可以畫成可點選的關係圖。
-- 3D 不是必須。只有同時要看很多實體、時間和關係層時，空間才可能有幫助；
-  一般查詢和會議準備用 2D graph、timeline 或卡片更清楚。
-- 值得借鑑「先查再問」：agent 不應先問使用者已經寫過的背景。
+- 2D 很適合看這些物件：來源卡、綜合回答、人物與決定的關係圖。那是員工
+  桌上的資料，不是辦公室本身。
+- 這裡說的 3D，不是 Firstmate、Maestro 或 Conductor 那種 ADE dashboard。
+  那些只是把記憶做成側欄或搜尋面板。
+- 比較接近的 3D 方向是
+  [Agent Office](https://github.com/AgentSystemLabs/agent-office)：空間是
+  辦公室，gstack 是走進辦公室的員工，gbrain 則是這些員工共用的記憶。
+  Agent Office 目前偏陽春，但已經有「誰在空間裡工作」；還缺的是員工坐下
+  後能先查辦公室記得什麼，而不是每次重問使用者。
+- 知識圖譜不必硬做成 3D 裝飾。只有當人物、專案、決定的距離能幫助找到誰
+  該被叫來時，空間才有價值。
+- 值得借鑑「先查再問」：員工進辦公室後，應先問共用記憶，而不是先問人。
 - 不該直接照搬全部 50 多個 skills。我們應先吸收 memory verbs、citation
   和 gap analysis 這幾個核心概念。
 
@@ -93,6 +102,8 @@ Agent 可以把決定、學習和人物資料寫進 brain。重開一個新 sess
   缺什麼的系統。
 - 最大限制或疑問：安裝路徑很多，範圍從本機 memory 到 24/7 個人 agent，
   第一次使用容易不知道該選哪一層。尚未親自驗證隱私隔離與實際查詢品質。
+  對未來 3D office 來說，這也是 improvement gap：記憶應該是辦公室的共用
+  層，而不是每個員工自己再裝一套大腦。
 - 是否值得進一步研究或親自體驗：值得先研究 memory、graph 和 synthesis
   的產品概念；不必先部署完整 always-on agent。
 
@@ -106,3 +117,4 @@ skills 搭配時的 handoff。
 
 - [gbrain repository](https://github.com/garrytan/gbrain)
 - [Using GBrain with GStack](https://github.com/garrytan/gstack/blob/main/USING_GBRAIN_WITH_GSTACK.md)
+- [Agent Office](https://github.com/AgentSystemLabs/agent-office)

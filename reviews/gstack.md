@@ -1,6 +1,7 @@
 # gstack
 
-> 狀態：`backlog`  
+> 狀態：`backlog`
+>
 > 注意：目前只完成資料查核，尚未獨立安裝與實測。
 
 ## Metadata

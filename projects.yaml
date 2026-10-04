@@ -1,0 +1,34 @@
+schema_version: 1
+
+# 每個 entry 使用穩定、URL-safe 的 id。請記錄實際測試的完整 commit SHA，
+# 不要只填入會移動的 branch 名稱。
+projects: []
+
+# 新增專案時複製以下範本並移除行首的註解符號：
+#
+#  - id: example-project
+#    name: Example Project
+#    upstream:
+#      url: https://github.com/example/example-project
+#      license: unknown
+#    fork:
+#      url: null
+#    checkout:
+#      directory: example-project
+#      tested_commit: null
+#      tested_version: null
+#    runtime:
+#      method: unknown # unknown | native | docker | docker-compose
+#      command: null
+#      ports: []
+#      data_paths: []
+#      notes: null
+#    evaluation:
+#      status: backlog
+#      review: reviews/example-project.md
+#      verdict: undecided # undecided | adopt | reference | pause | reject
+#      tested_at: null
+#      updated_at: YYYY-MM-DD
+#    discovery:
+#      source: null
+#      rationale: null

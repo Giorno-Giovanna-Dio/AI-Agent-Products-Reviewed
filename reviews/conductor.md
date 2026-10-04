@@ -1,6 +1,6 @@
 # Conductor
 
-> 狀態：`testing`
+> 狀態：`tried`
 >
 > 初步判斷：適合比較不同 agent runtime，以及同時進行多個相對獨立的任務。
 

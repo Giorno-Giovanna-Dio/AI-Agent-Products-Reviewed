@@ -27,119 +27,131 @@
 | Models / agent runtimes | |
 | Pricing plan | |
 
-## 2. Executive summary
+## 2. Product introduction
 
-- 一句話定位：
-- 解決的主要問題：
-- 最有辨識度的能力：
-- 最適合：
-- 不適合：
-- 初步結論：
+### What is it?
 
-## 3. Why evaluate it?
+用一至兩段說明產品是什麼、服務誰，以及如何完成主要工作。這裡應讓沒接觸
+過產品的人先建立完整輪廓，不從安裝或 testing 開始。
 
-### Motivation
+### Positioning
 
-為什麼值得投入時間？它可能補足現有產品或 workflow 的哪個缺口？
-
-### Hypotheses
-
-| ID | Claim to verify | Evidence needed |
-| --- | --- | --- |
-| H1 | | |
-| H2 | | |
-
-## 4. Test scope
-
-### Environment
-
-- Base repository / data：
-- Starting commit / version：
-- Credentials：只記錄類型，不得記錄 secret value
-- Network / permission constraints：
-- Resource limits：
-
-### Scenarios
-
-| ID | Task | Acceptance criteria | Result |
-| --- | --- | --- | --- |
-| T1 | | | `not-run` |
-| T2 | | | `not-run` |
-
-Result 使用 `pass`、`partial`、`fail`、`blocked` 或 `not-run`。
-
-### Out of scope
-
-- 尚未測試：
-- 不適用：
-
-## 5. Setup and reproducibility
-
-### Prerequisites
-
--
-
-### Steps
-
-```text
-Record the minimum reproducible commands without secrets.
-```
-
-### Setup experience
-
-- Time to first successful run：
-- Blocking errors：
-- Workarounds：
-- Cleanup / uninstall：
-
-## 6. Hands-on findings
-
-依 scenario 記錄 expected、actual、evidence 與是否可重現。不要只貼 agent
-summary；優先引用 test output、diff、log 或 screenshot。
-
-### T1 — Scenario name
-
-- Expected：
-- Actual：
-- Evidence：
-- Reproducible：`yes` / `no` / `unknown`
-- Notes：
-
-## 7. Product capabilities
+- Product category：
+- Primary problem：
+- Target users：
+- Maturity / stage：
+- Main interaction model：
+- Deployment model：
 
 ### Core workflow
 
+```text
+Describe the typical user journey from input to outcome.
+```
+
+### Why it is interesting
+
+- 最有辨識度的能力：
+- 可能補足的現有 workflow 缺口：
+- 最適合：
+- 不適合：
+
+## 3. Feature map
+
+先從官方資料整理功能，再透過實際體驗更新 Verification。不要因為尚未測試
+就省略重要 feature，也不要將官方宣稱寫成已驗證事實。
+
+| Feature | What it does | User value | Evidence | Verification |
+| --- | --- | --- | --- | --- |
+| | | | `[Official]` | `not-tried` |
+
+Verification 使用 `not-tried`、`confirmed`、`partial` 或 `contradicted`。
+
+### Core capabilities
+
 -
 
-### Agent / model behavior
+### Workflow and automation
 
 -
 
-### Environment and isolation
+### Collaboration and review
 
 -
 
-### Review and integration
+### Integrations and extensibility
 
 -
 
-### Extensibility
+### Environment and deployment
 
 -
 
-## 8. UX experience
+### Safety and controls
+
+-
+
+## 4. Product experience
+
+此區優先描述產品的實際操作方式；尚未使用時可根據官方 walkthrough 建立
+初稿，但必須標成 `[Official]`。
 
 - Onboarding：
-- Daily workflow：
-- Information density：
+- Primary user journey：
+- Information architecture：
 - Feedback and progress：
-- Error messages：
-- Recovery：
+- Human control / approvals：
+- Error messages and recovery：
 - Accessibility：
 
 主觀體驗也要附上觸發該感受的具體操作。
 
-## 9. Architecture and data flow
+## 5. Differentiation
+
+### Unique capabilities
+
+-
+
+### Common capabilities presented differently
+
+-
+
+### Missing or weaker capabilities
+
+-
+
+## 6. Alternatives and comparison
+
+### Closest alternatives
+
+| Product / workflow | Why users would compare it |
+| --- | --- |
+| | |
+
+### Comparison
+
+| Dimension | This product | Alternative | Evidence |
+| --- | --- | --- | --- |
+| Positioning | | | |
+| Core features | | | |
+| Interaction model | | | |
+| Deployment | | | |
+| Pricing | | | |
+| Constraints | | | |
+
+若比較來自文件而非相同條件實測，必須明確標示。
+
+## 7. Pricing, requirements, and constraints
+
+- Pricing model：
+- Required subscriptions / API keys：
+- Supported platforms：
+- Hardware / runtime requirements：
+- Usage limits：
+- License：
+- Known constraints：
+
+## 8. Architecture and data flow
 
 - Model：
 - Agent runtime / harness：
@@ -150,10 +162,10 @@ summary；優先引用 test output、diff、log 或 screenshot。
 - External services：
 
 ```text
-User → Orchestrator → Agent runtime → Sandbox / host → External services
+User → Product / orchestrator → Runtime → Execution environment → Services
 ```
 
-## 10. Security and privacy
+## 9. Security and privacy
 
 - Execution boundary：
 - Host permissions：
@@ -166,7 +178,70 @@ User → Orchestrator → Agent runtime → Sandbox / host → External services
 
 未確認的 security claim 必須標成 `[Unverified]`。
 
-## 11. Reliability and operations
+## 10. Review focus
+
+完成產品與 feature mapping 後，再列出最值得透過 hands-on experience 回答
+的問題。不是所有功能都需要在同一輪驗證。
+
+| ID | Product claim / question | Why it matters | Evidence needed |
+| --- | --- | --- | --- |
+| Q1 | | | |
+| Q2 | | | |
+
+## 11. Hands-on experience
+
+產品尚未使用時保留本節並填 `Not tried yet`。
+
+### Environment
+
+- Base repository / data：
+- Starting commit / version：
+- Credentials：只記錄類型，不得記錄 secret value
+- Host OS / hardware：
+- Network / permission constraints：
+- Resource limits：
+
+### Setup and reproducibility
+
+#### Prerequisites
+
+-
+
+#### Steps
+
+```text
+Record the minimum reproducible commands without secrets.
+```
+
+#### Setup experience
+
+- Time to first successful run：
+- Blocking errors：
+- Workarounds：
+- Cleanup / uninstall：
+
+### Scenarios
+
+| ID | Task | Acceptance criteria | Result |
+| --- | --- | --- | --- |
+| T1 | | | `not-run` |
+
+Result 使用 `pass`、`partial`、`fail`、`blocked` 或 `not-run`。
+
+### Findings
+
+依 scenario 記錄 expected、actual、evidence 與是否可重現。不要只貼 agent
+summary；優先引用 test output、diff、log 或 screenshot。
+
+### T1 — Scenario name
+
+- Expected：
+- Actual：
+- Evidence：
+- Reproducible：`yes` / `no` / `unknown`
+- Notes：
+
+### Reliability and operations
 
 - Failure isolation：
 - Retry / resume：
@@ -176,7 +251,7 @@ User → Orchestrator → Agent runtime → Sandbox / host → External services
 - Logs / observability：
 - Reproducibility：
 
-## 12. Performance and cost
+### Performance and cost
 
 | Metric | Result | Conditions |
 | --- | --- | --- |
@@ -186,7 +261,12 @@ User → Orchestrator → Agent runtime → Sandbox / host → External services
 | Local CPU / memory | | |
 | Additional subscription | | |
 
-## 13. Scorecard
+### Out of scope
+
+- 尚未測試：
+- 不適用：
+
+## 12. Scorecard
 
 只評分實際測試過的面向，並為每個分數附 evidence。
 
@@ -201,33 +281,15 @@ User → Orchestrator → Agent runtime → Sandbox / host → External services
 | Extensibility | `N/A` | |
 | Performance / cost | `N/A` | |
 
-## 14. Comparison
-
-### Baseline
-
-- Compared with：
-- Controls held constant：
-- Known unfair differences：
-
-| Dimension | This product | Baseline | Evidence |
-| --- | --- | --- | --- |
-| | | | |
-
-### Unique vs overlapping capabilities
-
-- 真正獨有：
-- 相同能力、不同呈現：
-- Baseline 較強：
-
-## 15. Strengths
+## 13. Strengths
 
 -
 
-## 16. Weaknesses and constraints
+## 14. Weaknesses and constraints
 
 -
 
-## 17. Integration notes
+## 15. Integration notes
 
 - 值得採用或參考的能力：
 - 可能的整合方式：
@@ -236,22 +298,22 @@ User → Orchestrator → Agent runtime → Sandbox / host → External services
 - License 與 attribution：
 - Exit / rollback plan：
 
-## 18. Verdict
+## 16. Verdict
 
 - Verdict：`undecided` / `adopt` / `reference` / `pause` / `reject`
 - Confidence：`low` / `medium` / `high`
 - Decision rationale：
 - What could change this decision：
 
-## 19. Open questions
+## 17. Open questions
 
 -
 
-## 20. Next actions
+## 18. Next actions
 
 -
 
-## 21. Evidence and references
+## 19. Evidence and references
 
 ### Artifacts
 
@@ -266,7 +328,7 @@ User → Orchestrator → Agent runtime → Sandbox / host → External services
 - Changelog：
 - Third-party material：
 
-## 22. Review history
+## 20. Review history
 
 | Date | Version / commit | Change | Commit |
 | --- | --- | --- | --- |

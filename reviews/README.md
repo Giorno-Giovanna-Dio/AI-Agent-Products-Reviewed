@@ -6,12 +6,15 @@
 ## 核心原則
 
 1. **固定版本**：記錄實際測試的產品版本或完整 commit SHA。
-2. **先定義任務**：執行前先寫假設、場景及 acceptance criteria。
-3. **證據分級**：不要把官方宣稱、實際觀察和個人推論混在一起。
-4. **公平比較**：比較產品時使用相同輸入、base commit、環境及驗收條件。
-5. **不替未測功能評分**：未親自操作的項目填 `N/A`，不可從文件推測分數。
-6. **狀態與決策分離**：`tried` 只代表用過，不代表值得採用。
-7. **保留失敗結果**：安裝失敗、卡住或無法重現本身也是評測證據。
+2. **先理解產品**：先整理定位、目標使用者、核心 workflow 與 feature map，
+   再決定哪些宣稱值得實測。
+3. **Feature 不等於價值**：除了列出功能，也要說明它解決的問題、適用情境
+   及與替代方案的差異。
+4. **證據分級**：不要把官方宣稱、實際觀察和個人推論混在一起。
+5. **公平比較**：比較產品時使用相同輸入、base commit、環境及驗收條件。
+6. **不替未測功能評分**：未親自操作的項目填 `N/A`，不可從文件推測分數。
+7. **狀態與決策分離**：`tried` 只代表用過，不代表值得採用。
+8. **保留失敗結果**：安裝失敗、卡住或無法重現本身也是評測證據。
 
 ## Evidence labels
 
@@ -27,35 +30,44 @@
 
 ## Review lifecycle
 
-### 1. Intake
+### 1. Product introduction
 
 - 在 `projects.yaml` 建立 entry，status 設為 `untried`。
-- 建立 review，記錄產品定位、來源、版本與為何值得測試。
-- 此階段可以整理官方功能，但所有分數維持 `N/A`。
+- 建立 review，記錄產品定位、來源、版本、目標使用者與主要問題。
+- 用一段簡短敘述說清楚產品是什麼，而不是直接從安裝步驟開始。
 
-### 2. Test design
+### 2. Feature mapping
 
-- 列出產品最核心的 1–3 個宣稱。
-- 為每個宣稱設計可重現的任務與 acceptance criteria。
-- 記錄不在本輪範圍內的功能，避免將「沒測」誤寫成「沒有」。
-- 準備 disposable data、假 secrets 與可還原的環境。
+- 依核心 workflow、協作、整合、執行環境與安全控制整理 features。
+- 對每個 feature 記錄用途、受益對象、證據來源及驗證狀態。
+- 區分真正獨有的能力、常見能力及只是名稱不同的重疊功能。
+- 此階段可以只做產品研究；所有未實測項目維持 `not-tried` 或 `N/A`。
 
-### 3. Hands-on run
+### 3. Product comparison
+
+- 找出最接近的替代方案及使用者目前可能採用的 workflow。
+- 比較定位、功能範圍、操作模式、部署方式、價格與限制。
+- 先提出差異，再決定哪些差異值得用 hands-on experience 驗證。
+
+### 4. Hands-on experience
 
 - 依照官方推薦方式安裝和執行。
+- 從產品最具代表性的 user journey 開始，不需要為了完整度測遍所有功能。
+- 為核心宣稱設計可重現的任務與 acceptance criteria。
 - 保留必要的 commands、logs、screenshots、diffs、時間與成本。
 - 同時記錄成功路徑、錯誤處理、cleanup 及 recovery。
 - 不將正式 credentials、完整資料庫或大型 generated files 提交到本
   repository。
 
-### 4. Analysis
+### 5. Analysis
 
 - 將觀察結果對回原始假設與 acceptance criteria。
 - 區分產品本身限制、環境問題及使用者設定問題。
 - 與替代方案比較時，說明哪些是真正差異，哪些只是不同名稱的重疊功能。
+- 修正 feature map 中不準確的理解，並更新驗證狀態。
 - 更新 scorecard；沒有證據的項目仍填 `N/A`。
 
-### 5. Decision
+### 6. Decision
 
 - Status 改為 `tried`。
 - 設定 verdict，記錄理由、信心程度及需要重新評估的條件。

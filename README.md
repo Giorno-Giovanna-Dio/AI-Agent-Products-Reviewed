@@ -45,10 +45,11 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 1. 將候選產品加入 `projects.yaml`，狀態設為 `untried`。
 2. 若有公開原始碼，clone 到獨立實驗區並記錄實際測試的完整 commit SHA；
    否則記錄產品版本。
-3. 優先依照 upstream 官方文件啟動；Docker 並非強制要求。
-4. 依照 [`reviews/README.md`](reviews/README.md) 的方法，使用
+3. 依照 [`reviews/README.md`](reviews/README.md) 的方法，使用
    [`reviews/_template.md`](reviews/_template.md) 建立評測文件。
-5. 更新狀態與結論，並以一項明確變更建立一個 atomic commit。
+4. 只有在關鍵問題無法透過官方文件、source 或 demo 釐清時，才依 upstream
+   推薦方式進行 hands-on validation；Docker 並非強制要求。
+5. 更新狀態、信心程度與結論，並以一項明確變更建立一個 atomic commit。
 
 候選專案不應直接放在本 repository 之下。若實驗時需要修改產品程式碼，
 應另外 fork 該產品；修改提交在產品 fork，評測結果則提交在這裡。

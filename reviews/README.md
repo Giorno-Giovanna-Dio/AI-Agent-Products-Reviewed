@@ -25,6 +25,8 @@ Review 的主要產出不是分數，而是：
 8. **保留失敗結果**：安裝失敗、卡住或無法重現本身也是評測證據。
 9. **不強迫 3D 化**：只有當深度、位置或空間關係能改善理解與操作時，才把
    pattern 映射到 3D；其餘情況應優先採用更清楚的 2D 表達。
+10. **Hands-on 是選擇性的**：研究 skill、template、輔助工具或已能從
+    source/docs 理解的能力時，不必為了完成形式而親自執行。
 
 ## Evidence labels
 
@@ -67,7 +69,32 @@ Review 的主要產出不是分數，而是：
 - 分別評估它們在 2D 與 3D workspace 中的呈現方式。
 - 記錄 transferable patterns、design risks，以及不值得照搬的部分。
 
-### 5. Hands-on experience
+### 5. Decide the validation method
+
+每個重要問題可選擇最適合的 evidence，而不是一律 hands-on：
+
+- `official-docs`：確認產品定位、功能範圍與官方 workflow。
+- `source-review`：確認 open-source implementation、permissions 或 data flow。
+- `demo-review`：理解 interaction、visualization 與 user journey。
+- `hands-on`：驗證實際 UX、可靠性、限制或文件無法回答的行為。
+- `prototype`：驗證某個 pattern 是否適合我們的 2D／3D workspace。
+
+值得 hands-on 的情況：
+
+- 結果會實質影響採用或 workspace design 決策。
+- Interaction quality 無法從文字或影片判斷。
+- 官方宣稱、source 與第三方經驗互相衝突。
+- 安全、權限、資料處理或 failure recovery 是核心風險。
+- 需要在相同條件下比較多個產品或 runtimes。
+
+可以不實測的情況：
+
+- 只是 skill、prompt template、薄封裝或輔助 feature。
+- Source 和文件已足以理解其 mechanism 與限制。
+- 與已研究產品高度重疊，沒有新的 workspace primitive。
+- 安裝成本或風險明顯高於它對研究問題的價值。
+
+### 6. Optional hands-on experience
 
 - 依照官方推薦方式安裝和執行。
 - 從產品最具代表性的 user journey 開始，不需要為了完整度測遍所有功能。
@@ -77,7 +104,9 @@ Review 的主要產出不是分數，而是：
 - 不將正式 credentials、完整資料庫或大型 generated files 提交到本
   repository。
 
-### 6. Analysis
+沒有執行時，記錄跳過原因和目前 evidence 即可，status 維持 `untried`。
+
+### 7. Analysis
 
 - 將觀察結果對回原始假設與 acceptance criteria。
 - 區分產品本身限制、環境問題及使用者設定問題。
@@ -85,9 +114,9 @@ Review 的主要產出不是分數，而是：
 - 修正 feature map 中不準確的理解，並更新驗證狀態。
 - 更新 scorecard；沒有證據的項目仍填 `N/A`。
 
-### 7. Decision
+### 8. Decision
 
-- Status 改為 `tried`。
+- 只有實際操作過產品時，才把 status 改為 `tried`。
 - 設定 verdict，記錄理由、信心程度及需要重新評估的條件。
 - 每個明確評測階段使用獨立 atomic commit。
 

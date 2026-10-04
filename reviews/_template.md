@@ -61,11 +61,12 @@ Describe the typical user journey from input to outcome.
 先從官方資料整理功能，再透過實際體驗更新 Verification。不要因為尚未測試
 就省略重要 feature，也不要將官方宣稱寫成已驗證事實。
 
-| Feature | What it does | User value | Evidence | Verification |
+| Feature | What it does | User value | Evidence | Confidence |
 | --- | --- | --- | --- | --- |
-| | | | `[Official]` | `not-tried` |
+| | | | `[Official]` | `medium` |
 
-Verification 使用 `not-tried`、`confirmed`、`partial` 或 `contradicted`。
+Confidence 使用 `low`、`medium` 或 `high`；它表示目前證據強度，不代表是否
+親自操作過產品。
 
 ### Core capabilities
 
@@ -234,14 +235,21 @@ User → Product / orchestrator → Runtime → Execution environment → Servic
 完成產品與 feature mapping 後，再列出最值得透過 hands-on experience 回答
 的問題。不是所有功能都需要在同一輪驗證。
 
-| ID | Product claim / question | Why it matters | Evidence needed |
-| --- | --- | --- | --- |
-| Q1 | | | |
-| Q2 | | | |
+| ID | Product claim / question | Why it matters | Validation method | Evidence needed |
+| --- | --- | --- | --- | --- |
+| Q1 | | | `official-docs` | |
+| Q2 | | | `source-review` | |
 
-## 12. Hands-on experience
+Validation method 可使用 `official-docs`、`source-review`、`demo-review`、
+`hands-on` 或 `prototype`。
 
-產品尚未使用時保留本節並填 `Not tried yet`。
+## 12. Hands-on experience (optional)
+
+- Decision：`run` / `skip` / `defer`
+- Reason：
+
+若選擇 `skip` 或 `defer`，記錄原因後即可移至下一節；不需要為了完成模板而
+執行產品，status 維持 `untried`。
 
 ### Environment
 

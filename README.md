@@ -49,21 +49,19 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
    [`reviews/_template.md`](reviews/_template.md) 建立評測文件。
 4. 只有在關鍵問題無法透過官方文件、source 或 demo 釐清時，才依 upstream
    推薦方式進行 hands-on validation；Docker 並非強制要求。
-5. 更新狀態、信心程度與結論，並以一項明確變更建立一個 atomic commit。
+5. 更新狀態與初步看法，並以一項明確變更建立一個 atomic commit。
 
 候選專案不應直接放在本 repository 之下。若實驗時需要修改產品程式碼，
 應另外 fork 該產品；修改提交在產品 fork，評測結果則提交在這裡。
 
 ## 狀態
 
-| Project | Source | Tested revision | Runtime | Status | Verdict |
-| --- | --- | --- | --- | --- | --- |
-| [Conductor](reviews/conductor.md) | [Website](https://www.conductor.build/) | 未記錄 | macOS native | `tried` | `undecided` |
-| [gstack](reviews/gstack.md) | [GitHub](https://github.com/garrytan/gstack) | 尚未測試 | Agent skills | `untried` | `undecided` |
+| Project | Source | Tested revision | Runtime | Status |
+| --- | --- | --- | --- | --- |
+| [Conductor](reviews/conductor.md) | [Website](https://www.conductor.build/) | 未記錄 | macOS native | `tried` |
+| [gstack](reviews/gstack.md) | [GitHub](https://github.com/garrytan/gstack) | 尚未測試 | Agent skills | `untried` |
 
 狀態值：
 
 - `untried`：已收錄，但尚未實際使用。
 - `tried`：已經實際體驗過。
-
-採用與否由獨立的 `Verdict` 欄位表示，不混入使用狀態。

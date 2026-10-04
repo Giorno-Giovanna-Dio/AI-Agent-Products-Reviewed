@@ -1,76 +1,93 @@
 # gstack
 
-> 狀態：`untried`
+> Status：`untried`
 >
-> 注意：目前只完成資料查核，尚未獨立安裝與實測。
+> Source：[garrytan/gstack](https://github.com/garrytan/gstack)
+>
+> Category：Agent workflow skills
+>
+> Last updated：2026-10-04
 
-## Metadata
+## 產品介紹
 
-- Repository：[garrytan/gstack](https://github.com/garrytan/gstack)
-- License：MIT
-- Tested commit：尚未測試
-- 發現來源：Conductor Quick Start
+gstack 是一套為 coding agents 準備的 open-source skills。它把產品開發拆成
+不同角色和階段，例如釐清需求、規劃、code review、瀏覽器 QA 和 shipping。
 
-## 產品定位
+它不是 Conductor 的內建 workflow。Conductor Quick Start 可以協助初始化
+gstack，但 gstack 本身是 Garry Tan 維護的獨立 MIT repository。
 
-gstack 是 Garry Tan 維護的獨立 open-source agent skills 套件，不是
-Conductor 自己的 workflow template。Conductor 可以透過 Quick Start
-初始化 gstack，但兩者應分開評測。
+## 主要 Features
 
-它把軟體開發流程拆成具名的專業角色與 skills，涵蓋產品構想、規劃、
-engineering/design review、實作檢查、瀏覽器 QA、發佈及 retrospective。
+### 完整開發流程
 
-官方描述的主要生命週期是：
+把 agent 工作串成 `office-hours → plan → implement → review → QA → ship →
+retro`，讓不同階段有明確目的，而不是只靠一個長 prompt。
 
-```text
-office-hours → plan → implement → review → QA → ship → retro
-```
+### 不同專業角色
 
-## 已確認的能力
+提供 product、CEO、engineering、design、QA 和 release 等 skills，讓 agent
+在每個階段採用不同的檢查角度。
 
-- `/office-hours`：整理產品構想與需求。
-- `/autoplan`：串接 CEO、design 與 engineering review。
-- `/review`：對目前 branch 的變更進行 pre-landing review。
-- `/browse`：透過 Chromium 進行瀏覽器操作與截圖。
-- `/qa`：測試、修正、重新驗證，並為修正產生 regression tests。
-- `/qa-only`：只產出 QA 報告，不修改程式碼。
-- `/ship`：執行測試、檢查 coverage、push 並建立 pull request。
-- `/codex`：使用 Codex 提供第二意見。
+### Browser QA
 
-完整 skill 清單仍在快速演進，因此正式評測時應固定 tested commit，而不是只
-記錄 `main` branch。
+`/browse` 和 `/qa` 讓 agent 操作 Chromium、檢查實際頁面、修正問題並重新
+驗證。`/qa-only` 則只回報結果，不修改程式碼。
 
-## 與 Conductor 的關係
+### Review 與 Shipping
 
-Conductor 是 workspace 與 agent harness 管理層；gstack 是放進 agent
-context 的工作流程和角色規則。兩者可以一起使用，但解決的問題不同：
+`/review` 用於合併前檢查；`/ship` 則把 tests、coverage、push 和 pull request
+串成發佈流程。
 
-| 工具 | 主要責任 |
-| --- | --- |
-| Conductor | 隔離 worktrees、執行不同 agent runtimes、管理 diff 與 PR |
-| gstack | 規範 agent 在規劃、review、QA 與 shipping 階段如何工作 |
+### 第二意見
 
-因此，使用 gstack 不代表一定需要 Conductor；在 Conductor 看到 gstack，也
-不代表它是 Conductor 的內建專屬能力。
+`/codex` 可以請 Codex review 或挑戰目前做法，提供不同 context 或 runtime
+的觀點。
 
-## 待驗證項目
+## 主打賣點
 
-- 安裝流程及其對既有 agent instructions 的影響。
-- 實際支援哪些 agent runtimes，以及各 runtime 的功能差異。
-- `/autoplan` 是否能有效收斂需求，而不是只增加輸出長度。
-- `/review` 與獨立 verifier agent 的重疊程度。
-- `/qa` 的 browser automation、修正品質與 regression tests。
-- `/ship` 是否會做出超出預期的 repository 或 GitHub 寫入操作。
-- Skills 數量、context consumption 與 token 成本。
+- 重點不是新的 model，而是把開發經驗和檢查清單包成可重複使用的 skills。
+- 從產品構想到 QA 和發佈提供一套 opinionated workflow。
+- 可以與 Conductor 等 workspace 工具搭配，但不依賴特定 workspace UI。
 
-## 初步判斷
+## 使用情境
 
-它值得作為獨立候選繼續測試，尤其適合研究如何把 proposal、review、
-verification 與 shipping 組成可重複的 agent workflow。目前尚無足夠實測
-證據給出 `adopt` 或 `reject` 結論。
+### 將模糊想法整理成可執行計畫
 
-## 參考資料
+- 適合誰：容易直接叫 agent 寫 code、卻缺少前期思考的人。
+- 在什麼情況使用：新 feature 或產品方向仍不清楚。
+- 帶來的價值：先經過產品、設計和 engineering 角度整理。
+
+### 建立固定 Review 和 QA 習慣
+
+- 適合誰：希望 agent 在交付前自行檢查的團隊。
+- 在什麼情況使用：功能完成但尚未合併或發佈。
+- 帶來的價值：將 review、瀏覽器測試和 regression tests 變成固定步驟。
+
+## 我們可以學什麼
+
+- Skills 可以作為 workspace 中可重用的 workflow blocks，而不只是 prompt
+  shortcuts。
+- 不同角色可以共享同一份 artifact，例如產品規劃產生的內容再交給
+  engineering review 和 QA。
+- 2D workspace 可以把 skills 呈現為 pipeline、stage cards 或可組合節點。
+- 3D 不一定有明顯優勢；除非需要同時觀看多條 workflow 和 artifacts 的空間
+  關係，否則 2D pipeline 會更清楚。
+- 我們應學習階段與 handoff 的設計，而不是直接複製所有 skill 名稱。
+
+## 初步看法
+
+- 最有價值的部分：把軟體開發方法變成 agents 可重複執行的角色和流程。
+- 最大限制或疑問：skills 很多，可能增加 context、輸出長度和使用者理解成本。
+- 是否值得進一步研究或親自體驗：值得先研究 workflow 設計；不必立即測完每個
+  skill。
+
+## 後續補充（選填）
+
+若之後實測，優先選 `/office-hours`、`/review` 和 `/qa` 各一個代表性流程，
+而不是逐一測試全部 skills。
+
+## Sources
 
 - [gstack repository](https://github.com/garrytan/gstack)
 - [gstack skills reference](https://github.com/garrytan/gstack/blob/main/docs/skills.md)
-- [Conductor v0.43.0: Codex skills and gstack Quick Start](https://www.conductor.build/changelog/0.43.0-codex-skills-plan-mode-fast-mode)
+- [Conductor Quick Start reference](https://www.conductor.build/changelog/0.43.0-codex-skills-plan-mode-fast-mode)

@@ -40,8 +40,13 @@ retro`，讓不同階段有明確目的，而不是只靠一個長 prompt。
 
 ### 第二意見
 
-`/codex` 可以請 Codex review 或挑戰目前做法，提供不同 context 或 runtime
-的觀點。
+`/codex` 不是 gstack 的預設工作方式。gstack 主要跑在 **Claude Code** 這個
+runtime 上；`/codex` 是從 Claude Code 裡再叫 OpenAI Codex CLI，用另一套
+runtime 做 review、challenge 或諮詢。
+
+所以「第二意見」指的是：原本由 Claude Code 做的事，再請 Codex 用不同
+context 和不同 agent system 檢查一次。gstack 自己也把這個 skill 標成
+Claude wrapper，因此它不會在 Codex host 上再呼叫自己。
 
 ## 主打賣點
 
@@ -71,8 +76,14 @@ retro`，讓不同階段有明確目的，而不是只靠一個長 prompt。
 - 不同角色可以共享同一份 artifact，例如產品規劃產生的內容再交給
   engineering review 和 QA。
 - 2D workspace 可以把 skills 呈現為 pipeline、stage cards 或可組合節點。
-- 3D 不一定有明顯優勢；除非需要同時觀看多條 workflow 和 artifacts 的空間
-  關係，否則 2D pipeline 會更清楚。
+- 這裡說的 3D，不是 Firstmate、Maestro 或 Conductor 那種 ADE 分頁加上象徵性
+  team orchestration。那些本質上仍是 agent dashboard。
+- 比較接近的 3D 方向是
+  [Agent Office](https://github.com/AgentSystemLabs/agent-office)：把 agent
+  放進 3D 辦公室，用位置、桌子、樓層表示誰在做什麼。它目前偏陽春，但比
+  ADE 更接近「空間裡的團隊」。
+- gstack 的價值不是再做一個 ADE，而是把 office-hours、review、QA、ship
+  這些階段變成 3D office 裡可看見的工作站、房間或 desk 流程。
 - 我們應學習階段與 handoff 的設計，而不是直接複製所有 skill 名稱。
 
 ## 初步看法
@@ -91,4 +102,6 @@ retro`，讓不同階段有明確目的，而不是只靠一個長 prompt。
 
 - [gstack repository](https://github.com/garrytan/gstack)
 - [gstack skills reference](https://github.com/garrytan/gstack/blob/main/docs/skills.md)
+- [/codex skill](https://github.com/garrytan/gstack/blob/main/codex/SKILL.md)
 - [Conductor Quick Start reference](https://www.conductor.build/changelog/0.43.0-codex-skills-plan-mode-fast-mode)
+- [Agent Office](https://github.com/AgentSystemLabs/agent-office)

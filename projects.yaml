@@ -57,6 +57,34 @@ projects:
     discovery:
       source: Conductor Quick Start
       rationale: Evaluate a structured end-to-end agent development workflow
+  - id: https://github.com/garrytan/gbrain
+    name: gbrain
+    source_type: repository
+    aliases: []
+    upstream:
+      url: https://github.com/garrytan/gbrain
+      repository: https://github.com/garrytan/gbrain
+      license: MIT
+    fork:
+      url: null
+    checkout:
+      directory: gbrain
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Persistent agent memory and knowledge layer
+    evaluation:
+      status: untried
+      review: reviews/gbrain.md
+      tested_at: null
+      updated_at: 2026-10-04
+    discovery:
+      source: related gstack cell
+      rationale: Understand persistent memory, synthesis, and knowledge-graph patterns
 
 # 新增專案時複製以下範本並移除行首的註解符號：
 #

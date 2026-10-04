@@ -14,7 +14,7 @@ clone 到本 repository 以外的獨立實驗區；這裡只保存可重現的�
 
 ## 評測流程
 
-1. 將候選產品加入 `projects.yaml`，狀態設為 `backlog`。
+1. 將候選產品加入 `projects.yaml`，狀態設為 `untried`。
 2. 若有公開原始碼，clone 到獨立實驗區並記錄實際測試的完整 commit SHA；
    否則記錄產品版本。
 3. 優先依照 upstream 官方文件啟動；Docker 並非強制要求。
@@ -28,15 +28,12 @@ clone 到本 repository 以外的獨立實驗區；這裡只保存可重現的�
 
 | Project | Source | Tested revision | Runtime | Status | Verdict |
 | --- | --- | --- | --- | --- | --- |
-| [Conductor](reviews/conductor.md) | [Website](https://www.conductor.build/) | 未記錄 | macOS native | `testing` | `undecided` |
-| [gstack](reviews/gstack.md) | [GitHub](https://github.com/garrytan/gstack) | 尚未測試 | Agent skills | `backlog` | `undecided` |
+| [Conductor](reviews/conductor.md) | [Website](https://www.conductor.build/) | 未記錄 | macOS native | `tried` | `undecided` |
+| [gstack](reviews/gstack.md) | [GitHub](https://github.com/garrytan/gstack) | 尚未測試 | Agent skills | `untried` | `undecided` |
 
 狀態值：
 
-- `backlog`：已收錄，尚未開始。
-- `setup`：正在安裝或排除啟動問題。
-- `testing`：正在實際體驗。
-- `reviewed`：已完成一輪評測。
-- `selected`：選為整合基礎或功能來源。
-- `paused`：暫停，等待外部條件。
-- `rejected`：目前不採用。
+- `untried`：已收錄，但尚未實際使用。
+- `tried`：已經實際體驗過。
+
+採用與否由獨立的 `Verdict` 欄位表示，不混入使用狀態。

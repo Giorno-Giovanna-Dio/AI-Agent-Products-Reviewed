@@ -22,7 +22,7 @@ projects:
       data_paths: []
       notes: macOS application; local agents run with the current user's permissions
     evaluation:
-      status: testing
+      status: tried
       review: reviews/conductor.md
       verdict: undecided
       tested_at: 2026-10-04
@@ -49,7 +49,7 @@ projects:
       data_paths: []
       notes: Agent skills suite; discovered through Conductor Quick Start
     evaluation:
-      status: backlog
+      status: untried
       review: reviews/gstack.md
       verdict: undecided
       tested_at: null
@@ -79,7 +79,7 @@ projects:
 #      data_paths: []
 #      notes: null
 #    evaluation:
-#      status: backlog
+#      status: untried # untried | tried
 #      review: reviews/example-project.md
 #      verdict: undecided # undecided | adopt | reference | pause | reject
 #      tested_at: null

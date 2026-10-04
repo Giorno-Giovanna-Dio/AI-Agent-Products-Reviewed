@@ -29,8 +29,10 @@ projects:
     discovery:
       source: user evaluation
       rationale: Compare native coding-agent runtimes and parallel approaches
-  - id: gstack
+  - id: https://github.com/garrytan/gstack
     name: gstack
+    source_type: repository
+    aliases: []
     upstream:
       url: https://github.com/garrytan/gstack
       repository: https://github.com/garrytan/gstack

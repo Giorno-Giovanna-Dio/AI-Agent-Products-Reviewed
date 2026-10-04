@@ -3,6 +3,14 @@
 這份文件定義所有產品共用的評測方式。每份 review 從
 [`_template.md`](_template.md) 複製，並在測試過程中持續更新。
 
+Review 的主要產出不是分數，而是：
+
+- 對前沿產品與技術方向的準確理解。
+- 可重用的 agent workspace primitives 與 interaction patterns。
+- 對未來 2D／3D workspace 的具體設計啟示。
+- 值得採用、需要重新設計及應避免的做法。
+- 仍需透過 prototype 或實測回答的問題。
+
 ## 核心原則
 
 1. **固定版本**：記錄實際測試的產品版本或完整 commit SHA。
@@ -15,6 +23,8 @@
 6. **不替未測功能評分**：未親自操作的項目填 `N/A`，不可從文件推測分數。
 7. **狀態與決策分離**：`tried` 只代表用過，不代表值得採用。
 8. **保留失敗結果**：安裝失敗、卡住或無法重現本身也是評測證據。
+9. **不強迫 3D 化**：只有當深度、位置或空間關係能改善理解與操作時，才把
+   pattern 映射到 3D；其餘情況應優先採用更清楚的 2D 表達。
 
 ## Evidence labels
 
@@ -49,7 +59,15 @@
 - 比較定位、功能範圍、操作模式、部署方式、價格與限制。
 - 先提出差異，再決定哪些差異值得用 hands-on experience 驗證。
 
-### 4. Hands-on experience
+### 4. Frontier and workspace analysis
+
+- 判斷哪些能力真正代表新的技術或 interaction direction。
+- 將產品拆成 agents、tasks、context、runtime、artifacts、state 與 control
+  等可重用 primitives。
+- 分別評估它們在 2D 與 3D workspace 中的呈現方式。
+- 記錄 transferable patterns、design risks，以及不值得照搬的部分。
+
+### 5. Hands-on experience
 
 - 依照官方推薦方式安裝和執行。
 - 從產品最具代表性的 user journey 開始，不需要為了完整度測遍所有功能。
@@ -59,7 +77,7 @@
 - 不將正式 credentials、完整資料庫或大型 generated files 提交到本
   repository。
 
-### 5. Analysis
+### 6. Analysis
 
 - 將觀察結果對回原始假設與 acceptance criteria。
 - 區分產品本身限制、環境問題及使用者設定問題。
@@ -67,7 +85,7 @@
 - 修正 feature map 中不準確的理解，並更新驗證狀態。
 - 更新 scorecard；沒有證據的項目仍填 `N/A`。
 
-### 6. Decision
+### 7. Decision
 
 - Status 改為 `tried`。
 - 設定 verdict，記錄理由、信心程度及需要重新評估的條件。

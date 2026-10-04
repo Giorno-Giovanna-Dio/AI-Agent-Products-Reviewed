@@ -91,7 +91,58 @@ Verification 使用 `not-tried`、`confirmed`、`partial` 或 `contradicted`。
 
 -
 
-## 4. Product experience
+## 4. Frontier relevance and workspace implications
+
+### What is at the edge?
+
+- Novel technical capability：
+- Novel interaction model：
+- Enabling technology：
+- Why this was not practical before：
+- Maturity：`experimental` / `emerging` / `established`
+
+### Workspace primitives
+
+把產品拆成可重用概念，而不是只複製畫面或 feature 名稱。
+
+| Primitive | How this product implements it | 2D relevance | 3D relevance | Evidence |
+| --- | --- | --- | --- | --- |
+| Agent | | | | |
+| Task / goal | | | | |
+| Context / memory | | | | |
+| Runtime / sandbox | | | | |
+| State / progress | | | | |
+| Artifact / provenance | | | | |
+| Human control | | | | |
+
+### Implications for a 2D workspace
+
+- Layout / canvas：
+- Navigation：
+- Relationships：
+- Progress visualization：
+- Comparison and review：
+
+### Implications for a 3D workspace
+
+- What depth or position represents：
+- Spatial relationships：
+- Navigation and camera：
+- Collaboration / presence：
+- Benefit over 2D：
+- Risk of visual complexity：
+
+### Design extraction
+
+- Pattern worth adopting：
+- Pattern requiring redesign：
+- Pattern to avoid：
+- Prototype question：
+
+如果 3D 沒有增加理解、操作或協作價值，應明確記錄「2D 較適合」，而不是
+為了符合產品方向強行建立空間隱喻。
+
+## 5. Product experience
 
 此區優先描述產品的實際操作方式；尚未使用時可根據官方 walkthrough 建立
 初稿，但必須標成 `[Official]`。
@@ -106,7 +157,7 @@ Verification 使用 `not-tried`、`confirmed`、`partial` 或 `contradicted`。
 
 主觀體驗也要附上觸發該感受的具體操作。
 
-## 5. Differentiation
+## 6. Differentiation
 
 ### Unique capabilities
 
@@ -120,7 +171,7 @@ Verification 使用 `not-tried`、`confirmed`、`partial` 或 `contradicted`。
 
 -
 
-## 6. Alternatives and comparison
+## 7. Alternatives and comparison
 
 ### Closest alternatives
 
@@ -141,7 +192,7 @@ Verification 使用 `not-tried`、`confirmed`、`partial` 或 `contradicted`。
 
 若比較來自文件而非相同條件實測，必須明確標示。
 
-## 7. Pricing, requirements, and constraints
+## 8. Pricing, requirements, and constraints
 
 - Pricing model：
 - Required subscriptions / API keys：
@@ -151,7 +202,7 @@ Verification 使用 `not-tried`、`confirmed`、`partial` 或 `contradicted`。
 - License：
 - Known constraints：
 
-## 8. Architecture and data flow
+## 9. Architecture and data flow
 
 - Model：
 - Agent runtime / harness：
@@ -165,7 +216,7 @@ Verification 使用 `not-tried`、`confirmed`、`partial` 或 `contradicted`。
 User → Product / orchestrator → Runtime → Execution environment → Services
 ```
 
-## 9. Security and privacy
+## 10. Security and privacy
 
 - Execution boundary：
 - Host permissions：
@@ -178,7 +229,7 @@ User → Product / orchestrator → Runtime → Execution environment → Servic
 
 未確認的 security claim 必須標成 `[Unverified]`。
 
-## 10. Review focus
+## 11. Review focus
 
 完成產品與 feature mapping 後，再列出最值得透過 hands-on experience 回答
 的問題。不是所有功能都需要在同一輪驗證。
@@ -188,7 +239,7 @@ User → Product / orchestrator → Runtime → Execution environment → Servic
 | Q1 | | | |
 | Q2 | | | |
 
-## 11. Hands-on experience
+## 12. Hands-on experience
 
 產品尚未使用時保留本節並填 `Not tried yet`。
 
@@ -266,7 +317,7 @@ summary；優先引用 test output、diff、log 或 screenshot。
 - 尚未測試：
 - 不適用：
 
-## 12. Scorecard
+## 13. Scorecard
 
 只評分實際測試過的面向，並為每個分數附 evidence。
 
@@ -281,15 +332,15 @@ summary；優先引用 test output、diff、log 或 screenshot。
 | Extensibility | `N/A` | |
 | Performance / cost | `N/A` | |
 
-## 13. Strengths
+## 14. Strengths
 
 -
 
-## 14. Weaknesses and constraints
+## 15. Weaknesses and constraints
 
 -
 
-## 15. Integration notes
+## 16. Integration notes
 
 - 值得採用或參考的能力：
 - 可能的整合方式：
@@ -298,22 +349,22 @@ summary；優先引用 test output、diff、log 或 screenshot。
 - License 與 attribution：
 - Exit / rollback plan：
 
-## 16. Verdict
+## 17. Verdict
 
 - Verdict：`undecided` / `adopt` / `reference` / `pause` / `reject`
 - Confidence：`low` / `medium` / `high`
 - Decision rationale：
 - What could change this decision：
 
-## 17. Open questions
+## 18. Open questions
 
 -
 
-## 18. Next actions
+## 19. Next actions
 
 -
 
-## 19. Evidence and references
+## 20. Evidence and references
 
 ### Artifacts
 
@@ -328,7 +379,7 @@ summary；優先引用 test output、diff、log 或 screenshot。
 - Changelog：
 - Third-party material：
 
-## 20. Review history
+## 21. Review history
 
 | Date | Version / commit | Change | Commit |
 | --- | --- | --- | --- |

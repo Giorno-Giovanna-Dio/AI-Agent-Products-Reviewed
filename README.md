@@ -17,8 +17,8 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 - 它如何呈現 agents、tasks、branches、sandboxes、artifacts 與進度？
 - 使用者如何委派、比較、介入、驗證及收回控制權？
 - 哪些能力來自 model，哪些來自 agent runtime 或 orchestration？
-- 哪些設計可以轉化成 2D canvas、graph、timeline、panel 或 3D spatial view？
-- 3D 是否真的增加空間理解、協作或狀態感知，而不只是視覺裝飾？
+- 它在 2D workspace（平面／pixel 風格工作空間）裡會變成什麼？
+- 它在 3D workspace（可走進的辦公室介面，不是 3D 物件）裡會變成什麼？
 - 哪些 pattern 值得採用、重新設計或明確避免？
 
 主要研究面向：
@@ -42,7 +42,10 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 
 ## 評測流程
 
-1. 將候選產品加入 `projects.yaml`，狀態設為 `untried`。
+1. 將候選產品加入 `projects.yaml`，狀態設為 `untried`。若來源是 GitHub
+   repo 或官方網址，可呼叫
+   [`/create-cell-pr`](.cursor/skills/create-cell-pr/SKILL.md) 讓 sub-agent
+   寫洞察筆記並開獨立 PR。
 2. 若有公開原始碼，clone 到獨立實驗區並記錄實際測試的完整 commit SHA；
    否則記錄產品版本。
 3. 依照 [`reviews/README.md`](reviews/README.md) 的方法，使用
@@ -56,7 +59,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 
 ## 狀態
 
-| Project | Source | Tested revision | Runtime | Status |
+| Cell | Cell ID | Tested revision | Runtime | Status |
 | --- | --- | --- | --- | --- |
 | [Conductor](reviews/conductor.md) | [Website](https://www.conductor.build/) | 未記錄 | macOS native | `tried` |
 | [gstack](reviews/gstack.md) | [GitHub](https://github.com/garrytan/gstack) | 尚未測試 | Agent skills | `untried` |

@@ -42,11 +42,12 @@
 
 - 值得借鑑的 product idea：
 - 值得借鑑的 interaction / workflow：
-- 對 2D AI agent workspace 的啟示：
-- 對 3D AI agent workspace 的啟示：
+- 在 2D workspace 裡會變成什麼：
+- 在 3D workspace 裡會變成什麼：
 - 不值得照搬或需要重新設計的地方：
 
-如果 3D 沒有帶來更好的理解、操作或協作，直接寫「2D 較適合」。
+2D 是平面工作空間，例如 pixel 風格辦公室。3D 是可走進的辦公室介面，不是
+3D 物件或立體圖譜。ADE dashboard 不要寫成 workspace。
 
 ## 初步看法
 

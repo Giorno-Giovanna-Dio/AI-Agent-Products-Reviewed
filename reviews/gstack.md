@@ -2,7 +2,7 @@
 
 > Status：`untried`
 >
-> Source：[garrytan/gstack](https://github.com/garrytan/gstack)
+> Cell ID：[https://github.com/garrytan/gstack](https://github.com/garrytan/gstack)
 >
 > Category：Agent workflow skills
 >

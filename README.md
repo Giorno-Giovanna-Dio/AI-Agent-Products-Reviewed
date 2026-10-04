@@ -11,7 +11,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 
 ## Research goals
 
-每個產品 review 應協助回答：
+每個 Cell review 應協助回答：
 
 - 它代表了哪一種新的 agent workspace 或 interaction model？
 - 它如何呈現 agents、tasks、branches、sandboxes、artifacts 與進度？
@@ -34,15 +34,28 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 
 ## Repository 結構
 
-- [`projects.yaml`](projects.yaml)：候選專案的結構化 metadata。
+- [`cells.yaml`](cells.yaml)：所有 Cells 的結構化 metadata。
 - [`reviews/README.md`](reviews/README.md)：共同評測規則與證據標準。
-- [`reviews/`](reviews/)：每個專案的實際體驗與結論。
-- `/workspace-labs/<project-id>`：建議的本機實驗位置，不屬於本
+- [`reviews/`](reviews/)：每個 Cell 的產品洞察。
+- `/workspace-labs/<cell-name>`：建議的本機實驗位置，不屬於本
   repository，也不會被 Git 追蹤。
+
+## Cell model
+
+一個 **Cell** 是表格中的一個獨立研究單元。Cell 不會保存 upstream 的完整
+程式碼；它只連結來源，並保存我們從產品中得到的洞察。
+
+- Repository-backed Cell 的 ID 是 canonical GitHub repository URL，例如
+  `https://github.com/mattpocock/sandcastle`。
+- 沒有公開 repository 的產品使用官方 canonical URL，例如
+  `https://www.conductor.build/`。
+- GitHub URL 統一移除 `.git`、query、fragment 與尾端 `/`。
+- Repository 改名或轉移後，新的 canonical URL 成為 ID，舊網址放進
+  `aliases`。
 
 ## 評測流程
 
-1. 將候選產品加入 `projects.yaml`，狀態設為 `untried`。
+1. 將候選產品建立為 `cells.yaml` 中的 Cell，狀態設為 `untried`。
 2. 若有公開原始碼，clone 到獨立實驗區並記錄實際測試的完整 commit SHA；
    否則記錄產品版本。
 3. 依照 [`reviews/README.md`](reviews/README.md) 的方法，使用
@@ -56,7 +69,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 
 ## 狀態
 
-| Project | Source | Tested revision | Runtime | Status |
+| Cell | Source | Tested revision | Runtime | Status |
 | --- | --- | --- | --- | --- |
 | [Conductor](reviews/conductor.md) | [Website](https://www.conductor.build/) | 未記錄 | macOS native | `tried` |
 | [gstack](reviews/gstack.md) | [GitHub](https://github.com/garrytan/gstack) | 尚未測試 | Agent skills | `untried` |

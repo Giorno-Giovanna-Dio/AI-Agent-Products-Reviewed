@@ -17,8 +17,8 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 - 它如何呈現 agents、tasks、branches、sandboxes、artifacts 與進度？
 - 使用者如何委派、比較、介入、驗證及收回控制權？
 - 哪些能力來自 model，哪些來自 agent runtime 或 orchestration？
-- 哪些設計可以轉化成 2D canvas、graph、timeline、panel 或 3D spatial view？
-- 3D 是否真的增加空間理解、協作或狀態感知，而不只是視覺裝飾？
+- 它在 2D workspace（平面／pixel 風格工作空間）裡會變成什麼？
+- 它在 3D workspace（可走進的辦公室介面，不是 3D 物件）裡會變成什麼？
 - 哪些 pattern 值得採用、重新設計或明確避免？
 
 主要研究面向：

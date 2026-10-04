@@ -132,8 +132,8 @@ Slug 用小寫、連字號，例如 `gstack`、`gbrain`、`sandcastle`。
 - `主要 Features`：只寫影響定位或 workflow 的功能，每個功能說明價值。
 - `主打賣點`：它最想被記住的差異，以及哪些只是舊能力的新包裝。
 - `使用情境`：2–3 個情境，寫適合誰、何時用、帶來什麼價值。
-- `我們可以學什麼`：萃取可放進未來 2D／3D agent workspace 的概念。
-  若 3D 沒有增加理解或操作價值，直接寫「2D 較適合」。
+- `我們可以學什麼`：萃取這個產品在未來 **2D workspace** 和 **3D workspace**
+  裡會變成什麼。兩者都是工作空間，不是資料視覺化，也不是 3D 物件。
 
 可以保留 `初步看法`、`後續補充`、`Sources`。不要讓測試步驟、API 或安裝
 教學蓋過這五段。
@@ -145,6 +145,24 @@ Slug 用小寫、連字號，例如 `gstack`、`gbrain`、`sandcastle`。
 - runtime、sandbox、permissions 如何管理
 - 進度、artifacts、review 如何呈現
 - 人如何委派、比較、介入和驗證
+- 它比較像辦公室、員工、共用記憶，還是只是 ADE dashboard
+
+### 2D / 3D workspace 定義
+
+寫 `我們可以學什麼` 時，使用這組定義，不要自行發明：
+
+- **2D workspace**：平面的工作空間。可以是 pixel 風格辦公室、地圖、樓層或
+  俯視畫面。人仍然在「一個地方」裡工作，只是介面是二維。
+- **3D workspace**：可走進的辦公室介面，例如
+  [Agent Office](https://github.com/AgentSystemLabs/agent-office)。重點是
+  看到員工在場、誰在哪裡做事，不是去做 3D 模型、立體圖譜或可旋轉物件。
+- **都不是**：把知識圖譜立體化、做裝飾用 3D object，或把 ADE 側欄叫成
+  workspace。
+- **ADE dashboard**（Conductor、Firstmate、Maestro 這類）可以記錄，但不要
+  把它寫成我們要做的 2D／3D workspace。
+
+因此不要寫「若 3D 沒幫助就用 2D」。要寫的是：這個產品進到 2D workspace
+會長怎樣，進到 3D office 又會長怎樣。
 
 ### 4. Register the Cell
 

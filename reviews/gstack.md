@@ -76,8 +76,10 @@ Claude wrapper，因此它不會在 Codex host 上再呼叫自己。
   專長的人：誰來想、誰來做、誰來查、誰來發佈。
 - 不同員工可以交接同一份 artifact，例如產品員工寫完規劃，再交給工程和 QA。
 - 2D 可以把這些員工畫成角色卡或團隊列表；那仍然只是名冊，不是辦公室。
-- 這裡說的 3D，不是 Firstmate、Maestro 或 Conductor 那種 ADE 分頁加上象徵性
-  team orchestration。那些本質上仍是 agent dashboard。
+- 這裡說的 3D，不是去做 3D 模型或立體物件，也不是 Firstmate、Maestro 或
+  Conductor 那種 ADE 分頁加上象徵性 team orchestration。那些本質上仍是
+  agent dashboard。
+  3D 指的是可以走進辦公室、看到員工在場的介面。
 - 比較接近的 3D 方向是
   [Agent Office](https://github.com/AgentSystemLabs/agent-office)：辦公室是
   空間，gstack 則是走進這個空間裡的員工。Agent Office 目前偏陽春，但已經

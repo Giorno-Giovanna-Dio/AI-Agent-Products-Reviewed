@@ -1,8 +1,8 @@
 # gstack
 
-> Status：`untried`
+> Cell ID：[https://github.com/garrytan/gstack](https://github.com/garrytan/gstack)
 >
-> Source：[garrytan/gstack](https://github.com/garrytan/gstack)
+> Status：`untried`
 >
 > Category：Agent workflow skills
 >
@@ -48,6 +48,7 @@ retro`，讓不同階段有明確目的，而不是只靠一個長 prompt。
 - 重點不是新的 model，而是把開發經驗和檢查清單包成可重複使用的 skills。
 - 從產品構想到 QA 和發佈提供一套 opinionated workflow。
 - 可以與 Conductor 等 workspace 工具搭配，但不依賴特定 workspace UI。
+- 和 [gbrain](https://github.com/garrytan/gbrain) 互補：gstack 管流程與角色，gbrain 管跨 session 記憶。兩者應視為不同 Cell。
 
 ## 使用情境
 

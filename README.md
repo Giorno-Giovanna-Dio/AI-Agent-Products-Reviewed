@@ -56,10 +56,10 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 
 ## 狀態
 
-| Project | Source | Tested revision | Runtime | Status |
+| Cell | Cell ID | Tested revision | Runtime | Status |
 | --- | --- | --- | --- | --- |
-| [Conductor](reviews/conductor.md) | [Website](https://www.conductor.build/) | 未記錄 | macOS native | `tried` |
-| [gstack](reviews/gstack.md) | [GitHub](https://github.com/garrytan/gstack) | 尚未測試 | Agent skills | `untried` |
+| [Conductor](reviews/conductor.md) | [https://www.conductor.build/](https://www.conductor.build/) | 未記錄 | macOS native | `tried` |
+| [gstack](reviews/gstack.md) | [https://github.com/garrytan/gstack](https://github.com/garrytan/gstack) | 尚未測試 | Agent skills | `untried` |
 
 狀態值：
 

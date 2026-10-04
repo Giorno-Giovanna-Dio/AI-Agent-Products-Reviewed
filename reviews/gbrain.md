@@ -80,18 +80,18 @@ Agent 可以把決定、學習和人物資料寫進 brain。重開一個新 sess
 
 - Agent workspace 需要把「這次對話」和「長期記憶」分開。記憶不該只藏在
   prompt 裡，而該是辦公室裡大家都能去查的東西。
-- 搜尋結果和綜合答案是兩種不同物件：一個是來源，一個是整理後的判斷。
-- 2D 很適合看這些物件：來源卡、綜合回答、人物與決定的關係圖。那是員工
-  桌上的資料，不是辦公室本身。
-- 這裡說的 3D，不是 Firstmate、Maestro 或 Conductor 那種 ADE dashboard。
-  那些只是把記憶做成側欄或搜尋面板。
-- 比較接近的 3D 方向是
-  [Agent Office](https://github.com/AgentSystemLabs/agent-office)：空間是
-  辦公室，gstack 是走進辦公室的員工，gbrain 則是這些員工共用的記憶。
-  Agent Office 目前偏陽春，但已經有「誰在空間裡工作」；還缺的是員工坐下
-  後能先查辦公室記得什麼，而不是每次重問使用者。
-- 知識圖譜不必硬做成 3D 裝飾。只有當人物、專案、決定的距離能幫助找到誰
-  該被叫來時，空間才有價值。
+- 搜尋結果和綜合答案是兩種不同東西：一個是來源，一個是整理後的判斷。
+- 2D 很適合讀這些資料：來源卡、綜合回答、人物與決定的關係。那是員工查
+  記憶時看到的內容，不是辦公室本身。
+- 這裡說的 3D，不是去做 3D 模型、立體圖譜，也不是把記憶變成可旋轉的物件。
+  3D 指的是像
+  [Agent Office](https://github.com/AgentSystemLabs/agent-office) 那樣，
+  可以走進一間辦公室、看到員工在場工作的介面。
+- 這也不是 Firstmate、Maestro 或 Conductor 那種 ADE dashboard。那些只是把
+  記憶做成側欄或搜尋面板。
+- 在這個 office 裡，gstack 是走進空間的員工，gbrain 是他們共用的記憶。
+  Agent Office 目前偏陽春，但已經有「誰在辦公室裡」；還缺的是員工坐下後
+  能先查這間辦公室記得什麼，而不是每次重問使用者。
 - 值得借鑑「先查再問」：員工進辦公室後，應先問共用記憶，而不是先問人。
 - 不該直接照搬全部 50 多個 skills。我們應先吸收 memory verbs、citation
   和 gap analysis 這幾個核心概念。

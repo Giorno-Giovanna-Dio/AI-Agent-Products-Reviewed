@@ -76,6 +76,30 @@ cells:
     discovery:
       source: related gstack cell
       rationale: Understand persistent memory, synthesis, and knowledge-graph patterns
+  - id: https://github.com/mattpocock/sandcastle
+    name: Sandcastle
+    source_type: repository
+    aliases: []
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: sandcastle
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: docker
+      command: null
+      ports: []
+      data_paths: []
+      notes: TypeScript orchestration library; typical path uses Docker/Podman/Vercel sandbox + Claude Code or Codex CLI
+    evaluation:
+      status: untried
+      review: reviews/sandcastle.md
+      tested_at: null
+      updated_at: 2026-10-05
+    discovery:
+      source: user request
+      rationale: Study programmatic sandbox, git worktree, and multi-agent AFK orchestration primitives
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

@@ -175,6 +175,30 @@ cells:
     discovery:
       source: user /create-cell-pr
       rationale: Open-source parallel-agent ADE comparable to Conductor; worktree-centric orchestration
+  - id: https://github.com/manaflow-ai/cmux
+    name: cmux
+    source_type: repository
+    aliases: []
+    license: GPL
+    fork_url: null
+    checkout:
+      directory: cmux
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: macOS Ghostty-based terminal; Homebrew cask or DMG; CLI and socket API
+    evaluation:
+      status: untried
+      review: reviews/cmux.md
+      tested_at: null
+      updated_at: 2026-10-05
+    discovery:
+      source: user request
+      rationale: Study terminal-first parallel agent workspace and attention primitives
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

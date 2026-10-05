@@ -81,6 +81,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [Sandcastle](reviews/sandcastle.md) | [https://github.com/mattpocock/sandcastle](https://github.com/mattpocock/sandcastle) | 尚未測試 | Docker / TS orchestration | `untried` |
 | [mattpocock skills](reviews/mattpocock-skills.md) | [https://github.com/mattpocock/skills](https://github.com/mattpocock/skills) | 尚未測試 | Agent skills | `untried` |
 | [Orca](reviews/orca.md) | [https://github.com/stablyai/orca](https://github.com/stablyai/orca) | 尚未測試 | Cross-platform ADE | `untried` |
+| [cmux](reviews/cmux.md) | [https://github.com/manaflow-ai/cmux](https://github.com/manaflow-ai/cmux) | 尚未測試 | macOS terminal workspace | `untried` |
 
 狀態值：
 

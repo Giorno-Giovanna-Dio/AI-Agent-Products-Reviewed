@@ -126,6 +126,30 @@ cells:
     discovery:
       source: user request
       rationale: Study programmatic sandbox, git worktree, and multi-agent AFK orchestration primitives
+  - id: https://github.com/mattpocock/skills
+    name: mattpocock skills
+    source_type: repository
+    aliases: []
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: mattpocock-skills
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Agent skills; Claude Code plugin or skills.sh install; per-repo setup skill
+    evaluation:
+      status: untried
+      review: reviews/mattpocock-skills.md
+      tested_at: null
+      updated_at: 2026-10-05
+    discovery:
+      source: user request
+      rationale: Study composable engineering-discipline skills, grilling alignment, and tracker-integrated workflows
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

@@ -95,7 +95,7 @@ Parquet 等），減少在 app 外切換。
 
 ### 跨 codebase 的架構問答
 
-- 適合誰：frontend / backend / infra 分属不同 Maestro session 的人。
+- 適合誰：frontend / backend / infra 分屬不同 Maestro session 的人。
 - 在什麼情況使用：「auth 在前後端怎麼接」這類需要多 context 的問題。
 - 帶來的價值：Group Chat moderator 代勞路由與 synthesis，人不必手動 copy
   paste 多個 chat。

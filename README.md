@@ -77,6 +77,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [Conductor](reviews/conductor.md) | [https://www.conductor.build/](https://www.conductor.build/) | 未記錄 | macOS native | `tried` |
 | [gstack](reviews/gstack.md) | [https://github.com/garrytan/gstack](https://github.com/garrytan/gstack) | 尚未測試 | Agent skills | `untried` |
 | [gbrain](reviews/gbrain.md) | [https://github.com/garrytan/gbrain](https://github.com/garrytan/gbrain) | 尚未測試 | Agent memory | `untried` |
+| [Agent Office](reviews/agent-office.md) | [https://github.com/AgentSystemLabs/agent-office](https://github.com/AgentSystemLabs/agent-office) | 尚未測試 | Node + browser 3D office | `untried` |
 | [Sandcastle](reviews/sandcastle.md) | [https://github.com/mattpocock/sandcastle](https://github.com/mattpocock/sandcastle) | 尚未測試 | Docker / TS orchestration | `untried` |
 
 狀態值：

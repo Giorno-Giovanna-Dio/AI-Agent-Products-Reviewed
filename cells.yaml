@@ -76,6 +76,30 @@ cells:
     discovery:
       source: related gstack cell
       rationale: Understand persistent memory, synthesis, and knowledge-graph patterns
+  - id: https://github.com/nimbalyst/nimbalyst
+    name: Nimbalyst
+    source_type: repository
+    aliases: []
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: nimbalyst
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Electron desktop; external coding agent CLIs; optional iOS companion
+    evaluation:
+      status: untried
+      review: reviews/nimbalyst.md
+      tested_at: null
+      updated_at: 2026-10-05
+    discovery:
+      source: user request
+      rationale: Compare visual document-centric multi-agent workspace patterns
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

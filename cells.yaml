@@ -76,6 +76,30 @@ cells:
     discovery:
       source: related gstack cell
       rationale: Understand persistent memory, synthesis, and knowledge-graph patterns
+  - id: https://github.com/generalaction/emdash
+    name: Emdash
+    source_type: repository
+    aliases: []
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: emdash
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Desktop app (macOS, Windows, Linux); local SQLite; optional remote SSH
+    evaluation:
+      status: untried
+      review: reviews/emdash.md
+      tested_at: null
+      updated_at: 2026-10-05
+    discovery:
+      source: user request
+      rationale: Open-source ADE for parallel coding agents, worktrees, and issue-driven tasks
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

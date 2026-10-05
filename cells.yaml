@@ -76,6 +76,31 @@ cells:
     discovery:
       source: related gstack cell
       rationale: Understand persistent memory, synthesis, and knowledge-graph patterns
+  - id: https://github.com/stablyai/orca
+    name: Orca
+    source_type: repository
+    aliases:
+      - https://onorca.dev/
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: orca
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Cross-platform desktop ADE; optional mobile companion and SSH remote worktrees
+    evaluation:
+      status: untried
+      review: reviews/orca.md
+      tested_at: null
+      updated_at: 2026-10-05
+    discovery:
+      source: user /create-cell-pr
+      rationale: Open-source parallel-agent ADE comparable to Conductor; worktree-centric orchestration
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

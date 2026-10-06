@@ -336,6 +336,32 @@ cells:
       source: user request
       rationale: Study minimal extensible agent harness, skills/extensions model, and durable runtime primitives
 
+  - id: https://github.com/paperclipai/paperclip
+    name: Paperclip
+    source_type: repository
+    aliases: []
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: npx paperclipai
+      ports: []
+      data_paths: []
+      notes: Node.js 24.11+; self-hosted server + React UI; `onboard` / `test-drive` CLI; agents via adapters
+    evaluation:
+      status: untried
+      review: reviews/paperclip.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-paperclip-cell-7aa3/reviews/paperclip.md
+      tested_at: null
+      updated_at: 2026-10-06
+    discovery:
+      source: GitHub starred scan
+      rationale: Open-source agent management at work; org/orchestration UX for multi-agent teams
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

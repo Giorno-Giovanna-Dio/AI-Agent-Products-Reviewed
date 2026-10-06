@@ -284,6 +284,31 @@ cells:
     discovery:
       source: user request
       rationale: Compare open-source multi-agent orchestration, Auto Run playbooks, and moderator-style group chat
+  - id: https://github.com/nimbalyst/nimbalyst
+    name: Nimbalyst
+    source_type: repository
+    aliases: []
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: nimbalyst
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Electron desktop; external coding agent CLIs; optional iOS companion
+    evaluation:
+      status: untried
+      review: reviews/nimbalyst.md
+      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/nimbalyst.md
+      tested_at: null
+      updated_at: 2026-10-06
+    discovery:
+      source: user request
+      rationale: Compare visual document-centric multi-agent workspace patterns
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

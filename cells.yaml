@@ -309,6 +309,32 @@ cells:
     discovery:
       source: user request
       rationale: Compare visual document-centric multi-agent workspace patterns
+  - id: https://github.com/earendil-works/pi
+    name: Pi
+    source_type: repository
+    aliases:
+      - https://github.com/badlogic/pi-mono
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: pi
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: pi
+      ports: []
+      data_paths: []
+      notes: Node.js 22.19+; coding-agent CLI; optional Docker/OpenShell/Gondolin sandbox
+    evaluation:
+      status: untried
+      review: reviews/pi.md
+      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/pi.md
+      tested_at: null
+      updated_at: 2026-10-06
+    discovery:
+      source: user request
+      rationale: Study minimal extensible agent harness, skills/extensions model, and durable runtime primitives
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

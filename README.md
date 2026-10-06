@@ -88,6 +88,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [Emdash](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/emdash.md) · [網頁](https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/emdash.md) | [https://github.com/generalaction/emdash](https://github.com/generalaction/emdash) | 尚未測試 | Desktop ADE | `untried` |
 | [Paseo](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/paseo.md) · [網頁](https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/paseo.md) | [https://github.com/getpaseo/paseo](https://github.com/getpaseo/paseo) | 尚未測試 | Self-hosted daemon | `untried` |
 | [Nimbalyst](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/nimbalyst.md) · [網頁](https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/nimbalyst.md) | [https://github.com/nimbalyst/nimbalyst](https://github.com/nimbalyst/nimbalyst) | 尚未測試 | Electron desktop | `untried` |
+| [Pi](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/pi.md) · [網頁](https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/pi.md) | [https://github.com/earendil-works/pi](https://github.com/earendil-works/pi) | 尚未測試 | Node.js coding-agent CLI | `untried` |
 
 狀態值：
 

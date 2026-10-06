@@ -259,6 +259,31 @@ cells:
     discovery:
       source: user request
       rationale: Compare self-hosted control plane, cross-device orchestration, and workspace-first agent UX
+  - id: https://github.com/RunMaestro/Maestro
+    name: Maestro
+    source_type: repository
+    aliases: []
+    license: AGPL-3.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Cross-platform Electron desktop app; orchestrates local CLI agents (Claude Code, Codex, OpenCode, etc.)
+    evaluation:
+      status: untried
+      review: reviews/maestro.md
+      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/maestro.md
+      tested_at: null
+      updated_at: 2026-10-06
+    discovery:
+      source: user request
+      rationale: Compare open-source multi-agent orchestration, Auto Run playbooks, and moderator-style group chat
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

@@ -23,8 +23,9 @@ cells:
     evaluation:
       status: tried
       review: reviews/conductor.md
+      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/conductor.md
       tested_at: 2026-10-04
-      updated_at: 2026-10-04
+      updated_at: 2026-10-06
     discovery:
       source: user evaluation
       rationale: Compare native coding-agent runtimes and parallel approaches
@@ -47,8 +48,9 @@ cells:
     evaluation:
       status: untried
       review: reviews/gstack.md
+      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/gstack.md
       tested_at: null
-      updated_at: 2026-10-04
+      updated_at: 2026-10-06
     discovery:
       source: Conductor Quick Start
       rationale: Evaluate a structured end-to-end agent development workflow
@@ -71,8 +73,9 @@ cells:
     evaluation:
       status: untried
       review: reviews/gbrain.md
+      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/gbrain.md
       tested_at: null
-      updated_at: 2026-10-04
+      updated_at: 2026-10-06
     discovery:
       source: related gstack cell
       rationale: Understand persistent memory, synthesis, and knowledge-graph patterns
@@ -97,8 +100,9 @@ cells:
     evaluation:
       status: untried
       review: reviews/agent-office.md
+      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/agent-office.md
       tested_at: null
-      updated_at: 2026-10-05
+      updated_at: 2026-10-06
     discovery:
       source: user request
       rationale: Canonical reference for walkable 3D agent office workspace and spatial observability
@@ -121,8 +125,9 @@ cells:
     evaluation:
       status: untried
       review: reviews/sandcastle.md
+      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/sandcastle.md
       tested_at: null
-      updated_at: 2026-10-05
+      updated_at: 2026-10-06
     discovery:
       source: user request
       rationale: Study programmatic sandbox, git worktree, and multi-agent AFK orchestration primitives
@@ -145,8 +150,9 @@ cells:
     evaluation:
       status: untried
       review: reviews/mattpocock-skills.md
+      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/mattpocock-skills.md
       tested_at: null
-      updated_at: 2026-10-05
+      updated_at: 2026-10-06
     discovery:
       source: user request
       rationale: Study composable engineering-discipline skills, grilling alignment, and tracker-integrated workflows
@@ -170,8 +176,9 @@ cells:
     evaluation:
       status: untried
       review: reviews/orca.md
+      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/orca.md
       tested_at: null
-      updated_at: 2026-10-05
+      updated_at: 2026-10-06
     discovery:
       source: user /create-cell-pr
       rationale: Open-source parallel-agent ADE comparable to Conductor; worktree-centric orchestration
@@ -194,11 +201,37 @@ cells:
     evaluation:
       status: untried
       review: reviews/cmux.md
+      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/cmux.md
       tested_at: null
-      updated_at: 2026-10-05
+      updated_at: 2026-10-06
     discovery:
       source: user request
       rationale: Study terminal-first parallel agent workspace and attention primitives
+  - id: https://github.com/generalaction/emdash
+    name: Emdash
+    source_type: repository
+    aliases: []
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: emdash
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Desktop app (macOS, Windows, Linux); local SQLite; optional remote SSH
+    evaluation:
+      status: untried
+      review: reviews/emdash.md
+      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/emdash.md
+      tested_at: null
+      updated_at: 2026-10-06
+    discovery:
+      source: user request
+      rationale: Open-source ADE for parallel coding agents, worktrees, and issue-driven tasks
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
@@ -221,6 +254,7 @@ cells:
 #    evaluation:
 #      status: untried # untried | tried
 #      review: reviews/example-project.md
+#      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/example-project.md
 #      tested_at: null
 #      updated_at: YYYY-MM-DD
 #    discovery:

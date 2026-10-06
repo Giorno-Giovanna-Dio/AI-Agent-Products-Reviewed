@@ -336,6 +336,32 @@ cells:
       source: user request
       rationale: Study minimal extensible agent harness, skills/extensions model, and durable runtime primitives
 
+  - id: https://github.com/NVIDIA/OpenShell
+    name: OpenShell
+    source_type: repository
+    aliases: []
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Policy-enforced sandbox runtime for autonomous agents; gateway + supervisor boundaries
+    evaluation:
+      status: untried
+      review: reviews/openshell.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openshell-cell-7aa3/reviews/openshell.md
+      tested_at: null
+      updated_at: 2026-10-06
+    discovery:
+      source: GitHub starred scan
+      rationale: Safe private runtime layer for autonomous agents — permissions and sandbox for workspace orchestration
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

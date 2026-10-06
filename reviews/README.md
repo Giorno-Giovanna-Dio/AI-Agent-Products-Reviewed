@@ -10,8 +10,7 @@ upstream 或 fork；Cell review 只挑出對未來 2D／3D AI agent workspace �
 洞察筆記以 Markdown 保存在 `reviews/`，但**建議用瀏覽器閱讀**，不要在 IDE 直接開
 `.md` 當主要閱讀方式：
 
-- **GitHub 渲染**：`https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/<slug>.md`
-- **GitHub Pages 閱讀器**：`https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/<slug>.md`（合併至 `main` 且 Pages 啟用後）
+- **GitHub 渲染**：`https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/<slug>.md`（PR 審閱中將 `main` 改為 PR branch）
 
 每份 review 先回答五個問題：
 

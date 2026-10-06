@@ -1,5 +1,10 @@
 # gbrain
 
+> **網頁閱讀（建議）**
+>
+> - [GitHub 渲染版](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/gbrain.md)
+> - [Pages 閱讀器](https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/gbrain.md)（`main` 部署後）
+>
 > Cell ID：[https://github.com/garrytan/gbrain](https://github.com/garrytan/gbrain)
 >
 > Status：`untried`

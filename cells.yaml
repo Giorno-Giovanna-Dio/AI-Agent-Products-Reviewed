@@ -23,8 +23,9 @@ cells:
     evaluation:
       status: tried
       review: reviews/conductor.md
+      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/conductor.md
       tested_at: 2026-10-04
-      updated_at: 2026-10-04
+      updated_at: 2026-10-06
     discovery:
       source: user evaluation
       rationale: Compare native coding-agent runtimes and parallel approaches
@@ -47,8 +48,9 @@ cells:
     evaluation:
       status: untried
       review: reviews/gstack.md
+      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/gstack.md
       tested_at: null
-      updated_at: 2026-10-04
+      updated_at: 2026-10-06
     discovery:
       source: Conductor Quick Start
       rationale: Evaluate a structured end-to-end agent development workflow
@@ -71,8 +73,9 @@ cells:
     evaluation:
       status: untried
       review: reviews/gbrain.md
+      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/gbrain.md
       tested_at: null
-      updated_at: 2026-10-04
+      updated_at: 2026-10-06
     discovery:
       source: related gstack cell
       rationale: Understand persistent memory, synthesis, and knowledge-graph patterns
@@ -123,6 +126,7 @@ cells:
 #    evaluation:
 #      status: untried # untried | tried
 #      review: reviews/example-project.md
+#      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/example-project.md
 #      tested_at: null
 #      updated_at: YYYY-MM-DD
 #    discovery:

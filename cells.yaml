@@ -336,6 +336,34 @@ cells:
       source: user request
       rationale: Study minimal extensible agent harness, skills/extensions model, and durable runtime primitives
 
+  - id: https://github.com/openclaw/openclaw
+    name: OpenClaw
+    source_type: repository
+    aliases:
+      - https://openclaw.ai
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: openclaw
+      ports:
+        - 18789
+      data_paths: []
+      notes: Node.js Gateway daemon; CLI onboard; optional Docker/Nix; channels via plugins
+    evaluation:
+      status: untried
+      review: reviews/openclaw.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openclaw-cell-7aa3/reviews/openclaw.md
+      tested_at: null
+      updated_at: 2026-10-06
+    discovery:
+      source: GitHub starred scan
+      rationale: Cross-platform personal/team assistant that executes tasks via local Gateway and messaging channels
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

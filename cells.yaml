@@ -232,6 +232,33 @@ cells:
     discovery:
       source: user request
       rationale: Open-source ADE for parallel coding agents, worktrees, and issue-driven tasks
+  - id: https://github.com/getpaseo/paseo
+    name: Paseo
+    source_type: repository
+    aliases: []
+    license: unknown
+    fork_url: null
+    checkout:
+      directory: paseo
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports:
+        - 6767
+      data_paths:
+        - ~/.paseo
+      notes: Local daemon; desktop bundles daemon; CLI/Docker optional; agents are external provider CLIs
+    evaluation:
+      status: untried
+      review: reviews/paseo.md
+      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/paseo.md
+      tested_at: null
+      updated_at: 2026-10-06
+    discovery:
+      source: user request
+      rationale: Compare self-hosted control plane, cross-device orchestration, and workspace-first agent UX
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

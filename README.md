@@ -85,6 +85,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [Orca](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/orca.md) · [網頁](https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/orca.md) | [https://github.com/stablyai/orca](https://github.com/stablyai/orca) | 尚未測試 | Cross-platform ADE | `untried` |
 | [cmux](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/cmux.md) · [網頁](https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/cmux.md) | [https://github.com/manaflow-ai/cmux](https://github.com/manaflow-ai/cmux) | 尚未測試 | macOS terminal workspace | `untried` |
 | [Emdash](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/emdash.md) · [網頁](https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/emdash.md) | [https://github.com/generalaction/emdash](https://github.com/generalaction/emdash) | 尚未測試 | Desktop ADE | `untried` |
+| [Paseo](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/paseo.md) · [網頁](https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/paseo.md) | [https://github.com/getpaseo/paseo](https://github.com/getpaseo/paseo) | 尚未測試 | Self-hosted daemon | `untried` |
 
 狀態值：
 

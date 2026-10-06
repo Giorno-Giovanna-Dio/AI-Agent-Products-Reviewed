@@ -23,7 +23,7 @@ cells:
     evaluation:
       status: tried
       review: reviews/conductor.md
-      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/conductor.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/conductor.md
       tested_at: 2026-10-04
       updated_at: 2026-10-06
     discovery:
@@ -48,7 +48,7 @@ cells:
     evaluation:
       status: untried
       review: reviews/gstack.md
-      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/gstack.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/gstack.md
       tested_at: null
       updated_at: 2026-10-06
     discovery:
@@ -73,7 +73,7 @@ cells:
     evaluation:
       status: untried
       review: reviews/gbrain.md
-      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/gbrain.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/gbrain.md
       tested_at: null
       updated_at: 2026-10-06
     discovery:
@@ -100,7 +100,7 @@ cells:
     evaluation:
       status: untried
       review: reviews/agent-office.md
-      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/agent-office.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/agent-office.md
       tested_at: null
       updated_at: 2026-10-06
     discovery:
@@ -125,7 +125,7 @@ cells:
     evaluation:
       status: untried
       review: reviews/sandcastle.md
-      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/sandcastle.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/sandcastle.md
       tested_at: null
       updated_at: 2026-10-06
     discovery:
@@ -150,7 +150,7 @@ cells:
     evaluation:
       status: untried
       review: reviews/mattpocock-skills.md
-      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/mattpocock-skills.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/mattpocock-skills.md
       tested_at: null
       updated_at: 2026-10-06
     discovery:
@@ -176,7 +176,7 @@ cells:
     evaluation:
       status: untried
       review: reviews/orca.md
-      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/orca.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/orca.md
       tested_at: null
       updated_at: 2026-10-06
     discovery:
@@ -201,7 +201,7 @@ cells:
     evaluation:
       status: untried
       review: reviews/cmux.md
-      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/cmux.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/cmux.md
       tested_at: null
       updated_at: 2026-10-06
     discovery:
@@ -226,7 +226,7 @@ cells:
     evaluation:
       status: untried
       review: reviews/emdash.md
-      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/emdash.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/emdash.md
       tested_at: null
       updated_at: 2026-10-06
     discovery:
@@ -253,7 +253,7 @@ cells:
     evaluation:
       status: untried
       review: reviews/paseo.md
-      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/paseo.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/paseo.md
       tested_at: null
       updated_at: 2026-10-06
     discovery:
@@ -278,7 +278,7 @@ cells:
     evaluation:
       status: untried
       review: reviews/maestro.md
-      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/maestro.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/maestro.md
       tested_at: null
       updated_at: 2026-10-06
     discovery:
@@ -303,7 +303,7 @@ cells:
     evaluation:
       status: untried
       review: reviews/nimbalyst.md
-      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/nimbalyst.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/nimbalyst.md
       tested_at: null
       updated_at: 2026-10-06
     discovery:
@@ -329,7 +329,7 @@ cells:
     evaluation:
       status: untried
       review: reviews/pi.md
-      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/pi.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/pi.md
       tested_at: null
       updated_at: 2026-10-06
     discovery:
@@ -357,7 +357,7 @@ cells:
 #    evaluation:
 #      status: untried # untried | tried
 #      review: reviews/example-project.md
-#      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/example-project.md
+#      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/example-project.md
 #      tested_at: null
 #      updated_at: YYYY-MM-DD
 #    discovery:

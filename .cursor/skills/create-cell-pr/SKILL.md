@@ -110,7 +110,6 @@ Slug 用小寫、連字號，例如 `gstack`、`gbrain`、`sandcastle`。
 > **網頁閱讀（建議）**
 >
 > - [GitHub 渲染版](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/<slug>.md)
-> - [Pages 閱讀器](https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/<slug>.md)（`main` 部署後）
 >
 > Cell ID：[https://github.com/owner/repo](https://github.com/owner/repo)
 >
@@ -182,24 +181,22 @@ Slug 用小寫、連字號，例如 `gstack`、`gbrain`、`sandcastle`。
 - `aliases`
 - `evaluation.status`：預設 `untried`
 - `evaluation.review`：`reviews/<slug>.md`
-- `evaluation.review_web`：Pages 閱讀器 URL（見下方網頁閱讀）
+- `evaluation.review_web`：GitHub 渲染 URL（見下方網頁閱讀）
 
 同步更新 `README.md` 狀態表，一列只代表一個 Cell。Cell 名稱欄連到 **GitHub
-渲染**與 **Pages**，不要用相對路徑 `reviews/<slug>.md`（避免在 IDE 開 raw
-Markdown）。
+渲染**，不要用相對路徑 `reviews/<slug>.md`（避免在 IDE 開 raw Markdown）。
 
 #### 網頁閱讀（所有 Cell 通用）
 
-洞察筆記的 canonical 檔案仍是 `reviews/<slug>.md`，但**預設閱讀體驗是瀏覽器**：
+洞察筆記的 canonical 檔案仍是 `reviews/<slug>.md`，但**預設閱讀體驗是瀏覽器中的
+GitHub 渲染**：
 
 | 時機 | URL |
 | --- | --- |
 | PR 尚未 merge | `https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/<branch>/reviews/<slug>.md` |
 | 已在 `main` | 同上，`<branch>` 改為 `main` |
-| Pages（`main` 部署後） | `https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/<slug>.md` |
 
-Pages 由 `.github/workflows/review-site.yml` 部署；全站索引見
-[`docs/`](../../../docs/)。撰寫規則見 [`reviews/README.md`](../../../reviews/README.md)。
+撰寫規則見 [`reviews/README.md`](../../../reviews/README.md)。
 
 ### 5. Open the PR
 
@@ -209,7 +206,7 @@ Pages 由 `.github/workflows/review-site.yml` 部署；全站索引見
 - PR 只描述這一個 Cell，不要夾帶重構或其他產品。
 
 PR 應讓人先看到洞察筆記，再決定 merge。PR 描述裡也應附上 **GitHub 渲染**
-連結（優先指向 PR branch），可選附 Pages 連結（merge 後生效）。
+連結（優先指向 PR branch）。
 
 ### 6. 回覆使用者（閱讀連結）
 
@@ -217,8 +214,7 @@ PR 應讓人先看到洞察筆記，再決定 merge。PR 描述裡也應附上 *
 瀏覽器讀完整筆記，而不是請對方去開 workspace 裡的 `.md`：
 
 1. **GitHub 渲染（立即可用）**：`<branch>` 換成本次 PR 的 branch。
-2. **Pages 閱讀器（merge 至 `main` 且 Pages 啟用後）**：`#/reviews/<slug>.md`。
-3. 可簡短附 PR URL；洞察內容以 GitHub／Pages 連結為主。
+2. 可簡短附 PR URL；洞察內容以 GitHub 渲染連結為主。
 
 ## Hands-on is optional
 
@@ -237,5 +233,5 @@ PR 應讓人先看到洞察筆記，再決定 merge。PR 描述裡也應附上 *
 - [ ] Cell ID 是唯一的 canonical URL
 - [ ] catalog 和 README 已更新（含網頁閱讀連結與 `review_web`）
 - [ ] 只有這個 Cell 的專用 PR
-- [ ] 對話結尾已附上 GitHub／Pages 閱讀連結
+- [ ] 對話結尾已附上 GitHub 渲染閱讀連結
 - [ ] 用簡單的話寫出可學習的重點，而不是翻譯官方文件

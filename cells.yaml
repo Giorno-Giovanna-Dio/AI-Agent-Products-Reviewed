@@ -336,6 +336,32 @@ cells:
       source: user request
       rationale: Study minimal extensible agent harness, skills/extensions model, and durable runtime primitives
 
+  - id: https://github.com/akitaonrails/ai-memory
+    name: ai-memory
+    source_type: repository
+    aliases: []
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: ai-memory
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: ai-memory
+      ports: []
+      data_paths: []
+      notes: Single Rust binary; self-hosted server; lifecycle hooks + MCP for 20+ coding CLIs; git-backed markdown wiki + SQLite index
+    evaluation:
+      status: untried
+      review: reviews/ai-memory.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ai-memory-cell-7aa3/reviews/ai-memory.md
+      tested_at: null
+      updated_at: 2026-10-06
+    discovery:
+      source: GitHub starred scan
+      rationale: Cross-agent long-term memory and typed vendor handoff for coding CLI harnesses
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

@@ -87,6 +87,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [Paseo](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/paseo.md) | [https://github.com/getpaseo/paseo](https://github.com/getpaseo/paseo) | 尚未測試 | Self-hosted daemon | `untried` |
 | [Nimbalyst](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/nimbalyst.md) | [https://github.com/nimbalyst/nimbalyst](https://github.com/nimbalyst/nimbalyst) | 尚未測試 | Electron desktop | `untried` |
 | [Pi](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/pi.md) | [https://github.com/earendil-works/pi](https://github.com/earendil-works/pi) | 尚未測試 | Node.js coding-agent CLI | `untried` |
+| [Hindsight](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-hindsight-cell-7aa3/reviews/hindsight.md) | [https://github.com/vectorize-io/hindsight](https://github.com/vectorize-io/hindsight) | 尚未測試 | Docker or pip hindsight-api | `untried` |
 
 狀態值：
 

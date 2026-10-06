@@ -41,6 +41,24 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
   或 GitHub 渲染連結在瀏覽器閱讀，見 [`reviews/README.md`](reviews/README.md)）。
 - `/workspace-labs/<cell-name>`：建議的本機實驗位置，不屬於本
   repository，也不會被 Git 追蹤。
+- [`docs/`](docs/)：Docsify 靜態站（由
+  [`.github/workflows/review-site.yml`](.github/workflows/review-site.yml)
+  部署至 GitHub Pages）。
+
+### GitHub Pages（一次性設定）
+
+若 **Deploy review site** 在 `deploy-pages` 步驟失敗並出現 `404` /
+`Ensure GitHub Pages has been enabled`，代表尚未在 repository 啟用 Pages
+或來源不是 **GitHub Actions**：
+
+1. 開啟 [Repository → Settings → Pages](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/settings/pages)。
+2. **Build and deployment → Source** 選 **GitHub Actions**（不要選
+   *Deploy from a branch*）。
+3. 儲存後到 **Actions** 分頁，對 **Deploy review site** 按 **Run workflow**
+   重新部署，或再 push 一次 `main`。
+
+公開站點 URL：
+`https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/`。
 
 ## Cell model
 

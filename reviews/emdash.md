@@ -41,8 +41,8 @@ marker 的 lifecycle hooks，讓 Emdash 在 session 內追蹤進度；在 Emdash
 
 ### Issue 與工單匯入
 
-可從 Linear、GitHub、Jira、GitLab、Asana、Notion、Monday.com 等來源把
-issue 丟進 agent 任務，把「票務系統」和「agent 實作」接在同一 workflow。
+**可從 Linear、GitHub、Jira、GitLab、Asana、Notion、Monday.com 等來源把
+issue 丟進 agent 任務，把「票務系統」和「agent 實作」接在同一 workflow。**
 
 ### Review、GitHub 與 CI
 

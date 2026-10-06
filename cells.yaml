@@ -95,8 +95,9 @@ cells:
     evaluation:
       status: untried
       review: reviews/emdash.md
+      review_web: https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/emdash.md
       tested_at: null
-      updated_at: 2026-10-05
+      updated_at: 2026-10-06
     discovery:
       source: user request
       rationale: Open-source ADE for parallel coding agents, worktrees, and issue-driven tasks

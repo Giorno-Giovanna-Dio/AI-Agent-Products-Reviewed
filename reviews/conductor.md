@@ -1,5 +1,10 @@
 # Conductor
 
+> **網頁閱讀（建議）**
+>
+> - [GitHub 渲染版](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/conductor.md)
+> - [Pages 閱讀器](https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/conductor.md)（`main` 部署後）
+>
 > Status：`tried`
 >
 > Cell ID：[https://www.conductor.build/](https://www.conductor.build/)

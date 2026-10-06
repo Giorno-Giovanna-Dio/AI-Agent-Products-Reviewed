@@ -336,6 +336,33 @@ cells:
       source: user request
       rationale: Study minimal extensible agent harness, skills/extensions model, and durable runtime primitives
 
+  - id: https://github.com/mvschwarz/openrig
+    name: OpenRig
+    source_type: repository
+    aliases: []
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: openrig
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: rig
+      ports: []
+      data_paths:
+        - ~/.openrig
+      notes: Node.js 22 or 24; tmux; macOS or Linux; Hono daemon + SQLite; Claude Code, Codex, Pi via managed tmux seats
+    evaluation:
+      status: untried
+      review: reviews/openrig.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openrig-cell-7aa3/reviews/openrig.md
+      tested_at: null
+      updated_at: 2026-10-06
+    discovery:
+      source: GitHub starred scan
+      rationale: Agent teams with roles, shared context, and owned work across Claude Code, Codex, and Pi
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

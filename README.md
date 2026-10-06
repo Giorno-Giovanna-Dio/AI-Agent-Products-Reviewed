@@ -36,7 +36,9 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 
 - [`cells.yaml`](cells.yaml)：所有 Cells 的結構化 metadata。
 - [`reviews/README.md`](reviews/README.md)：共同評測規則與證據標準。
-- [`reviews/`](reviews/)：每個 Cell 的產品洞察。
+- [`reviews/`](reviews/)：每個 Cell 的產品洞察（原始 Markdown；**建議用
+  [GitHub Pages 閱讀器](https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/)
+  或 GitHub 渲染連結在瀏覽器閱讀，見 [`reviews/README.md`](reviews/README.md)）。
 - `/workspace-labs/<cell-name>`：建議的本機實驗位置，不屬於本
   repository，也不會被 Git 追蹤。
 
@@ -74,11 +76,19 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 
 | Cell | Cell ID | Tested revision | Runtime | Status |
 | --- | --- | --- | --- | --- |
-| [Conductor](reviews/conductor.md) | [https://www.conductor.build/](https://www.conductor.build/) | 未記錄 | macOS native | `tried` |
-| [gstack](reviews/gstack.md) | [https://github.com/garrytan/gstack](https://github.com/garrytan/gstack) | 尚未測試 | Agent skills | `untried` |
-| [gbrain](reviews/gbrain.md) | [https://github.com/garrytan/gbrain](https://github.com/garrytan/gbrain) | 尚未測試 | Agent memory | `untried` |
-| [Agent Office](reviews/agent-office.md) | [https://github.com/AgentSystemLabs/agent-office](https://github.com/AgentSystemLabs/agent-office) | 尚未測試 | Node + browser 3D office | `untried` |
-| [Pi](reviews/pi.md) | [https://github.com/earendil-works/pi](https://github.com/earendil-works/pi) | 尚未測試 | Node.js coding-agent CLI | `untried` |
+| [Conductor](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/conductor.md) · [網頁](https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/conductor.md) | [https://www.conductor.build/](https://www.conductor.build/) | 未記錄 | macOS native | `tried` |
+| [gstack](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/gstack.md) · [網頁](https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/gstack.md) | [https://github.com/garrytan/gstack](https://github.com/garrytan/gstack) | 尚未測試 | Agent skills | `untried` |
+| [gbrain](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/gbrain.md) · [網頁](https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/gbrain.md) | [https://github.com/garrytan/gbrain](https://github.com/garrytan/gbrain) | 尚未測試 | Agent memory | `untried` |
+| [Agent Office](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/agent-office.md) · [網頁](https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/agent-office.md) | [https://github.com/AgentSystemLabs/agent-office](https://github.com/AgentSystemLabs/agent-office) | 尚未測試 | Node + browser 3D office | `untried` |
+| [Sandcastle](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/sandcastle.md) · [網頁](https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/sandcastle.md) | [https://github.com/mattpocock/sandcastle](https://github.com/mattpocock/sandcastle) | 尚未測試 | Docker / TS orchestration | `untried` |
+| [mattpocock skills](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/mattpocock-skills.md) · [網頁](https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/mattpocock-skills.md) | [https://github.com/mattpocock/skills](https://github.com/mattpocock/skills) | 尚未測試 | Agent skills | `untried` |
+| [Maestro](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/maestro.md) · [網頁](https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/maestro.md) | [https://github.com/RunMaestro/Maestro](https://github.com/RunMaestro/Maestro) | 尚未測試 | Desktop orchestration | `untried` |
+| [Orca](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/orca.md) · [網頁](https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/orca.md) | [https://github.com/stablyai/orca](https://github.com/stablyai/orca) | 尚未測試 | Cross-platform ADE | `untried` |
+| [cmux](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/cmux.md) · [網頁](https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/cmux.md) | [https://github.com/manaflow-ai/cmux](https://github.com/manaflow-ai/cmux) | 尚未測試 | macOS terminal workspace | `untried` |
+| [Emdash](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/emdash.md) · [網頁](https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/emdash.md) | [https://github.com/generalaction/emdash](https://github.com/generalaction/emdash) | 尚未測試 | Desktop ADE | `untried` |
+| [Paseo](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/paseo.md) · [網頁](https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/paseo.md) | [https://github.com/getpaseo/paseo](https://github.com/getpaseo/paseo) | 尚未測試 | Self-hosted daemon | `untried` |
+| [Nimbalyst](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/nimbalyst.md) · [網頁](https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/nimbalyst.md) | [https://github.com/nimbalyst/nimbalyst](https://github.com/nimbalyst/nimbalyst) | 尚未測試 | Electron desktop | `untried` |
+| [Pi](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/pi.md) · [網頁](https://giorno-giovanna-dio.github.io/AI-Agent-Products-Reviewed/#/reviews/pi.md) | [https://github.com/earendil-works/pi](https://github.com/earendil-works/pi) | 尚未測試 | Node.js coding-agent CLI | `untried` |
 
 狀態值：
 

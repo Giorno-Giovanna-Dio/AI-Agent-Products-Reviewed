@@ -336,6 +336,8 @@ cells:
       source: user request
       rationale: Study minimal extensible agent harness, skills/extensions model, and durable runtime primitives
 
+  - id: https://github.com/akitaonrails/ai-memory
+    name: ai-memory
   - id: https://github.com/pingdotgg/t3code
     name: T3 Code
   - id: https://github.com/paperclipai/paperclip
@@ -345,11 +347,20 @@ cells:
     license: MIT
     fork_url: null
     checkout:
+      directory: ai-memory
       directory: null
       tested_commit: null
       tested_version: null
     runtime:
       method: native
+      command: ai-memory
+      ports: []
+      data_paths: []
+      notes: Single Rust binary; self-hosted server; lifecycle hooks + MCP for 20+ coding CLIs; git-backed markdown wiki + SQLite index
+    evaluation:
+      status: untried
+      review: reviews/ai-memory.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ai-memory-cell-7aa3/reviews/ai-memory.md
       command: t3
       ports: []
       data_paths: []
@@ -370,6 +381,7 @@ cells:
       updated_at: 2026-10-06
     discovery:
       source: GitHub starred scan
+      rationale: Cross-agent long-term memory and typed vendor handoff for coding CLI harnesses
       rationale: Open-source Conductor-class harness control surface with strong mobile/remote story
       rationale: Open-source agent management at work; org/orchestration UX for multi-agent teams
 

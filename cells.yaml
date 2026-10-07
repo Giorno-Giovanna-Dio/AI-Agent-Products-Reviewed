@@ -372,6 +372,32 @@ cells:
       source: GitHub starred scan
       rationale: Open-source Conductor-class harness control surface with strong mobile/remote story
       rationale: Open-source agent management at work; org/orchestration UX for multi-agent teams
+  - id: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
+    name: LLM Wiki
+    source_type: product
+    aliases:
+      - https://gist.githubusercontent.com/karpathy/442a6bf555914893e9891c11519de94f/raw/llm-wiki.md
+    license: unknown
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: unknown
+      command: null
+      ports: []
+      data_paths: []
+      notes: Idea gist (llm-wiki.md), not an installable app. Paste into an agent such as Claude Code, Codex, OpenCode, or Pi; Obsidian is the suggested reader. Do not clone the gist into this repo.
+    evaluation:
+      status: untried
+      review: reviews/llm-wiki.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-llm-wiki-cell-17ae/reviews/llm-wiki.md
+      tested_at: null
+      updated_at: 2026-10-07
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study compiled persistent wiki versus per-query RAG, and the human-curator / agent-bookkeeper split
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

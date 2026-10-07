@@ -87,6 +87,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [Paseo](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/paseo.md) | [https://github.com/getpaseo/paseo](https://github.com/getpaseo/paseo) | 尚未測試 | Self-hosted daemon | `untried` |
 | [Nimbalyst](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/nimbalyst.md) | [https://github.com/nimbalyst/nimbalyst](https://github.com/nimbalyst/nimbalyst) | 尚未測試 | Electron desktop | `untried` |
 | [Pi](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/pi.md) | [https://github.com/earendil-works/pi](https://github.com/earendil-works/pi) | 尚未測試 | Node.js coding-agent CLI | `untried` |
+| [llmwiki](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-llm-wiki-compiler-cell-7aa3/reviews/llm-wiki-compiler.md) | [https://github.com/atomicstrata/llm-wiki-compiler](https://github.com/atomicstrata/llm-wiki-compiler) | 尚未測試 | Node CLI / MCP knowledge compiler | `untried` |
 
 狀態值：
 

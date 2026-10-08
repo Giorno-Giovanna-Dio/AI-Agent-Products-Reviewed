@@ -496,6 +496,33 @@ cells:
       rationale: Cross-agent long-term memory and typed vendor handoff for coding CLI harnesses
       rationale: Open-source Conductor-class harness control surface with strong mobile/remote story
       rationale: Open-source agent management at work; org/orchestration UX for multi-agent teams
+  - id: https://github.com/TencentCloud/octop-memory
+    name: Octop Memory
+    source_type: repository
+    aliases: []
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: octop-memory
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: octop-memory
+      ports: []
+      data_paths:
+        - ~/.octop-memory/
+        - ~/.octopmemory/
+      notes: Python 3.12+; stdlib + SQLite/FTS5 core; optional PostgreSQL, CLI, LangGraph checkpointer; OpenClaw plugin and Hermes provider
+    evaluation:
+      status: untried
+      review: reviews/octop-memory.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-octop-memory-cell-740f/reviews/octop-memory.md
+      tested_at: null
+      updated_at: 2026-10-08
+    discovery:
+      source: user request
+      rationale: Portable layered memory that travels between hosts, separate from the Octop assistant shell
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

@@ -653,6 +653,33 @@ cells:
       rationale: Portable layered memory that travels between hosts, separate from the Octop assistant shell
       rationale: Browser runtime for agents — named login profiles, attention-budget DOM, and demonstration-to-skill handoff
 
+  - id: https://github.com/onlook-dev/onlook
+    name: Onlook
+    source_type: repository
+    aliases:
+      - https://onlook.com
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Next.js web client (Bun). README documents a CodeSandbox SDK dev sandbox and Freestyle hosting; self-host docs require a CodeSandbox token.
+    evaluation:
+      status: untried
+      review: reviews/onlook.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-onlook-cell-90bd/reviews/onlook.md
+      tested_at: null
+      updated_at: 2026-10-08
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study a visual artifact surface where the running UI is the review object and each element maps back to source.
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

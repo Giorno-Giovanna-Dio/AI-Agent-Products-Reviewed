@@ -336,6 +336,14 @@ cells:
       source: user request
       rationale: Study minimal extensible agent harness, skills/extensions model, and durable runtime primitives
 
+  - id: https://github.com/TencentCloud/Octop
+    name: Octop
+    source_type: repository
+    aliases:
+      - https://octop.cloud
+    license: MIT
+    fork_url: null
+    checkout:
   - id: https://github.com/odysseus-dev/odysseus
     name: Odysseus
     source_type: repository
@@ -391,6 +399,17 @@ cells:
       tested_commit: null
       tested_version: null
     runtime:
+      method: native
+      command: octop run
+      ports:
+        - 8088
+      data_paths:
+        - ~/.octop
+      notes: Python 3.12+ single process; Web/CLI/IM/cron; optional PostgreSQL control-plane DB and Docker workspace sandbox
+    evaluation:
+      status: untried
+      review: reviews/octop.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-octop-cell-7aa3/reviews/octop.md
       method: docker
       command: docker compose up -d --build
       ports:
@@ -468,6 +487,7 @@ cells:
       updated_at: 2026-10-06
     discovery:
       source: GitHub starred scan
+      rationale: Self-hosted multi-user multi-agent assistant with IM channels, expert teams, and household-oriented orchestration
       rationale: Self-hosted AI workspace
       rationale: Agent memory that learns — context and handoff patterns for orchestration workspace
       rationale: Runtime layer where coding agents live — sandbox/permissions for workspace

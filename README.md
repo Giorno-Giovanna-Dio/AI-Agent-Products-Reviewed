@@ -98,6 +98,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [ai-memory](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ai-memory-cell-7aa3/reviews/ai-memory.md) | [https://github.com/akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | 尚未測試 | Single Rust binary | `untried` |
 | [T3 Code](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-t3code-cell-7aa3/reviews/t3code.md) | [https://github.com/pingdotgg/t3code](https://github.com/pingdotgg/t3code) | 尚未測試 | Local server + Electron/desktop/web/mobile clients | `untried` |
 | [Paperclip](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-paperclip-cell-7aa3/reviews/paperclip.md) | [https://github.com/paperclipai/paperclip](https://github.com/paperclipai/paperclip) | 尚未測試 | Node.js 24.11+ | `untried` |
+| [LLM Wiki](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-llm-wiki-cell-17ae/reviews/llm-wiki.md) | [https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) | 尚未測試 | Idea gist（貼給 agent） | `untried` |
 
 狀態值：
 

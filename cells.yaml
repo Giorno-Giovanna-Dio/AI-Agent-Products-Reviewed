@@ -336,6 +336,13 @@ cells:
       source: user request
       rationale: Study minimal extensible agent harness, skills/extensions model, and durable runtime primitives
 
+  - id: https://github.com/odysseus-dev/odysseus
+    name: Odysseus
+    source_type: repository
+    aliases: []
+    license: AGPL-3.0-or-later
+    fork_url: null
+    checkout:
   - id: https://github.com/vectorize-io/hindsight
     name: Hindsight
     source_type: repository
@@ -385,6 +392,16 @@ cells:
       tested_version: null
     runtime:
       method: docker
+      command: docker compose up -d --build
+      ports:
+        - 7000
+      data_paths:
+        - data/
+      notes: Native Python/uvicorn also supported; bundled ChromaDB, SearXNG, ntfy in Compose; Cookbook for local model serve
+    evaluation:
+      status: untried
+      review: reviews/odysseus.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-odysseus-cell-7aa3/reviews/odysseus.md
       command: null
       ports:
         - 8888
@@ -451,6 +468,7 @@ cells:
       updated_at: 2026-10-06
     discovery:
       source: GitHub starred scan
+      rationale: Self-hosted AI workspace
       rationale: Agent memory that learns — context and handoff patterns for orchestration workspace
       rationale: Runtime layer where coding agents live — sandbox/permissions for workspace
       rationale: Agent teams with roles, shared context, and owned work across Claude Code, Codex, and Pi

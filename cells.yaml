@@ -344,6 +344,34 @@ cells:
     license: Apache-2.0
     fork_url: null
     checkout:
+  - id: https://github.com/mvschwarz/openrig
+    name: OpenRig
+    source_type: repository
+    aliases: []
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: openrig
+  - id: https://github.com/openclaw/openclaw
+    name: OpenClaw
+    source_type: repository
+    aliases:
+      - https://openclaw.ai
+    license: MIT
+    fork_url: null
+    checkout:
+  - id: https://github.com/akitaonrails/ai-memory
+    name: ai-memory
+  - id: https://github.com/pingdotgg/t3code
+    name: T3 Code
+  - id: https://github.com/paperclipai/paperclip
+    name: Paperclip
+    source_type: repository
+    aliases: []
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: ai-memory
       directory: null
       tested_commit: null
       tested_version: null
@@ -357,11 +385,58 @@ cells:
       status: untried
       review: reviews/herdr.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-herdr-cell-7aa3/reviews/herdr.md
+      command: rig
+      ports: []
+      data_paths:
+        - ~/.openrig
+      notes: Node.js 22 or 24; tmux; macOS or Linux; Hono daemon + SQLite; Claude Code, Codex, Pi via managed tmux seats
+    evaluation:
+      status: untried
+      review: reviews/openrig.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openrig-cell-7aa3/reviews/openrig.md
+      command: openclaw
+      ports:
+        - 18789
+      data_paths: []
+      notes: Node.js Gateway daemon; CLI onboard; optional Docker/Nix; channels via plugins
+    evaluation:
+      status: untried
+      review: reviews/openclaw.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openclaw-cell-7aa3/reviews/openclaw.md
+      command: ai-memory
+      ports: []
+      data_paths: []
+      notes: Single Rust binary; self-hosted server; lifecycle hooks + MCP for 20+ coding CLIs; git-backed markdown wiki + SQLite index
+    evaluation:
+      status: untried
+      review: reviews/ai-memory.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ai-memory-cell-7aa3/reviews/ai-memory.md
+      command: t3
+      ports: []
+      data_paths: []
+      notes: Local server + Electron/desktop/web/mobile clients; T3 Connect optional relay
+    evaluation:
+      status: untried
+      review: reviews/t3code.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-t3code-cell-7aa3/reviews/t3code.md
+      command: npx paperclipai
+      ports: []
+      data_paths: []
+      notes: Node.js 24.11+; self-hosted server + React UI; `onboard` / `test-drive` CLI; agents via adapters
+    evaluation:
+      status: untried
+      review: reviews/paperclip.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-paperclip-cell-7aa3/reviews/paperclip.md
       tested_at: null
       updated_at: 2026-10-06
     discovery:
       source: GitHub starred scan
       rationale: Runtime layer where coding agents live — sandbox/permissions for workspace
+      rationale: Agent teams with roles, shared context, and owned work across Claude Code, Codex, and Pi
+      rationale: Cross-platform personal/team assistant that executes tasks via local Gateway and messaging channels
+      rationale: Cross-agent long-term memory and typed vendor handoff for coding CLI harnesses
+      rationale: Open-source Conductor-class harness control surface with strong mobile/remote story
+      rationale: Open-source agent management at work; org/orchestration UX for multi-agent teams
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

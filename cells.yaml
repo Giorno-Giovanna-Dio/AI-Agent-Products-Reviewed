@@ -335,6 +335,32 @@ cells:
     discovery:
       source: user request
       rationale: Study minimal extensible agent harness, skills/extensions model, and durable runtime primitives
+  - id: https://github.com/atomicstrata/llm-wiki-compiler
+    name: llmwiki
+    source_type: repository
+    aliases:
+      - https://llmwiki.atomicstrata.ai
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: llm-wiki-compiler
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: llmwiki
+      ports: []
+      data_paths: []
+      notes: Node.js 24+ CLI, MCP server, and SDK; LLM provider required for compile/query
+    evaluation:
+      status: untried
+      review: reviews/llm-wiki-compiler.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-llm-wiki-compiler-cell-7aa3/reviews/llm-wiki-compiler.md
+      tested_at: null
+      updated_at: 2026-10-07
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study compile-then-query knowledge artifacts, citation/review gates, and agent context packs
 
   - id: https://github.com/NVIDIA/OpenShell
     name: OpenShell

@@ -336,6 +336,34 @@ cells:
       source: user request
       rationale: Study minimal extensible agent harness, skills/extensions model, and durable runtime primitives
 
+  - id: https://github.com/TencentCloud/octop-harness
+    name: Octop Harness
+    source_type: repository
+    aliases:
+      - https://pypi.org/project/octop-harness/
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: octop-harness
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: octop-harness
+      ports: []
+      data_paths:
+        - ~/.octop-harness
+      notes: Python 3.12+ library around deepagents; optional CLI extra; Docker/OpenSandbox and object-storage backends are extras; hosts such as Octop embed it
+    evaluation:
+      status: untried
+      review: reviews/octop-harness.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-octop-harness-cell-7618/reviews/octop-harness.md
+      tested_at: null
+      updated_at: 2026-10-08
+    discovery:
+      source: user request
+      rationale: Study the production agent runtime under Octop — registry, workspace backends, peer inbox, and permission policy
+
   - id: https://github.com/TencentCloud/Octop
     name: Octop
     source_type: repository

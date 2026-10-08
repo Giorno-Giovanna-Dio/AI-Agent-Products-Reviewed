@@ -336,6 +336,13 @@ cells:
       source: user request
       rationale: Study minimal extensible agent harness, skills/extensions model, and durable runtime primitives
 
+  - id: https://github.com/NVIDIA/OpenShell
+    name: OpenShell
+    source_type: repository
+    aliases: []
+    license: Apache-2.0
+    fork_url: null
+    checkout:
   - id: https://github.com/TencentCloud/Octop
     name: Octop
     source_type: repository
@@ -400,6 +407,14 @@ cells:
       tested_version: null
     runtime:
       method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Policy-enforced sandbox runtime for autonomous agents; gateway + supervisor boundaries
+    evaluation:
+      status: untried
+      review: reviews/openshell.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openshell-cell-7aa3/reviews/openshell.md
       command: octop run
       ports:
         - 8088
@@ -487,6 +502,7 @@ cells:
       updated_at: 2026-10-06
     discovery:
       source: GitHub starred scan
+      rationale: Safe private runtime layer for autonomous agents — permissions and sandbox for workspace orchestration
       rationale: Self-hosted multi-user multi-agent assistant with IM channels, expert teams, and household-oriented orchestration
       rationale: Self-hosted AI workspace
       rationale: Agent memory that learns — context and handoff patterns for orchestration workspace

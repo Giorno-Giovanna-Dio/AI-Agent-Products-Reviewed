@@ -420,6 +420,32 @@ cells:
       rationale: Cross-agent long-term memory and typed vendor handoff for coding CLI harnesses
       rationale: Open-source Conductor-class harness control surface with strong mobile/remote story
       rationale: Open-source agent management at work; org/orchestration UX for multi-agent teams
+  - id: https://github.com/langchain-ai/deepagents
+    name: Deep Agents
+    source_type: repository
+    aliases: []
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: deepagents
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths:
+        - ~/.deepagents
+      notes: Python package deepagents on LangGraph; terminal agent dcode lives in the same repo; JS sibling is deepagentsjs
+    evaluation:
+      status: untried
+      review: reviews/deepagents.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-deepagents-cell-9e0b/reviews/deepagents.md
+      tested_at: null
+      updated_at: 2026-10-08
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study batteries-included harness primitives — filesystem memory, subagent quarantine, and human interrupts — as the runtime of one employee in a future workspace
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

@@ -653,6 +653,33 @@ cells:
       rationale: Portable layered memory that travels between hosts, separate from the Octop assistant shell
       rationale: Browser runtime for agents — named login profiles, attention-budget DOM, and demonstration-to-skill handoff
 
+  - id: https://github.com/affaan-m/ECC
+    name: ECC
+    source_type: repository
+    aliases:
+      - https://ecc.tools
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Harness plugin and skills for Claude Code and other coding CLIs; not a server
+    evaluation:
+      status: untried
+      review: reviews/ecc.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ecc-cell-90bd/reviews/ecc.md
+      tested_at: null
+      updated_at: 2026-10-08
+    discovery:
+      source: user /create-cell-pr
+      rationale: Instincts turn repeated session wins into scoped behavior, and AgentShield scans prompts, hooks, MCP, and permissions
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

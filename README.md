@@ -95,6 +95,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [ai-memory](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ai-memory-cell-7aa3/reviews/ai-memory.md) | [https://github.com/akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | 尚未測試 | Single Rust binary | `untried` |
 | [T3 Code](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-t3code-cell-7aa3/reviews/t3code.md) | [https://github.com/pingdotgg/t3code](https://github.com/pingdotgg/t3code) | 尚未測試 | Local server + Electron/desktop/web/mobile clients | `untried` |
 | [Paperclip](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-paperclip-cell-7aa3/reviews/paperclip.md) | [https://github.com/paperclipai/paperclip](https://github.com/paperclipai/paperclip) | 尚未測試 | Node.js 24.11+ | `untried` |
+| [Octop Browser](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-octop-browser-cell-6a61/reviews/octop-browser.md) | [https://github.com/TencentCloud/octop-browser](https://github.com/TencentCloud/octop-browser) | 尚未測試 | Python 3.11+ CDP browser | `untried` |
 
 狀態值：
 

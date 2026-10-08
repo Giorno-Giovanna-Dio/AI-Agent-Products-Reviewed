@@ -477,6 +477,35 @@ cells:
       rationale: Open-source Conductor-class harness control surface with strong mobile/remote story
       rationale: Open-source agent management at work; org/orchestration UX for multi-agent teams
 
+  - id: https://github.com/TencentCloud/octop-browser
+    name: Octop Browser
+    source_type: repository
+    aliases: []
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: octop-browser
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: octop-browser
+      ports:
+        - 9222
+      data_paths:
+        - ~/.octop-browser/profiles
+        - ~/.octop-browser/screenshots
+      notes: Python 3.11+; direct CDP to Chromium; CLI, Python API, and MCP; named profiles persist logins; CDP port starts at 9222
+    evaluation:
+      status: untried
+      review: reviews/octop-browser.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-octop-browser-cell-6a61/reviews/octop-browser.md
+      tested_at: null
+      updated_at: 2026-10-08
+    discovery:
+      source: user request
+      rationale: Browser runtime for agents — named login profiles, attention-budget DOM, and demonstration-to-skill handoff
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

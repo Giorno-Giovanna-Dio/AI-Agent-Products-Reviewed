@@ -652,6 +652,36 @@ cells:
       source: user request
       rationale: Portable layered memory that travels between hosts, separate from the Octop assistant shell
       rationale: Browser runtime for agents — named login profiles, attention-budget DOM, and demonstration-to-skill handoff
+  - id: https://github.com/anomalyco/opencode
+    name: OpenCode
+    source_type: repository
+    aliases:
+      - https://github.com/sst/opencode
+      - https://opencode.ai
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: opencode
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: opencode
+      ports:
+        - 4096
+      data_paths:
+        - ~/.local/share/opencode
+        - ~/.config/opencode
+      notes: Terminal TUI plus local HTTP server; desktop app and IDE extension are clients; upstream default branch is dev
+    evaluation:
+      status: untried
+      review: reviews/opencode.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-opencode-cell-9e0b/reviews/opencode.md
+      tested_at: null
+      updated_at: 2026-10-08
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study the coding-agent employee itself — Build/Plan permissions, child sessions, and a local server shared by TUI, desktop, and IDE
 
   - id: https://github.com/opensoft/oh-my-opencode
     name: Oh My OpenCode

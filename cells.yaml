@@ -652,6 +652,122 @@ cells:
       source: user request
       rationale: Portable layered memory that travels between hosts, separate from the Octop assistant shell
       rationale: Browser runtime for agents — named login profiles, attention-budget DOM, and demonstration-to-skill handoff
+  - id: https://github.com/anomalyco/opencode
+    name: OpenCode
+    source_type: repository
+    aliases:
+      - https://github.com/sst/opencode
+      - https://opencode.ai
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: opencode
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: opencode
+      ports:
+        - 4096
+      data_paths:
+        - ~/.local/share/opencode
+        - ~/.config/opencode
+      notes: Terminal TUI plus local HTTP server; desktop app and IDE extension are clients; upstream default branch is dev
+    evaluation:
+      status: untried
+      review: reviews/opencode.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-opencode-cell-9e0b/reviews/opencode.md
+      tested_at: null
+      updated_at: 2026-10-08
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study the coding-agent employee itself — Build/Plan permissions, child sessions, and a local server shared by TUI, desktop, and IDE
+
+  - id: https://github.com/opensoft/oh-my-opencode
+    name: Oh My OpenCode
+    source_type: repository
+    aliases:
+      - https://github.com/code-yeongyu/oh-my-opencode
+      - https://github.com/code-yeongyu/oh-my-openagent
+    license: Sustainable Use License 1.0
+    fork_url: null
+    checkout:
+      directory: oh-my-opencode
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths:
+        - ~/.config/opencode/oh-my-opencode.json
+        - .opencode/oh-my-opencode.json
+        - .sisyphus/
+      notes: OpenCode plugin. This fork's dev branch matches upstream commit aead4ae (2026-01-25) and has 0 unique commits. Upstream is now code-yeongyu/oh-my-openagent. Not executed.
+    evaluation:
+      status: untried
+      review: reviews/oh-my-opencode.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-oh-my-opencode-cell-103e/reviews/oh-my-opencode.md
+      tested_at: null
+      updated_at: 2026-10-08
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study role-split orchestration inside a coding session — planner, conductor, workers, and verify-before-done — for a 2D/3D office
+
+  - id: https://github.com/onlook-dev/onlook
+    name: Onlook
+    source_type: repository
+    aliases:
+      - https://onlook.com
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Next.js web client (Bun). README documents a CodeSandbox SDK dev sandbox and Freestyle hosting; self-host docs require a CodeSandbox token.
+    evaluation:
+      status: untried
+      review: reviews/onlook.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-onlook-cell-90bd/reviews/onlook.md
+      tested_at: null
+      updated_at: 2026-10-08
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study a visual artifact surface where the running UI is the review object and each element maps back to source.
+
+  - id: https://github.com/danielmiessler/LifeOS
+    name: LifeOS
+    source_type: repository
+    aliases:
+      - https://ourlifeos.ai
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths:
+        - ~/.config/LIFEOS/USER
+      notes: Installed into an existing coding harness (Claude Code is the documented most-tested path); optional Pulse on 31337; USER data at ~/.config/LIFEOS/USER
+    evaluation:
+      status: untried
+      review: reviews/lifeos.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-lifeos-cell-90bd/reviews/lifeos.md
+      tested_at: null
+      updated_at: 2026-10-08
+    discovery:
+      source: user /create-cell-pr
+      rationale: The layer on a coding harness that records who you are and what done looks like, distinct from a skill pack or a standalone memory server
 
   - id: https://github.com/affaan-m/ECC
     name: ECC

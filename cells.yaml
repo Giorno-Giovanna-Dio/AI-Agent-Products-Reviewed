@@ -683,6 +683,37 @@ cells:
       source: user /create-cell-pr
       rationale: Study the coding-agent employee itself — Build/Plan permissions, child sessions, and a local server shared by TUI, desktop, and IDE
 
+  - id: https://github.com/opensoft/oh-my-opencode
+    name: Oh My OpenCode
+    source_type: repository
+    aliases:
+      - https://github.com/code-yeongyu/oh-my-opencode
+      - https://github.com/code-yeongyu/oh-my-openagent
+    license: Sustainable Use License 1.0
+    fork_url: null
+    checkout:
+      directory: oh-my-opencode
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths:
+        - ~/.config/opencode/oh-my-opencode.json
+        - .opencode/oh-my-opencode.json
+        - .sisyphus/
+      notes: OpenCode plugin. This fork's dev branch matches upstream commit aead4ae (2026-01-25) and has 0 unique commits. Upstream is now code-yeongyu/oh-my-openagent. Not executed.
+    evaluation:
+      status: untried
+      review: reviews/oh-my-opencode.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-oh-my-opencode-cell-103e/reviews/oh-my-opencode.md
+      tested_at: null
+      updated_at: 2026-10-08
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study role-split orchestration inside a coding session — planner, conductor, workers, and verify-before-done — for a 2D/3D office
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

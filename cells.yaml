@@ -336,6 +336,14 @@ cells:
       source: user request
       rationale: Study minimal extensible agent harness, skills/extensions model, and durable runtime primitives
 
+  - id: https://github.com/herdrdev/herdr
+    name: Herdr
+    source_type: repository
+    aliases:
+      - https://herdr.dev
+    license: Apache-2.0
+    fork_url: null
+    checkout:
   - id: https://github.com/mvschwarz/openrig
     name: OpenRig
     source_type: repository
@@ -369,6 +377,14 @@ cells:
       tested_version: null
     runtime:
       method: native
+      command: herdr
+      ports: []
+      data_paths: []
+      notes: Single Rust binary; background server + TUI client; local socket API; optional SSH remote workspaces; agents are external CLIs in PTY panes
+    evaluation:
+      status: untried
+      review: reviews/herdr.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-herdr-cell-7aa3/reviews/herdr.md
       command: rig
       ports: []
       data_paths:
@@ -415,6 +431,7 @@ cells:
       updated_at: 2026-10-06
     discovery:
       source: GitHub starred scan
+      rationale: Runtime layer where coding agents live — sandbox/permissions for workspace
       rationale: Agent teams with roles, shared context, and owned work across Claude Code, Codex, and Pi
       rationale: Cross-platform personal/team assistant that executes tasks via local Gateway and messaging channels
       rationale: Cross-agent long-term memory and typed vendor handoff for coding CLI harnesses

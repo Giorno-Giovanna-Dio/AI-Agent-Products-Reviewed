@@ -652,6 +652,33 @@ cells:
       source: user request
       rationale: Portable layered memory that travels between hosts, separate from the Octop assistant shell
       rationale: Browser runtime for agents — named login profiles, attention-budget DOM, and demonstration-to-skill handoff
+  - id: https://github.com/openchamber/openchamber
+    name: OpenChamber
+    source_type: repository
+    aliases:
+      - https://github.com/btriapitsyn/openchamber
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: openchamber
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: openchamber
+      ports: []
+      data_paths:
+        - ~/.config/openchamber/
+      notes: ADE around OpenCode. Desktop bundles the OpenCode CLI; CLI, web, and VS Code need Node.js 22+ and an installed OpenCode. Listens on localhost by default. Relay identity is under ~/.config/openchamber/; full session store path not confirmed.
+    evaluation:
+      status: untried
+      review: reviews/openchamber.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openchamber-cell-0717/reviews/openchamber.md
+      tested_at: null
+      updated_at: 2026-10-08
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

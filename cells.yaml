@@ -653,6 +653,33 @@ cells:
       rationale: Portable layered memory that travels between hosts, separate from the Octop assistant shell
       rationale: Browser runtime for agents — named login profiles, attention-budget DOM, and demonstration-to-skill handoff
 
+  - id: https://github.com/crewAIInc/crewAI
+    name: CrewAI
+    source_type: repository
+    aliases:
+      - https://crewai.com
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python framework; not a desktop workspace
+    evaluation:
+      status: untried
+      review: reviews/crewai.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-crewai-cell-90bd/reviews/crewai.md
+      tested_at: null
+      updated_at: 2026-10-08
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study role, task, and process primitives for multi-agent crews
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

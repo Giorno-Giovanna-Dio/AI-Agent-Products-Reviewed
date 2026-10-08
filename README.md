@@ -103,6 +103,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [Octop Memory](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-octop-memory-cell-740f/reviews/octop-memory.md) | [https://github.com/TencentCloud/octop-memory](https://github.com/TencentCloud/octop-memory) | 尚未測試 | Python 3.12+ memory runtime | `untried` |
 | [Octop Browser](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-octop-browser-cell-6a61/reviews/octop-browser.md) | [https://github.com/TencentCloud/octop-browser](https://github.com/TencentCloud/octop-browser) | 尚未測試 | Python 3.11+ CDP browser | `untried` |
 | [LLM Wiki](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-llm-wiki-cell-17ae/reviews/llm-wiki.md) | [https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) | 尚未測試 | Idea gist（貼給 agent） | `untried` |
+| [CrewAI](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-crewai-cell-90bd/reviews/crewai.md) | [https://github.com/crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | 尚未測試 | Python agent framework | `untried` |
 
 狀態值：
 

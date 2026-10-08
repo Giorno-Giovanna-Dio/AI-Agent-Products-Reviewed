@@ -336,6 +336,14 @@ cells:
       source: user request
       rationale: Study minimal extensible agent harness, skills/extensions model, and durable runtime primitives
 
+  - id: https://github.com/vectorize-io/hindsight
+    name: Hindsight
+    source_type: repository
+    aliases:
+      - https://hindsight.vectorize.io/
+    license: MIT
+    fork_url: null
+    checkout:
   - id: https://github.com/herdrdev/herdr
     name: Herdr
     source_type: repository
@@ -376,6 +384,18 @@ cells:
       tested_commit: null
       tested_version: null
     runtime:
+      method: docker
+      command: null
+      ports:
+        - 8888
+        - 9999
+      data_paths:
+        - hindsight-data
+      notes: Docker or pip hindsight-api; optional embedded pg0; UI on 9999; LLM key required for retain/reflect pipeline
+    evaluation:
+      status: untried
+      review: reviews/hindsight.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-hindsight-cell-7aa3/reviews/hindsight.md
       method: native
       command: herdr
       ports: []
@@ -431,6 +451,7 @@ cells:
       updated_at: 2026-10-06
     discovery:
       source: GitHub starred scan
+      rationale: Agent memory that learns — context and handoff patterns for orchestration workspace
       rationale: Runtime layer where coding agents live — sandbox/permissions for workspace
       rationale: Agent teams with roles, shared context, and owned work across Claude Code, Codex, and Pi
       rationale: Cross-platform personal/team assistant that executes tasks via local Gateway and messaging channels

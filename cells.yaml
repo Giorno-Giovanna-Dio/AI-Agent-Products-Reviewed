@@ -869,6 +869,33 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/cloudflare/cloudflare-os
+    name: Cloudflare OS
+    source_type: repository
+    aliases:
+      - https://os.cloudflare.app
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: TypeScript monorepo on Cloudflare Workers (Durable Objects, Dynamic Workers, Facets) and workerd. Local quick start is pnpm run-local via wrangler. Not executed.
+    evaluation:
+      status: untried
+      review: reviews/cloudflare-os.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-cloudflare-os-cell-c2d2/reviews/cloudflare-os.md
+      tested_at: null
+      updated_at: 2026-10-09
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study a Workers workspace where a sandboxed gadget, the agent, and capability gatekeepers share one place, then place that on a 2D floor and a walkable office.
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

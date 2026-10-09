@@ -796,6 +796,33 @@ cells:
       source: user /create-cell-pr
       rationale: Instincts turn repeated session wins into scoped behavior, and AgentShield scans prompts, hooks, MCP, and permissions
 
+  - id: https://github.com/code-yeongyu/oh-my-openagent
+    name: OmO
+    source_type: repository
+    aliases:
+      - https://omo.dev
+    license: SUL-1.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Standalone omo CLI on senpi (their pi fork); OpenCode and Codex (LazyCodex) editions also ship as plugins. State under ~/.omo.
+    evaluation:
+      status: untried
+      review: reviews/oh-my-openagent.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-oh-my-openagent-cell-90bd/reviews/oh-my-openagent.md
+      tested_at: null
+      updated_at: 2026-10-08
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study keyword-switched multi-agent procedure — category dispatch, dependency waves, and evidence gates — as office staffing.
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

@@ -869,6 +869,33 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/gastownhall/gastown
+    name: Gas Town
+    source_type: repository
+    aliases:
+      - https://github.com/steveyegge/gastown
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: gt
+      ports: []
+      data_paths: []
+      notes: Go CLI `gt` with tmux-backed agents and a Dolt Beads ledger (town example ~/gt); optional Docker Compose. Not executed.
+    evaluation:
+      status: untried
+      review: reviews/gastown.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-gastown-cell-c2d2/reviews/gastown.md
+      tested_at: null
+      updated_at: 2026-10-09
+    discovery:
+      source: user /create-cell-pr
+      rationale: A named town of roles, hooks, and a merge dock is a place of work even though today's UI is still a CLI and dashboard.
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

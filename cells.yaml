@@ -869,6 +869,35 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/Mng-dev-ai/agentrove
+    name: Agentrove
+    source_type: repository
+    aliases: []
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: docker-compose
+      command: docker compose up -d
+      ports:
+        - 3000
+        - 8080
+      data_paths:
+        - storage/
+      notes: Docker Compose web (frontend 3000, API 8080, Redis); macOS Tauri sidecar and iOS thin client also ship. ACP agents run in a per-workspace Docker or host sandbox. Not run.
+    evaluation:
+      status: untried
+      review: reviews/agentrove.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agentrove-cell-c2d2/reviews/agentrove.md
+      tested_at: null
+      updated_at: 2026-10-09
+    discovery:
+      source: user /create-cell-pr
+      rationale: Personas, sub-thread handoff, and per-workspace ACP sandboxes as staffing inside one coding room
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

@@ -869,6 +869,34 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/Devin-AXIS/iPolloWork
+    name: iPolloWork
+    source_type: repository
+    aliases:
+      - https://www.ipollo.ai
+      - https://ipolloworklabs.com
+    license: LicenseRef-iPolloWork-Source-Available-1.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Electron desktop plus local server. Default engine is an OpenCode sidecar; optional Codex Harness and DeepSeek Harness adapters. Source builds need Node.js 22+ and pnpm 11. Orchestrator CLI can optionally run sidecars in Docker or Apple container. Not executed.
+    evaluation:
+      status: untried
+      review: reviews/ipollowork.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ipollowork-cell-c2d2/reviews/ipollowork.md
+      tested_at: null
+      updated_at: 2026-10-09
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study a local multi-engine workbench that keeps project agents, approvals, and editable documents, decks, design, and video on one control surface.
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

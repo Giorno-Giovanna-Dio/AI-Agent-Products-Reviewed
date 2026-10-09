@@ -869,6 +869,36 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/longyangxi/OpenOffice
+    name: Open Office
+    source_type: repository
+    aliases: []
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports:
+        - 9090
+        - 9099
+      data_paths:
+        - ~/.open-office
+        - ~/.open-office-dev
+      notes: TypeScript. Next.js + PixiJS top-down pixel office; Node gateway package bit-office (dev WebSocket 9099, default 9090). Optional Tauri desktop and Telegram. Not run.
+    evaluation:
+      status: untried
+      review: reviews/openoffice.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openoffice-cell-c2d2/reviews/openoffice.md
+      tested_at: null
+      updated_at: 2026-10-09
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study a shared 2D pixel floor where a lead, developers, and a reviewer hand work through phases and per-agent worktrees.
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

@@ -869,6 +869,34 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/smtg-ai/claude-squad
+    name: Claude Squad
+    source_type: repository
+    aliases:
+      - https://smtg-ai.github.io/claude-squad/
+    license: AGPL-3.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths:
+        - ~/.claude-squad
+      notes: Go TUI (`cs`). Each session is a tmux process plus a git worktree under ~/.claude-squad/worktrees. Requires tmux and gh.
+    evaluation:
+      status: untried
+      review: reviews/claude-squad.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-claude-squad-cell-80a8/reviews/claude-squad.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study one-task-one-worktree supervision, including pause-to-human checkout and screen-scraped auto-accept.
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

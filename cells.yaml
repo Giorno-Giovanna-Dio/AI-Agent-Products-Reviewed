@@ -869,6 +869,35 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/EKKOLearnAI/ekko-studio
+    name: Ekko Studio
+    source_type: repository
+    aliases:
+      - https://ekkostudio.xyz
+      - https://hermes-studio.ai
+      - https://github.com/EKKOLearnAI/hermes-web-ui
+    license: BSL-1.1
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Desktop Electron app is the recommended path and bundles the runtime. npm (Node.js 23+) serves a local web console; Docker Compose is also documented. Not run in this review.
+    evaluation:
+      status: untried
+      review: reviews/ekko-studio.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ekko-studio-cell-fb52/reviews/ekko-studio.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
+      rationale: Separate the Vue Flow workflow studio from the chat and group rooms where people work, and treat node handoff as a narrow packet rather than shared memory
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

@@ -869,6 +869,34 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/microsoft/autogen
+    name: AutoGen
+    source_type: repository
+    aliases:
+      - https://microsoft.github.io/autogen/
+      - https://github.com/microsoft/agent-framework
+    license: CC-BY-4.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Maintenance-mode Python/.NET framework. LICENSE is CC BY 4.0 for docs; LICENSE-CODE is MIT for code. Not a desktop workspace.
+    evaluation:
+      status: untried
+      review: reviews/autogen.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-autogen-cell-9381/reviews/autogen.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study shared conversation teams, handoff, and runtime as who is in the room and where work moves, while keeping this cell distinct from Microsoft Agent Framework.
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

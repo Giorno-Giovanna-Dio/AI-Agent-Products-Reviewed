@@ -869,6 +869,38 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/ClaudioDrews/memory-os
+    name: Memory OS
+    source_type: repository
+    aliases: []
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: docker-compose
+      command: null
+      ports:
+        - 6333
+        - 6379
+      data_paths:
+        - ~/.hermes/memories
+        - ~/.hermes/state.db
+        - ~/.hermes/memory_store.db
+        - ~/vault
+      notes: Hermes Agent plugin plus local Qdrant, Redis, and ARQ worker; layered memory and cron, not a process scheduler
+    evaluation:
+      status: untried
+      review: reviews/memory-os.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memory-os-cell-fb52/reviews/memory-os.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
+      rationale: See what memory-as-an-OS adds beyond storage — layers, janitor schedules, and source authority — for a future agent office
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

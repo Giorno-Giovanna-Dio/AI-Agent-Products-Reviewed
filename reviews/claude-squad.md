@@ -33,7 +33,7 @@ tmux。他們改的檔案因此不會搶同一個工作目錄。
 
 ### 一個任務，一間隔離的房
 
-新 session 要先取一個名字（程式限制 32 個字元）。預設從你當時的 HEAD
+新 session 要先取一個名字（程式以顯示寬度 32 為上限）。預設從你當時的 HEAD
 開一條新 branch，前綴是使用者名稱，worktree 放在
 `~/.claude-squad/worktrees`，不在 repo 裡面。也可以改接一條已經存在的
 branch；這種 branch 在 session 清掉時不會被刪。

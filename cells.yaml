@@ -869,6 +869,33 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/topoteretes/cognee
+    name: Cognee
+    source_type: repository
+    aliases:
+      - https://www.cognee.ai
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python 3.10–3.14 package. Official local path can ingest and retrieve text without an LLM key via the bundled GLiNER demo and local embeddings. Optional Docker API on 8000, UI on 3000, MCP on 8001. Not tried.
+    evaluation:
+      status: untried
+      review: reviews/cognee.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-cognee-cell-fb52/reviews/cognee.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study dataset-scoped graph memory, session notes versus permanent lessons, and recall as what an employee consults when sitting down
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

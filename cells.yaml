@@ -869,6 +869,33 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/MemoriLabs/Memori
+    name: Memori
+    source_type: repository
+    aliases:
+      - https://memorilabs.ai
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python and TypeScript SDK wrapping LLM clients; BYODB SQL or Memori Cloud. Not executed.
+    evaluation:
+      status: untried
+      review: reviews/memori.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memori-cell-fb52/reviews/memori.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study entity, process, and session attribution, and recall-before-answer, as desk notes in a 2D/3D office
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

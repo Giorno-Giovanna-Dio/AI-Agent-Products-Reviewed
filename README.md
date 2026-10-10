@@ -111,6 +111,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [Onlook](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-onlook-cell-90bd/reviews/onlook.md) | [https://github.com/onlook-dev/onlook](https://github.com/onlook-dev/onlook) | 尚未測試 | Next.js web；CodeSandbox sandbox | `untried` |
 | [Oh My OpenCode](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-oh-my-opencode-cell-103e/reviews/oh-my-opencode.md) | [https://github.com/opensoft/oh-my-opencode](https://github.com/opensoft/oh-my-opencode) | 尚未測試 | OpenCode 外掛（2026-01 快照） | `untried` |
 | [OpenCode](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-opencode-cell-9e0b/reviews/opencode.md) | [https://github.com/anomalyco/opencode](https://github.com/anomalyco/opencode) | 尚未測試 | Terminal TUI + local HTTP server | `untried` |
+| [PocketFlow Codebase Knowledge](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pocketflow-codebase-tutorial-cell-ca43/reviews/pocketflow-tutorial-codebase-knowledge.md) | [https://github.com/The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge](https://github.com/The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge) | 尚未測試 | Python CLI（PocketFlow 教學流程） | `untried` |
 
 狀態值：
 

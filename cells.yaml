@@ -869,6 +869,37 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge
+    name: PocketFlow Codebase Knowledge
+    source_type: repository
+    aliases:
+      - https://github.com/The-Pocket/Tutorial-Codebase-Knowledge
+      - https://code2tutorial.com/
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: python main.py
+      ports: []
+      data_paths:
+        - output/
+        - llm_cache.json
+        - logs/
+      notes: Python CLI tutorial that imports PocketFlow; optional Docker (python:3.10). Needs an LLM key. Not installed.
+    evaluation:
+      status: untried
+      review: reviews/pocketflow-tutorial-codebase-knowledge.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pocketflow-codebase-tutorial-cell-ca43/reviews/pocketflow-tutorial-codebase-knowledge.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study a codebase compiled into indexed concepts and ordered chapters, as stations on a 2D floor and desks in a 3D office
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

@@ -869,6 +869,36 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/2FastLabs/agent-squad
+    name: Agent Squad
+    source_type: repository
+    aliases:
+      - https://github.com/awslabs/agent-squad
+      - https://github.com/awslabs/multi-agent-orchestrator
+      - https://github.com/transfer-aws/agent-squad
+      - https://2fastlabs.github.io/agent-squad/
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python 3.11+ / TypeScript / Swift library. Per-turn classifier routing with per-agent chat storage. Not a desktop workspace.
+    evaluation:
+      status: untried
+      review: reviews/agent-squad.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agent-squad-cell-ad04/reviews/agent-squad.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study per-turn classifier routing, per-agent conversation drawers, and supervisor parallel ask as office dispatch.
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

@@ -869,6 +869,32 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/jjyaoao/HelloAgents
+    name: HelloAgents
+    source_type: repository
+    aliases: []
+    license: CC-BY-NC-SA-4.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python 3.12–3.13 library (package hello-agents 1.0.1); not a desktop app
+    evaluation:
+      status: untried
+      review: reviews/helloagents.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-helloagents-cell-ca43/reviews/helloagents.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
+      rationale: One desk splits session, profile, and task memory; a subagent side room keeps its own notepad while sharing the tool bench
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

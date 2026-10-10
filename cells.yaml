@@ -869,6 +869,34 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/langchain-ai/langchain
+    name: LangChain
+    source_type: repository
+    aliases:
+      - https://www.langchain.com
+      - https://docs.langchain.com
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python package langchain on LangGraph; not a desktop workspace. JS sibling is langchainjs. Not installed.
+    evaluation:
+      status: untried
+      review: reviews/langchain.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-langchain-cell-ca43/reviews/langchain.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study tool desks, agent loops, and graph handoffs as staffing on a 2D floor and in a walkable office
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

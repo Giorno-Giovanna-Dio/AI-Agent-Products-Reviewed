@@ -869,6 +869,35 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/datawhalechina/hello-agents
+    name: Hello-Agents
+    source_type: repository
+    aliases:
+      - http://github.com/datawhalechina/hello-agents
+      - https://hello-agents.datawhale.cc
+      - https://datawhalechina.github.io/hello-agents/
+    license: CC-BY-NC-SA-4.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: unknown
+      command: null
+      ports: []
+      data_paths: []
+      notes: Datawhale tutorial and chapter samples. Installable HelloAgents framework is a separate repo. Not run.
+    evaluation:
+      status: untried
+      review: reviews/hello-agents.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-hello-agents-cell-ca43/reviews/hello-agents.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study the tutorial path — paradigms, tool-wall, memory, context packets, and sequential handoff — as desks on a training floor.
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

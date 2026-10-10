@@ -111,6 +111,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [Onlook](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-onlook-cell-90bd/reviews/onlook.md) | [https://github.com/onlook-dev/onlook](https://github.com/onlook-dev/onlook) | 尚未測試 | Next.js web；CodeSandbox sandbox | `untried` |
 | [Oh My OpenCode](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-oh-my-opencode-cell-103e/reviews/oh-my-opencode.md) | [https://github.com/opensoft/oh-my-opencode](https://github.com/opensoft/oh-my-opencode) | 尚未測試 | OpenCode 外掛（2026-01 快照） | `untried` |
 | [OpenCode](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-opencode-cell-9e0b/reviews/opencode.md) | [https://github.com/anomalyco/opencode](https://github.com/anomalyco/opencode) | 尚未測試 | Terminal TUI + local HTTP server | `untried` |
+| [AxisAgentic](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-axisagentic-cell-ca43/reviews/axisagentic.md) | [https://github.com/XYZ-AI-Lab/AxisAgentic](https://github.com/XYZ-AI-Lab/AxisAgentic) | 尚未測試 | Python 3.12+ 長程 runtime | `untried` |
 
 狀態值：
 

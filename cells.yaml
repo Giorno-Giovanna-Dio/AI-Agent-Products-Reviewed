@@ -869,6 +869,34 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/Ryder-Sun/Meldwork
+    name: Meldwork
+    source_type: repository
+    aliases:
+      - https://ryder-sun.github.io/Meldwork/
+      - https://github.com/Ryder-MHumble/Meldwork
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Electron desktop for Apple silicon macOS; calls installed local agent CLIs
+    evaluation:
+      status: untried
+      review: reviews/meldwork.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-meldwork-cell-80a8/reviews/meldwork.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
+      rationale: A local review loop that freezes one task snapshot, keeps each agent's dissent visible, and requires a human adoption gate before workspace writes.
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

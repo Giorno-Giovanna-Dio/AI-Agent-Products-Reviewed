@@ -869,6 +869,32 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/The-Pocket/PocketFlow
+    name: PocketFlow
+    source_type: repository
+    aliases: []
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python package; stdlib-only core (99 lines on main). Not an office UI. PyPI 0.0.3 not checked against main.
+    evaluation:
+      status: untried
+      review: reviews/pocketflow.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pocketflow-cell-ca43/reviews/pocketflow.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study graph nodes, action paths, and a shared store as desks, corridors, and a common cabinet in a 2D floor and a walkable 3D office
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

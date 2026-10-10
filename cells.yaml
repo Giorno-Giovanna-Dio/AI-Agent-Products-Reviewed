@@ -869,6 +869,33 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/TEN-framework/ten-framework
+    name: TEN Framework
+    source_type: repository
+    aliases:
+      - https://theten.ai
+    license: Apache-2.0 with additional conditions
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: docker-compose
+      command: null
+      ports: []
+      data_paths: []
+      notes: Agent Examples use Docker Compose; tman can run apps such as the transcriber demo. Not tried.
+    evaluation:
+      status: untried
+      review: reviews/ten-framework.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ten-framework-cell-9381/reviews/ten-framework.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
+      rationale: A voice session is an extension graph. Desks are listeners, models, speakers, and turn-taking; connections route the work.
+
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
 #  - id: https://github.com/example/example-project

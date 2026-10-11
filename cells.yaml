@@ -874,6 +874,215 @@ cells:
     source_type: repository
     aliases:
       - https://docs.codeg.app
+  - id: https://github.com/longyangxi/OpenOffice
+    name: Open Office
+  - id: https://github.com/Mng-dev-ai/agentrove
+    name: Agentrove
+    source_type: repository
+    aliases: []
+    license: Apache-2.0
+  - id: https://github.com/NanmiCoder/cc-haha
+    name: cc-haha
+    source_type: repository
+    aliases:
+      - https://cchaha.ai
+  - id: https://github.com/Devin-AXIS/iPolloWork
+    name: iPolloWork
+    source_type: repository
+    aliases:
+      - https://www.ipollo.ai
+      - https://ipolloworklabs.com
+    license: LicenseRef-iPolloWork-Source-Available-1.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Electron desktop plus local server. Default engine is an OpenCode sidecar; optional Codex Harness and DeepSeek Harness adapters. Source builds need Node.js 22+ and pnpm 11. Orchestrator CLI can optionally run sidecars in Docker or Apple container. Not executed.
+    evaluation:
+      status: untried
+      review: reviews/ipollowork.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/ipollowork.md
+      tested_at: null
+      updated_at: 2026-10-09
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study a local multi-engine workbench that keeps project agents, approvals, and editable documents, decks, design, and video on one control surface.
+
+  - id: https://github.com/pixel-agents-hq/pixel-agents
+    name: Pixel Agents
+    source_type: repository
+    aliases: []
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports:
+        - 9090
+        - 9099
+      data_paths:
+        - ~/.open-office
+        - ~/.open-office-dev
+      notes: TypeScript. Next.js + PixiJS top-down pixel office; Node gateway package bit-office (dev WebSocket 9099, default 9090). Optional Tauri desktop and Telegram. Not run.
+    evaluation:
+      status: untried
+      review: reviews/openoffice.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openoffice-cell-c2d2/reviews/openoffice.md
+      ports: []
+      data_paths: []
+      notes: VS Code extension panel plus standalone Node 20+ browser office. Claude Code is the shipped provider. Not run.
+    evaluation:
+      status: untried
+      review: reviews/pixel-agents.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/pixel-agents.md
+      tested_at: null
+      updated_at: 2026-10-09
+    discovery:
+      source: user /create-cell-pr
+      rationale: Pixel-art floor is the workplace for Claude Code sessions — seats, areas, bubbles, and teammates — distinct from a walkable 3D office.
+
+  - id: https://github.com/gastownhall/gastown
+    name: Gas Town
+    source_type: repository
+    aliases:
+      - https://github.com/steveyegge/gastown
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: docker-compose
+      command: docker compose up -d
+      ports:
+        - 3000
+        - 8080
+      data_paths:
+        - storage/
+      notes: Docker Compose web (frontend 3000, API 8080, Redis); macOS Tauri sidecar and iOS thin client also ship. ACP agents run in a per-workspace Docker or host sandbox. Not run.
+    evaluation:
+      status: untried
+      review: reviews/agentrove.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agentrove-cell-c2d2/reviews/agentrove.md
+      method: native
+      command: gt
+      ports: []
+      data_paths: []
+      notes: Go CLI `gt` with tmux-backed agents and a Dolt Beads ledger (town example ~/gt); optional Docker Compose. Not executed.
+    evaluation:
+      status: untried
+      review: reviews/gastown.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/gastown.md
+      tested_at: null
+      updated_at: 2026-10-09
+    discovery:
+      source: user /create-cell-pr
+      rationale: A named town of roles, hooks, and a merge dock is a place of work even though today's UI is still a CLI and dashboard.
+
+  - id: https://github.com/phodal/routa
+    name: Routa
+    source_type: repository
+    aliases:
+      - https://phodal.github.io/routa/
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths:
+        - ~/.claude
+      notes: Electron desktop (macOS/Windows/Linux) around the bundled Bun CLI claude-haha and a local REST/WebSocket server. Computer Use documents a macOS native helper and a Windows Python helper; no Linux executor in the docs. Not run.
+    evaluation:
+      status: untried
+      review: reviews/cc-haha.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-cc-haha-cell-c2d2/reviews/cc-haha.md
+      data_paths: []
+      notes: Next.js web, Tauri desktop with Axum, and routa-cli; Docker sandbox exists. Not run.
+    evaluation:
+      status: untried
+      review: reviews/routa.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/routa.md
+      tested_at: null
+      updated_at: 2026-10-09
+    discovery:
+      source: user /create-cell-pr
+      rationale: Kanban lane moves queue specialist sessions and server-side delivery gates, so a board can become stations in a future office.
+
+  - id: https://github.com/golutra/golutra
+    name: Golutra
+    source_type: repository
+    aliases:
+      - https://www.golutra.com
+    license: BUSL-1.1
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths:
+        - .golutra
+      notes: Tauri desktop (Vue 3 + Rust). Documented path is the desktop app; it spawns local CLI PTYs. Workspace metadata under .golutra/; chat DB in the app data dir.
+    evaluation:
+      status: untried
+      review: reviews/golutra.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/golutra.md
+      tested_at: null
+      updated_at: 2026-10-09
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study chat-room dispatch onto parallel local CLI sessions, and how permission-skip flags sit next to a sandbox checkbox.
+
+  - id: https://github.com/SeemSeam/claude_codex_bridge
+    name: Claude Code Bridge
+    source_type: repository
+    aliases: []
+    license: AGPL-3.0-only
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python CLI entry (ccb.py) with tmux on Linux/macOS/WSL; native Windows beta uses Herdr. Releases also include an optional Rust runtime accelerator. npm package @seemseam/ccb is the installer. Not executed.
+    evaluation:
+      status: untried
+      review: reviews/claude-codex-bridge.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/claude-codex-bridge.md
+      tested_at: null
+      updated_at: 2026-10-09
+    discovery:
+      source: user /create-cell-pr
+      rationale: Visible native CLI panes plus a project mailbox, so a human can watch, wait, and take a desk while results return to the original conversation.
+
+  - id: https://github.com/cloudflare/cloudflare-os
+    name: Cloudflare OS
+    source_type: repository
+    aliases:
+      - https://os.cloudflare.app
     license: Apache-2.0
     fork_url: null
     checkout:
@@ -895,6 +1104,19 @@ cells:
     discovery:
       source: user /create-cell-pr
       rationale: Study session aggregation and cold-start cross-agent handoff as memory and room assignment, separate from an ADE dashboard
+      notes: TypeScript monorepo on Cloudflare Workers (Durable Objects, Dynamic Workers, Facets) and workerd. Local quick start is pnpm run-local via wrangler. Not executed.
+    evaluation:
+      status: untried
+      review: reviews/cloudflare-os.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/cloudflare-os.md
+      tested_at: null
+      updated_at: 2026-10-09
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study a shared 2D pixel floor where a lead, developers, and a reviewer hand work through phases and per-agent worktrees.
+      rationale: Personas, sub-thread handoff, and per-workspace ACP sandboxes as staffing inside one coding room
+      rationale: Local Claude Code desktop shell with worktrees, a skill marketplace, in-harness model switching, and remote IM on one CLI kernel.
+      rationale: Study a Workers workspace where a sandboxed gadget, the agent, and capability gatekeepers share one place, then place that on a 2D floor and a walkable office.
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

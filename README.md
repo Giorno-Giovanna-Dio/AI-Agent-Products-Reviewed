@@ -3,9 +3,9 @@
 </p>
 
 <p align="center">
-  <strong>繁體中文</strong>
+  <strong>English</strong>
   &nbsp;·&nbsp;
-  <a href="README.en.md">English</a>
+  <a href="README.zh-TW.md">繁體中文</a>
 </p>
 
 <p align="center">
@@ -15,315 +15,321 @@
 </p>
 
 <p align="center">
-  <a href="#目錄">目錄</a>
+  <a href="#contents">Contents</a>
   &nbsp;·&nbsp;
-  <a href="#歡迎貢獻">貢獻</a>
+  <a href="#contributing">Contributing</a>
   &nbsp;·&nbsp;
-  <a href="CODE_OF_CONDUCT.md">共事準則</a>
+  <a href="CODE_OF_CONDUCT.md">Code of conduct</a>
   &nbsp;·&nbsp;
-  <a href="#支持這個目錄">支持</a>
+  <a href="#support-this-catalog">Support</a>
 </p>
 
 # AI Agent Products Reviewed
 
-這是一個公開的 AI agent products 蒐集樞紐。產品、框架、工作台、記憶層和
-runtime 散落在不同的 repository 與官方網站。這裡把它們收成同一份目錄：
-每個產品是一個 Cell，看得出它的性質，以及它在一組 AI agent orchestration
-team 裡補上的部分。
+This is a public hub for AI agent products. Products, frameworks, workbenches,
+memory layers, and runtimes are scattered across repositories and official
+sites. This catalog gathers them. Each product is a Cell: you can see what
+kind of thing it is, and which part it fills in an AI agent orchestration team.
 
-目錄用來對照，不用來排名。我們用同一套問題閱讀它們：agents、tasks、
-context、execution environments 與 human oversight 如何被組織，以及這些
-概念放進 2D／3D AI agent workspace 時會變成什麼。
+The catalog is for comparison, not ranking. We read each product with the same
+questions: how agents, tasks, context, execution environments, and human
+oversight are organized, and what those ideas become inside a 2D or 3D AI
+agent workspace.
 
-授權是 [MIT](LICENSE)。共事方式見 [共事準則](CODE_OF_CONDUCT.md)。
+Licensed under [MIT](LICENSE). How we work together is in the
+[code of conduct](CODE_OF_CONDUCT.md). The conduct note and the full
+contribution guide are in Traditional Chinese.
 
-## 歡迎貢獻
+## Contributing
 
-**新來的貢獻者也很歡迎。** 這份目錄要靠大家把散落各地的 AI agent products 補進來。
+**Contributions are welcome.** This catalog depends on people adding AI agent
+products that are still scattered around.
 
-- 提出一個還沒收錄的產品。
-- 寫一篇洞察筆記，並把它放進編排團隊的一個席位。
-- 修正已經在目錄裡的 Cell：過時資訊、失效連結，或放錯的席位。
+- Propose a product that is not listed yet.
+- Write an insight note and place it in one seat of the orchestration team.
+- Correct a Cell that is already listed: outdated facts, broken links, or the wrong seat.
 
-從 [貢獻準則](CONTRIBUTING.md) 開始。一個新產品一個 pull request。還沒實際用過也可以寫，把 status 留在 `untried`。英文目錄在 [README.en.md](README.en.md)；新增一列時，中英文各加一次，席位相同。
+Start with [CONTRIBUTING.md](CONTRIBUTING.md). One new product per pull
+request. You can write a note before you have used the product; leave status
+at `untried`. When you add a row here, add the same Cell to the Traditional
+Chinese [README.zh-TW.md](README.zh-TW.md).
 
-## 目錄
+## Contents
 
-- [歡迎貢獻](#歡迎貢獻)
-- [研究問題](#research-goals)
-- [Repository 結構](#repository-結構)
-- [Cell](#cell-model)
-- [評測流程](#評測流程)
-- [在編排團隊裡的位置](#在編排團隊裡的位置)
-- [支持這個目錄](#支持這個目錄)
+- [Contributing](#contributing)
+- [Research goals](#research-goals)
+- [Repository layout](#repository-layout)
+- [Cell model](#cell-model)
+- [Review process](#review-process)
+- [Where it sits in an orchestration team](#where-it-sits-in-an-orchestration-team)
+- [Support this catalog](#support-this-catalog)
 
-可自行執行的候選專案會 clone 到本 repository 以外的獨立實驗區；這裡只
-保存來源資訊、產品與 feature 分析、實際體驗，以及對 2D／3D workspace 的
-設計啟示。沒有公開 repository 的產品則記錄官方頁面與可取得的版本資訊。
+Projects you want to run yourself are cloned outside this repository. This
+repo keeps the source link, the product and feature analysis, what you
+actually tried, and what it suggests for a 2D or 3D workspace. A product
+without a public repository is recorded from its official page and whatever
+version information is available.
 
 ## Research goals
 
-每個 Cell review 應協助回答：
+Each Cell review should help answer:
 
-- 它代表了哪一種新的 agent workspace 或 interaction model？
-- 它如何呈現 agents、tasks、branches、sandboxes、artifacts 與進度？
-- 使用者如何委派、比較、介入、驗證及收回控制權？
-- 哪些能力來自 model，哪些來自 agent runtime 或 orchestration？
-- 它在 2D workspace（平面／pixel 風格工作空間）裡會變成什麼？
-- 它在 3D workspace（可走進的辦公室介面，不是 3D 物件）裡會變成什麼？
-- 哪些 pattern 值得採用、重新設計或明確避免？
+- Which new agent workspace or interaction model does it represent?
+- How does it present agents, tasks, branches, sandboxes, artifacts, and progress?
+- How does a person delegate, compare, intervene, verify, and take control back?
+- Which abilities come from the model, and which come from the agent runtime or orchestration?
+- What does it become in a 2D workspace (a flat or pixel workplace)?
+- What does it become in a 3D workspace (an office you can walk into, not a 3D object)?
+- Which patterns are worth adopting, redesigning, or deliberately avoiding?
 
-主要研究面向：
+Main research angles:
 
-1. Workspace 與 spatial organization
+1. Workspace and spatial organization
 2. Multi-agent orchestration
-3. Context、memory 與 handoff
-4. Runtime、sandbox 與 permissions
-5. State、progress 與 observability
+3. Context, memory, and handoff
+4. Runtime, sandbox, and permissions
+5. State, progress, and observability
 6. Human-in-the-loop control
-7. Artifacts、provenance 與 review
-8. Collaboration 與 extensibility
+7. Artifacts, provenance, and review
+8. Collaboration and extensibility
 
-## Repository 結構
+## Repository layout
 
-- [`README.en.md`](README.en.md)：同一份目錄的英文版。
-- [`CONTRIBUTING.md`](CONTRIBUTING.md)：如何提案、新增或修正一個 Cell。
-- [`cells.yaml`](cells.yaml)：所有 Cells 的結構化 metadata。
-- [`reviews/README.md`](reviews/README.md)：共同評測規則與證據標準。
-- [`reviews/`](reviews/)：每個 Cell 的產品洞察（原始 Markdown；**建議用 GitHub 渲染連結在瀏覽器閱讀**，見 [`reviews/README.md`](reviews/README.md)）。
-- `/workspace-labs/<cell-name>`：建議的本機實驗位置，不屬於本
-  repository，也不會被 Git 追蹤。
+- [`README.md`](README.md): this English catalog. It is the repository homepage. [`README.zh-TW.md`](README.zh-TW.md) is the Traditional Chinese catalog.
+- [`CONTRIBUTING.md`](CONTRIBUTING.md): how to propose, add, or correct a Cell. Written in Traditional Chinese.
+- [`cells.yaml`](cells.yaml): structured metadata for every Cell.
+- [`reviews/README.md`](reviews/README.md): shared review rules and evidence standard.
+- [`reviews/`](reviews/): one insight note per Cell. Read them through the GitHub rendered link in a browser. See [`reviews/README.md`](reviews/README.md).
+- `/workspace-labs/<cell-name>`: a suggested local experiment path. It is outside this repository and is not tracked by Git.
 
 ## Cell model
 
-一個 **Cell** 是表格中的一個獨立研究單元。Cell 不會保存 upstream 的完整
-程式碼；它只連結來源，並保存我們從產品中得到的洞察。
+A **Cell** is one research unit in the tables. A Cell does not store the
+upstream source tree. It links to the source and keeps what we learned from
+the product.
 
-- Repository-backed Cell 的 ID 是 canonical GitHub repository URL，例如
-  `https://github.com/mattpocock/sandcastle`。
-- 沒有公開 repository 的產品使用官方 canonical URL，例如
-  `https://www.conductor.build/`。
-- GitHub URL 統一移除 `.git`、query、fragment 與尾端 `/`。
-- Repository 改名或轉移後，新的 canonical URL 成為 ID，舊網址放進
-  `aliases`。
+- A repository-backed Cell ID is the canonical GitHub repository URL, for example `https://github.com/mattpocock/sandcastle`.
+- A product with no public repository uses its official canonical URL, for example `https://www.conductor.build/`.
+- Strip `.git`, the query, the fragment, and a trailing `/` from GitHub URLs.
+- If a repository is renamed or transferred, the new canonical URL becomes the ID and the old URL goes in `aliases`.
 
-## 評測流程
+## Review process
 
-1. 將候選產品建立為 `cells.yaml` 中的 Cell，狀態設為 `untried`。一般貢獻依
-   [`CONTRIBUTING.md`](CONTRIBUTING.md)。若來源是 GitHub repo 或官方網址，
-   也可以呼叫 [`/create-cell-pr`](.cursor/skills/create-cell-pr/SKILL.md)
-   讓 sub-agent 寫洞察筆記並開獨立 PR。
-2. 若有公開原始碼，clone 到獨立實驗區並記錄實際測試的完整 commit SHA；
-   否則記錄產品版本。
-3. 依照 [`reviews/README.md`](reviews/README.md) 的方法，使用
-   [`reviews/_template.md`](reviews/_template.md) 建立評測文件。
-4. 只有在關鍵問題無法透過官方文件、source 或 demo 釐清時，才依 upstream
-   推薦方式進行 hands-on validation；Docker 並非強制要求。
-5. 更新實測狀態與初步看法，並把這個 Cell 放進下方的編排團隊席位。以一項明確變更建立一個 atomic commit。
+1. Add the product as a Cell in `cells.yaml` with status `untried`. Follow [`CONTRIBUTING.md`](CONTRIBUTING.md). If the source is a GitHub repo or an official URL, you can also call [`/create-cell-pr`](.cursor/skills/create-cell-pr/SKILL.md) and let a sub-agent write the note and open its own PR.
+2. If the source is public, clone it into a separate experiment area and record the full commit SHA you actually tested. Otherwise record the product version.
+3. Follow [`reviews/README.md`](reviews/README.md) and start from [`reviews/_template.md`](reviews/_template.md).
+4. Do hands-on validation, the way upstream recommends, only when official docs, source, or a demo cannot answer a key question. Docker is not required.
+5. Update the tried/untried status and the early read, and place the Cell in one seat below. One clear change per atomic commit.
 
-候選專案不應直接放在本 repository 之下。若實驗時需要修改產品程式碼，
-應另外 fork 該產品；修改提交在產品 fork，評測結果則提交在這裡。
+Do not put candidate projects inside this repository. If an experiment needs
+code changes, fork that product. The fork holds the code changes. The review
+stays here.
 
-## 在編排團隊裡的位置
+## Where it sits in an orchestration team
 
-這張表分類每個產品的性質，以及它在一組 AI agent orchestration team 裡補上的部分。每個 Cell 只放一個主要席位。旁邊還會碰到的能力，寫在「貢獻」裡。實測狀態寫在各篇筆記，以及 [`cells.yaml`](cells.yaml) 的 `evaluation.status`。
+These tables classify what a product is, and which part it fills in an AI
+agent orchestration team. Each Cell has one primary seat. Abilities that also
+touch a neighboring seat go in Contribution. Whether anyone has tried it is
+recorded in the note and in [`cells.yaml`](cells.yaml) under
+`evaluation.status`.
 
-| 席位 | 在團隊裡負責 |
+| Seat | What it does on the team |
 | --- | --- |
-| 指揮 | 拆工作、派給對的人、把結果收回來。 |
-| 治理 | 管目標、編制、預算、權限，以及沒人盯著時能不能開工。 |
-| 工作台 | 讓人同時看見、比較、介入多個 agent。 |
-| 在場 | 用空間顯示誰在忙、誰在等、誰做完了。 |
-| 員工 | 真正讀寫、操作介面、說話或回覆的那位，以及組裝這位的 runtime。 |
-| 記憶 | 讓下一輪、下一位 agent 還用得到先前的上下文。 |
-| 方法 | 規定這份工作該怎麼做：技能、程序、完成定義。 |
-| 邊界 | 決定在哪裡跑，以及能碰哪些檔案、網路、終端和瀏覽器。 |
-| 驗證 | 留下分數、軌跡和可比較的作答，用來判斷這次做得如何。 |
-| 交付表面 | 團隊要一起改的那層產出：畫面、文件、表格、簡報。 |
+| Orchestration | Splits the work, assigns it to the right agent, and brings the result back. |
+| Governance | Covers goals, headcount, budget, permissions, and whether work can start while nobody is watching. |
+| Workbench | Lets a person see, compare, and step into several agents at once. |
+| Presence | Uses space to show who is busy, who is waiting, and who is done. |
+| Worker | The one that reads, writes, operates a UI, speaks, or replies, and the runtime that assembles them. |
+| Memory | Keeps earlier context available to the next turn and the next agent. |
+| Method | Says how this work should be done: skills, procedure, and what done looks like. |
+| Boundary | Decides where it runs, and which files, network, terminal, and browser it may touch. |
+| Evaluation | Keeps scores, traces, and comparable attempts so you can judge how this run went. |
+| Delivery surface | The layer of output the team edits together: screens, documents, sheets, and slides. |
 
-Cell 名稱連到該篇洞察筆記的 GitHub 渲染。Cell ID 寫在筆記開頭，也寫在 [`cells.yaml`](cells.yaml)。
+The Cell name links to the GitHub-rendered insight note. The Cell ID is at
+the top of the note and in [`cells.yaml`](cells.yaml).
 
-### 指揮
+### Orchestration
 
-拆工作、派給對的人、把結果收回來。
+Splits the work, assigns it to the right agent, and brings the result back.
 
-| Cell | 性質 | 貢獻 |
+| Cell | Nature | Contribution |
 | --- | --- | --- |
-| [Sandcastle](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/sandcastle.md) | 編排函式庫 | 用程式把 coding agent 放進隔離環境，做完再依分支合併 |
-| [Octop Harness](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-octop-harness-cell-7618/reviews/octop-harness.md) | 部署 runtime | 在一個 process 裡登記多個彼此隔離的 agent |
-| [OpenRig](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openrig-cell-7aa3/reviews/openrig.md) | 團隊 harness | 用 YAML 描述座位與成員，一次啟動並派工 |
-| [Deep Agents](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-deepagents-cell-9e0b/reviews/deepagents.md) | 長任務 harness | 把子 agent、虛擬檔案、記憶和人工核准包成一個長任務 runtime |
-| [CrewAI](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-crewai-cell-90bd/reviews/crewai.md) | 編排框架 | 用角色和任務組成小隊，外面再用事件流程控分支 |
-| [OmO](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-oh-my-openagent-cell-90bd/reviews/oh-my-openagent.md) | 編排層 | 主 session 拆工派工，暫時工人負責改檔並交回證據 |
-| [Oh My OpenCode](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-oh-my-opencode-cell-103e/reviews/oh-my-opencode.md) | 多角色外掛 | 把一次開發編成訪談、計畫、派工、實作和查資料 |
-| [AgentScope](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agentscope-cell-fb52/reviews/agentscope.md) | 編排框架 | 在程式裡組 agent，並讓多個 agent 把工作交來交去 |
-| [Gas Town](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/gastown.md) | CLI 編排 | 同時調度多個 coding agent，工作狀態寫進可恢復的帳本 |
-| [Routa](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/routa.md) | 交付協調台 | 把長聊天拆成任務、看板、筆記和專員契約 |
-| [Agency Swarm](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agency-swarm-cell-ad04/reviews/agency-swarm.md) | 編排框架 | 用職位和單向溝通圖決定誰可以派工、誰接手整段對話 |
-| [Agent Squad](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agent-squad-cell-ad04/reviews/agent-squad.md) | 對話路由 | 把每一句話交給最合適的專門 agent，並記住這段聊天 |
-| [Amux](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-amux-cell-80a8/reviews/amux.md) | 自架控制面 | 給既有 coding agent 一面共用看板、傳話管道和排程 |
-| [AutoAgent](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-autoagent-cell-ca43/reviews/autoagent.md) | 編排框架 | 用自然語言組出專員和工作流程，由分診員分派 |
-| [AutoGen](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-autogen-cell-9381/reviews/autogen.md) | 編排框架 | 用程式組一群會自己做事、也能和人一起做事的 agent |
-| [BeeAI Framework](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-beeai-framework-cell-ad04/reviews/beeai-framework.md) | 編排框架 | 在 Python 或 TypeScript 裡寫會交接的 agent 與流程 |
-| [Bernstein](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-bernstein-cell-80a8/reviews/bernstein.md) | 排程編排 | 把一個目標拆給多個 CLI agent，再用排程決定領工、重試和合併 |
-| [LangGraph](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-langgraph-cell-9381/reviews/langgraph.md) | 圖式 runtime | 用共用狀態、節點和邊編排會跑很久、可中斷再續的流程 |
-| [MetaGPT](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-metagpt-cell-9381/reviews/metagpt.md) | 編排框架 | 把多個角色編成一家軟體公司，依 SOP 交出設計和程式 |
-| [Microsoft Agent Framework](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-microsoft-agent-framework-cell-9381/reviews/microsoft-agent-framework.md) | 編排框架 | 寫會呼叫工具的 agent，或把多個 agent 串成 workflow |
-| [MS-Agent](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ms-agent-cell-ad04/reviews/ms-agent.md) | 長任務 harness | 負責規劃、權限、子 agent，以及隔天還能接著做的專案記憶 |
-| [OpenAI Agents SDK](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openai-agents-python-cell-9381/reviews/openai-agents-python.md) | agent SDK | 用 agent、handoff 和 guardrail 組多 agent 流程 |
-| [PocketFlow](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pocketflow-cell-ca43/reviews/pocketflow.md) | 圖式框架 | 把一次應用寫成節點、動作和一份共用資料 |
-| [Pragma](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pragma-cell-80a8/reviews/pragma.md) | Agent Team 平台 | 把專家、流程、工具、記憶和人要點頭的關卡收成可帶走的團隊 |
-| [Youtu-Agent](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-youtu-agent-cell-ad04/reviews/youtu-agent.md) | 編排框架 | 用 YAML 組裝並執行 agent，同一份設定還能拿去評測和改進 |
+| [Sandcastle](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/sandcastle.md) | orchestration library | Runs a coding agent in an isolated environment from code, then merges by branch strategy. |
+| [Octop Harness](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-octop-harness-cell-7618/reviews/octop-harness.md) | deployment runtime | Registers several isolated agents inside one process. |
+| [OpenRig](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openrig-cell-7aa3/reviews/openrig.md) | team harness | Describes seats and members in YAML, then starts them and assigns work. |
+| [Deep Agents](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-deepagents-cell-9e0b/reviews/deepagents.md) | long-task harness | Packs sub-agents, a virtual filesystem, memory, and human approval into a long-task runtime. |
+| [CrewAI](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-crewai-cell-90bd/reviews/crewai.md) | orchestration framework | Builds a crew from roles and tasks, then wraps it in an event flow for branching. |
+| [OmO](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-oh-my-openagent-cell-90bd/reviews/oh-my-openagent.md) | orchestration layer | The main session splits and assigns work; temporary workers edit files and return evidence. |
+| [Oh My OpenCode](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-oh-my-opencode-cell-103e/reviews/oh-my-opencode.md) | multi-role plugin | Turns one development effort into interview, plan, assignment, implementation, and research. |
+| [AgentScope](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agentscope-cell-fb52/reviews/agentscope.md) | orchestration framework | Assembles agents in code and lets them hand work to each other. |
+| [Gas Town](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/gastown.md) | CLI orchestration | Schedules several coding agents at once, with work state kept in a recoverable ledger. |
+| [Routa](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/routa.md) | delivery coordination desk | Breaks a long chat into tasks, a board, notes, and specialist contracts. |
+| [Agency Swarm](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agency-swarm-cell-ad04/reviews/agency-swarm.md) | orchestration framework | Uses roles and a one-way communication graph to decide who may assign work and who takes over the conversation. |
+| [Agent Squad](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agent-squad-cell-ad04/reviews/agent-squad.md) | conversation router | Routes each utterance to the specialist agent and keeps the chat. |
+| [Amux](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-amux-cell-80a8/reviews/amux.md) | self-hosted control plane | Gives existing coding agents a shared board, a message channel, and a schedule. |
+| [AutoAgent](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-autoagent-cell-ca43/reviews/autoagent.md) | orchestration framework | Builds specialists and workflows in natural language, then a triage agent assigns the work. |
+| [AutoGen](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-autogen-cell-9381/reviews/autogen.md) | orchestration framework | Assembles in code a group of agents that can work on their own and with a person. |
+| [BeeAI Framework](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-beeai-framework-cell-ad04/reviews/beeai-framework.md) | orchestration framework | Writes agents and flows that hand work off, in Python or TypeScript. |
+| [Bernstein](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-bernstein-cell-80a8/reviews/bernstein.md) | scheduled orchestration | Splits one goal across CLI agents, then a scheduler decides who takes work, when to retry, and when to merge. |
+| [LangGraph](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-langgraph-cell-9381/reviews/langgraph.md) | graph runtime | Orchestrates long, resumable flows with shared state, nodes, and edges. |
+| [MetaGPT](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-metagpt-cell-9381/reviews/metagpt.md) | orchestration framework | Organizes roles into a software company that delivers design and code by an SOP. |
+| [Microsoft Agent Framework](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-microsoft-agent-framework-cell-9381/reviews/microsoft-agent-framework.md) | orchestration framework | Writes a tool-calling agent, or chains several agents into a workflow. |
+| [MS-Agent](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ms-agent-cell-ad04/reviews/ms-agent.md) | long-task harness | Handles planning, permissions, sub-agents, and project memory that can resume the next day. |
+| [OpenAI Agents SDK](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openai-agents-python-cell-9381/reviews/openai-agents-python.md) | agent SDK | Composes multi-agent flows from agents, handoffs, and guardrails. |
+| [PocketFlow](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pocketflow-cell-ca43/reviews/pocketflow.md) | graph framework | Writes one application as nodes, actions, and a shared store. |
+| [Pragma](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pragma-cell-80a8/reviews/pragma.md) | Agent Team platform | Packs specialists, flows, tools, memory, and human checkpoints into a team you can take with you. |
+| [Youtu-Agent](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-youtu-agent-cell-ad04/reviews/youtu-agent.md) | orchestration framework | Assembles and runs agents from YAML, and can evaluate and improve that same config. |
 
-### 治理
+### Governance
 
-管目標、編制、預算、權限，以及沒人盯著時能不能開工。
+Covers goals, headcount, budget, permissions, and whether work can start while nobody is watching.
 
-| Cell | 性質 | 貢獻 |
+| Cell | Nature | Contribution |
 | --- | --- | --- |
-| [Paperclip](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-paperclip-cell-7aa3/reviews/paperclip.md) | 組織控制面 | 用目標、編制、預算和 heartbeat 把外部 agent 當員工喚醒 |
-| [Agenta](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agenta-cell-ad04/reviews/agenta.md) | 團隊工作空間 | 讓團隊組出會自己開工的同事，並調整指示、技能和權限 |
+| [Paperclip](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-paperclip-cell-7aa3/reviews/paperclip.md) | org control plane | Wakes external agents as employees with goals, an org chart, a budget, and a heartbeat. |
+| [Agenta](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agenta-cell-ad04/reviews/agenta.md) | team workspace | Lets a team assemble colleagues that start on their own, and tune instructions, skills, and permissions. |
 
-### 工作台
+### Workbench
 
-讓人同時看見、比較、介入多個 agent。
+Lets a person see, compare, and step into several agents at once.
 
-| Cell | 性質 | 貢獻 |
+| Cell | Nature | Contribution |
 | --- | --- | --- |
-| [Conductor](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/conductor.md) | 桌面 ADE | 把多個 coding agent 的 worktree、預覽和合併放進同一個控制台 |
-| [Maestro](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/maestro.md) | 桌面 ADE | 用鍵盤優先的控制台同時推進多個專案和任務佇列 |
-| [Orca](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/orca.md) | 桌面 ADE | 每個 CLI agent 一個 worktree，同一應用看對話、終端和 diff |
-| [cmux](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/cmux.md) | 終端機工作空間 | 用分頁、分割和「需要你」的通知組織很多 CLI session |
-| [Emdash](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/emdash.md) | 桌面 ADE | 以任務為單位跑既有 agent，再在同一個 app 看 diff、CI 和 PR |
-| [Paseo](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/paseo.md) | 自架控制面 | daemon 在本機跑既有 CLI，桌面、手機和網頁連回同一台 |
-| [Nimbalyst](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/nimbalyst.md) | 視覺工作台 | 人和 agent 改同一批檔案，平行 session 用 worktree 隔開 |
-| [Odysseus](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-odysseus-cell-7aa3/reviews/odysseus.md) | 自架個人工作空間 | 把聊天、研究、文件、郵件和待辦收進同一個介面 |
-| [T3 Code](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-t3code-cell-7aa3/reviews/t3code.md) | harness 控制面 | 連到本機已登入的 CLI，用同一套 UI 開 thread、看 diff、批核權限 |
-| [OpenChamber](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openchamber-cell-0717/reviews/openchamber.md) | OpenCode 工作台 | 在桌面、瀏覽器、VS Code 和手機上監督同一批 OpenCode session |
-| [Ekko Studio](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ekko-studio-cell-fb52/reviews/ekko-studio.md) | 工作台與節點流程 | 在單人聊天、群組房間和可執行的節點圖之間切換 |
-| [Codeg](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-codeg-cell-fb52/reviews/codeg.md) | 多 agent ADE | 用 ACP 把多個 CLI 收進同一套對話、diff 和權限提示 |
-| [Agentrove](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agentrove-cell-c2d2/reviews/agentrove.md) | 自架程式工作空間 | 一個 workspace 綁一個 sandbox，用 ACP 啟動已安裝的 agent |
-| [cc-haha](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-cc-haha-cell-c2d2/reviews/cc-haha.md) | 本機桌面工作台 | 用白話改專案並看 diff，手機和即時通訊連回這台電腦 |
-| [iPolloWork](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/ipollowork.md) | 多引擎工作台 | 把 OpenCode、Codex 等引擎收成同一條任務、進度和檔案 |
-| [Golutra](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/golutra.md) | 終端聊天室 | 把多個本機 CLI 收成頻道成員，輸出回到同一條對話 |
-| [Claude Code Bridge](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/claude-codex-bridge.md) | CLI 工作台 | 同時看到多個 CLI，也能用訊息把工作在他們之間交出去 |
-| [AgentSpace](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agentspace-cell-80a8/reviews/agentspace.md) | 協作 web workspace | 給人和有崗位的數字員工一個共同的訊息、文件和審批之家 |
-| [Buzz](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-buzz-cell-80a8/reviews/buzz.md) | 協作工作空間 | 人和 agent 進同一批頻道、討論串、畫布和工作流程 |
-| [Claude Squad](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-claude-squad-cell-80a8/reviews/claude-squad.md) | 終端監督 | 每個 session 自己的 worktree 和 tmux，避免搶同一個目錄 |
-| [Free4chat](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-free4chat-cell-fb52/reviews/free4chat.md) | 臨時協作房間 | 用一條連結把瀏覽器裡的人和本機 agent 拉進同一段短時間的工作 |
-| [Hermes Workspace](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-hermes-workspace-cell-ad04/reviews/hermes-workspace.md) | Web 指揮台 | 用瀏覽器看 Hermes 的對話、終端、記憶、技能和多個工人 |
-| [Kun](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-kun-cell-ad04/reviews/kun.md) | 本機工作臺 | 在 Code、Design、Work 和 Rooms 裡把目標做成可檢查的交付 |
-| [Meldwork](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-meldwork-cell-80a8/reviews/meldwork.md) | 桌面 ADE | 把已安裝的 CLI 放進同一個案子，可單人做、多人各答或討論後採用 |
-| [Mycelium](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-mycelium-cell-ca43/reviews/mycelium.md) | 共用房間 | 人和既有 coding agent 共用聊天、工作板和一份 markdown 記憶 |
-| [OpenHands](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openhands-cell-80a8/reviews/openhands.md) | 自架開發控制台 | 把對話、終端、瀏覽器、檔案和自動化畫出來，動作在旁邊的 sandbox 執行 |
+| [Conductor](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/conductor.md) | desktop ADE | Puts worktrees, previews, and merges for several coding agents in one console. |
+| [Maestro](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/maestro.md) | desktop ADE | Moves several projects and a task queue forward from a keyboard-first console. |
+| [Orca](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/orca.md) | desktop ADE | Gives each CLI agent its own worktree, and shows chat, terminal, and diff in one app. |
+| [cmux](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/cmux.md) | terminal workspace | Organizes many CLI sessions with tabs, splits, and a notification when an agent needs you. |
+| [Emdash](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/emdash.md) | desktop ADE | Runs existing agents per task, then shows diff, CI, and the PR in the same app. |
+| [Paseo](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/paseo.md) | self-hosted control plane | A daemon runs existing CLIs locally; desktop, phone, and web connect back to that machine. |
+| [Nimbalyst](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/nimbalyst.md) | visual workbench | People and agents edit the same files, with parallel sessions isolated in worktrees. |
+| [Odysseus](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-odysseus-cell-7aa3/reviews/odysseus.md) | self-hosted personal workspace | Gathers chat, research, documents, mail, and todos into one interface. |
+| [T3 Code](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-t3code-cell-7aa3/reviews/t3code.md) | harness control surface | Connects to CLIs already signed in locally, and uses one UI to open threads, read diffs, and approve permissions. |
+| [OpenChamber](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openchamber-cell-0717/reviews/openchamber.md) | OpenCode workbench | Supervises the same OpenCode sessions from desktop, browser, VS Code, and phone. |
+| [Ekko Studio](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ekko-studio-cell-fb52/reviews/ekko-studio.md) | workbench and node flow | Switches between a solo chat, a group room, and an executable node graph. |
+| [Codeg](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-codeg-cell-fb52/reviews/codeg.md) | multi-agent ADE | Uses ACP to gather several CLIs into one chat, diff, and permission prompt. |
+| [Agentrove](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agentrove-cell-c2d2/reviews/agentrove.md) | self-hosted coding workspace | Binds one workspace to one sandbox and starts installed agents through ACP. |
+| [cc-haha](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-cc-haha-cell-c2d2/reviews/cc-haha.md) | local desktop workbench | Edits a project in plain language and reads the diff; phone and chat apps connect back to this computer. |
+| [iPolloWork](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/ipollowork.md) | multi-engine workbench | Folds engines such as OpenCode and Codex into one stream of tasks, progress, and files. |
+| [Golutra](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/golutra.md) | terminal chat room | Turns local CLIs into channel members and brings their output back into one conversation. |
+| [Claude Code Bridge](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/claude-codex-bridge.md) | CLI workbench | Shows several CLIs at once, and lets them hand work to each other by message. |
+| [AgentSpace](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agentspace-cell-80a8/reviews/agentspace.md) | collaborative web workspace | Gives people and role-bound digital employees one home for messages, documents, and approvals. |
+| [Buzz](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-buzz-cell-80a8/reviews/buzz.md) | collaborative workspace | Puts people and agents in the same channels, threads, canvases, and workflows. |
+| [Claude Squad](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-claude-squad-cell-80a8/reviews/claude-squad.md) | terminal supervisor | Gives each session its own worktree and tmux so they do not share one directory. |
+| [Free4chat](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-free4chat-cell-fb52/reviews/free4chat.md) | temporary collaboration room | Uses one link to pull browser participants and local agents into a short stretch of shared work. |
+| [Hermes Workspace](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-hermes-workspace-cell-ad04/reviews/hermes-workspace.md) | web command deck | Uses a browser to watch Hermes chats, terminals, memory, skills, and several workers. |
+| [Kun](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-kun-cell-ad04/reviews/kun.md) | local workbench | Turns a goal into a checkable delivery across Code, Design, Work, and Rooms. |
+| [Meldwork](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-meldwork-cell-80a8/reviews/meldwork.md) | desktop ADE | Puts installed CLIs on one case: one worker, several answers, or a discussion before you adopt a result. |
+| [Mycelium](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-mycelium-cell-ca43/reviews/mycelium.md) | shared room | Shares a chat, a board, and one markdown memory between a person and the coding agents they already use. |
+| [OpenHands](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openhands-cell-80a8/reviews/openhands.md) | self-hosted dev console | Draws chat, terminal, browser, files, and automation; the actions run in a sandbox beside it. |
 
-### 在場
+### Presence
 
-用空間顯示誰在忙、誰在等、誰做完了。
+Uses space to show who is busy, who is waiting, and who is done.
 
-| Cell | 性質 | 貢獻 |
+| Cell | Nature | Contribution |
 | --- | --- | --- |
-| [Agent Office](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/agent-office.md) | 3D 辦公室 | 每個 repo 一層樓，走過去看 worker 的終端並一起打字 |
-| [Open Office](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openoffice-cell-c2d2/reviews/openoffice.md) | 2D 像素團隊 | 有名字的成員在同一層地板上計畫、寫程式、審查和預覽 |
-| [Pixel Agents](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/pixel-agents.md) | 2D 像素辦公室 | 正在跑的 agent 變成樓層上的小人，卡住時頭上冒泡泡 |
+| [Agent Office](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/agent-office.md) | 3D office | Gives each repo a floor; walk over, read a worker's terminal, and type with them. |
+| [Open Office](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openoffice-cell-c2d2/reviews/openoffice.md) | 2D pixel team | Named members on one floor plan, write code, review, and preview. |
+| [Pixel Agents](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/pixel-agents.md) | 2D pixel office | A running agent becomes a figure on the floor, with a bubble when it is stuck. |
 
-### 員工
+### Worker
 
-真正讀寫、操作介面、說話或回覆的那位，以及組裝這位的 runtime。
+The one that reads, writes, operates a UI, speaks, or replies, and the runtime that assembles them.
 
-| Cell | 性質 | 貢獻 |
+| Cell | Nature | Contribution |
 | --- | --- | --- |
-| [Pi](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/pi.md) | coding agent runtime | 最小、可嵌入的 coding agent，可走 CLI，也可進別的產品 |
-| [Octop](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-octop-cell-7aa3/reviews/octop.md) | 自架助理平台 | 多位使用者各自養專家，並在 Web、桌面和多個 IM 上對話 |
-| [OpenClaw](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openclaw-cell-7aa3/reviews/openclaw.md) | 助理 runtime | 長駐 Gateway，從既有聊天 app 動手做 shell、排程和裝置動作 |
-| [OpenCode](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-opencode-cell-9e0b/reviews/opencode.md) | coding agent | 在專案裡讀寫、跑指令，並可再叫專家進來 |
-| [Agent-S](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agent-s-cell-9381/reviews/agent-s.md) | 桌面操作 agent | 看螢幕，用滑鼠和鍵盤完成一般應用程式裡的工作 |
-| [Atomic Agents](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-atomic-agents-cell-ca43/reviews/atomic-agents.md) | 零件庫 | 把流程拆成有 schema 的小零件，輸入輸出先檢查再接線 |
-| [HelloAgents](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-helloagents-cell-ca43/reviews/helloagents.md) | 元件庫 | 用工具註冊表組一輪「提出工具請求、執行、再回到模型」 |
-| [LangChain](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-langchain-cell-ca43/reviews/langchain.md) | agent 框架 | 用模型、工具和一段 prompt 組成會自己呼叫工具的 loop |
-| [LiveKit Agents](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-livekit-agents-cell-9381/reviews/livekit-agents.md) | 語音 runtime | 讓一段程式進即時房間，成為會聽、會說、也能看的參與者 |
-| [Open-AutoGLM](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-open-autoglm-cell-ca43/reviews/open-autoglm.md) | 手機操作 agent | 用一句話派差事，在接上的手機上打開 App 並做完 |
-| [Qwen-Agent](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-qwen-agent-cell-9381/reviews/qwen-agent.md) | agent 框架 | 把模型、工具和文件組成一位會串流回覆的 Assistant |
-| [TEN Framework](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ten-framework-cell-9381/reviews/ten-framework.md) | 語音 runtime | 用可替換的 extension graph 組一通即時語音對話 |
+| [Pi](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/pi.md) | coding agent runtime | A minimal, embeddable coding agent that can run as a CLI or inside another product. |
+| [Octop](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-octop-cell-7aa3/reviews/octop.md) | self-hosted assistant platform | Several users each keep their own experts, and talk to them on the web, desktop, and chat apps. |
+| [OpenClaw](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openclaw-cell-7aa3/reviews/openclaw.md) | assistant runtime | A long-running Gateway that acts from chat apps you already use: shell, schedules, and device actions. |
+| [OpenCode](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-opencode-cell-9e0b/reviews/opencode.md) | coding agent | Reads, writes, and runs commands in a project, and can call in specialists. |
+| [Agent-S](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agent-s-cell-9381/reviews/agent-s.md) | desktop-use agent | Looks at the screen and finishes work in ordinary apps with mouse and keyboard. |
+| [Atomic Agents](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-atomic-agents-cell-ca43/reviews/atomic-agents.md) | parts library | Splits a flow into schema-checked parts, and wires them only after inputs and outputs are validated. |
+| [HelloAgents](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-helloagents-cell-ca43/reviews/helloagents.md) | component library | Uses a tool registry to run one loop: request a tool, execute it, return to the model. |
+| [LangChain](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-langchain-cell-ca43/reviews/langchain.md) | agent framework | Builds a tool-calling loop from a model, tools, and a prompt. |
+| [LiveKit Agents](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-livekit-agents-cell-9381/reviews/livekit-agents.md) | voice runtime | Places a program in a realtime room as a participant that can hear, speak, and see. |
+| [Open-AutoGLM](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-open-autoglm-cell-ca43/reviews/open-autoglm.md) | phone-use agent | Sends an errand in one sentence and finishes it in an app on a connected phone. |
+| [Qwen-Agent](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-qwen-agent-cell-9381/reviews/qwen-agent.md) | agent framework | Composes a model, tools, and documents into an Assistant that streams its reply. |
+| [TEN Framework](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ten-framework-cell-9381/reviews/ten-framework.md) | voice runtime | Builds a realtime voice conversation from a swappable extension graph. |
 
-### 記憶
+### Memory
 
-讓下一輪、下一位 agent 還用得到先前的上下文。
+Keeps earlier context available to the next turn and the next agent.
 
-| Cell | 性質 | 貢獻 |
+| Cell | Nature | Contribution |
 | --- | --- | --- |
-| [gbrain](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/gbrain.md) | 長期記憶 | 把決定、關係和做過的事存成下一輪還查得到的知識 |
-| [llmwiki](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-llm-wiki-compiler-cell-7aa3/reviews/llm-wiki-compiler.md) | 知識編譯器 | 把文件和 session 編成可追溯來源的 wiki，之後人和 agent 都查這份 |
-| [Hindsight](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-hindsight-cell-7aa3/reviews/hindsight.md) | 會學習的記憶 | 把新資訊整理成事實、經驗和心智模型，再 recall、reflect |
-| [ai-memory](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ai-memory-cell-7aa3/reviews/ai-memory.md) | 跨 harness 記憶 | 把多種 coding CLI 的軌跡收進同一份 git 版控 wiki |
-| [Octop Memory](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-octop-memory-cell-740f/reviews/octop-memory.md) | 可搬移記憶 runtime | 抽出事實、召回一段塞得進 prompt 的上下文，並能換宿主 |
-| [LLM Wiki](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-llm-wiki-cell-17ae/reviews/llm-wiki.md) | 想法規格 | 貼給自己的 agent，一起長出某個主題的知識庫 |
-| [MCP Memory Service](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-mcp-memory-service-cell-fb52/reviews/mcp-memory-service.md) | 自架記憶服務 | 把決定、觀察和錯誤留在下一個 session 和其他 agent 都能打開的檔案櫃 |
-| [Memori](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memori-cell-fb52/reviews/memori.md) | SQL 記憶層 | 記下這一輪是誰、哪一段工作，下一輪再把相關事實放進上下文 |
-| [Memory OS](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memory-os-cell-fb52/reviews/memory-os.md) | Hermes 記憶層 | 把檔案、對話、事實和 wiki 接在 Hermes 上，呼叫模型前塞進相關舊事 |
-| [memsearch](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memsearch-cell-fb52/reviews/memsearch.md) | 專案記憶 | 回合結束寫成 Markdown，需要舊決定時再查少數片段回來 |
-| [Cashew](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-cashew-cell-ca43/reviews/cashew.md) | 個人思考圖 | 用單一 SQLite 把想法和衍生關係留給已經在跑的 agent |
-| [Cognee](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-cognee-cell-fb52/reviews/cognee.md) | 知識圖譜記憶 | 把文件、程式和對話整理成可搜尋的圖譜，用問答調出相關的一段 |
-| [Daem0nMCP](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-daem0n-mcp-cell-ca43/reviews/daem0n-mcp.md) | 長駐記憶 daemon | 跨 session 送上過去的決定和失敗，改東西之前先擋一下 |
-| [Memlayer](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memlayer-cell-ca43/reviews/memlayer.md) | 記憶函式庫 | 夾在模型和儲存中間，決定這句話要不要寫下、要不要回頭找 |
-| [Memora](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memora-cell-fb52/reviews/memora.md) | MCP 記憶庫 | 把事實、待辦、問題和文件放進同一份庫，開工時依主題取出還有效的內容 |
-| [MemPalace Evolve](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-mempalace-evolve-cell-ca43/reviews/mempalace-evolve.md) | 本機長期記憶 | 把事實放進一個目錄，換一輪對話再找出來 |
-| [PocketFlow Codebase Knowledge](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pocketflow-codebase-tutorial-cell-ca43/reviews/pocketflow-tutorial-codebase-knowledge.md) | 教學流程 | 把一個程式庫編成一份可重讀的 Markdown 教學 |
-| [Youtube Made Simple](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pocketflow-youtube-tutorial-cell-ca43/reviews/pocketflow-tutorial-youtube-made-simple.md) | 教學流程 | 把一支很長的影片收成一頁淺白說明 |
+| [gbrain](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/gbrain.md) | long-term memory | Stores decisions, relationships, and past work as knowledge the next turn can look up. |
+| [llmwiki](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-llm-wiki-compiler-cell-7aa3/reviews/llm-wiki-compiler.md) | knowledge compiler | Compiles documents and sessions into a sourced wiki that people and agents query afterward. |
+| [Hindsight](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-hindsight-cell-7aa3/reviews/hindsight.md) | learning memory | Turns new information into facts, experience, and mental models, then recalls and reflects. |
+| [ai-memory](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ai-memory-cell-7aa3/reviews/ai-memory.md) | cross-harness memory | Collects traces from many coding CLIs into one git-versioned wiki. |
+| [Octop Memory](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-octop-memory-cell-740f/reviews/octop-memory.md) | portable memory runtime | Extracts facts, recalls a prompt-sized context, and can move that memory to another host. |
+| [LLM Wiki](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-llm-wiki-cell-17ae/reviews/llm-wiki.md) | idea spec | Hand it to your own agent and grow a knowledge base for one subject together. |
+| [MCP Memory Service](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-mcp-memory-service-cell-fb52/reviews/mcp-memory-service.md) | self-hosted memory service | Keeps decisions, observations, and errors in a cabinet the next session and other agents can open. |
+| [Memori](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memori-cell-fb52/reviews/memori.md) | SQL memory layer | Records who was in this turn and which piece of work it was, then puts related facts into the next context. |
+| [Memory OS](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memory-os-cell-fb52/reviews/memory-os.md) | Hermes memory layer | Attaches files, chats, facts, and a wiki to Hermes, and inserts relevant history before the model call. |
+| [memsearch](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memsearch-cell-fb52/reviews/memsearch.md) | project memory | Writes the turn to Markdown, then looks up a few passages when an old decision is needed. |
+| [Cashew](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-cashew-cell-ca43/reviews/cashew.md) | personal thought graph | Keeps ideas and the links between them in one SQLite file for an agent that is already running. |
+| [Cognee](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-cognee-cell-fb52/reviews/cognee.md) | knowledge-graph memory | Turns documents, code, and chats into a searchable graph, and answers with a relevant passage. |
+| [Daem0nMCP](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-daem0n-mcp-cell-ca43/reviews/daem0n-mcp.md) | persistent memory daemon | Brings past decisions and failures across sessions, and pauses before something is changed. |
+| [Memlayer](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memlayer-cell-ca43/reviews/memlayer.md) | memory library | Sits between the model and storage, and decides whether this utterance is written down or looked up. |
+| [Memora](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memora-cell-fb52/reviews/memora.md) | MCP memory store | Puts facts, todos, questions, and documents in one store, and pulls what is still valid by topic when work starts. |
+| [MemPalace Evolve](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-mempalace-evolve-cell-ca43/reviews/mempalace-evolve.md) | local long-term memory | Puts facts in a directory and finds them again in a later conversation. |
+| [PocketFlow Codebase Knowledge](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pocketflow-codebase-tutorial-cell-ca43/reviews/pocketflow-tutorial-codebase-knowledge.md) | tutorial pipeline | Compiles a codebase into a Markdown tutorial you can reread. |
+| [Youtube Made Simple](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pocketflow-youtube-tutorial-cell-ca43/reviews/pocketflow-tutorial-youtube-made-simple.md) | tutorial pipeline | Turns a long video into one plain page. |
 
-### 方法
+### Method
 
-規定這份工作該怎麼做：技能、程序、完成定義。
+Says how this work should be done: skills, procedure, and what done looks like.
 
-| Cell | 性質 | 貢獻 |
+| Cell | Nature | Contribution |
 | --- | --- | --- |
-| [gstack](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/gstack.md) | skills 套件 | 用產品、工程、設計、QA、發佈等角色規定怎麼看問題和交接 |
-| [mattpocock skills](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/mattpocock-skills.md) | 工程技能 | 讓 coding agent 對齊需求，並用測試和 review 建立回饋 |
-| [ECC](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ecc-cell-90bd/reviews/ecc.md) | 工程程序 | 把 plan、test、implement、review、verify 留在既有 harness 裡 |
-| [LifeOS](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-lifeos-cell-90bd/reviews/lifeos.md) | 個人 harness | 記住你是誰、在意什麼，以及做完長什麼樣子 |
-| [Hello-Agents](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-hello-agents-cell-ca43/reviews/hello-agents.md) | 教程 | 用一本書和章節程式說明智能體從原理到多智能體應用怎麼組 |
+| [gstack](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/gstack.md) | skills pack | Uses product, engineering, design, QA, and release roles to say how to look at a problem and hand it off. |
+| [mattpocock skills](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/mattpocock-skills.md) | engineering skills | Aligns a coding agent with the requirements, and builds feedback from tests and review. |
+| [ECC](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ecc-cell-90bd/reviews/ecc.md) | engineering procedure | Keeps plan, test, implement, review, and verify inside the harness you already use. |
+| [LifeOS](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-lifeos-cell-90bd/reviews/lifeos.md) | personal harness | Remembers who you are, what you care about, and what done looks like. |
+| [Hello-Agents](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-hello-agents-cell-ca43/reviews/hello-agents.md) | tutorial | Explains, in a book and chapter code, how to build agents from first principles through multi-agent apps. |
 
-### 邊界
+### Boundary
 
-決定在哪裡跑，以及能碰哪些檔案、網路、終端和瀏覽器。
+Decides where it runs, and which files, network, terminal, and browser it may touch.
 
-| Cell | 性質 | 貢獻 |
+| Cell | Nature | Contribution |
 | --- | --- | --- |
-| [OpenShell](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openshell-cell-7aa3/reviews/openshell.md) | policy sandbox | 用政策限制 agent 能碰的檔案、行程、網路和憑證 |
-| [Herdr](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-herdr-cell-7aa3/reviews/herdr.md) | 終端 runtime | 保住既有 agent 的 PTY 和版面，讓上層讀得到狀態並隨時接回 |
-| [Octop Browser](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-octop-browser-cell-6a61/reviews/octop-browser.md) | 瀏覽器 runtime | 給 agent 一台真的 Chromium，用短代號操作頁面，登入留在本機 |
-| [Cloudflare OS](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/cloudflare-os.md) | 權限工作台 | 每個 workspace 預設碰不到外部帳號，要先由人把資源介紹進去 |
+| [OpenShell](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openshell-cell-7aa3/reviews/openshell.md) | policy sandbox | Uses policy to limit the files, processes, network, and credentials an agent may touch. |
+| [Herdr](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-herdr-cell-7aa3/reviews/herdr.md) | terminal runtime | Keeps the PTY and layout of an existing agent alive so a layer above can read state and attach again. |
+| [Octop Browser](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-octop-browser-cell-6a61/reviews/octop-browser.md) | browser runtime | Gives an agent a real Chromium, operates the page by short handles, and keeps logins on the machine. |
+| [Cloudflare OS](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/cloudflare-os.md) | permission workbench | A workspace cannot touch external accounts until a person introduces the resource. |
 
-### 驗證
+### Evaluation
 
-留下分數、軌跡和可比較的作答，用來判斷這次做得如何。
+Keeps scores, traces, and comparable attempts so you can judge how this run went.
 
-| Cell | 性質 | 貢獻 |
+| Cell | Nature | Contribution |
 | --- | --- | --- |
-| [AxisAgentic](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-axisagentic-cell-ca43/reviews/axisagentic.md) | 長程 runtime | 跑會用工具的長任務，並把每次執行寫成可回放的軌跡 |
-| [Harbor](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-harbor-cell-ad04/reviews/harbor.md) | 評測 harness | 把每次作答的分數和軌跡留下來，方便比較、重評和再最佳化 |
+| [AxisAgentic](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-axisagentic-cell-ca43/reviews/axisagentic.md) | long-horizon runtime | Runs long tool-using tasks and writes each run as a replayable trace. |
+| [Harbor](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-harbor-cell-ad04/reviews/harbor.md) | evaluation harness | Keeps the score and trace of each attempt so they can be compared, regraded, and optimized. |
 
-### 交付表面
+### Delivery surface
 
-團隊要一起改的那層產出：畫面、文件、表格、簡報。
+The layer of output the team edits together: screens, documents, sheets, and slides.
 
-| Cell | 性質 | 貢獻 |
+| Cell | Nature | Contribution |
 | --- | --- | --- |
-| [Onlook](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-onlook-cell-90bd/reviews/onlook.md) | 介面畫布 | 在正在跑的畫面上改 React 介面，再寫回程式碼 |
-| [Univer](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-univer-cell-80a8/reviews/univer.md) | Office runtime | 讓人和 agent 操作同一套試算表、文件和簡報模型 |
-| [Univer Workspace](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-univer-workspace-cell-80a8/reviews/univer-workspace.md) | 文件協作區 | 人和 agent 一起改表格與文件，由人決定要不要併回正在看的版本 |
+| [Onlook](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-onlook-cell-90bd/reviews/onlook.md) | interface canvas | Edits a React interface on the running screen, then writes the change back to code. |
+| [Univer](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-univer-cell-80a8/reviews/univer.md) | Office runtime | Lets people and agents operate the same spreadsheet, document, and slide model. |
+| [Univer Workspace](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-univer-workspace-cell-80a8/reviews/univer-workspace.md) | document workspace | People and agents edit sheets and documents together; a person decides whether to merge back into the version everyone is looking at. |
 
-實測狀態仍只用兩個值：
+Hands-on status has two values:
 
-- `untried`：已收錄，但尚未實際使用。
-- `tried`：已經實際體驗過。
+- `untried`: catalogued, not actually used yet.
+- `tried`: someone has used it.
 
-## 支持這個目錄
+## Support this catalog
 
-這份目錄以 MIT 授權公開。維持它有兩種方式。
+This catalog is public under the MIT license. Two ways to keep it going:
 
-- 補上還沒收錄的產品，或修正一個已經在目錄裡的 Cell。作法見 [貢獻準則](CONTRIBUTING.md)。
-- 用 [GitHub Sponsors](https://github.com/sponsors/Giorno-Giovanna-Dio) 資助維護。倉庫頁的 Sponsor 按鈕讀的是 [`.github/FUNDING.yml`](.github/FUNDING.yml)。
+- Add a product that is not listed, or correct a Cell that is. See [CONTRIBUTING.md](CONTRIBUTING.md).
+- Fund maintenance with [GitHub Sponsors](https://github.com/sponsors/Giorno-Giovanna-Dio). The Sponsor button on the repository page reads [`.github/FUNDING.yml`](.github/FUNDING.yml).
 
 <p align="center">
   <a href="https://github.com/sponsors/Giorno-Giovanna-Dio"><img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="Sponsor on GitHub"></a>

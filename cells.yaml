@@ -869,6 +869,14 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/EKKOLearnAI/ekko-studio
+    name: Ekko Studio
+    source_type: repository
+    aliases:
+      - https://ekkostudio.xyz
+      - https://hermes-studio.ai
+      - https://github.com/EKKOLearnAI/hermes-web-ui
+    license: BSL-1.1
   - id: https://github.com/spacering-net/codeg
     name: Codeg
     source_type: repository
@@ -1094,6 +1102,11 @@ cells:
       command: null
       ports: []
       data_paths: []
+      notes: Desktop Electron app is the recommended path and bundles the runtime. npm (Node.js 23+) serves a local web console; Docker Compose is also documented. Not run in this review.
+    evaluation:
+      status: untried
+      review: reviews/ekko-studio.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ekko-studio-cell-fb52/reviews/ekko-studio.md
       notes: Desktop Tauri app or self-hosted codeg-server; Docker image also published
     evaluation:
       status: untried
@@ -1103,6 +1116,7 @@ cells:
       updated_at: 2026-10-10
     discovery:
       source: user /create-cell-pr
+      rationale: Separate the Vue Flow workflow studio from the chat and group rooms where people work, and treat node handoff as a narrow packet rather than shared memory
       rationale: Study session aggregation and cold-start cross-agent handoff as memory and room assignment, separate from an ADE dashboard
       notes: TypeScript monorepo on Cloudflare Workers (Durable Objects, Dynamic Workers, Facets) and workerd. Local quick start is pnpm run-local via wrangler. Not executed.
     evaluation:

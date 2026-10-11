@@ -966,6 +966,13 @@ cells:
     source_type: repository
     aliases: []
     license: MIT
+  - id: https://github.com/simular-ai/Agent-S
+    name: Agent-S
+    source_type: repository
+    aliases:
+      - https://www.simular.ai
+      - https://www.sai.work
+    license: Apache-2.0
     fork_url: null
     checkout:
       directory: null
@@ -1186,6 +1193,15 @@ cells:
       status: untried
       review: reviews/agency-swarm.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agency-swarm-cell-ad04/reviews/agency-swarm.md
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python package gui-agents 0.3.2. Operates a real desktop via screenshots and pyautogui. This review did not run it.
+    evaluation:
+      status: untried
+      review: reviews/agent-s.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agent-s-cell-9381/reviews/agent-s.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1211,6 +1227,7 @@ cells:
       rationale: Local Claude Code desktop shell with worktrees, a skill marketplace, in-harness model switching, and remote IM on one CLI kernel.
       rationale: Study a Workers workspace where a sandboxed gadget, the agent, and capability gatekeepers share one place, then place that on a 2D floor and a walkable office.
       rationale: Study directional communication flows — task slips that return versus handoffs that move the visitor — as the floor plan of an agency office.
+      rationale: Study how a person watches, interrupts, and verifies an employee who is using a real desktop
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

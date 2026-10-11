@@ -1178,6 +1178,12 @@ cells:
       - https://github.com/agenta-ai/agenta
       - https://agenta.ai
     license: MIT (non-ee); Agenta Enterprise License (ee/)
+  - id: https://github.com/HKUDS/AgentSpace
+    name: AgentSpace
+    source_type: repository
+    aliases:
+      - https://hire-an-agent.online/
+    license: Apache-2.0
     fork_url: null
     checkout:
       directory: null
@@ -1227,6 +1233,11 @@ cells:
       status: untried
       review: reviews/agenta.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agenta-cell-ad04/reviews/agenta.md
+      notes: Next.js web workspace plus remote daemon and PostgreSQL. Feishu-style dashboard with documents, not a spatial office.
+    evaluation:
+      status: untried
+      review: reviews/agentspace.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agentspace-cell-80a8/reviews/agentspace.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1255,6 +1266,7 @@ cells:
       rationale: Study how a person watches, interrupts, and verifies an employee who is using a real desktop
       rationale: Study per-turn classifier routing, per-agent conversation drawers, and supervisor parallel ask as office dispatch.
       rationale: Study a shared job-shaped coworker — approval pauses, unattended first messages, and desk-to-desk handoff — as presence in a 2D or 3D office.
+      rationale: Study shared channels, typed document handoffs, and approval gates that put humans and digital employees on the same tasks.
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

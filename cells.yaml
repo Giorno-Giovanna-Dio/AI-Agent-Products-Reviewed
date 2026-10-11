@@ -1047,6 +1047,12 @@ cells:
     source_type: repository
     aliases:
       - https://github.com/steveyegge/gastown
+  - id: https://github.com/langchain-ai/langchain
+    name: LangChain
+    source_type: repository
+    aliases:
+      - https://www.langchain.com
+      - https://docs.langchain.com
     license: MIT
     fork_url: null
     checkout:
@@ -1460,6 +1466,11 @@ cells:
       status: untried
       review: reviews/kun.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-kun-cell-ad04/reviews/kun.md
+      notes: Python package langchain on LangGraph; not a desktop workspace. JS sibling is langchainjs. Not installed.
+    evaluation:
+      status: untried
+      review: reviews/langchain.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-langchain-cell-ca43/reviews/langchain.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1507,6 +1518,7 @@ cells:
       rationale: One desk splits session, profile, and task memory; a subagent side room keeps its own notepad while sharing the tool bench
       rationale: Study a web command center attached to a separate agent runtime — role dispatch, checkpoints, and a human greenlight — as desks in a 2D and 3D office.
       rationale: Study a local GUI and TUI workbench where design, documents, and multi-agent rooms share one task record, while humans still pin rules and accept deliveries.
+      rationale: Study tool desks, agent loops, and graph handoffs as staffing on a 2D floor and in a walkable office
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

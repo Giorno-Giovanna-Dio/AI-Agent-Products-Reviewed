@@ -869,12 +869,11 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
-  - id: https://github.com/golutra/golutra
-    name: Golutra
+  - id: https://github.com/pixel-agents-hq/pixel-agents
+    name: Pixel Agents
     source_type: repository
-    aliases:
-      - https://www.golutra.com
-    license: BUSL-1.1
+    aliases: []
+    license: MIT
     fork_url: null
     checkout:
       directory: null
@@ -884,18 +883,17 @@ cells:
       method: native
       command: null
       ports: []
-      data_paths:
-        - .golutra
-      notes: Tauri desktop (Vue 3 + Rust). Documented path is the desktop app; it spawns local CLI PTYs. Workspace metadata under .golutra/; chat DB in the app data dir.
+      data_paths: []
+      notes: VS Code extension panel plus standalone Node 20+ browser office. Claude Code is the shipped provider. Not run.
     evaluation:
       status: untried
-      review: reviews/golutra.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-golutra-cell-c2d2/reviews/golutra.md
+      review: reviews/pixel-agents.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pixel-agents-cell-c2d2/reviews/pixel-agents.md
       tested_at: null
       updated_at: 2026-10-09
     discovery:
       source: user /create-cell-pr
-      rationale: Study chat-room dispatch onto parallel local CLI sessions, and how permission-skip flags sit next to a sandbox checkbox.
+      rationale: Pixel-art floor is the workplace for Claude Code sessions — seats, areas, bubbles, and teammates — distinct from a walkable 3D office.
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

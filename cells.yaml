@@ -1008,6 +1008,11 @@ cells:
     aliases:
       - https://github.com/geekan/MetaGPT
     license: MIT
+  - id: https://github.com/mycelium-io/mycelium
+    name: Mycelium
+    source_type: repository
+    aliases: []
+    license: Apache-2.0
     fork_url: null
     checkout:
       directory: null
@@ -1583,6 +1588,15 @@ cells:
       status: untried
       review: reviews/ms-agent.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ms-agent-cell-ad04/reviews/ms-agent.md
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Desktop app (Mac; Linux/Windows preview) or CLI with a Docker hub. Peer agents are external sessions such as Claude Code. Not installed.
+    evaluation:
+      status: untried
+      review: reviews/mycelium.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-mycelium-cell-ca43/reviews/mycelium.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1640,6 +1654,7 @@ cells:
       rationale: Study role desks, document handoff (PRD, design, tasks, code), and environment message passing as a software-company office
       rationale: Study agent versus workflow, checkpoint resume, and human approval as who is at which desk
       rationale: Study harness permissions, file-based research handoff, and chain versus DAG staffing as an office floor
+      rationale: A shared room where peer agents sit at board desks, and a mediator comes in when they disagree
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

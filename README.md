@@ -161,6 +161,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [MetaGPT](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-metagpt-cell-9381/reviews/metagpt.md) | [https://github.com/FoundationAgents/MetaGPT](https://github.com/FoundationAgents/MetaGPT) | 尚未測試 | Python CLI（3.9–<3.12） | `untried` |
 | [Microsoft Agent Framework](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-microsoft-agent-framework-cell-9381/reviews/microsoft-agent-framework.md) | [https://github.com/microsoft/agent-framework](https://github.com/microsoft/agent-framework) | 尚未測試 | Python 與 .NET agent／workflow 框架 | `untried` |
 | [MS-Agent](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ms-agent-cell-ad04/reviews/ms-agent.md) | [https://github.com/modelscope/ms-agent](https://github.com/modelscope/ms-agent) | 尚未測試 | Python agent harness（CLI／TUI／WebUI） | `untried` |
+| [Mycelium](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-mycelium-cell-ca43/reviews/mycelium.md) | [https://github.com/mycelium-io/mycelium](https://github.com/mycelium-io/mycelium) | 尚未測試 | Mac 桌面 App，或 CLI＋Docker hub | `untried` |
 
 狀態值：
 

@@ -869,11 +869,10 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
-  - id: https://github.com/gastownhall/gastown
-    name: Gas Town
+  - id: https://github.com/pixel-agents-hq/pixel-agents
+    name: Pixel Agents
     source_type: repository
-    aliases:
-      - https://github.com/steveyegge/gastown
+    aliases: []
     license: MIT
     fork_url: null
     checkout:
@@ -882,19 +881,19 @@ cells:
       tested_version: null
     runtime:
       method: native
-      command: gt
+      command: null
       ports: []
       data_paths: []
-      notes: Go CLI `gt` with tmux-backed agents and a Dolt Beads ledger (town example ~/gt); optional Docker Compose. Not executed.
+      notes: VS Code extension panel plus standalone Node 20+ browser office. Claude Code is the shipped provider. Not run.
     evaluation:
       status: untried
-      review: reviews/gastown.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-gastown-cell-c2d2/reviews/gastown.md
+      review: reviews/pixel-agents.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pixel-agents-cell-c2d2/reviews/pixel-agents.md
       tested_at: null
       updated_at: 2026-10-09
     discovery:
       source: user /create-cell-pr
-      rationale: A named town of roles, hooks, and a merge dock is a place of work even though today's UI is still a CLI and dashboard.
+      rationale: Pixel-art floor is the workplace for Claude Code sessions — seats, areas, bubbles, and teammates — distinct from a walkable 3D office.
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

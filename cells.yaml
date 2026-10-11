@@ -1101,6 +1101,12 @@ cells:
     source_type: repository
     aliases: []
     license: MIT
+  - id: https://github.com/smtg-ai/claude-squad
+    name: Claude Squad
+    source_type: repository
+    aliases:
+      - https://smtg-ai.github.io/claude-squad/
+    license: AGPL-3.0
     fork_url: null
     checkout:
       directory: null
@@ -1337,6 +1343,13 @@ cells:
       status: untried
       review: reviews/cashew.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-cashew-cell-ca43/reviews/cashew.md
+      data_paths:
+        - ~/.claude-squad
+      notes: Go TUI (`cs`). Each session is a tmux process plus a git worktree under ~/.claude-squad/worktrees. Requires tmux and gh.
+    evaluation:
+      status: untried
+      review: reviews/claude-squad.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-claude-squad-cell-80a8/reviews/claude-squad.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1375,6 +1388,7 @@ cells:
       rationale: Study a deterministic scheduler that splits one goal across isolated worktrees, and the thinner GitHub Action that only starts that scheduler
       rationale: Study a self-hosted relay where humans and agents share rooms, keys, and one signed event log
       rationale: Study bounded recall, compaction handoff, and sleep closing commitments as archive-room roles on a floor
+      rationale: Study one-task-one-worktree supervision, including pause-to-human checkout and screen-scraped auto-accept.
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

@@ -135,6 +135,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [AgentSpace](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agentspace-cell-80a8/reviews/agentspace.md) | [https://github.com/HKUDS/AgentSpace](https://github.com/HKUDS/AgentSpace) | 尚未測試 | Next.js web workspace + daemon | `untried` |
 | [Amux](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-amux-cell-80a8/reviews/amux.md) | [https://github.com/mixpeek/amux](https://github.com/mixpeek/amux) | 尚未測試 | Self-hosted Rust server + tmux | `untried` |
 | [Atomic Agents](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-atomic-agents-cell-ca43/reviews/atomic-agents.md) | [https://github.com/Eigenwise/atomic-agents](https://github.com/Eigenwise/atomic-agents) | 尚未測試 | Python >=3.12 library | `untried` |
+| [AutoAgent](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-autoagent-cell-ca43/reviews/autoagent.md) | [https://github.com/HKUDS/AutoAgent](https://github.com/HKUDS/AutoAgent) | 尚未測試 | Python CLI；Docker workplace | `untried` |
 
 狀態值：
 

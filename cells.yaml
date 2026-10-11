@@ -1141,6 +1141,11 @@ cells:
     source_type: repository
     aliases: []
     license: AGPL-3.0-only
+  - id: https://github.com/HKUDS/AutoAgent
+    name: AutoAgent
+    source_type: repository
+    aliases: []
+    license: MIT
     fork_url: null
     checkout:
       directory: null
@@ -1263,6 +1268,11 @@ cells:
       status: untried
       review: reviews/atomic-agents.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-atomic-agents-cell-ca43/reviews/atomic-agents.md
+      notes: Python >=3.10 CLI (`auto`); Docker workplace for code, browser, and files. Not tried.
+    evaluation:
+      status: untried
+      review: reviews/autoagent.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-autoagent-cell-ca43/reviews/autoagent.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1294,6 +1304,7 @@ cells:
       rationale: Study shared channels, typed document handoffs, and approval gates that put humans and digital employees on the same tasks.
       rationale: Study a shared board with atomic claims, layered memory, and origin-stamped handoff as the office around many CLI workers
       rationale: Study schema-aligned handoffs, context boards versus turn drawers, and visible dispatch as how work moves between desks
+      rationale: Study triage handoff, event listen-and-join, and natural-language hiring as desks in a sandbox office.
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

@@ -3,6 +3,12 @@
 </p>
 
 <p align="center">
+  <strong>繁體中文</strong>
+  &nbsp;·&nbsp;
+  <a href="README.en.md">English</a>
+</p>
+
+<p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-3d3a36" alt="MIT License"></a>
   <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-3d3a36" alt="PRs welcome"></a>
   <a href="https://github.com/sponsors/Giorno-Giovanna-Dio"><img src="https://img.shields.io/badge/sponsor-GitHub%20Sponsors-ea4aaa?logo=githubsponsors&logoColor=white" alt="GitHub Sponsors"></a>
@@ -39,7 +45,7 @@ context、execution environments 與 human oversight 如何被組織，以及這
 - 寫一篇洞察筆記，並把它放進編排團隊的一個席位。
 - 修正已經在目錄裡的 Cell：過時資訊、失效連結，或放錯的席位。
 
-從 [貢獻準則](CONTRIBUTING.md) 開始。一個新產品一個 pull request。還沒實際用過也可以寫，把 status 留在 `untried`。
+從 [貢獻準則](CONTRIBUTING.md) 開始。一個新產品一個 pull request。還沒實際用過也可以寫，把 status 留在 `untried`。英文目錄在 [README.en.md](README.en.md)；新增一列時，中英文各加一次，席位相同。
 
 ## 目錄
 
@@ -80,6 +86,7 @@ context、execution environments 與 human oversight 如何被組織，以及這
 
 ## Repository 結構
 
+- [`README.en.md`](README.en.md)：同一份目錄的英文版。
 - [`CONTRIBUTING.md`](CONTRIBUTING.md)：如何提案、新增或修正一個 Cell。
 - [`cells.yaml`](cells.yaml)：所有 Cells 的結構化 metadata。
 - [`reviews/README.md`](reviews/README.md)：共同評測規則與證據標準。

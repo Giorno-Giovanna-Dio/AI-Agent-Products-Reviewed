@@ -43,7 +43,7 @@ URL 成為 ID，舊網址放進 `aliases`。
 
 1. `reviews/<slug>.md`：洞察筆記。從 [`reviews/_template.md`](reviews/_template.md) 複製。
 2. [`cells.yaml`](cells.yaml)：一筆 metadata。先確認這個 Cell ID 還沒有出現。
-3. [`README.md`](README.md) 的「在編排團隊裡的位置」：在對應席位下加一列。
+3. [`README.md`](README.md) 和 [`README.en.md`](README.en.md) 的席位表：同一個席位下各加一列。英文版的性質與貢獻用英文，連結與中文版相同。
 
 Slug 用小寫和連字號，例如 `gstack`、`agent-office`。
 

@@ -977,6 +977,11 @@ cells:
     name: Atomic Agents
     source_type: repository
     aliases: []
+  - id: https://github.com/9thLevelSoftware/Daem0n-MCP
+    name: Daem0nMCP
+    source_type: repository
+    aliases:
+      - https://github.com/DasBluEyedDevil/Daem0n-MCP
     license: MIT
     fork_url: null
     checkout:
@@ -1361,6 +1366,15 @@ cells:
       status: untried
       review: reviews/cognee.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-cognee-cell-fb52/reviews/cognee.md
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python >=3.10 FastMCP server; stdio or HTTP. Project data under .daem0nmcp/. Not installed.
+    evaluation:
+      status: untried
+      review: reviews/daem0n-mcp.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-daem0n-mcp-cell-ca43/reviews/daem0n-mcp.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1401,6 +1415,7 @@ cells:
       rationale: Study bounded recall, compaction handoff, and sleep closing commitments as archive-room roles on a floor
       rationale: Study one-task-one-worktree supervision, including pause-to-human checkout and screen-scraped auto-accept.
       rationale: Study dataset-scoped graph memory, session notes versus permanent lessons, and recall as what an employee consults when sitting down
+      rationale: Study a long-running MCP daemon as the office clerk who stays for briefing, counsel, decision handoff, and idle review
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

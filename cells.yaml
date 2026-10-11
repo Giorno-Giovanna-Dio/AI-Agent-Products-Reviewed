@@ -1002,6 +1002,12 @@ cells:
       - https://livekit.io
       - https://docs.livekit.io/agents
     license: Apache-2.0
+  - id: https://github.com/FoundationAgents/MetaGPT
+    name: MetaGPT
+    source_type: repository
+    aliases:
+      - https://github.com/geekan/MetaGPT
+    license: MIT
     fork_url: null
     checkout:
       directory: null
@@ -1546,6 +1552,15 @@ cells:
       status: untried
       review: reviews/mempalace-evolve.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-mempalace-evolve-cell-ca43/reviews/mempalace-evolve.md
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python CLI framework (README requires Python >=3.9 and <3.12). Roles run in one process; not a desktop workspace
+    evaluation:
+      status: untried
+      review: reviews/metagpt.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-metagpt-cell-9381/reviews/metagpt.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1600,6 +1615,7 @@ cells:
       rationale: Study memory as the layer between desk agents and storage, so a person can see salience writeback, tiered recall, and due reminders in the office.
       rationale: Study a shared MCP memory store — database, project, and tool-surface scopes — against digest handoff and file-level sync
       rationale: Study how notes are filed into wings and rooms, then fade, merge, or move to a shared corridor that people can see in an office.
+      rationale: Study role desks, document handoff (PRD, design, tasks, code), and environment message passing as a software-company office
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

@@ -158,6 +158,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [Memlayer](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memlayer-cell-ca43/reviews/memlayer.md) | [https://github.com/divagr18/memlayer](https://github.com/divagr18/memlayer) | 尚未測試 | Python 3.10+ memory library | `untried` |
 | [Memora](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memora-cell-fb52/reviews/memora.md) | [https://github.com/agentic-box/memora](https://github.com/agentic-box/memora) | 尚未測試 | Python MCP 記憶 server | `untried` |
 | [MemPalace Evolve](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-mempalace-evolve-cell-ca43/reviews/mempalace-evolve.md) | [https://github.com/a2328275243/mempalace-evolve](https://github.com/a2328275243/mempalace-evolve) | 尚未測試 | Python 本機記憶層 | `untried` |
+| [MetaGPT](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-metagpt-cell-9381/reviews/metagpt.md) | [https://github.com/FoundationAgents/MetaGPT](https://github.com/FoundationAgents/MetaGPT) | 尚未測試 | Python CLI（3.9–<3.12） | `untried` |
 
 狀態值：
 

@@ -869,6 +869,11 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/Mng-dev-ai/agentrove
+    name: Agentrove
+    source_type: repository
+    aliases: []
+    license: Apache-2.0
   - id: https://github.com/NanmiCoder/cc-haha
     name: cc-haha
     source_type: repository
@@ -940,6 +945,18 @@ cells:
       tested_commit: null
       tested_version: null
     runtime:
+      method: docker-compose
+      command: docker compose up -d
+      ports:
+        - 3000
+        - 8080
+      data_paths:
+        - storage/
+      notes: Docker Compose web (frontend 3000, API 8080, Redis); macOS Tauri sidecar and iOS thin client also ship. ACP agents run in a per-workspace Docker or host sandbox. Not run.
+    evaluation:
+      status: untried
+      review: reviews/agentrove.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agentrove-cell-c2d2/reviews/agentrove.md
       method: native
       command: gt
       ports: []
@@ -1068,6 +1085,7 @@ cells:
       updated_at: 2026-10-09
     discovery:
       source: user /create-cell-pr
+      rationale: Personas, sub-thread handoff, and per-workspace ACP sandboxes as staffing inside one coding room
       rationale: Local Claude Code desktop shell with worktrees, a skill marketplace, in-harness model switching, and remote IM on one CLI kernel.
       rationale: Study a Workers workspace where a sandboxed gadget, the agent, and capability gatekeepers share one place, then place that on a 2D floor and a walkable office.
 

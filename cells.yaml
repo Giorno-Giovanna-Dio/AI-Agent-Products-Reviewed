@@ -869,6 +869,8 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/ClaudioDrews/memory-os
+    name: Memory OS
   - id: https://github.com/agentscope-ai/agentscope
     name: AgentScope
     source_type: repository
@@ -943,6 +945,21 @@ cells:
       tested_commit: null
       tested_version: null
     runtime:
+      method: docker-compose
+      command: null
+      ports:
+        - 6333
+        - 6379
+      data_paths:
+        - ~/.hermes/memories
+        - ~/.hermes/state.db
+        - ~/.hermes/memory_store.db
+        - ~/vault
+      notes: Hermes Agent plugin plus local Qdrant, Redis, and ARQ worker; layered memory and cron, not a process scheduler
+    evaluation:
+      status: untried
+      review: reviews/memory-os.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memory-os-cell-fb52/reviews/memory-os.md
       method: native
       command: null
       ports:
@@ -1137,6 +1154,7 @@ cells:
       updated_at: 2026-10-10
     discovery:
       source: user /create-cell-pr
+      rationale: See what memory-as-an-OS adds beyond storage — layers, janitor schedules, and source authority — for a future agent office
       rationale: Study how messages, pipelines, and human confirmation move work between agents
       rationale: Study a markdown journal plus rebuildable search index as an office archive employees query, distinct from learning memory and knowledge graphs.
       rationale: Separate the Vue Flow workflow studio from the chat and group rooms where people work, and treat node handoff as a narrow packet rather than shared memory

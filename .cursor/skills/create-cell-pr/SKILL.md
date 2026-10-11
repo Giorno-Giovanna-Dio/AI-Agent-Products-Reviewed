@@ -7,8 +7,10 @@ description: Turn a GitHub repo or product URL into a Cell 產品洞察筆記 an
 
 把一個外部產品整理成 Cell 洞察筆記，並為它單獨開一個 PR。
 
-這個 repository 是 2D／3D AI agent workspace 的技術雷達。目標是萃取可學習的
-產品概念，不是複製對方的 README，也不是把 upstream 程式碼放進本 repo。
+這個 repository 是公開的 AI agent products 蒐集樞紐，同時也是 2D／3D AI
+agent workspace 的技術雷達。目標是萃取可學習的產品概念，不是複製對方的
+README，也不是把 upstream 程式碼放進本 repo。對人說明的同一套規則見
+[`CONTRIBUTING.md`](../../../CONTRIBUTING.md)。
 
 ## When to use
 

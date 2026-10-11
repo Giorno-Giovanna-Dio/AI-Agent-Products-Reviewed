@@ -1,9 +1,17 @@
 # AI Agent Products Reviewed
 
-這個 repository 是建立 2D／3D AI agent workspace 前的產品研究與技術雷達。
-目標不是替產品排名，而是理解目前前沿產品如何組織 agents、tasks、context、
-execution environments 與 human oversight，並萃取可用於未來 workspace
-設計的 interaction 和 system primitives。
+這是一個公開的 AI agent products 蒐集樞紐。產品、框架、工作台、記憶層和
+runtime 散落在不同的 repository 與官方網站。這裡把它們收成同一份目錄：
+每個產品是一個 Cell，看得出它的性質，以及它在一組 AI agent orchestration
+team 裡補上的部分。
+
+目錄用來對照，不用來排名。我們用同一套問題閱讀它們：agents、tasks、
+context、execution environments 與 human oversight 如何被組織，以及這些
+概念放進 2D／3D AI agent workspace 時會變成什麼。
+
+歡迎補上還沒被收進來的產品。作法、席位怎麼選、一個 PR 放幾個 Cell，見
+[貢獻準則](CONTRIBUTING.md)。授權是 [MIT](LICENSE)。共事方式見
+[共事準則](CODE_OF_CONDUCT.md)。
 
 可自行執行的候選專案會 clone 到本 repository 以外的獨立實驗區；這裡只
 保存來源資訊、產品與 feature 分析、實際體驗，以及對 2D／3D workspace 的
@@ -34,6 +42,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 
 ## Repository 結構
 
+- [`CONTRIBUTING.md`](CONTRIBUTING.md)：如何提案、新增或修正一個 Cell。
 - [`cells.yaml`](cells.yaml)：所有 Cells 的結構化 metadata。
 - [`reviews/README.md`](reviews/README.md)：共同評測規則與證據標準。
 - [`reviews/`](reviews/)：每個 Cell 的產品洞察（原始 Markdown；**建議用 GitHub 渲染連結在瀏覽器閱讀**，見 [`reviews/README.md`](reviews/README.md)）。
@@ -55,10 +64,10 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 
 ## 評測流程
 
-1. 將候選產品建立為 `cells.yaml` 中的 Cell，狀態設為 `untried`。若來源是
-   GitHub repo 或官方網址，可呼叫
-   [`/create-cell-pr`](.cursor/skills/create-cell-pr/SKILL.md) 讓 sub-agent
-   寫洞察筆記並開獨立 PR。
+1. 將候選產品建立為 `cells.yaml` 中的 Cell，狀態設為 `untried`。一般貢獻依
+   [`CONTRIBUTING.md`](CONTRIBUTING.md)。若來源是 GitHub repo 或官方網址，
+   也可以呼叫 [`/create-cell-pr`](.cursor/skills/create-cell-pr/SKILL.md)
+   讓 sub-agent 寫洞察筆記並開獨立 PR。
 2. 若有公開原始碼，clone 到獨立實驗區並記錄實際測試的完整 commit SHA；
    否則記錄產品版本。
 3. 依照 [`reviews/README.md`](reviews/README.md) 的方法，使用

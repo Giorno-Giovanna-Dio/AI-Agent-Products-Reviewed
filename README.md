@@ -171,6 +171,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [Pragma](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pragma-cell-80a8/reviews/pragma.md) | [https://github.com/pqpo/pragma](https://github.com/pqpo/pragma) | 尚未測試 | macOS Desktop 預覽＋CLI／SDK | `untried` |
 | [Qwen-Agent](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-qwen-agent-cell-9381/reviews/qwen-agent.md) | [https://github.com/QwenLM/Qwen-Agent](https://github.com/QwenLM/Qwen-Agent) | 尚未測試 | Python agent framework | `untried` |
 | [TEN Framework](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ten-framework-cell-9381/reviews/ten-framework.md) | [https://github.com/TEN-framework/ten-framework](https://github.com/TEN-framework/ten-framework) | 尚未測試 | Docker Compose 語音 agent；tman | `untried` |
+| [Univer](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-univer-cell-80a8/reviews/univer.md) | [https://github.com/dream-num/univer](https://github.com/dream-num/univer) | 尚未測試 | 可嵌入 Office SDK（瀏覽器 + Node） | `untried` |
 
 狀態值：
 

@@ -1029,6 +1029,12 @@ cells:
     aliases:
       - https://theten.ai
     license: Apache-2.0 with additional conditions
+  - id: https://github.com/dream-num/univer
+    name: Univer
+    source_type: repository
+    aliases:
+      - https://univer.ai
+    license: Apache-2.0
     fork_url: null
     checkout:
       directory: null
@@ -1702,6 +1708,15 @@ cells:
       status: untried
       review: reviews/ten-framework.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ten-framework-cell-9381/reviews/ten-framework.md
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Embeddable Office SDK for browser and Node.js. This repository is the open-source editor runtime; DREAMNUM.md says commercial collaboration, import/export, and server features belong to Univer Pro.
+    evaluation:
+      status: untried
+      review: reviews/univer.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-univer-cell-80a8/reviews/univer.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1769,6 +1784,7 @@ cells:
       rationale: Study a portable agent-team definition that binds a different harness per step, with a mission whiteboard and human-approved memory
       rationale: Study how an agent, its tools, and retrieved document snippets are composed, and how a person would see that in a place of work
       rationale: A voice session is an extension graph. Desks are listeners, models, speakers, and turn-taking; connections route the work.
+      rationale: The office-document runtime agents and humans would share, distinct from the workspace product
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

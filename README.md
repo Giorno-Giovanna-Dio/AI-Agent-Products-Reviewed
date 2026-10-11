@@ -130,6 +130,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [Cloudflare OS](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/cloudflare-os.md) | [https://github.com/cloudflare/cloudflare-os](https://github.com/cloudflare/cloudflare-os) | 尚未測試 | Workers／workerd；Gadgets Workshop | `untried` |
 | [Agency Swarm](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agency-swarm-cell-ad04/reviews/agency-swarm.md) | [https://github.com/VRSEN/agency-swarm](https://github.com/VRSEN/agency-swarm) | 尚未測試 | Python 3.12+ agency framework | `untried` |
 | [Agent-S](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agent-s-cell-9381/reviews/agent-s.md) | [https://github.com/simular-ai/Agent-S](https://github.com/simular-ai/Agent-S) | 尚未測試 | Python computer-use agent | `untried` |
+| [Agent Squad](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agent-squad-cell-ad04/reviews/agent-squad.md) | [https://github.com/2FastLabs/agent-squad](https://github.com/2FastLabs/agent-squad) | 尚未測試 | Python／TypeScript／Swift 對話路由 | `untried` |
 
 狀態值：
 

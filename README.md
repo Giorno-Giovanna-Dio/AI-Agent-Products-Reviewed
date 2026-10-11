@@ -6,6 +6,12 @@
   <strong>English</strong>
   &nbsp;·&nbsp;
   <a href="README.zh-TW.md">繁體中文</a>
+  &nbsp;·&nbsp;
+  <a href="README.ja.md">日本語</a>
+  &nbsp;·&nbsp;
+  <a href="README.ko.md">한국어</a>
+  &nbsp;·&nbsp;
+  <a href="README.es.md">Español</a>
 </p>
 
 <p align="center">
@@ -37,7 +43,7 @@ oversight are organized, and what those ideas become inside a 2D or 3D AI
 agent workspace.
 
 Licensed under [MIT](LICENSE). How we work together is in the
-[code of conduct](CODE_OF_CONDUCT.md). The conduct note and the full
+[code of conduct](CODE_OF_CONDUCT.md). The insight notes, the conduct note, and the full
 contribution guide are in Traditional Chinese.
 
 ## Contributing
@@ -51,8 +57,9 @@ products that are still scattered around.
 
 Start with [CONTRIBUTING.md](CONTRIBUTING.md). One new product per pull
 request. You can write a note before you have used the product; leave status
-at `untried`. When you add a row here, add the same Cell to the Traditional
-Chinese [README.zh-TW.md](README.zh-TW.md).
+at `untried`. When you add a row here, add the same Cell, in the same seat,
+to [README.zh-TW.md](README.zh-TW.md), [README.ja.md](README.ja.md),
+[README.ko.md](README.ko.md), and [README.es.md](README.es.md).
 
 ## Contents
 
@@ -95,7 +102,11 @@ Main research angles:
 
 ## Repository layout
 
-- [`README.md`](README.md): this English catalog. It is the repository homepage. [`README.zh-TW.md`](README.zh-TW.md) is the Traditional Chinese catalog.
+- [`README.md`](README.md): this English catalog. It is the repository homepage.
+- [`README.zh-TW.md`](README.zh-TW.md): the Traditional Chinese catalog.
+- [`README.ja.md`](README.ja.md): the Japanese catalog.
+- [`README.ko.md`](README.ko.md): the Korean catalog.
+- [`README.es.md`](README.es.md): the Spanish catalog.
 - [`CONTRIBUTING.md`](CONTRIBUTING.md): how to propose, add, or correct a Cell. Written in Traditional Chinese.
 - [`cells.yaml`](cells.yaml): structured metadata for every Cell.
 - [`reviews/README.md`](reviews/README.md): shared review rules and evidence standard.

@@ -163,6 +163,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [MS-Agent](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ms-agent-cell-ad04/reviews/ms-agent.md) | [https://github.com/modelscope/ms-agent](https://github.com/modelscope/ms-agent) | 尚未測試 | Python agent harness（CLI／TUI／WebUI） | `untried` |
 | [Mycelium](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-mycelium-cell-ca43/reviews/mycelium.md) | [https://github.com/mycelium-io/mycelium](https://github.com/mycelium-io/mycelium) | 尚未測試 | Mac 桌面 App，或 CLI＋Docker hub | `untried` |
 | [Open-AutoGLM](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-open-autoglm-cell-ca43/reviews/open-autoglm.md) | [https://github.com/zai-org/Open-AutoGLM](https://github.com/zai-org/Open-AutoGLM) | 尚未測試 | Python phone agent + ADB/HDC/WDA | `untried` |
+| [OpenAI Agents SDK](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openai-agents-python-cell-9381/reviews/openai-agents-python.md) | [https://github.com/openai/openai-agents-python](https://github.com/openai/openai-agents-python) | 尚未測試 | Python agent SDK | `untried` |
 
 狀態值：
 

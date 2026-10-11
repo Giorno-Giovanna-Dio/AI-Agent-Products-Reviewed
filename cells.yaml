@@ -869,6 +869,11 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/NanmiCoder/cc-haha
+    name: cc-haha
+    source_type: repository
+    aliases:
+      - https://cchaha.ai
   - id: https://github.com/Devin-AXIS/iPolloWork
     name: iPolloWork
     source_type: repository
@@ -965,6 +970,13 @@ cells:
       method: native
       command: null
       ports: []
+      data_paths:
+        - ~/.claude
+      notes: Electron desktop (macOS/Windows/Linux) around the bundled Bun CLI claude-haha and a local REST/WebSocket server. Computer Use documents a macOS native helper and a Windows Python helper; no Linux executor in the docs. Not run.
+    evaluation:
+      status: untried
+      review: reviews/cc-haha.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-cc-haha-cell-c2d2/reviews/cc-haha.md
       data_paths: []
       notes: Next.js web, Tauri desktop with Axum, and routa-cli; Docker sandbox exists. Not run.
     evaluation:
@@ -1056,6 +1068,7 @@ cells:
       updated_at: 2026-10-09
     discovery:
       source: user /create-cell-pr
+      rationale: Local Claude Code desktop shell with worktrees, a skill marketplace, in-harness model switching, and remote IM on one CLI kernel.
       rationale: Study a Workers workspace where a sandboxed gadget, the agent, and capability gatekeepers share one place, then place that on a 2D floor and a walkable office.
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：

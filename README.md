@@ -141,6 +141,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [BeeAI Framework](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-beeai-framework-cell-ad04/reviews/beeai-framework.md) | [https://github.com/i-am-bee/beeai-framework](https://github.com/i-am-bee/beeai-framework) | 尚未測試 | Python／TypeScript agent framework | `untried` |
 | [Bernstein](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-bernstein-cell-80a8/reviews/bernstein.md) | [https://github.com/sipyourdrink-ltd/bernstein](https://github.com/sipyourdrink-ltd/bernstein) | 尚未測試 | GitHub Action + Python scheduler | `untried` |
 | [Buzz](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-buzz-cell-80a8/reviews/buzz.md) | [https://github.com/block/buzz](https://github.com/block/buzz) | 尚未測試 | Rust relay + Tauri desktop | `untried` |
+| [Cashew](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-cashew-cell-ca43/reviews/cashew.md) | [https://github.com/rajkripal/cashew](https://github.com/rajkripal/cashew) | 尚未測試 | Python 3.10+ CLI；單一 SQLite 記憶 | `untried` |
 
 狀態值：
 

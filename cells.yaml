@@ -1096,6 +1096,11 @@ cells:
     aliases:
       - https://buzz.xyz
     license: Apache-2.0
+  - id: https://github.com/rajkripal/cashew
+    name: Cashew
+    source_type: repository
+    aliases: []
+    license: MIT
     fork_url: null
     checkout:
       directory: null
@@ -1327,6 +1332,11 @@ cells:
       status: untried
       review: reviews/buzz.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-buzz-cell-80a8/reviews/buzz.md
+      notes: Python 3.10+ CLI; one local SQLite brain; not an agent runtime
+    evaluation:
+      status: untried
+      review: reviews/cashew.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-cashew-cell-ca43/reviews/cashew.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1364,6 +1374,7 @@ cells:
       rationale: Study requirement rules, handoff-as-tool, and permission gates as visible constraints in a multi-agent office
       rationale: Study a deterministic scheduler that splits one goal across isolated worktrees, and the thinner GitHub Action that only starts that scheduler
       rationale: Study a self-hosted relay where humans and agents share rooms, keys, and one signed event log
+      rationale: Study bounded recall, compaction handoff, and sleep closing commitments as archive-room roles on a floor
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

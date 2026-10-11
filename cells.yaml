@@ -1272,6 +1272,10 @@ cells:
       - http://github.com/datawhalechina/hello-agents
       - https://hello-agents.datawhale.cc
       - https://datawhalechina.github.io/hello-agents/
+  - id: https://github.com/jjyaoao/HelloAgents
+    name: HelloAgents
+    source_type: repository
+    aliases: []
     license: CC-BY-NC-SA-4.0
     fork_url: null
     checkout:
@@ -1422,6 +1426,11 @@ cells:
       status: untried
       review: reviews/hello-agents.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-hello-agents-cell-ca43/reviews/hello-agents.md
+      notes: Python 3.12–3.13 library (package hello-agents 1.0.1); not a desktop app
+    evaluation:
+      status: untried
+      review: reviews/helloagents.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-helloagents-cell-ca43/reviews/helloagents.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1466,6 +1475,7 @@ cells:
       rationale: Study ephemeral rooms for humans and independent agents — who is present, what survives when the room closes, and how a human steers — against a persistent office
       rationale: Study trials, sandboxes, verifiers, and scores as exam rooms a person can compare, watch, and regrade.
       rationale: Study the tutorial path — paradigms, tool-wall, memory, context packets, and sequential handoff — as desks on a training floor.
+      rationale: One desk splits session, profile, and task memory; a subagent side room keeps its own notepad while sharing the tool bench
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

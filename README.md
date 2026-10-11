@@ -140,6 +140,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [AxisAgentic](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-axisagentic-cell-ca43/reviews/axisagentic.md) | [https://github.com/XYZ-AI-Lab/AxisAgentic](https://github.com/XYZ-AI-Lab/AxisAgentic) | 尚未測試 | Python 3.12+ 長程 runtime | `untried` |
 | [BeeAI Framework](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-beeai-framework-cell-ad04/reviews/beeai-framework.md) | [https://github.com/i-am-bee/beeai-framework](https://github.com/i-am-bee/beeai-framework) | 尚未測試 | Python／TypeScript agent framework | `untried` |
 | [Bernstein](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-bernstein-cell-80a8/reviews/bernstein.md) | [https://github.com/sipyourdrink-ltd/bernstein](https://github.com/sipyourdrink-ltd/bernstein) | 尚未測試 | GitHub Action + Python scheduler | `untried` |
+| [Buzz](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-buzz-cell-80a8/reviews/buzz.md) | [https://github.com/block/buzz](https://github.com/block/buzz) | 尚未測試 | Rust relay + Tauri desktop | `untried` |
 
 狀態值：
 

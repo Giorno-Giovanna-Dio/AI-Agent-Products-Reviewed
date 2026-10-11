@@ -1090,6 +1090,11 @@ cells:
       - https://github.com/marketplace/actions/bernstein-multi-agent-orchestration
       - https://bernstein.run
       - https://github.com/chernistry/bernstein
+  - id: https://github.com/block/buzz
+    name: Buzz
+    source_type: repository
+    aliases:
+      - https://buzz.xyz
     license: Apache-2.0
     fork_url: null
     checkout:
@@ -1317,6 +1322,11 @@ cells:
       status: untried
       review: reviews/bernstein.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-bernstein-cell-80a8/reviews/bernstein.md
+      notes: Rust Nostr relay plus Tauri desktop; agents join through buzz-acp
+    evaluation:
+      status: untried
+      review: reviews/buzz.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-buzz-cell-80a8/reviews/buzz.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1353,6 +1363,7 @@ cells:
       rationale: Study one desk per task — visible context versus the full trace — as a place in a 2D or 3D office.
       rationale: Study requirement rules, handoff-as-tool, and permission gates as visible constraints in a multi-agent office
       rationale: Study a deterministic scheduler that splits one goal across isolated worktrees, and the thinner GitHub Action that only starts that scheduler
+      rationale: Study a self-hosted relay where humans and agents share rooms, keys, and one signed event log
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

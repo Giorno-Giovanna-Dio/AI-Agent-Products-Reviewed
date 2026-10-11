@@ -173,6 +173,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [TEN Framework](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ten-framework-cell-9381/reviews/ten-framework.md) | [https://github.com/TEN-framework/ten-framework](https://github.com/TEN-framework/ten-framework) | 尚未測試 | Docker Compose 語音 agent；tman | `untried` |
 | [Univer](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-univer-cell-80a8/reviews/univer.md) | [https://github.com/dream-num/univer](https://github.com/dream-num/univer) | 尚未測試 | 可嵌入 Office SDK（瀏覽器 + Node） | `untried` |
 | [Univer Workspace](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-univer-workspace-cell-80a8/reviews/univer-workspace.md) | [https://github.com/dream-num/univer-workspace](https://github.com/dream-num/univer-workspace) | 尚未測試 | Node.js 24+ Browser／Server；本機 Agent | `untried` |
+| [Youtu-Agent](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-youtu-agent-cell-ad04/reviews/youtu-agent.md) | [https://github.com/TencentCloudADP/youtu-agent](https://github.com/TencentCloudADP/youtu-agent) | 尚未測試 | Python 3.12+ YAML agent framework | `untried` |
 
 狀態值：
 

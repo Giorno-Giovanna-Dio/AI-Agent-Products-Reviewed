@@ -1035,6 +1035,13 @@ cells:
     aliases:
       - https://univer.ai
     license: Apache-2.0
+  - id: https://github.com/TencentCloudADP/youtu-agent
+    name: Youtu-Agent
+    source_type: repository
+    aliases:
+      - https://github.com/Tencent/Youtu-agent
+      - https://tencentcloudadp.github.io/youtu-agent/
+    license: MIT
     fork_url: null
     checkout:
       directory: null
@@ -1728,6 +1735,16 @@ cells:
       status: untried
       review: reviews/univer-workspace.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-univer-workspace-cell-80a8/reviews/univer-workspace.md
+      method: native
+      command: null
+      ports:
+        - 8848
+      data_paths: []
+      notes: Python 3.12+ framework. YAML agent configs; CLI chat or optional local WebUI on 127.0.0.1:8848. Not executed.
+    evaluation:
+      status: untried
+      review: reviews/youtu-agent.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-youtu-agent-cell-ad04/reviews/youtu-agent.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1797,6 +1814,7 @@ cells:
       rationale: A voice session is an extension graph. Desks are listeners, models, speakers, and turn-taking; connections route the work.
       rationale: The office-document runtime agents and humans would share, distinct from the workspace product
       rationale: Documents are the shared artifact surface where humans and agents create, isolate drafts, and review before merge
+      rationale: Study the YAML split of environment, toolkit, and agent, plus workforce replan and eval stages, as office staffing
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

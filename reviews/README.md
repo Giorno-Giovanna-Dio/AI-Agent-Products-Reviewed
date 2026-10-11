@@ -58,6 +58,10 @@ upstream 或 fork；Cell review 只挑出對未來 2D／3D AI agent workspace �
 - `untried`：已研究，但尚未實際使用。
 - `tried`：已經實際體驗過。
 
+根目錄 README 的「在編排團隊裡的位置」用來分類產品性質，以及它在 AI agent
+orchestration team 裡的席位。每篇筆記的 Category 對齊其中一個席位，再補上性質。
+席位是：指揮、治理、工作台、在場、員工、記憶、方法、邊界、驗證、交付表面。
+
 使用 [`_template.md`](_template.md) 建立新的產品 review。
 
 若要把一個 GitHub repo 或產品網址整理成 Cell 並開獨立 PR，呼叫

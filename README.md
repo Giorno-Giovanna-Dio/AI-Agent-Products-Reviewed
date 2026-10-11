@@ -138,6 +138,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [AutoAgent](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-autoagent-cell-ca43/reviews/autoagent.md) | [https://github.com/HKUDS/AutoAgent](https://github.com/HKUDS/AutoAgent) | 尚未測試 | Python CLI；Docker workplace | `untried` |
 | [AutoGen](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-autogen-cell-9381/reviews/autogen.md) | [https://github.com/microsoft/autogen](https://github.com/microsoft/autogen) | 尚未測試 | Python 3.10+ AgentChat／Core；維護模式 | `untried` |
 | [AxisAgentic](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-axisagentic-cell-ca43/reviews/axisagentic.md) | [https://github.com/XYZ-AI-Lab/AxisAgentic](https://github.com/XYZ-AI-Lab/AxisAgentic) | 尚未測試 | Python 3.12+ 長程 runtime | `untried` |
+| [BeeAI Framework](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-beeai-framework-cell-ad04/reviews/beeai-framework.md) | [https://github.com/i-am-bee/beeai-framework](https://github.com/i-am-bee/beeai-framework) | 尚未測試 | Python／TypeScript agent framework | `untried` |
 
 狀態值：
 

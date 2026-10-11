@@ -1078,6 +1078,11 @@ cells:
     name: AxisAgentic
     source_type: repository
     aliases: []
+  - id: https://github.com/i-am-bee/beeai-framework
+    name: BeeAI Framework
+    source_type: repository
+    aliases:
+      - https://framework.beeai.dev
     license: Apache-2.0
     fork_url: null
     checkout:
@@ -1295,6 +1300,11 @@ cells:
       status: untried
       review: reviews/axisagentic.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-axisagentic-cell-ca43/reviews/axisagentic.md
+      notes: Python and TypeScript agent library; not a desktop workspace
+    evaluation:
+      status: untried
+      review: reviews/beeai-framework.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-beeai-framework-cell-ad04/reviews/beeai-framework.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1329,6 +1339,7 @@ cells:
       rationale: Study triage handoff, event listen-and-join, and natural-language hiring as desks in a sandbox office.
       rationale: Study shared conversation teams, handoff, and runtime as who is in the room and where work moves, while keeping this cell distinct from Microsoft Agent Framework.
       rationale: Study one desk per task — visible context versus the full trace — as a place in a 2D or 3D office.
+      rationale: Study requirement rules, handoff-as-tool, and permission gates as visible constraints in a multi-agent office
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

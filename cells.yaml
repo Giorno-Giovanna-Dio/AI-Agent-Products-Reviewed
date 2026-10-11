@@ -869,6 +869,11 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/agentscope-ai/agentscope
+    name: AgentScope
+    source_type: repository
+    aliases:
+      - https://agentscope.io
   - id: https://github.com/zilliztech/memsearch
     name: memsearch
     source_type: repository
@@ -1113,6 +1118,11 @@ cells:
       command: null
       ports: []
       data_paths: []
+      notes: Python framework, not a desktop workspace
+    evaluation:
+      status: untried
+      review: reviews/agentscope.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agentscope-cell-fb52/reviews/agentscope.md
       notes: Desktop Electron app is the recommended path and bundles the runtime. npm (Node.js 23+) serves a local web console; Docker Compose is also documented. Not run in this review.
     evaluation:
       status: untried
@@ -1127,6 +1137,7 @@ cells:
       updated_at: 2026-10-10
     discovery:
       source: user /create-cell-pr
+      rationale: Study how messages, pipelines, and human confirmation move work between agents
       rationale: Study a markdown journal plus rebuildable search index as an office archive employees query, distinct from learning memory and knowledge graphs.
       rationale: Separate the Vue Flow workflow studio from the chat and group rooms where people work, and treat node handoff as a narrow packet rather than shared memory
       rationale: Study session aggregation and cold-start cross-agent handoff as memory and room assignment, separate from an ADE dashboard

@@ -1143,6 +1143,11 @@ cells:
     aliases:
       - https://www.langchain.com/langgraph
     license: MIT
+  - id: https://github.com/a2328275243/mempalace-evolve
+    name: MemPalace Evolve
+    source_type: repository
+    aliases: []
+    license: MIT
     fork_url: null
     checkout:
       directory: null
@@ -1534,6 +1539,13 @@ cells:
       status: untried
       review: reviews/memora.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memora-cell-fb52/reviews/memora.md
+      data_paths:
+        - ~/.mempalace
+      notes: Python 3.10+ library and CLI; optional MCP and REST on 8765. Not executed. Default palace directory is ~/.mempalace.
+    evaluation:
+      status: untried
+      review: reviews/mempalace-evolve.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-mempalace-evolve-cell-ca43/reviews/mempalace-evolve.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1587,6 +1599,7 @@ cells:
       rationale: A local review loop that freezes one task snapshot, keeps each agent's dissent visible, and requires a human adoption gate before workspace writes.
       rationale: Study memory as the layer between desk agents and storage, so a person can see salience writeback, tiered recall, and due reminders in the office.
       rationale: Study a shared MCP memory store — database, project, and tool-surface scopes — against digest handoff and file-level sync
+      rationale: Study how notes are filed into wings and rooms, then fade, merge, or move to a shared corridor that people can see in an office.
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

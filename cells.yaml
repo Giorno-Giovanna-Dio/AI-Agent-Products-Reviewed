@@ -869,6 +869,11 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/spacering-net/codeg
+    name: Codeg
+    source_type: repository
+    aliases:
+      - https://docs.codeg.app
   - id: https://github.com/longyangxi/OpenOffice
     name: Open Office
   - id: https://github.com/Mng-dev-ai/agentrove
@@ -1089,6 +1094,16 @@ cells:
       command: null
       ports: []
       data_paths: []
+      notes: Desktop Tauri app or self-hosted codeg-server; Docker image also published
+    evaluation:
+      status: untried
+      review: reviews/codeg.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-codeg-cell-fb52/reviews/codeg.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study session aggregation and cold-start cross-agent handoff as memory and room assignment, separate from an ADE dashboard
       notes: TypeScript monorepo on Cloudflare Workers (Durable Objects, Dynamic Workers, Facets) and workerd. Local quick start is pnpm run-local via wrangler. Not executed.
     evaluation:
       status: untried

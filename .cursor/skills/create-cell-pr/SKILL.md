@@ -1,16 +1,20 @@
 ---
 name: create-cell-pr
-description: Turn a GitHub repo or product URL into a Cell 產品洞察筆記 and open one dedicated pull request. Use when the user shares a repository, asks to form a Cell, write an insight note, review an AI product, or wants a sub-agent to package research without cloning upstream code into this repo. Also trigger on 洞察筆記、Cell PR、產品介紹、gstack-style review, or “幫我研究這個 repo”.
+description: Turn a GitHub repo or product URL into a Cell 產品洞察筆記 and open one dedicated pull request. Place the Cell in one orchestration-team seat, and add the same row to README.md, README.zh-TW.md, README.ja.md, README.ko.md, and README.es.md. Use when the user shares a repository, asks to form a Cell, write an insight note, review an AI product, or wants a sub-agent to package research without cloning upstream code into this repo. Also trigger on 洞察筆記、Cell PR、產品介紹、gstack-style review, or “幫我研究這個 repo”.
 ---
 
 # Create Cell PR
 
 把一個外部產品整理成 Cell 洞察筆記，並為它單獨開一個 PR。
 
-這個 repository 是公開的 AI agent products 蒐集樞紐，同時也是 2D／3D AI
-agent workspace 的技術雷達。目標是萃取可學習的產品概念，不是複製對方的
-README，也不是把 upstream 程式碼放進本 repo。對人說明的同一套規則見
-[`CONTRIBUTING.md`](../../../CONTRIBUTING.md)。
+這個 repository 是公開的 AI agent products 蒐集樞紐。每個產品是一個
+Cell：目錄要看得出它的性質，以及它在一組 AI agent orchestration team 裡
+補上的哪一個席位。目錄用來對照，不用來排名。實測狀態留在筆記和
+`cells.yaml` 的 `evaluation.status`。筆記仍要回答 2D／3D workspace 的
+研究問題。README 分類表的欄位是席位、性質、貢獻。
+
+不要複製對方的 README，也不要把 upstream 程式碼放進本 repo。對人說明的
+同一套規則見 [`CONTRIBUTING.md`](../../../CONTRIBUTING.md)。
 
 ## When to use
 
@@ -67,12 +71,13 @@ README，也不是把 upstream 程式碼放進本 repo。對人說明的同一�
 
 ### 1. Confirm the Cell
 
-- 讀 `README.md`、`reviews/README.md`、`reviews/_template.md`。
+- 讀 `README.md`、`CONTRIBUTING.md`、`reviews/README.md`、`reviews/_template.md`。
+- 先從 `README.md` 的席位表決定這一個主要席位，再寫筆記的 Category。
 - 從 `main` 開一條只服務這個 Cell 的 branch。
 - 若目前 agent 有指定 branch 命名規則，遵守它；否則使用
   `cursor/add-<slug>-cell`。
-- 先檢查這個 Cell ID 是否已存在。已存在就更新同一份 review，不要新建重複
-  Cell。
+- 先檢查這個 Cell ID 是否已存在。已存在就更新同一份 review，以及五份
+  README 裡的那一列，不要新建重複 Cell。
 
 Canonical ID：
 
@@ -144,6 +149,10 @@ Slug 用小寫、連字號，例如 `gstack`、`gbrain`、`sandcastle`。
 可以保留 `初步看法`、`後續補充`、`Sources`。不要讓測試步驟、API 或安裝
 教學蓋過這五段。
 
+複製 template 之後，把筆記裡的 GitHub 渲染連結從 `main` 改成這次 PR 的
+branch。`evaluation.review_web` 用同一個 URL。合併進 `main` 之後，兩處都改回
+`main`。
+
 特別萃取：
 
 - agents、tasks、goals 如何被組織
@@ -151,7 +160,7 @@ Slug 用小寫、連字號，例如 `gstack`、`gbrain`、`sandcastle`。
 - runtime、sandbox、permissions 如何管理
 - 進度、artifacts、review 如何呈現
 - 人如何委派、比較、介入和驗證
-- 它比較像辦公室、員工、共用記憶，還是只是 ADE dashboard
+- 它在編排團隊裡主要補上哪一個席位。選法見下方 Register the Cell
 
 ### 2D / 3D workspace 定義
 
@@ -172,8 +181,8 @@ Slug 用小寫、連字號，例如 `gstack`、`gbrain`、`sandcastle`。
 
 ### 4. Register the Cell
 
-優先更新 `cells.yaml`。若這個 branch 還只有 `projects.yaml`，就更新它，
-但 Cell ID 仍使用 canonical URL。
+更新 `cells.yaml`。沿用檔案裡現有的一筆形狀。席位寫在五份 README 和筆記的
+Category，`cells.yaml` 維持現有欄位，不另開席位欄。
 
 必要欄位：
 
@@ -181,24 +190,54 @@ Slug 用小寫、連字號，例如 `gstack`、`gbrain`、`sandcastle`。
 - `name`
 - `source_type`：`repository` 或 `product`
 - `aliases`
-- `evaluation.status`：預設 `untried`
+- `license`：只寫公開頁面確認到的授權。沒看到就寫 `unknown`
+- `evaluation.status`：預設 `untried`。只有真正用過才寫 `tried`
 - `evaluation.review`：`reviews/<slug>.md`
 - `evaluation.review_web`：GitHub 渲染 URL（見下方網頁閱讀）
+- `evaluation.updated_at`：`YYYY-MM-DD`
 
-同步更新五份 README 的席位表，一列只代表一個 Cell，放進同一個主要席位，Cell 連結相同。英文欄位是：
+同步更新五份 README 的席位表。一列只代表一個 Cell，放進同一個主要席位，
+Cell 連結相同。新列加在該席位表格的最後，不要重排既有列。跨到鄰近席位的
+能力寫在貢獻那一句，不另開一列。
 
-| Cell | Nature | Contribution |
-| --- | --- | --- |
+定義以 `README.md` 的席位表為準。同一個席位在五份 README 的 `###` 標題是：
 
-- **席位**擇一：Orchestration、Governance、Workbench、Presence、Worker、Memory、Method、Boundary、Evaluation、Delivery surface。中文對應是指揮、治理、工作台、在場、員工、記憶、方法、邊界、驗證、交付表面。定義見 README 該節的席位表。
-- **Nature**：這個產品是什麼的英文短語，例如 `desktop ADE`、`orchestration framework`、`long-term memory`。
-- **Contribution**：一句英文，寫它在該席位補上的能力。跨到其他席位的部分也寫在這一句，不另開一列。
-- `README.zh-TW.md` 用同樣的 Cell 連結和同一個席位。欄位是 Cell、性質、貢獻，性質與貢獻寫繁體中文。
-- `README.ja.md` 欄位是 Cell、種類、貢献，種類與貢献寫日文。
-- `README.ko.md` 欄位是 Cell、성질、기여，성질與기여寫韓文。
-- `README.es.md` 欄位是 Cell、Naturaleza、Contribución，性質與貢獻寫西班牙文。
-- Cell 名稱連到 **GitHub 渲染**，不要用相對路徑 `reviews/<slug>.md`（避免在 IDE 開 raw Markdown）。
-- 這張表不放 Tested revision、Runtime、Status。實測狀態仍寫在筆記與 `evaluation.status`。
+| 席位 | README.md | README.zh-TW.md | README.ja.md | README.ko.md | README.es.md |
+| --- | --- | --- | --- | --- | --- |
+| Orchestration | Orchestration | 指揮 | オーケストレーション | 오케스트레이션 | Orquestación |
+| Governance | Governance | 治理 | ガバナンス | 거버넌스 | Gobernanza |
+| Workbench | Workbench | 工作台 | ワークベンチ | 워크벤치 | Banco de trabajo |
+| Presence | Presence | 在場 | 在席 | 현장 | Presencia |
+| Worker | Worker | 員工 | ワーカー | 워커 | Trabajador |
+| Memory | Memory | 記憶 | メモリ | 메모리 | Memoria |
+| Method | Method | 方法 | 進め方 | 방법 | Método |
+| Boundary | Boundary | 邊界 | 実行境界 | 실행 경계 | Límite |
+| Evaluation | Evaluation | 驗證 | 検証 | 검증 | Evaluación |
+| Delivery surface | Delivery surface | 交付表面 | 成果の画面 | 산출 표면 | Superficie de entrega |
+
+欄位：
+
+- `README.md`：Cell、Nature、Contribution。Nature 是英文短語，例如 `desktop ADE`、`orchestration framework`、`long-term memory`。Contribution 是一句英文，寫它在該席位補上的能力。
+- `README.zh-TW.md`：Cell、性質、貢獻。性質與貢獻寫繁體中文。
+- `README.ja.md`：Cell、種類、貢献。種類與貢献寫日文。
+- `README.ko.md`：Cell、성질、기여。성질與기여寫韓文。
+- `README.es.md`：Cell、Naturaleza、Contribución。Naturaleza 與 Contribución 寫西班牙文。
+
+選席位時只看它在團隊裡主要補上的那一塊：
+
+- 拆工、派工、把結果收回來：Orchestration。
+- 目標、人數、預算、權限，以及沒人看著時能不能開工：Governance。
+- 人同時看見、比較、進入多個 agent 的介面：Workbench。ADE 主控台放這裡。
+- 用空間顯示誰在忙、誰在等、誰做完：Presence。
+- 真正去讀、寫、操作介面、說話或回答的，以及組裝它們的 runtime：Worker。
+- 讓下一回合、下一個 agent 還用得到先前的文脈：Memory。
+- 技能、程序、完成定義：Method。
+- 在哪裡跑，以及可以碰哪些檔案、網路、終端、瀏覽器：Boundary。
+- 分數、軌跡、可比較的嘗試：Evaluation。
+- 人和 agent 一起改的畫面、文件、表格、簡報：Delivery surface。監督 agent 的主控台仍是 Workbench。
+
+Cell 名稱連到 **GitHub 渲染**，不要用相對路徑 `reviews/<slug>.md`（避免在 IDE 開 raw Markdown）。
+這張表不放 Tested revision、Runtime、Status。實測狀態仍寫在筆記與 `evaluation.status`。
 
 #### 網頁閱讀（所有 Cell 通用）
 
@@ -214,7 +253,7 @@ GitHub 渲染**：
 
 ### 5. Open the PR
 
-- 只 commit 這個 Cell 的檔案。
+- 只 commit 這個 Cell 的檔案：筆記、`cells.yaml`，以及五份 README 的那一列。
 - commit message 例如：`docs: add <name> Cell insight note`
 - push 後開 **draft PR**，base 為 `main`。
 - PR 只描述這一個 Cell，不要夾帶重構或其他產品。
@@ -245,7 +284,9 @@ PR 應讓人先看到洞察筆記，再決定 merge。PR 描述裡也應附上 *
 - [ ] 沒有把 upstream 放進本 repo
 - [ ] `reviews/<slug>.md` 有五個核心段落
 - [ ] Cell ID 是唯一的 canonical URL
-- [ ] catalog 和五份 README（`README.md`、`README.zh-TW.md`、`README.ja.md`、`README.ko.md`、`README.es.md`）已更新（含網頁閱讀連結與 `review_web`）
+- [ ] `cells.yaml` 沿用現有形狀，席位沒有另開欄位；`license` 與 `evaluation.updated_at` 已填
+- [ ] 五份 README 是同一個席位、同一條 Cell 連結，新列在該表最後；次要能力寫在貢獻，沒有第二列
+- [ ] 筆記 Category 是「席位／性質」，和 README 席位一致；渲染連結在合併前指向這次的 branch
 - [ ] 只有這個 Cell 的專用 PR
 - [ ] 對話結尾已附上 GitHub 渲染閱讀連結
 - [ ] 用簡單的話寫出可學習的重點，而不是翻譯官方文件

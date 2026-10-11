@@ -869,6 +869,13 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/Devin-AXIS/iPolloWork
+    name: iPolloWork
+    source_type: repository
+    aliases:
+      - https://www.ipollo.ai
+      - https://ipolloworklabs.com
+    license: LicenseRef-iPolloWork-Source-Available-1.0
   - id: https://github.com/pixel-agents-hq/pixel-agents
     name: Pixel Agents
     source_type: repository
@@ -884,6 +891,11 @@ cells:
       command: null
       ports: []
       data_paths: []
+      notes: Electron desktop plus local server. Default engine is an OpenCode sidecar; optional Codex Harness and DeepSeek Harness adapters. Source builds need Node.js 22+ and pnpm 11. Orchestrator CLI can optionally run sidecars in Docker or Apple container. Not executed.
+    evaluation:
+      status: untried
+      review: reviews/ipollowork.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ipollowork-cell-c2d2/reviews/ipollowork.md
       notes: TypeScript monorepo on Cloudflare Workers (Durable Objects, Dynamic Workers, Facets) and workerd. Local quick start is pnpm run-local via wrangler. Not executed.
     evaluation:
       status: untried
@@ -898,6 +910,7 @@ cells:
       updated_at: 2026-10-09
     discovery:
       source: user /create-cell-pr
+      rationale: Study a local multi-engine workbench that keeps project agents, approvals, and editable documents, decks, design, and video on one control surface.
       rationale: Study a Workers workspace where a sandboxed gadget, the agent, and capability gatekeepers share one place, then place that on a 2D floor and a walkable office.
       rationale: Pixel-art floor is the workplace for Claude Code sessions — seats, areas, bubbles, and teammates — distinct from a walkable 3D office.
 

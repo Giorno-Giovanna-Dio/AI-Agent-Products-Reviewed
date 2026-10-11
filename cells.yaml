@@ -995,6 +995,13 @@ cells:
     aliases:
       - https://hermes-workspace.com
     license: MIT
+  - id: https://github.com/livekit/agents
+    name: LiveKit Agents
+    source_type: repository
+    aliases:
+      - https://livekit.io
+      - https://docs.livekit.io/agents
+    license: Apache-2.0
     fork_url: null
     checkout:
       directory: null
@@ -1482,6 +1489,15 @@ cells:
       status: untried
       review: reviews/langgraph.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-langgraph-cell-9381/reviews/langgraph.md
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python framework for realtime room participants; not a desktop workspace
+    evaluation:
+      status: untried
+      review: reviews/livekit-agents.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-livekit-agents-cell-9381/reviews/livekit-agents.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1531,6 +1547,7 @@ cells:
       rationale: Study a local GUI and TUI workbench where design, documents, and multi-agent rooms share one task record, while humans still pin rules and accept deliveries.
       rationale: Study tool desks, agent loops, and graph handoffs as staffing on a 2D floor and in a walkable office
       rationale: Study graph state, checkpoints, interrupts, and time travel as the schedule and routing under Deep Agents, which sits on this runtime
+      rationale: A dispatched job joins a room as a participant, so presence, the speaking turn, and human takeover are workplace events
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

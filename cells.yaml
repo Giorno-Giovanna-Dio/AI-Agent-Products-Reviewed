@@ -1171,6 +1171,13 @@ cells:
       - https://github.com/transfer-aws/agent-squad
       - https://2fastlabs.github.io/agent-squad/
     license: Apache-2.0
+  - id: https://github.com/Agenta-AI/agenta
+    name: Agenta
+    source_type: repository
+    aliases:
+      - https://github.com/agenta-ai/agenta
+      - https://agenta.ai
+    license: MIT (non-ee); Agenta Enterprise License (ee/)
     fork_url: null
     checkout:
       directory: null
@@ -1215,6 +1222,11 @@ cells:
       status: untried
       review: reviews/agent-squad.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agent-squad-cell-ad04/reviews/agent-squad.md
+      notes: Self-host docs use Docker Compose; agents run in a runner (local container or Daytona). Not executed.
+    evaluation:
+      status: untried
+      review: reviews/agenta.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agenta-cell-ad04/reviews/agenta.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1242,6 +1254,7 @@ cells:
       rationale: Study directional communication flows — task slips that return versus handoffs that move the visitor — as the floor plan of an agency office.
       rationale: Study how a person watches, interrupts, and verifies an employee who is using a real desktop
       rationale: Study per-turn classifier routing, per-agent conversation drawers, and supervisor parallel ask as office dispatch.
+      rationale: Study a shared job-shaped coworker — approval pauses, unattended first messages, and desk-to-desk handoff — as presence in a 2D or 3D office.
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

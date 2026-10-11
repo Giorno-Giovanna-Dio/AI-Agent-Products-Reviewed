@@ -43,7 +43,7 @@ README，也不是把 upstream 程式碼放進本 repo。對人說明的同一�
 
 - 一份洞察筆記：`reviews/<slug>.md`
 - catalog 中的一筆 Cell
-- README「在編排團隊裡的位置」的一列
+- README「在編排團隊裡的位置」的一列，並在 `README.en.md` 的同一個席位加英文一列
 - 一條專用 branch 和一個 draft PR
 
 ## Hard rules
@@ -185,7 +185,7 @@ Slug 用小寫、連字號，例如 `gstack`、`gbrain`、`sandcastle`。
 - `evaluation.review`：`reviews/<slug>.md`
 - `evaluation.review_web`：GitHub 渲染 URL（見下方網頁閱讀）
 
-同步更新 `README.md` 的「在編排團隊裡的位置」，一列只代表一個 Cell，放進一個主要席位。欄位是：
+同步更新 `README.md` 與 `README.en.md` 的席位表，一列只代表一個 Cell，放進同一個主要席位。中文欄位是：
 
 | Cell | 性質 | 貢獻 |
 | --- | --- | --- |
@@ -193,6 +193,7 @@ Slug 用小寫、連字號，例如 `gstack`、`gbrain`、`sandcastle`。
 - **席位**擇一：指揮、治理、工作台、在場、員工、記憶、方法、邊界、驗證、交付表面。定義見 README 該節的席位表。
 - **性質**：這個產品是什麼的短語，例如「桌面 ADE」「編排框架」「長期記憶」。
 - **貢獻**：一句話，寫它在該席位補上的能力。跨到其他席位的部分也寫在這一句，不另開一列。
+- `README.en.md` 用同樣的 Cell 連結和同一個席位。欄位是 Cell、Nature、Contribution，性質與貢獻寫英文。
 - Cell 名稱連到 **GitHub 渲染**，不要用相對路徑 `reviews/<slug>.md`（避免在 IDE 開 raw Markdown）。
 - 這張表不放 Tested revision、Runtime、Status。實測狀態仍寫在筆記與 `evaluation.status`。
 

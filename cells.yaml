@@ -1314,6 +1314,11 @@ cells:
     source_type: repository
     aliases: []
     license: CC-BY-NC-SA-4.0
+  - id: https://github.com/divagr18/memlayer
+    name: Memlayer
+    source_type: repository
+    aliases: []
+    license: MIT
     fork_url: null
     checkout:
       directory: null
@@ -1510,6 +1515,11 @@ cells:
       status: untried
       review: reviews/meldwork.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-meldwork-cell-80a8/reviews/meldwork.md
+      notes: Python 3.10+ library (PyPI and repo 0.1.8); wraps an LLM client, local Chroma plus NetworkX. Not installed.
+    evaluation:
+      status: untried
+      review: reviews/memlayer.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memlayer-cell-ca43/reviews/memlayer.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1561,6 +1571,7 @@ cells:
       rationale: Study graph state, checkpoints, interrupts, and time travel as the schedule and routing under Deep Agents, which sits on this runtime
       rationale: A dispatched job joins a room as a participant, so presence, the speaking turn, and human takeover are workplace events
       rationale: A local review loop that freezes one task snapshot, keeps each agent's dissent visible, and requires a human adoption gate before workspace writes.
+      rationale: Study memory as the layer between desk agents and storage, so a person can see salience writeback, tiered recall, and due reminders in the office.
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

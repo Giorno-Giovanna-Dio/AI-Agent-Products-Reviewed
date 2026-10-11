@@ -166,6 +166,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [OpenAI Agents SDK](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openai-agents-python-cell-9381/reviews/openai-agents-python.md) | [https://github.com/openai/openai-agents-python](https://github.com/openai/openai-agents-python) | 尚未測試 | Python agent SDK | `untried` |
 | [OpenHands](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openhands-cell-80a8/reviews/openhands.md) | [https://github.com/OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | 尚未測試 | Agent Canvas GUI + Agent Server sandbox | `untried` |
 | [PocketFlow](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pocketflow-cell-ca43/reviews/pocketflow.md) | [https://github.com/The-Pocket/PocketFlow](https://github.com/The-Pocket/PocketFlow) | 尚未測試 | Python graph framework (zero deps) | `untried` |
+| [PocketFlow Codebase Knowledge](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pocketflow-codebase-tutorial-cell-ca43/reviews/pocketflow-tutorial-codebase-knowledge.md) | [https://github.com/The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge](https://github.com/The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge) | 尚未測試 | Python CLI（PocketFlow 教學流程） | `untried` |
 
 狀態值：
 

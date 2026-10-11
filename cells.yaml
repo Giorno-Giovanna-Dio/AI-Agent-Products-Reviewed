@@ -1283,6 +1283,12 @@ cells:
     name: PocketFlow
     source_type: repository
     aliases: []
+  - id: https://github.com/The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge
+    name: PocketFlow Codebase Knowledge
+    source_type: repository
+    aliases:
+      - https://github.com/The-Pocket/Tutorial-Codebase-Knowledge
+      - https://code2tutorial.com/
     license: MIT
     fork_url: null
     checkout:
@@ -1642,6 +1648,17 @@ cells:
       status: untried
       review: reviews/pocketflow.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pocketflow-cell-ca43/reviews/pocketflow.md
+      command: python main.py
+      ports: []
+      data_paths:
+        - output/
+        - llm_cache.json
+        - logs/
+      notes: Python CLI tutorial that imports PocketFlow; optional Docker (python:3.10). Needs an LLM key. Not installed.
+    evaluation:
+      status: untried
+      review: reviews/pocketflow-tutorial-codebase-knowledge.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pocketflow-codebase-tutorial-cell-ca43/reviews/pocketflow-tutorial-codebase-knowledge.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1704,6 +1721,7 @@ cells:
       rationale: Study who keeps the visitor when work moves — a handoff changes the active desk, while an agent-as-tool leaves the manager in place
       rationale: Study conversation-scoped sandboxes, confirmation pauses, and a control-room GUI over a software-engineer agent runtime
       rationale: Study graph nodes, action paths, and a shared store as desks, corridors, and a common cabinet in a 2D floor and a walkable 3D office
+      rationale: Study a codebase compiled into indexed concepts and ordered chapters, as stations on a 2D floor and desks in a 3D office
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

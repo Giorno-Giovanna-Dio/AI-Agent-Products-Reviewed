@@ -11,7 +11,7 @@
 <p align="center">
   <a href="#目錄">目錄</a>
   &nbsp;·&nbsp;
-  <a href="CONTRIBUTING.md">貢獻</a>
+  <a href="#歡迎貢獻">貢獻</a>
   &nbsp;·&nbsp;
   <a href="CODE_OF_CONDUCT.md">共事準則</a>
   &nbsp;·&nbsp;

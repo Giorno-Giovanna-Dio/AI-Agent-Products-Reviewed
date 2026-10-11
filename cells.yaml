@@ -397,6 +397,25 @@ cells:
     license: Apache-2.0
     fork_url: null
     checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Policy-enforced sandbox runtime for autonomous agents; gateway + supervisor boundaries
+    evaluation:
+      status: untried
+      review: reviews/openshell.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openshell-cell-7aa3/reviews/openshell.md
+      tested_at: null
+      updated_at: 2026-10-06
+    discovery:
+      source: GitHub starred scan
+      rationale: Safe private runtime layer for autonomous agents — permissions and sandbox for workspace orchestration
+
   - id: https://github.com/TencentCloud/Octop
     name: Octop
     source_type: repository
@@ -405,6 +424,27 @@ cells:
     license: MIT
     fork_url: null
     checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: octop run
+      ports:
+        - 8088
+      data_paths:
+        - ~/.octop
+      notes: Python 3.12+ single process; Web/CLI/IM/cron; optional PostgreSQL control-plane DB and Docker workspace sandbox
+    evaluation:
+      status: untried
+      review: reviews/octop.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-octop-cell-7aa3/reviews/octop.md
+      tested_at: null
+      updated_at: 2026-10-06
+    discovery:
+      source: GitHub starred scan
+      rationale: Self-hosted multi-user multi-agent assistant with IM channels, expert teams, and household-oriented orchestration
+
   - id: https://github.com/odysseus-dev/odysseus
     name: Odysseus
     source_type: repository
@@ -412,6 +452,27 @@ cells:
     license: AGPL-3.0-or-later
     fork_url: null
     checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: docker
+      command: docker compose up -d --build
+      ports:
+        - 7000
+      data_paths:
+        - data/
+      notes: Native Python/uvicorn also supported; bundled ChromaDB, SearXNG, ntfy in Compose; Cookbook for local model serve
+    evaluation:
+      status: untried
+      review: reviews/odysseus.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-odysseus-cell-7aa3/reviews/odysseus.md
+      tested_at: null
+      updated_at: 2026-10-06
+    discovery:
+      source: GitHub starred scan
+      rationale: Self-hosted AI workspace
+
   - id: https://github.com/vectorize-io/hindsight
     name: Hindsight
     source_type: repository
@@ -420,6 +481,28 @@ cells:
     license: MIT
     fork_url: null
     checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: docker
+      command: null
+      ports:
+        - 8888
+        - 9999
+      data_paths:
+        - hindsight-data
+      notes: Docker or pip hindsight-api; optional embedded pg0; UI on 9999; LLM key required for retain/reflect pipeline
+    evaluation:
+      status: untried
+      review: reviews/hindsight.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-hindsight-cell-7aa3/reviews/hindsight.md
+      tested_at: null
+      updated_at: 2026-10-06
+    discovery:
+      source: GitHub starred scan
+      rationale: Agent memory that learns — context and handoff patterns for orchestration workspace
+
   - id: https://github.com/herdrdev/herdr
     name: Herdr
     source_type: repository
@@ -428,6 +511,25 @@ cells:
     license: Apache-2.0
     fork_url: null
     checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: herdr
+      ports: []
+      data_paths: []
+      notes: Single Rust binary; background server + TUI client; local socket API; optional SSH remote workspaces; agents are external CLIs in PTY panes
+    evaluation:
+      status: untried
+      review: reviews/herdr.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-herdr-cell-7aa3/reviews/herdr.md
+      tested_at: null
+      updated_at: 2026-10-06
+    discovery:
+      source: GitHub starred scan
+      rationale: Runtime layer where coding agents live — sandbox/permissions for workspace
+
   - id: https://github.com/mvschwarz/openrig
     name: OpenRig
     source_type: repository
@@ -436,6 +538,25 @@ cells:
     fork_url: null
     checkout:
       directory: openrig
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: rig
+      ports: []
+      data_paths:
+        - ~/.openrig
+      notes: Node.js 22 or 24; tmux; macOS or Linux; Hono daemon + SQLite; Claude Code, Codex, Pi via managed tmux seats
+    evaluation:
+      status: untried
+      review: reviews/openrig.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openrig-cell-7aa3/reviews/openrig.md
+      tested_at: null
+      updated_at: 2026-10-06
+    discovery:
+      source: GitHub starred scan
+      rationale: Agent teams with roles, shared context, and owned work across Claude Code, Codex, and Pi
+
   - id: https://github.com/openclaw/openclaw
     name: OpenClaw
     source_type: repository
@@ -444,10 +565,78 @@ cells:
     license: MIT
     fork_url: null
     checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: openclaw
+      ports:
+        - 18789
+      data_paths: []
+      notes: Node.js Gateway daemon; CLI onboard; optional Docker/Nix; channels via plugins
+    evaluation:
+      status: untried
+      review: reviews/openclaw.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openclaw-cell-7aa3/reviews/openclaw.md
+      tested_at: null
+      updated_at: 2026-10-06
+    discovery:
+      source: GitHub starred scan
+      rationale: Cross-platform personal/team assistant that executes tasks via local Gateway and messaging channels
+
   - id: https://github.com/akitaonrails/ai-memory
     name: ai-memory
+    source_type: repository
+    aliases: []
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: ai-memory
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: ai-memory
+      ports: []
+      data_paths: []
+      notes: Single Rust binary; self-hosted server; lifecycle hooks + MCP for 20+ coding CLIs; git-backed markdown wiki + SQLite index
+    evaluation:
+      status: untried
+      review: reviews/ai-memory.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ai-memory-cell-7aa3/reviews/ai-memory.md
+      tested_at: null
+      updated_at: 2026-10-06
+    discovery:
+      source: GitHub starred scan
+      rationale: Cross-agent long-term memory and typed vendor handoff for coding CLI harnesses
+
   - id: https://github.com/pingdotgg/t3code
     name: T3 Code
+    source_type: repository
+    aliases: []
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: t3
+      ports: []
+      data_paths: []
+      notes: Local server + Electron/desktop/web/mobile clients; T3 Connect optional relay
+    evaluation:
+      status: untried
+      review: reviews/t3code.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-t3code-cell-7aa3/reviews/t3code.md
+      tested_at: null
+      updated_at: 2026-10-06
+    discovery:
+      source: GitHub starred scan
+      rationale: Open-source Conductor-class harness control surface with strong mobile/remote story
+
   - id: https://github.com/paperclipai/paperclip
     name: Paperclip
     source_type: repository
@@ -568,8 +757,59 @@ cells:
       rationale: Open-source agent management at work; org/orchestration UX for multi-agent teams
   - id: https://github.com/langchain-ai/deepagents
     name: Deep Agents
+    source_type: repository
+    aliases: []
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: deepagents
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths:
+        - ~/.deepagents
+      notes: Python package deepagents on LangGraph; terminal agent dcode lives in the same repo; JS sibling is deepagentsjs
+    evaluation:
+      status: untried
+      review: reviews/deepagents.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-deepagents-cell-9e0b/reviews/deepagents.md
+      tested_at: null
+      updated_at: 2026-10-08
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study batteries-included harness primitives — filesystem memory, subagent quarantine, and human interrupts — as the runtime of one employee in a future workspace
+
   - id: https://github.com/TencentCloud/octop-memory
     name: Octop Memory
+    source_type: repository
+    aliases: []
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: octop-memory
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: octop-memory
+      ports: []
+      data_paths:
+        - ~/.octop-memory/
+        - ~/.octopmemory/
+      notes: Python 3.12+; stdlib + SQLite/FTS5 core; optional PostgreSQL, CLI, LangGraph checkpointer; OpenClaw plugin and Hermes provider
+    evaluation:
+      status: untried
+      review: reviews/octop-memory.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-octop-memory-cell-740f/reviews/octop-memory.md
+      tested_at: null
+      updated_at: 2026-10-08
+    discovery:
+      source: user request
+      rationale: Portable layered memory that travels between hosts, separate from the Octop assistant shell
+
   - id: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
     name: LLM Wiki
     source_type: product
@@ -661,6 +901,25 @@ cells:
     fork_url: null
     checkout:
       directory: openchamber
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: openchamber
+      ports: []
+      data_paths:
+        - ~/.config/openchamber/
+      notes: ADE around OpenCode. Desktop bundles the OpenCode CLI; CLI, web, and VS Code need Node.js 22+ and an installed OpenCode. Listens on localhost by default. Relay identity is under ~/.config/openchamber/; full session store path not confirmed.
+    evaluation:
+      status: untried
+      review: reviews/openchamber.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openchamber-cell-0717/reviews/openchamber.md
+      tested_at: null
+      updated_at: 2026-10-08
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
+
   - id: https://github.com/anomalyco/opencode
     name: OpenCode
     source_type: repository
@@ -876,58 +1135,34 @@ cells:
       - https://codeberg.org/doobidoo/mcp-memory-service
       - https://mcpmemory.services
     license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: memory
+      ports:
+        - 8000
+      data_paths: []
+      notes: Python 3.10+ self-hosted memory service (PyPI mcp-memory-service 11.15.0). MCP for coding clients; HTTP for agent pipelines. Backends include sqlite-vec, Cloudflare, hybrid, and Milvus. Not run in this review.
+    evaluation:
+      status: untried
+      review: reviews/mcp-memory-service.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-mcp-memory-service-cell-fb52/reviews/mcp-memory-service.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study MCP as the door any employee uses to read and write shared memory, including tags, consolidation, and local drawers versus the synced cabinet
+
   - id: https://github.com/MemoriLabs/Memori
     name: Memori
     source_type: repository
     aliases:
       - https://memorilabs.ai
     license: Apache-2.0
-  - id: https://github.com/ClaudioDrews/memory-os
-    name: Memory OS
-  - id: https://github.com/agentscope-ai/agentscope
-    name: AgentScope
-    source_type: repository
-    aliases:
-      - https://agentscope.io
-  - id: https://github.com/zilliztech/memsearch
-    name: memsearch
-    source_type: repository
-    aliases:
-      - https://zilliztech.github.io/memsearch/
-  - id: https://github.com/EKKOLearnAI/ekko-studio
-    name: Ekko Studio
-    source_type: repository
-    aliases:
-      - https://ekkostudio.xyz
-      - https://hermes-studio.ai
-      - https://github.com/EKKOLearnAI/hermes-web-ui
-    license: BSL-1.1
-  - id: https://github.com/spacering-net/codeg
-    name: Codeg
-    source_type: repository
-    aliases:
-      - https://docs.codeg.app
-  - id: https://github.com/longyangxi/OpenOffice
-    name: Open Office
-  - id: https://github.com/Mng-dev-ai/agentrove
-    name: Agentrove
-    source_type: repository
-    aliases: []
-    license: Apache-2.0
-  - id: https://github.com/NanmiCoder/cc-haha
-    name: cc-haha
-    source_type: repository
-    aliases:
-      - https://cchaha.ai
-  - id: https://github.com/Devin-AXIS/iPolloWork
-    name: iPolloWork
-    source_type: repository
-    aliases:
-      - https://www.ipollo.ai
-      - https://ipolloworklabs.com
-    license: LicenseRef-iPolloWork-Source-Available-1.0
-  - id: https://github.com/harbor-framework/harbor
-    name: Harbor
     fork_url: null
     checkout:
       directory: null
@@ -938,24 +1173,253 @@ cells:
       command: null
       ports: []
       data_paths: []
-      notes: Electron desktop plus local server. Default engine is an OpenCode sidecar; optional Codex Harness and DeepSeek Harness adapters. Source builds need Node.js 22+ and pnpm 11. Orchestrator CLI can optionally run sidecars in Docker or Apple container. Not executed.
+      notes: Python and TypeScript SDK wrapping LLM clients; BYODB SQL or Memori Cloud. Not executed.
     evaluation:
       status: untried
-      review: reviews/ipollowork.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/ipollowork.md
+      review: reviews/memori.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memori-cell-fb52/reviews/memori.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study entity, process, and session attribution, and recall-before-answer, as desk notes in a 2D/3D office
+
+  - id: https://github.com/ClaudioDrews/memory-os
+    name: Memory OS
+    source_type: repository
+    aliases: []
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: docker-compose
+      command: null
+      ports:
+        - 6333
+        - 6379
+      data_paths:
+        - ~/.hermes/memories
+        - ~/.hermes/state.db
+        - ~/.hermes/memory_store.db
+        - ~/vault
+      notes: Hermes Agent plugin plus local Qdrant, Redis, and ARQ worker; layered memory and cron, not a process scheduler
+    evaluation:
+      status: untried
+      review: reviews/memory-os.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memory-os-cell-fb52/reviews/memory-os.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
+      rationale: See what memory-as-an-OS adds beyond storage — layers, janitor schedules, and source authority — for a future agent office
+
+  - id: https://github.com/agentscope-ai/agentscope
+    name: AgentScope
+    source_type: repository
+    aliases:
+      - https://agentscope.io
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python framework, not a desktop workspace
+    evaluation:
+      status: untried
+      review: reviews/agentscope.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agentscope-cell-fb52/reviews/agentscope.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study how messages, pipelines, and human confirmation move work between agents
+
+  - id: https://github.com/zilliztech/memsearch
+    name: memsearch
+    source_type: repository
+    aliases:
+      - https://zilliztech.github.io/memsearch/
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python CLI and plugins for Claude Code, Codex, DeepSeek Harness, OpenClaw, and OpenCode. Markdown journals are the memory; Milvus is a rebuildable index. Not a desktop workspace.
+    evaluation:
+      status: untried
+      review: reviews/memsearch.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memsearch-cell-fb52/reviews/memsearch.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study a markdown journal plus rebuildable search index as an office archive employees query, distinct from learning memory and knowledge graphs.
+
+  - id: https://github.com/EKKOLearnAI/ekko-studio
+    name: Ekko Studio
+    source_type: repository
+    aliases:
+      - https://ekkostudio.xyz
+      - https://hermes-studio.ai
+      - https://github.com/EKKOLearnAI/hermes-web-ui
+    license: BSL-1.1
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Desktop Electron app is the recommended path and bundles the runtime. npm (Node.js 23+) serves a local web console; Docker Compose is also documented. Not run in this review.
+    evaluation:
+      status: untried
+      review: reviews/ekko-studio.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ekko-studio-cell-fb52/reviews/ekko-studio.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
+      rationale: Separate the Vue Flow workflow studio from the chat and group rooms where people work, and treat node handoff as a narrow packet rather than shared memory
+
+  - id: https://github.com/spacering-net/codeg
+    name: Codeg
+    source_type: repository
+    aliases:
+      - https://docs.codeg.app
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Desktop Tauri app or self-hosted codeg-server; Docker image also published
+    evaluation:
+      status: untried
+      review: reviews/codeg.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-codeg-cell-fb52/reviews/codeg.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
+      rationale: Study session aggregation and cold-start cross-agent handoff as memory and room assignment, separate from an ADE dashboard
+
+  - id: https://github.com/longyangxi/OpenOffice
+    name: Open Office
+    source_type: repository
+    aliases: []
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports:
+        - 9090
+        - 9099
+      data_paths:
+        - ~/.open-office
+        - ~/.open-office-dev
+      notes: TypeScript. Next.js + PixiJS top-down pixel office; Node gateway package bit-office (dev WebSocket 9099, default 9090). Optional Tauri desktop and Telegram. Not run.
+    evaluation:
+      status: untried
+      review: reviews/openoffice.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openoffice-cell-c2d2/reviews/openoffice.md
       tested_at: null
       updated_at: 2026-10-09
     discovery:
       source: user /create-cell-pr
-      rationale: Study a local multi-engine workbench that keeps project agents, approvals, and editable documents, decks, design, and video on one control surface.
+      rationale: Study a shared 2D pixel floor where a lead, developers, and a reviewer hand work through phases and per-agent worktrees.
 
-  - id: https://github.com/pixel-agents-hq/pixel-agents
-    name: Pixel Agents
+  - id: https://github.com/Mng-dev-ai/agentrove
+    name: Agentrove
+    source_type: repository
+    aliases: []
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: docker-compose
+      command: docker compose up -d
+      ports:
+        - 3000
+        - 8080
+      data_paths:
+        - storage/
+      notes: Docker Compose web (frontend 3000, API 8080, Redis); macOS Tauri sidecar and iOS thin client also ship. ACP agents run in a per-workspace Docker or host sandbox. Not run.
+    evaluation:
+      status: untried
+      review: reviews/agentrove.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agentrove-cell-c2d2/reviews/agentrove.md
+      tested_at: null
+      updated_at: 2026-10-09
+    discovery:
+      source: user /create-cell-pr
+      rationale: Personas, sub-thread handoff, and per-workspace ACP sandboxes as staffing inside one coding room
+
+  - id: https://github.com/NanmiCoder/cc-haha
+    name: cc-haha
     source_type: repository
     aliases:
-      - https://github.com/laude-institute/harbor
-      - https://harborframework.com
-    license: Apache-2.0
+      - https://cchaha.ai
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths:
+        - ~/.claude
+      notes: Electron desktop (macOS/Windows/Linux) around the bundled Bun CLI claude-haha and a local REST/WebSocket server. Computer Use documents a macOS native helper and a Windows Python helper; no Linux executor in the docs. Not run.
+    evaluation:
+      status: untried
+      review: reviews/cc-haha.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-cc-haha-cell-c2d2/reviews/cc-haha.md
+      tested_at: null
+      updated_at: 2026-10-09
+    discovery:
+      source: user /create-cell-pr
+      rationale: Local Claude Code desktop shell with worktrees, a skill marketplace, in-harness model switching, and remote IM on one CLI kernel.
+
+  - id: https://github.com/Devin-AXIS/iPolloWork
+    name: iPolloWork
+    source_type: repository
+    aliases:
+      - https://www.ipollo.ai
+      - https://ipolloworklabs.com
+    license: LicenseRef-iPolloWork-Source-Available-1.0
     fork_url: null
     checkout:
       directory: null
@@ -985,11 +1449,6 @@ cells:
       status: untried
       review: reviews/ipollowork.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/ipollowork.md
-      notes: VS Code extension panel plus standalone Node 20+ browser office. Claude Code is the shipped provider. Not run.
-    evaluation:
-      status: untried
-      review: reviews/pixel-agents.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/pixel-agents.md
       tested_at: null
       updated_at: 2026-10-09
     discovery:
@@ -1000,82 +1459,6 @@ cells:
     name: Pixel Agents
     source_type: repository
     aliases: []
-    license: MIT
-  - id: https://github.com/simular-ai/Agent-S
-    name: Agent-S
-    source_type: repository
-    aliases:
-      - https://www.simular.ai
-      - https://www.sai.work
-    license: Apache-2.0
-  - id: https://github.com/Eigenwise/atomic-agents
-    name: Atomic Agents
-    source_type: repository
-    aliases: []
-  - id: https://github.com/9thLevelSoftware/Daem0n-MCP
-    name: Daem0nMCP
-    source_type: repository
-    aliases:
-      - https://github.com/DasBluEyedDevil/Daem0n-MCP
-  - id: https://github.com/outsourc-e/hermes-workspace
-    name: Hermes Workspace
-    source_type: repository
-    aliases:
-      - https://hermes-workspace.com
-    license: MIT
-  - id: https://github.com/livekit/agents
-    name: LiveKit Agents
-    source_type: repository
-    aliases:
-      - https://livekit.io
-      - https://docs.livekit.io/agents
-    license: Apache-2.0
-  - id: https://github.com/FoundationAgents/MetaGPT
-    name: MetaGPT
-    source_type: repository
-    aliases:
-      - https://github.com/geekan/MetaGPT
-    license: MIT
-  - id: https://github.com/mycelium-io/mycelium
-    name: Mycelium
-  - id: https://github.com/zai-org/Open-AutoGLM
-    name: Open-AutoGLM
-    source_type: repository
-    aliases: []
-    license: Apache-2.0
-  - id: https://github.com/OpenHands/OpenHands
-    name: OpenHands
-    source_type: repository
-    aliases:
-      - https://github.com/OpenDevin/OpenDevin
-      - https://github.com/All-Hands-AI/OpenHands
-      - https://openhands.dev
-    license: MIT
-  - id: https://github.com/TEN-framework/ten-framework
-    name: TEN Framework
-    source_type: repository
-    aliases:
-      - https://theten.ai
-    license: Apache-2.0 with additional conditions
-  - id: https://github.com/dream-num/univer
-    name: Univer
-    source_type: repository
-    aliases:
-      - https://univer.ai
-    license: Apache-2.0
-  - id: https://github.com/TencentCloudADP/youtu-agent
-    name: Youtu-Agent
-    source_type: repository
-    aliases:
-      - https://github.com/Tencent/Youtu-agent
-      - https://tencentcloudadp.github.io/youtu-agent/
-      rationale: Pixel-art floor is the workplace for Claude Code sessions — seats, areas, bubbles, and teammates — distinct from a walkable 3D office.
-
-  - id: https://github.com/gastownhall/gastown
-    name: Gas Town
-    source_type: repository
-    aliases:
-      - https://github.com/steveyegge/gastown
     license: MIT
     fork_url: null
     checkout:
@@ -1118,141 +1501,17 @@ cells:
       status: untried
       review: reviews/pixel-agents.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/pixel-agents.md
-      method: native
-      command: gt
-      ports: []
-      data_paths: []
-      notes: Go CLI `gt` with tmux-backed agents and a Dolt Beads ledger (town example ~/gt); optional Docker Compose. Not executed.
-    evaluation:
-      status: untried
-      review: reviews/gastown.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/gastown.md
-      tested_at: null
-      updated_at: 2026-10-09
-    discovery:
-      source: user /create-cell-pr
-      rationale: A named town of roles, hooks, and a merge dock is a place of work even though today's UI is still a CLI and dashboard.
-
-  - id: https://github.com/phodal/routa
-    name: Routa
-    source_type: repository
-    aliases:
-      - https://phodal.github.io/routa/
-    license: MIT
-    fork_url: null
-    checkout:
-      directory: null
-      tested_commit: null
-      tested_version: null
-    runtime:
-      method: native
-      command: null
-      ports: []
-      data_paths: []
-      notes: Next.js web, Tauri desktop with Axum, and routa-cli; Docker sandbox exists. Not run.
-    evaluation:
-      status: untried
-      review: reviews/routa.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/routa.md
-      tested_at: null
-      updated_at: 2026-10-09
-    discovery:
-      source: user /create-cell-pr
-      rationale: Kanban lane moves queue specialist sessions and server-side delivery gates, so a board can become stations in a future office.
-
-  - id: https://github.com/golutra/golutra
-    name: Golutra
-    source_type: repository
-    aliases:
-      - https://www.golutra.com
-    license: BUSL-1.1
-    fork_url: null
-    checkout:
-      directory: null
-      tested_commit: null
-      tested_version: null
-    runtime:
-      method: native
-      command: null
-      ports: []
-      data_paths:
-        - .golutra
-      notes: Tauri desktop (Vue 3 + Rust). Documented path is the desktop app; it spawns local CLI PTYs. Workspace metadata under .golutra/; chat DB in the app data dir.
-    evaluation:
-      status: untried
-      review: reviews/golutra.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/golutra.md
-      tested_at: null
-      updated_at: 2026-10-09
-    discovery:
-      source: user /create-cell-pr
-      rationale: Study chat-room dispatch onto parallel local CLI sessions, and how permission-skip flags sit next to a sandbox checkbox.
-
-  - id: https://github.com/SeemSeam/claude_codex_bridge
-    name: Claude Code Bridge
-    source_type: repository
-    aliases: []
-    license: AGPL-3.0-only
-    fork_url: null
-    checkout:
-      directory: null
-      tested_commit: null
-      tested_version: null
-    runtime:
-      method: native
-      command: null
-      ports: []
-      data_paths: []
-      notes: Python CLI entry (ccb.py) with tmux on Linux/macOS/WSL; native Windows beta uses Herdr. Releases also include an optional Rust runtime accelerator. npm package @seemseam/ccb is the installer. Not executed.
-    evaluation:
-      status: untried
-      review: reviews/claude-codex-bridge.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/claude-codex-bridge.md
-      tested_at: null
-      updated_at: 2026-10-09
-    discovery:
-      source: user /create-cell-pr
-      rationale: Visible native CLI panes plus a project mailbox, so a human can watch, wait, and take a desk while results return to the original conversation.
-
-  - id: https://github.com/cloudflare/cloudflare-os
-    name: Cloudflare OS
-    source_type: repository
-    aliases:
-      - https://os.cloudflare.app
-    license: Apache-2.0
-    fork_url: null
-    checkout:
-      directory: null
-      tested_commit: null
-      tested_version: null
-    runtime:
-      method: native
-      command: null
-      ports: []
-      data_paths: []
-      notes: TypeScript monorepo on Cloudflare Workers (Durable Objects, Dynamic Workers, Facets) and workerd. Local quick start is pnpm run-local via wrangler. Not executed.
-    evaluation:
-      status: untried
-      review: reviews/cloudflare-os.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/cloudflare-os.md
       tested_at: null
       updated_at: 2026-10-09
     discovery:
       source: user /create-cell-pr
       rationale: Pixel-art floor is the workplace for Claude Code sessions — seats, areas, bubbles, and teammates — distinct from a walkable 3D office.
-      rationale: Study a Workers workspace where a sandboxed gadget, the agent, and capability gatekeepers share one place, then place that on a 2D floor and a walkable office.
 
   - id: https://github.com/gastownhall/gastown
     name: Gas Town
     source_type: repository
     aliases:
       - https://github.com/steveyegge/gastown
-  - id: https://github.com/langchain-ai/langchain
-    name: LangChain
-    source_type: repository
-    aliases:
-      - https://www.langchain.com
-      - https://docs.langchain.com
     license: MIT
     fork_url: null
     checkout:
@@ -1292,54 +1551,6 @@ cells:
     source_type: repository
     aliases:
       - https://phodal.github.io/routa/
-  - id: https://github.com/VRSEN/agency-swarm
-    name: Agency Swarm
-    source_type: repository
-    aliases: []
-    license: MIT
-  - id: https://github.com/XYZ-AI-Lab/AxisAgentic
-    name: AxisAgentic
-    source_type: repository
-    aliases: []
-  - id: https://github.com/i-am-bee/beeai-framework
-    name: BeeAI Framework
-    source_type: repository
-    aliases:
-      - https://framework.beeai.dev
-  - id: https://github.com/sipyourdrink-ltd/bernstein
-    name: Bernstein
-    source_type: repository
-    aliases:
-      - https://github.com/marketplace/actions/bernstein-multi-agent-orchestration
-      - https://bernstein.run
-      - https://github.com/chernistry/bernstein
-  - id: https://github.com/block/buzz
-    name: Buzz
-    source_type: repository
-    aliases:
-      - https://buzz.xyz
-    license: Apache-2.0
-  - id: https://github.com/rajkripal/cashew
-    name: Cashew
-    source_type: repository
-    aliases: []
-    license: MIT
-  - id: https://github.com/smtg-ai/claude-squad
-    name: Claude Squad
-    source_type: repository
-    aliases:
-      - https://smtg-ai.github.io/claude-squad/
-    license: AGPL-3.0
-  - id: https://github.com/langchain-ai/langgraph
-    name: LangGraph
-    source_type: repository
-    aliases:
-      - https://www.langchain.com/langgraph
-    license: MIT
-  - id: https://github.com/a2328275243/mempalace-evolve
-    name: MemPalace Evolve
-    source_type: repository
-    aliases: []
     license: MIT
     fork_url: null
     checkout:
@@ -1408,77 +1619,6 @@ cells:
     source_type: repository
     aliases: []
     license: AGPL-3.0-only
-  - id: https://github.com/HKUDS/AutoAgent
-    name: AutoAgent
-    source_type: repository
-    aliases: []
-    license: MIT
-  - id: https://github.com/microsoft/autogen
-    name: AutoGen
-    source_type: repository
-    aliases:
-      - https://microsoft.github.io/autogen/
-      - https://github.com/microsoft/agent-framework
-    license: CC-BY-4.0
-  - id: https://github.com/topoteretes/cognee
-    name: Cognee
-    source_type: repository
-    aliases:
-      - https://www.cognee.ai
-    license: Apache-2.0
-  - id: https://github.com/KunAgent/Kun
-    name: Kun
-    source_type: repository
-    aliases:
-      - https://www.kun-agent.com
-    license: PolyForm Noncommercial 1.0.0
-  - id: https://github.com/Ryder-Sun/Meldwork
-    name: Meldwork
-    source_type: repository
-    aliases:
-      - https://ryder-sun.github.io/Meldwork/
-      - https://github.com/Ryder-MHumble/Meldwork
-    license: Apache-2.0
-  - id: https://github.com/microsoft/agent-framework
-    name: Microsoft Agent Framework
-    source_type: repository
-    aliases:
-      - https://learn.microsoft.com/en-us/agent-framework/overview/agent-framework-overview
-    license: MIT
-  - id: https://github.com/modelscope/ms-agent
-    name: MS-Agent
-    source_type: repository
-    aliases:
-      - https://ms-agent-en.readthedocs.io
-    license: Apache-2.0
-  - id: https://github.com/The-Pocket/PocketFlow
-    name: PocketFlow
-    source_type: repository
-    aliases: []
-  - id: https://github.com/The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge
-    name: PocketFlow Codebase Knowledge
-    source_type: repository
-    aliases:
-      - https://github.com/The-Pocket/Tutorial-Codebase-Knowledge
-      - https://code2tutorial.com/
-    license: MIT
-  - id: https://github.com/pqpo/pragma
-    name: Pragma
-    source_type: repository
-    aliases: []
-    license: AGPL-3.0
-  - id: https://github.com/QwenLM/Qwen-Agent
-    name: Qwen-Agent
-    source_type: repository
-    aliases:
-      - https://qwenlm.github.io/Qwen-Agent/en/
-  - id: https://github.com/dream-num/univer-workspace
-    name: Univer Workspace
-    source_type: repository
-    aliases:
-      - https://univer.ai
-      - https://space.univer.ai
-    license: Apache-2.0
     fork_url: null
     checkout:
       directory: null
@@ -1505,72 +1645,7 @@ cells:
     source_type: repository
     aliases:
       - https://os.cloudflare.app
-  - id: https://github.com/2FastLabs/agent-squad
-    name: Agent Squad
-    source_type: repository
-    aliases:
-      - https://github.com/awslabs/agent-squad
-      - https://github.com/awslabs/multi-agent-orchestrator
-      - https://github.com/transfer-aws/agent-squad
-      - https://2fastlabs.github.io/agent-squad/
     license: Apache-2.0
-  - id: https://github.com/Agenta-AI/agenta
-    name: Agenta
-    source_type: repository
-    aliases:
-      - https://github.com/agenta-ai/agenta
-      - https://agenta.ai
-    license: MIT (non-ee); Agenta Enterprise License (ee/)
-  - id: https://github.com/HKUDS/AgentSpace
-    name: AgentSpace
-    source_type: repository
-    aliases:
-      - https://hire-an-agent.online/
-    license: Apache-2.0
-  - id: https://github.com/mixpeek/amux
-    name: Amux
-    source_type: repository
-    aliases:
-      - https://amux.io
-    license: MIT + Commons Clause
-  - id: https://github.com/i365dev/free4chat
-    name: Free4chat
-    source_type: repository
-    aliases:
-      - https://www.free4.chat
-      - https://free4.chat
-    license: MIT
-  - id: https://github.com/datawhalechina/hello-agents
-    name: Hello-Agents
-    source_type: repository
-    aliases:
-      - http://github.com/datawhalechina/hello-agents
-      - https://hello-agents.datawhale.cc
-      - https://datawhalechina.github.io/hello-agents/
-  - id: https://github.com/jjyaoao/HelloAgents
-    name: HelloAgents
-    source_type: repository
-    aliases: []
-    license: CC-BY-NC-SA-4.0
-  - id: https://github.com/divagr18/memlayer
-    name: Memlayer
-    source_type: repository
-    aliases: []
-  - id: https://github.com/agentic-box/memora
-    name: Memora
-    source_type: repository
-    aliases:
-      - https://pypi.org/project/memora-mcp/
-  - id: https://github.com/openai/openai-agents-python
-    name: OpenAI Agents SDK
-    source_type: repository
-    aliases:
-      - https://openai.github.io/openai-agents-python/
-  - id: https://github.com/The-Pocket/PocketFlow-Tutorial-Youtube-Made-Simple
-    name: Youtube Made Simple
-    source_type: repository
-    aliases: []
-    license: MIT
     fork_url: null
     checkout:
       directory: null
@@ -1596,308 +1671,6 @@ cells:
       status: untried
       review: reviews/codeg.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-codeg-cell-fb52/reviews/codeg.md
-      notes: Python 3.12+ framework on the OpenAI Agents SDK; terminal UI via npx. Not executed.
-    evaluation:
-      status: untried
-      review: reviews/agency-swarm.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agency-swarm-cell-ad04/reviews/agency-swarm.md
-      method: native
-      command: null
-      ports: []
-      data_paths: []
-      notes: Python package gui-agents 0.3.2. Operates a real desktop via screenshots and pyautogui. This review did not run it.
-    evaluation:
-      status: untried
-      review: reviews/agent-s.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agent-s-cell-9381/reviews/agent-s.md
-      notes: Python 3.11+ / TypeScript / Swift library. Per-turn classifier routing with per-agent chat storage. Not a desktop workspace.
-    evaluation:
-      status: untried
-      review: reviews/agent-squad.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agent-squad-cell-ad04/reviews/agent-squad.md
-      notes: Self-host docs use Docker Compose; agents run in a runner (local container or Daytona). Not executed.
-    evaluation:
-      status: untried
-      review: reviews/agenta.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agenta-cell-ad04/reviews/agenta.md
-      notes: Next.js web workspace plus remote daemon and PostgreSQL. Feishu-style dashboard with documents, not a spatial office.
-    evaluation:
-      status: untried
-      review: reviews/agentspace.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agentspace-cell-80a8/reviews/agentspace.md
-      notes: Self-hosted Rust binary and embedded dashboard on port 8824; workers run in tmux by default
-    evaluation:
-      status: untried
-      review: reviews/amux.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-amux-cell-80a8/reviews/amux.md
-      method: native
-      command: null
-      ports: []
-      data_paths: []
-      notes: Python >=3.12 library on Instructor and Pydantic; CLI `atomic` downloads Forge tools. Not a desktop workspace.
-    evaluation:
-      status: untried
-      review: reviews/atomic-agents.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-atomic-agents-cell-ca43/reviews/atomic-agents.md
-      notes: Python >=3.10 CLI (`auto`); Docker workplace for code, browser, and files. Not tried.
-    evaluation:
-      status: untried
-      review: reviews/autoagent.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-autoagent-cell-ca43/reviews/autoagent.md
-      notes: Maintenance-mode Python/.NET framework. LICENSE is CC BY 4.0 for docs; LICENSE-CODE is MIT for code. Not a desktop workspace.
-    evaluation:
-      status: untried
-      review: reviews/autogen.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-autogen-cell-9381/reviews/autogen.md
-      notes: Python 3.12+ package; OpenAI-compatible endpoint; optional E2B sandbox. Not installed.
-    evaluation:
-      status: untried
-      review: reviews/axisagentic.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-axisagentic-cell-ca43/reviews/axisagentic.md
-      notes: Python and TypeScript agent library; not a desktop workspace
-    evaluation:
-      status: untried
-      review: reviews/beeai-framework.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-beeai-framework-cell-ad04/reviews/beeai-framework.md
-      notes: GitHub Action installs the bernstein CLI; orchestration is a local Python scheduler, not a hosted workspace
-    evaluation:
-      status: untried
-      review: reviews/bernstein.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-bernstein-cell-80a8/reviews/bernstein.md
-      notes: Rust Nostr relay plus Tauri desktop; agents join through buzz-acp
-    evaluation:
-      status: untried
-      review: reviews/buzz.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-buzz-cell-80a8/reviews/buzz.md
-      notes: Python 3.10+ CLI; one local SQLite brain; not an agent runtime
-    evaluation:
-      status: untried
-      review: reviews/cashew.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-cashew-cell-ca43/reviews/cashew.md
-      data_paths:
-        - ~/.claude-squad
-      notes: Go TUI (`cs`). Each session is a tmux process plus a git worktree under ~/.claude-squad/worktrees. Requires tmux and gh.
-    evaluation:
-      status: untried
-      review: reviews/claude-squad.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-claude-squad-cell-80a8/reviews/claude-squad.md
-      notes: Python 3.10–3.14 package. Official local path can ingest and retrieve text without an LLM key via the bundled GLiNER demo and local embeddings. Optional Docker API on 8000, UI on 3000, MCP on 8001. Not tried.
-    evaluation:
-      status: untried
-      review: reviews/cognee.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-cognee-cell-fb52/reviews/cognee.md
-      method: native
-      command: null
-      ports: []
-      data_paths: []
-      notes: Python >=3.10 FastMCP server; stdio or HTTP. Project data under .daem0nmcp/. Not installed.
-    evaluation:
-      status: untried
-      review: reviews/daem0n-mcp.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-daem0n-mcp-cell-ca43/reviews/daem0n-mcp.md
-      command: free4chat-agent
-      ports: []
-      data_paths: []
-      notes: Hosted temporary rooms at free4.chat (Cloudflare Workers, per-room Durable Object, Realtime SFU). Optional local Go runtime free4chat-agent on macOS/Linux; Windows support is deferred. Not run in this review.
-    evaluation:
-      status: untried
-      review: reviews/free4chat.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-free4chat-cell-fb52/reviews/free4chat.md
-      command: null
-      ports: []
-      data_paths: []
-      notes: Python eval harness. Default trial sandbox is local Docker; cloud sandboxes are optional. Not the Harbor container registry.
-    evaluation:
-      status: untried
-      review: reviews/harbor.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-harbor-cell-ad04/reviews/harbor.md
-      method: unknown
-      command: null
-      ports: []
-      data_paths: []
-      notes: Datawhale tutorial and chapter samples. Installable HelloAgents framework is a separate repo. Not run.
-    evaluation:
-      status: untried
-      review: reviews/hello-agents.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-hello-agents-cell-ca43/reviews/hello-agents.md
-      notes: Python 3.12–3.13 library (package hello-agents 1.0.1); not a desktop app
-    evaluation:
-      status: untried
-      review: reviews/helloagents.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-helloagents-cell-ca43/reviews/helloagents.md
-      method: native
-      command: null
-      ports:
-        - 3000
-      data_paths:
-        - ~/.hermes/workspace-overrides.json
-      notes: Web command center for a separate Hermes Agent runtime (NousResearch/hermes-agent). pnpm dev on :3000; expects gateway :8642 and dashboard :9119. Docker Compose can run both images. Not executed.
-    evaluation:
-      status: untried
-      review: reviews/hermes-workspace.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-hermes-workspace-cell-ad04/reviews/hermes-workspace.md
-      data_paths:
-        - ~/.kun/data
-      notes: Electron desktop plus bundled TUI; TypeScript. Default data dir ~/.kun/data. Each client owns its runtime unless attached with kun tui --no-start. Not executed.
-    evaluation:
-      status: untried
-      review: reviews/kun.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-kun-cell-ad04/reviews/kun.md
-      notes: Python package langchain on LangGraph; not a desktop workspace. JS sibling is langchainjs. Not installed.
-    evaluation:
-      status: untried
-      review: reviews/langchain.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-langchain-cell-ca43/reviews/langchain.md
-      notes: Python graph orchestration runtime under Deep Agents; JS sibling is langgraphjs. In-memory checkpointer does not survive process restart.
-    evaluation:
-      status: untried
-      review: reviews/langgraph.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-langgraph-cell-9381/reviews/langgraph.md
-      method: native
-      command: null
-      ports: []
-      data_paths: []
-      notes: Python framework for realtime room participants; not a desktop workspace
-    evaluation:
-      status: untried
-      review: reviews/livekit-agents.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-livekit-agents-cell-9381/reviews/livekit-agents.md
-      notes: Electron desktop for Apple silicon macOS; calls installed local agent CLIs
-    evaluation:
-      status: untried
-      review: reviews/meldwork.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-meldwork-cell-80a8/reviews/meldwork.md
-      notes: Python 3.10+ library (PyPI and repo 0.1.8); wraps an LLM client, local Chroma plus NetworkX. Not installed.
-    evaluation:
-      status: untried
-      review: reviews/memlayer.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memlayer-cell-ca43/reviews/memlayer.md
-      command: memora-server
-      ports: []
-      data_paths:
-        - ~/.local/share/memora/memories.db
-      notes: Python MCP memory server (package memora-mcp). GitHub main is v0.4.6; latest GitHub Release is v0.5.5, with tags through v0.5.7 not merged to main. PyPI memora-mcp was 0.3.3 on 2026-10-10. Default local DB path above.
-    evaluation:
-      status: untried
-      review: reviews/memora.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memora-cell-fb52/reviews/memora.md
-      data_paths:
-        - ~/.mempalace
-      notes: Python 3.10+ library and CLI; optional MCP and REST on 8765. Not executed. Default palace directory is ~/.mempalace.
-    evaluation:
-      status: untried
-      review: reviews/mempalace-evolve.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-mempalace-evolve-cell-ca43/reviews/mempalace-evolve.md
-      method: native
-      command: null
-      ports: []
-      data_paths: []
-      notes: Python CLI framework (README requires Python >=3.9 and <3.12). Roles run in one process; not a desktop workspace
-    evaluation:
-      status: untried
-      review: reviews/metagpt.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-metagpt-cell-9381/reviews/metagpt.md
-      notes: Python 3.10+ and .NET library in one repo; Go SDK is a separate repository. Not a desktop workspace.
-    evaluation:
-      status: untried
-      review: reviews/microsoft-agent-framework.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-microsoft-agent-framework-cell-9381/reviews/microsoft-agent-framework.md
-      notes: Python harness shared by CLI, TUI, and local WebUI. WebUI settings default to ~/.ms_agent. Not executed.
-    evaluation:
-      status: untried
-      review: reviews/ms-agent.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ms-agent-cell-ad04/reviews/ms-agent.md
-      method: native
-      command: null
-      ports: []
-      data_paths: []
-      notes: Desktop app (Mac; Linux/Windows preview) or CLI with a Docker hub. Peer agents are external sessions such as Claude Code. Not installed.
-    evaluation:
-      status: untried
-      review: reviews/mycelium.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-mycelium-cell-ca43/reviews/mycelium.md
-      notes: Python Phone Agent on a computer; phone via ADB, HDC, or WebDriverAgent; vision model is a separate OpenAI-compatible service
-    evaluation:
-      status: untried
-      review: reviews/open-autoglm.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-open-autoglm-cell-ca43/reviews/open-autoglm.md
-      notes: Python library openai-agents; in-process Runner
-    evaluation:
-      status: untried
-      review: reviews/openai-agents-python.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openai-agents-python-cell-9381/reviews/openai-agents-python.md
-      method: native
-      command: null
-      ports: []
-      data_paths:
-        - ~/.openhands
-      notes: Agent Canvas GUI; the agent loop lives in the sibling software-agent-sdk Agent Server. Optional Docker sandbox for the whole stack, or one container per conversation. Not executed.
-    evaluation:
-      status: untried
-      review: reviews/openhands.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openhands-cell-80a8/reviews/openhands.md
-      notes: Python package; stdlib-only core (99 lines on main). Not an office UI. PyPI 0.0.3 not checked against main.
-    evaluation:
-      status: untried
-      review: reviews/pocketflow.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pocketflow-cell-ca43/reviews/pocketflow.md
-      command: python main.py
-      ports: []
-      data_paths:
-        - output/
-        - llm_cache.json
-        - logs/
-      notes: Python CLI tutorial that imports PocketFlow; optional Docker (python:3.10). Needs an LLM key. Not installed.
-    evaluation:
-      status: untried
-      review: reviews/pocketflow-tutorial-codebase-knowledge.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pocketflow-codebase-tutorial-cell-ca43/reviews/pocketflow-tutorial-codebase-knowledge.md
-      notes: Python tutorial on PocketFlow; checked-in LLM wrapper calls Anthropic Vertex. Not installed.
-    evaluation:
-      status: untried
-      review: reviews/pocketflow-tutorial-youtube-made-simple.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pocketflow-youtube-tutorial-cell-ca43/reviews/pocketflow-tutorial-youtube-made-simple.md
-      notes: macOS Desktop preview plus CLI and SDK; not executed
-    evaluation:
-      status: untried
-      review: reviews/pragma.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pragma-cell-80a8/reviews/pragma.md
-      notes: Python library; optional Gradio GUI, BM25 RAG, MCP subprocesses, Docker code interpreter
-    evaluation:
-      status: untried
-      review: reviews/qwen-agent.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-qwen-agent-cell-9381/reviews/qwen-agent.md
-      ports: []
-      data_paths: []
-      notes: Agent Examples use Docker Compose; tman can run apps such as the transcriber demo. Not tried.
-    evaluation:
-      status: untried
-      review: reviews/ten-framework.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ten-framework-cell-9381/reviews/ten-framework.md
-      method: native
-      command: null
-      ports: []
-      data_paths: []
-      notes: Embeddable Office SDK for browser and Node.js. This repository is the open-source editor runtime; DREAMNUM.md says commercial collaboration, import/export, and server features belong to Univer Pro.
-    evaluation:
-      status: untried
-      review: reviews/univer.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-univer-cell-80a8/reviews/univer.md
-      notes: Node.js 24+ Browser and Server; local DSH Workspace Agent; univer-workspace-cli. Not run.
-    evaluation:
-      status: untried
-      review: reviews/univer-workspace.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-univer-workspace-cell-80a8/reviews/univer-workspace.md
-      method: native
-      command: null
-      ports:
-        - 8848
-      data_paths: []
-      notes: Python 3.12+ framework. YAML agent configs; CLI chat or optional local WebUI on 127.0.0.1:8848. Not executed.
-    evaluation:
-      status: untried
-      review: reviews/youtu-agent.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-youtu-agent-cell-ad04/reviews/youtu-agent.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1922,51 +1695,1265 @@ cells:
       rationale: Personas, sub-thread handoff, and per-workspace ACP sandboxes as staffing inside one coding room
       rationale: Local Claude Code desktop shell with worktrees, a skill marketplace, in-harness model switching, and remote IM on one CLI kernel.
       rationale: Study a Workers workspace where a sandboxed gadget, the agent, and capability gatekeepers share one place, then place that on a 2D floor and a walkable office.
+
+  - id: https://github.com/VRSEN/agency-swarm
+    name: Agency Swarm
+    source_type: repository
+    aliases: []
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python 3.12+ framework on the OpenAI Agents SDK; terminal UI via npx. Not executed.
+    evaluation:
+      status: untried
+      review: reviews/agency-swarm.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agency-swarm-cell-ad04/reviews/agency-swarm.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study directional communication flows — task slips that return versus handoffs that move the visitor — as the floor plan of an agency office.
+
+  - id: https://github.com/simular-ai/Agent-S
+    name: Agent-S
+    source_type: repository
+    aliases:
+      - https://www.simular.ai
+      - https://www.sai.work
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python package gui-agents 0.3.2. Operates a real desktop via screenshots and pyautogui. This review did not run it.
+    evaluation:
+      status: untried
+      review: reviews/agent-s.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agent-s-cell-9381/reviews/agent-s.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study how a person watches, interrupts, and verifies an employee who is using a real desktop
+
+  - id: https://github.com/2FastLabs/agent-squad
+    name: Agent Squad
+    source_type: repository
+    aliases:
+      - https://github.com/awslabs/agent-squad
+      - https://github.com/awslabs/multi-agent-orchestrator
+      - https://github.com/transfer-aws/agent-squad
+      - https://2fastlabs.github.io/agent-squad/
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python 3.11+ / TypeScript / Swift library. Per-turn classifier routing with per-agent chat storage. Not a desktop workspace.
+    evaluation:
+      status: untried
+      review: reviews/agent-squad.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agent-squad-cell-ad04/reviews/agent-squad.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study per-turn classifier routing, per-agent conversation drawers, and supervisor parallel ask as office dispatch.
+
+  - id: https://github.com/Agenta-AI/agenta
+    name: Agenta
+    source_type: repository
+    aliases:
+      - https://github.com/agenta-ai/agenta
+      - https://agenta.ai
+    license: MIT (non-ee); Agenta Enterprise License (ee/)
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Self-host docs use Docker Compose; agents run in a runner (local container or Daytona). Not executed.
+    evaluation:
+      status: untried
+      review: reviews/agenta.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agenta-cell-ad04/reviews/agenta.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study a shared job-shaped coworker — approval pauses, unattended first messages, and desk-to-desk handoff — as presence in a 2D or 3D office.
+
+  - id: https://github.com/HKUDS/AgentSpace
+    name: AgentSpace
+    source_type: repository
+    aliases:
+      - https://hire-an-agent.online/
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Next.js web workspace plus remote daemon and PostgreSQL. Feishu-style dashboard with documents, not a spatial office.
+    evaluation:
+      status: untried
+      review: reviews/agentspace.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agentspace-cell-80a8/reviews/agentspace.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study shared channels, typed document handoffs, and approval gates that put humans and digital employees on the same tasks.
+
+  - id: https://github.com/mixpeek/amux
+    name: Amux
+    source_type: repository
+    aliases:
+      - https://amux.io
+    license: MIT + Commons Clause
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Self-hosted Rust binary and embedded dashboard on port 8824; workers run in tmux by default
+    evaluation:
+      status: untried
+      review: reviews/amux.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-amux-cell-80a8/reviews/amux.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study a shared board with atomic claims, layered memory, and origin-stamped handoff as the office around many CLI workers
+
+  - id: https://github.com/Eigenwise/atomic-agents
+    name: Atomic Agents
+    source_type: repository
+    aliases: []
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python >=3.12 library on Instructor and Pydantic; CLI `atomic` downloads Forge tools. Not a desktop workspace.
+    evaluation:
+      status: untried
+      review: reviews/atomic-agents.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-atomic-agents-cell-ca43/reviews/atomic-agents.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study schema-aligned handoffs, context boards versus turn drawers, and visible dispatch as how work moves between desks
+
+  - id: https://github.com/HKUDS/AutoAgent
+    name: AutoAgent
+    source_type: repository
+    aliases: []
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python >=3.10 CLI (`auto`); Docker workplace for code, browser, and files. Not tried.
+    evaluation:
+      status: untried
+      review: reviews/autoagent.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-autoagent-cell-ca43/reviews/autoagent.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study triage handoff, event listen-and-join, and natural-language hiring as desks in a sandbox office.
+
+  - id: https://github.com/microsoft/autogen
+    name: AutoGen
+    source_type: repository
+    aliases:
+      - https://microsoft.github.io/autogen/
+      - https://github.com/microsoft/agent-framework
+    license: CC-BY-4.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Maintenance-mode Python/.NET framework. LICENSE is CC BY 4.0 for docs; LICENSE-CODE is MIT for code. Not a desktop workspace.
+    evaluation:
+      status: untried
+      review: reviews/autogen.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-autogen-cell-9381/reviews/autogen.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study shared conversation teams, handoff, and runtime as who is in the room and where work moves, while keeping this cell distinct from Microsoft Agent Framework.
+
+  - id: https://github.com/XYZ-AI-Lab/AxisAgentic
+    name: AxisAgentic
+    source_type: repository
+    aliases: []
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python 3.12+ package; OpenAI-compatible endpoint; optional E2B sandbox. Not installed.
+    evaluation:
+      status: untried
+      review: reviews/axisagentic.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-axisagentic-cell-ca43/reviews/axisagentic.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study one desk per task — visible context versus the full trace — as a place in a 2D or 3D office.
+
+  - id: https://github.com/i-am-bee/beeai-framework
+    name: BeeAI Framework
+    source_type: repository
+    aliases:
+      - https://framework.beeai.dev
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python and TypeScript agent library; not a desktop workspace
+    evaluation:
+      status: untried
+      review: reviews/beeai-framework.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-beeai-framework-cell-ad04/reviews/beeai-framework.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study requirement rules, handoff-as-tool, and permission gates as visible constraints in a multi-agent office
+
+  - id: https://github.com/sipyourdrink-ltd/bernstein
+    name: Bernstein
+    source_type: repository
+    aliases:
+      - https://github.com/marketplace/actions/bernstein-multi-agent-orchestration
+      - https://bernstein.run
+      - https://github.com/chernistry/bernstein
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: GitHub Action installs the bernstein CLI; orchestration is a local Python scheduler, not a hosted workspace
+    evaluation:
+      status: untried
+      review: reviews/bernstein.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-bernstein-cell-80a8/reviews/bernstein.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study a deterministic scheduler that splits one goal across isolated worktrees, and the thinner GitHub Action that only starts that scheduler
+
+  - id: https://github.com/block/buzz
+    name: Buzz
+    source_type: repository
+    aliases:
+      - https://buzz.xyz
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Rust Nostr relay plus Tauri desktop; agents join through buzz-acp
+    evaluation:
+      status: untried
+      review: reviews/buzz.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-buzz-cell-80a8/reviews/buzz.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study a self-hosted relay where humans and agents share rooms, keys, and one signed event log
+
+  - id: https://github.com/rajkripal/cashew
+    name: Cashew
+    source_type: repository
+    aliases: []
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python 3.10+ CLI; one local SQLite brain; not an agent runtime
+    evaluation:
+      status: untried
+      review: reviews/cashew.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-cashew-cell-ca43/reviews/cashew.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study bounded recall, compaction handoff, and sleep closing commitments as archive-room roles on a floor
+
+  - id: https://github.com/smtg-ai/claude-squad
+    name: Claude Squad
+    source_type: repository
+    aliases:
+      - https://smtg-ai.github.io/claude-squad/
+    license: AGPL-3.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths:
+        - ~/.claude-squad
+      notes: Go TUI (`cs`). Each session is a tmux process plus a git worktree under ~/.claude-squad/worktrees. Requires tmux and gh.
+    evaluation:
+      status: untried
+      review: reviews/claude-squad.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-claude-squad-cell-80a8/reviews/claude-squad.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study one-task-one-worktree supervision, including pause-to-human checkout and screen-scraped auto-accept.
+
+  - id: https://github.com/topoteretes/cognee
+    name: Cognee
+    source_type: repository
+    aliases:
+      - https://www.cognee.ai
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python 3.10–3.14 package. Official local path can ingest and retrieve text without an LLM key via the bundled GLiNER demo and local embeddings. Optional Docker API on 8000, UI on 3000, MCP on 8001. Not tried.
+    evaluation:
+      status: untried
+      review: reviews/cognee.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-cognee-cell-fb52/reviews/cognee.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study dataset-scoped graph memory, session notes versus permanent lessons, and recall as what an employee consults when sitting down
+
+  - id: https://github.com/9thLevelSoftware/Daem0n-MCP
+    name: Daem0nMCP
+    source_type: repository
+    aliases:
+      - https://github.com/DasBluEyedDevil/Daem0n-MCP
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python >=3.10 FastMCP server; stdio or HTTP. Project data under .daem0nmcp/. Not installed.
+    evaluation:
+      status: untried
+      review: reviews/daem0n-mcp.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-daem0n-mcp-cell-ca43/reviews/daem0n-mcp.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study a long-running MCP daemon as the office clerk who stays for briefing, counsel, decision handoff, and idle review
+
+  - id: https://github.com/i365dev/free4chat
+    name: Free4chat
+    source_type: repository
+    aliases:
+      - https://www.free4.chat
+      - https://free4.chat
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: free4chat-agent
+      ports: []
+      data_paths: []
+      notes: Hosted temporary rooms at free4.chat (Cloudflare Workers, per-room Durable Object, Realtime SFU). Optional local Go runtime free4chat-agent on macOS/Linux; Windows support is deferred. Not run in this review.
+    evaluation:
+      status: untried
+      review: reviews/free4chat.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-free4chat-cell-fb52/reviews/free4chat.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study ephemeral rooms for humans and independent agents — who is present, what survives when the room closes, and how a human steers — against a persistent office
+
+  - id: https://github.com/harbor-framework/harbor
+    name: Harbor
+    source_type: repository
+    aliases:
+      - https://github.com/laude-institute/harbor
+      - https://harborframework.com
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python eval harness. Default trial sandbox is local Docker; cloud sandboxes are optional. Not the Harbor container registry.
+    evaluation:
+      status: untried
+      review: reviews/harbor.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-harbor-cell-ad04/reviews/harbor.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study trials, sandboxes, verifiers, and scores as exam rooms a person can compare, watch, and regrade.
+
+  - id: https://github.com/datawhalechina/hello-agents
+    name: Hello-Agents
+    source_type: repository
+    aliases:
+      - http://github.com/datawhalechina/hello-agents
+      - https://hello-agents.datawhale.cc
+      - https://datawhalechina.github.io/hello-agents/
+    license: CC-BY-NC-SA-4.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: unknown
+      command: null
+      ports: []
+      data_paths: []
+      notes: Datawhale tutorial and chapter samples. Installable HelloAgents framework is a separate repo. Not run.
+    evaluation:
+      status: untried
+      review: reviews/hello-agents.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-hello-agents-cell-ca43/reviews/hello-agents.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study the tutorial path — paradigms, tool-wall, memory, context packets, and sequential handoff — as desks on a training floor.
+
+  - id: https://github.com/jjyaoao/HelloAgents
+    name: HelloAgents
+    source_type: repository
+    aliases: []
+    license: CC-BY-NC-SA-4.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python 3.12–3.13 library (package hello-agents 1.0.1); not a desktop app
+    evaluation:
+      status: untried
+      review: reviews/helloagents.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-helloagents-cell-ca43/reviews/helloagents.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: One desk splits session, profile, and task memory; a subagent side room keeps its own notepad while sharing the tool bench
+
+  - id: https://github.com/outsourc-e/hermes-workspace
+    name: Hermes Workspace
+    source_type: repository
+    aliases:
+      - https://hermes-workspace.com
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports:
+        - 3000
+      data_paths:
+        - ~/.hermes/workspace-overrides.json
+      notes: Web command center for a separate Hermes Agent runtime (NousResearch/hermes-agent). pnpm dev on :3000; expects gateway :8642 and dashboard :9119. Docker Compose can run both images. Not executed.
+    evaluation:
+      status: untried
+      review: reviews/hermes-workspace.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-hermes-workspace-cell-ad04/reviews/hermes-workspace.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study a web command center attached to a separate agent runtime — role dispatch, checkpoints, and a human greenlight — as desks in a 2D and 3D office.
+
+  - id: https://github.com/KunAgent/Kun
+    name: Kun
+    source_type: repository
+    aliases:
+      - https://www.kun-agent.com
+    license: PolyForm Noncommercial 1.0.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths:
+        - ~/.kun/data
+      notes: Electron desktop plus bundled TUI; TypeScript. Default data dir ~/.kun/data. Each client owns its runtime unless attached with kun tui --no-start. Not executed.
+    evaluation:
+      status: untried
+      review: reviews/kun.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-kun-cell-ad04/reviews/kun.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study a local GUI and TUI workbench where design, documents, and multi-agent rooms share one task record, while humans still pin rules and accept deliveries.
+
+  - id: https://github.com/langchain-ai/langchain
+    name: LangChain
+    source_type: repository
+    aliases:
+      - https://www.langchain.com
+      - https://docs.langchain.com
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python package langchain on LangGraph; not a desktop workspace. JS sibling is langchainjs. Not installed.
+    evaluation:
+      status: untried
+      review: reviews/langchain.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-langchain-cell-ca43/reviews/langchain.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study tool desks, agent loops, and graph handoffs as staffing on a 2D floor and in a walkable office
+
+  - id: https://github.com/langchain-ai/langgraph
+    name: LangGraph
+    source_type: repository
+    aliases:
+      - https://www.langchain.com/langgraph
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python graph orchestration runtime under Deep Agents; JS sibling is langgraphjs. In-memory checkpointer does not survive process restart.
+    evaluation:
+      status: untried
+      review: reviews/langgraph.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-langgraph-cell-9381/reviews/langgraph.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study graph state, checkpoints, interrupts, and time travel as the schedule and routing under Deep Agents, which sits on this runtime
+
+  - id: https://github.com/livekit/agents
+    name: LiveKit Agents
+    source_type: repository
+    aliases:
+      - https://livekit.io
+      - https://docs.livekit.io/agents
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python framework for realtime room participants; not a desktop workspace
+    evaluation:
+      status: untried
+      review: reviews/livekit-agents.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-livekit-agents-cell-9381/reviews/livekit-agents.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: A dispatched job joins a room as a participant, so presence, the speaking turn, and human takeover are workplace events
+
+  - id: https://github.com/Ryder-Sun/Meldwork
+    name: Meldwork
+    source_type: repository
+    aliases:
+      - https://ryder-sun.github.io/Meldwork/
+      - https://github.com/Ryder-MHumble/Meldwork
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Electron desktop for Apple silicon macOS; calls installed local agent CLIs
+    evaluation:
+      status: untried
+      review: reviews/meldwork.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-meldwork-cell-80a8/reviews/meldwork.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: A local review loop that freezes one task snapshot, keeps each agent's dissent visible, and requires a human adoption gate before workspace writes.
+
+  - id: https://github.com/divagr18/memlayer
+    name: Memlayer
+    source_type: repository
+    aliases: []
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python 3.10+ library (PyPI and repo 0.1.8); wraps an LLM client, local Chroma plus NetworkX. Not installed.
+    evaluation:
+      status: untried
+      review: reviews/memlayer.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memlayer-cell-ca43/reviews/memlayer.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study memory as the layer between desk agents and storage, so a person can see salience writeback, tiered recall, and due reminders in the office.
+
+  - id: https://github.com/agentic-box/memora
+    name: Memora
+    source_type: repository
+    aliases:
+      - https://pypi.org/project/memora-mcp/
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: memora-server
+      ports: []
+      data_paths:
+        - ~/.local/share/memora/memories.db
+      notes: Python MCP memory server (package memora-mcp). GitHub main is v0.4.6; latest GitHub Release is v0.5.5, with tags through v0.5.7 not merged to main. PyPI memora-mcp was 0.3.3 on 2026-10-10. Default local DB path above.
+    evaluation:
+      status: untried
+      review: reviews/memora.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memora-cell-fb52/reviews/memora.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study a shared MCP memory store — database, project, and tool-surface scopes — against digest handoff and file-level sync
+
+  - id: https://github.com/a2328275243/mempalace-evolve
+    name: MemPalace Evolve
+    source_type: repository
+    aliases: []
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths:
+        - ~/.mempalace
+      notes: Python 3.10+ library and CLI; optional MCP and REST on 8765. Not executed. Default palace directory is ~/.mempalace.
+    evaluation:
+      status: untried
+      review: reviews/mempalace-evolve.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-mempalace-evolve-cell-ca43/reviews/mempalace-evolve.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study how notes are filed into wings and rooms, then fade, merge, or move to a shared corridor that people can see in an office.
+
+  - id: https://github.com/FoundationAgents/MetaGPT
+    name: MetaGPT
+    source_type: repository
+    aliases:
+      - https://github.com/geekan/MetaGPT
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python CLI framework (README requires Python >=3.9 and <3.12). Roles run in one process; not a desktop workspace
+    evaluation:
+      status: untried
+      review: reviews/metagpt.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-metagpt-cell-9381/reviews/metagpt.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study role desks, document handoff (PRD, design, tasks, code), and environment message passing as a software-company office
+
+  - id: https://github.com/microsoft/agent-framework
+    name: Microsoft Agent Framework
+    source_type: repository
+    aliases:
+      - https://learn.microsoft.com/en-us/agent-framework/overview/agent-framework-overview
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python 3.10+ and .NET library in one repo; Go SDK is a separate repository. Not a desktop workspace.
+    evaluation:
+      status: untried
+      review: reviews/microsoft-agent-framework.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-microsoft-agent-framework-cell-9381/reviews/microsoft-agent-framework.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study agent versus workflow, checkpoint resume, and human approval as who is at which desk
+
+  - id: https://github.com/modelscope/ms-agent
+    name: MS-Agent
+    source_type: repository
+    aliases:
+      - https://ms-agent-en.readthedocs.io
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python harness shared by CLI, TUI, and local WebUI. WebUI settings default to ~/.ms_agent. Not executed.
+    evaluation:
+      status: untried
+      review: reviews/ms-agent.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ms-agent-cell-ad04/reviews/ms-agent.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study harness permissions, file-based research handoff, and chain versus DAG staffing as an office floor
+
+  - id: https://github.com/mycelium-io/mycelium
+    name: Mycelium
+    source_type: repository
+    aliases: []
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Desktop app (Mac; Linux/Windows preview) or CLI with a Docker hub. Peer agents are external sessions such as Claude Code. Not installed.
+    evaluation:
+      status: untried
+      review: reviews/mycelium.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-mycelium-cell-ca43/reviews/mycelium.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: A shared room where peer agents sit at board desks, and a mediator comes in when they disagree
+
+  - id: https://github.com/zai-org/Open-AutoGLM
+    name: Open-AutoGLM
+    source_type: repository
+    aliases: []
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python Phone Agent on a computer; phone via ADB, HDC, or WebDriverAgent; vision model is a separate OpenAI-compatible service
+    evaluation:
+      status: untried
+      review: reviews/open-autoglm.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-open-autoglm-cell-ca43/reviews/open-autoglm.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: A phone clerk looks, makes one gesture, then looks again, and waits at the desk for a person on payment or login
+
+  - id: https://github.com/openai/openai-agents-python
+    name: OpenAI Agents SDK
+    source_type: repository
+    aliases:
+      - https://openai.github.io/openai-agents-python/
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python library openai-agents; in-process Runner
+    evaluation:
+      status: untried
+      review: reviews/openai-agents-python.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openai-agents-python-cell-9381/reviews/openai-agents-python.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study who keeps the visitor when work moves — a handoff changes the active desk, while an agent-as-tool leaves the manager in place
+
+  - id: https://github.com/OpenHands/OpenHands
+    name: OpenHands
+    source_type: repository
+    aliases:
+      - https://github.com/OpenDevin/OpenDevin
+      - https://github.com/All-Hands-AI/OpenHands
+      - https://openhands.dev
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths:
+        - ~/.openhands
+      notes: Agent Canvas GUI; the agent loop lives in the sibling software-agent-sdk Agent Server. Optional Docker sandbox for the whole stack, or one container per conversation. Not executed.
+    evaluation:
+      status: untried
+      review: reviews/openhands.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openhands-cell-80a8/reviews/openhands.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study conversation-scoped sandboxes, confirmation pauses, and a control-room GUI over a software-engineer agent runtime
+
+  - id: https://github.com/The-Pocket/PocketFlow
+    name: PocketFlow
+    source_type: repository
+    aliases: []
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python package; stdlib-only core (99 lines on main). Not an office UI. PyPI 0.0.3 not checked against main.
+    evaluation:
+      status: untried
+      review: reviews/pocketflow.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pocketflow-cell-ca43/reviews/pocketflow.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study graph nodes, action paths, and a shared store as desks, corridors, and a common cabinet in a 2D floor and a walkable 3D office
+
+  - id: https://github.com/The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge
+    name: PocketFlow Codebase Knowledge
+    source_type: repository
+    aliases:
+      - https://github.com/The-Pocket/Tutorial-Codebase-Knowledge
+      - https://code2tutorial.com/
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: python main.py
+      ports: []
+      data_paths:
+        - output/
+        - llm_cache.json
+        - logs/
+      notes: Python CLI tutorial that imports PocketFlow; optional Docker (python:3.10). Needs an LLM key. Not installed.
+    evaluation:
+      status: untried
+      review: reviews/pocketflow-tutorial-codebase-knowledge.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pocketflow-codebase-tutorial-cell-ca43/reviews/pocketflow-tutorial-codebase-knowledge.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study a codebase compiled into indexed concepts and ordered chapters, as stations on a 2D floor and desks in a 3D office
+
+  - id: https://github.com/The-Pocket/PocketFlow-Tutorial-Youtube-Made-Simple
+    name: Youtube Made Simple
+    source_type: repository
+    aliases: []
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python tutorial on PocketFlow; checked-in LLM wrapper calls Anthropic Vertex. Not installed.
+    evaluation:
+      status: untried
+      review: reviews/pocketflow-tutorial-youtube-made-simple.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pocketflow-youtube-tutorial-cell-ca43/reviews/pocketflow-tutorial-youtube-made-simple.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: A hallway of stations fills one shared clipboard, turning a long transcript into topic cards and one simple page.
+
+  - id: https://github.com/pqpo/pragma
+    name: Pragma
+    source_type: repository
+    aliases: []
+    license: AGPL-3.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: macOS Desktop preview plus CLI and SDK; not executed
+    evaluation:
+      status: untried
+      review: reviews/pragma.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pragma-cell-80a8/reviews/pragma.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study a portable agent-team definition that binds a different harness per step, with a mission whiteboard and human-approved memory
+
+  - id: https://github.com/QwenLM/Qwen-Agent
+    name: Qwen-Agent
+    source_type: repository
+    aliases:
+      - https://qwenlm.github.io/Qwen-Agent/en/
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Python library; optional Gradio GUI, BM25 RAG, MCP subprocesses, Docker code interpreter
+    evaluation:
+      status: untried
+      review: reviews/qwen-agent.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-qwen-agent-cell-9381/reviews/qwen-agent.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study how an agent, its tools, and retrieved document snippets are composed, and how a person would see that in a place of work
+
+  - id: https://github.com/TEN-framework/ten-framework
+    name: TEN Framework
+    source_type: repository
+    aliases:
+      - https://theten.ai
+    license: Apache-2.0 with additional conditions
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: docker-compose
+      command: null
+      ports: []
+      data_paths: []
+      notes: Agent Examples use Docker Compose; tman can run apps such as the transcriber demo. Not tried.
+    evaluation:
+      status: untried
+      review: reviews/ten-framework.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ten-framework-cell-9381/reviews/ten-framework.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: A voice session is an extension graph. Desks are listeners, models, speakers, and turn-taking; connections route the work.
+
+  - id: https://github.com/dream-num/univer
+    name: Univer
+    source_type: repository
+    aliases:
+      - https://univer.ai
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Embeddable Office SDK for browser and Node.js. This repository is the open-source editor runtime; DREAMNUM.md says commercial collaboration, import/export, and server features belong to Univer Pro.
+    evaluation:
+      status: untried
+      review: reviews/univer.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-univer-cell-80a8/reviews/univer.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: The office-document runtime agents and humans would share, distinct from the workspace product
+
+  - id: https://github.com/dream-num/univer-workspace
+    name: Univer Workspace
+    source_type: repository
+    aliases:
+      - https://univer.ai
+      - https://space.univer.ai
+    license: Apache-2.0
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports: []
+      data_paths: []
+      notes: Node.js 24+ Browser and Server; local DSH Workspace Agent; univer-workspace-cli. Not run.
+    evaluation:
+      status: untried
+      review: reviews/univer-workspace.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-univer-workspace-cell-80a8/reviews/univer-workspace.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Documents are the shared artifact surface where humans and agents create, isolate drafts, and review before merge
+
+  - id: https://github.com/TencentCloudADP/youtu-agent
+    name: Youtu-Agent
+    source_type: repository
+    aliases:
+      - https://github.com/Tencent/Youtu-agent
+      - https://tencentcloudadp.github.io/youtu-agent/
+    license: MIT
+    fork_url: null
+    checkout:
+      directory: null
+      tested_commit: null
+      tested_version: null
+    runtime:
+      method: native
+      command: null
+      ports:
+        - 8848
+      data_paths: []
+      notes: Python 3.12+ framework. YAML agent configs; CLI chat or optional local WebUI on 127.0.0.1:8848. Not executed.
+    evaluation:
+      status: untried
+      review: reviews/youtu-agent.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-youtu-agent-cell-ad04/reviews/youtu-agent.md
+      tested_at: null
+      updated_at: 2026-10-10
+    discovery:
+      source: user /create-cell-pr
       rationale: Study the YAML split of environment, toolkit, and agent, plus workforce replan and eval stages, as office staffing
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：

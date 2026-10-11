@@ -1015,6 +1015,14 @@ cells:
     source_type: repository
     aliases: []
     license: Apache-2.0
+  - id: https://github.com/OpenHands/OpenHands
+    name: OpenHands
+    source_type: repository
+    aliases:
+      - https://github.com/OpenDevin/OpenDevin
+      - https://github.com/All-Hands-AI/OpenHands
+      - https://openhands.dev
+    license: MIT
     fork_url: null
     checkout:
       directory: null
@@ -1614,6 +1622,16 @@ cells:
       status: untried
       review: reviews/openai-agents-python.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openai-agents-python-cell-9381/reviews/openai-agents-python.md
+      method: native
+      command: null
+      ports: []
+      data_paths:
+        - ~/.openhands
+      notes: Agent Canvas GUI; the agent loop lives in the sibling software-agent-sdk Agent Server. Optional Docker sandbox for the whole stack, or one container per conversation. Not executed.
+    evaluation:
+      status: untried
+      review: reviews/openhands.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openhands-cell-80a8/reviews/openhands.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1674,6 +1692,7 @@ cells:
       rationale: A shared room where peer agents sit at board desks, and a mediator comes in when they disagree
       rationale: A phone clerk looks, makes one gesture, then looks again, and waits at the desk for a person on payment or login
       rationale: Study who keeps the visitor when work moves — a handoff changes the active desk, while an agent-as-tool leaves the manager in place
+      rationale: Study conversation-scoped sandboxes, confirmation pauses, and a control-room GUI over a software-engineer agent runtime
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

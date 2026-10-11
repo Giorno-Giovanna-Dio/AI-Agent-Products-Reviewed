@@ -869,11 +869,11 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
-  - id: https://github.com/SeemSeam/claude_codex_bridge
-    name: Claude Code Bridge
+  - id: https://github.com/pixel-agents-hq/pixel-agents
+    name: Pixel Agents
     source_type: repository
     aliases: []
-    license: AGPL-3.0-only
+    license: MIT
     fork_url: null
     checkout:
       directory: null
@@ -884,16 +884,16 @@ cells:
       command: null
       ports: []
       data_paths: []
-      notes: Python CLI entry (ccb.py) with tmux on Linux/macOS/WSL; native Windows beta uses Herdr. Releases also include an optional Rust runtime accelerator. npm package @seemseam/ccb is the installer. Not executed.
+      notes: VS Code extension panel plus standalone Node 20+ browser office. Claude Code is the shipped provider. Not run.
     evaluation:
       status: untried
-      review: reviews/claude-codex-bridge.md
-      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-claude-codex-bridge-cell-c2d2/reviews/claude-codex-bridge.md
+      review: reviews/pixel-agents.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pixel-agents-cell-c2d2/reviews/pixel-agents.md
       tested_at: null
       updated_at: 2026-10-09
     discovery:
       source: user /create-cell-pr
-      rationale: Visible native CLI panes plus a project mailbox, so a human can watch, wait, and take a desk while results return to the original conversation.
+      rationale: Pixel-art floor is the workplace for Claude Code sessions — seats, areas, bubbles, and teammates — distinct from a walkable 3D office.
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

@@ -152,6 +152,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [Hermes Workspace](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-hermes-workspace-cell-ad04/reviews/hermes-workspace.md) | [https://github.com/outsourc-e/hermes-workspace](https://github.com/outsourc-e/hermes-workspace) | 尚未測試 | Hermes Agent 的 Web 指揮台 | `untried` |
 | [Kun](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-kun-cell-ad04/reviews/kun.md) | [https://github.com/KunAgent/Kun](https://github.com/KunAgent/Kun) | 尚未測試 | Electron 桌面 + 內建 TUI | `untried` |
 | [LangChain](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-langchain-cell-ca43/reviews/langchain.md) | [https://github.com/langchain-ai/langchain](https://github.com/langchain-ai/langchain) | 尚未測試 | Python agent framework（create_agent） | `untried` |
+| [LangGraph](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-langgraph-cell-9381/reviews/langgraph.md) | [https://github.com/langchain-ai/langgraph](https://github.com/langchain-ai/langgraph) | 尚未測試 | Python 圖編排 runtime | `untried` |
 
 狀態值：
 

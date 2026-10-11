@@ -1130,6 +1130,12 @@ cells:
     aliases:
       - https://smtg-ai.github.io/claude-squad/
     license: AGPL-3.0
+  - id: https://github.com/langchain-ai/langgraph
+    name: LangGraph
+    source_type: repository
+    aliases:
+      - https://www.langchain.com/langgraph
+    license: MIT
     fork_url: null
     checkout:
       directory: null
@@ -1471,6 +1477,11 @@ cells:
       status: untried
       review: reviews/langchain.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-langchain-cell-ca43/reviews/langchain.md
+      notes: Python graph orchestration runtime under Deep Agents; JS sibling is langgraphjs. In-memory checkpointer does not survive process restart.
+    evaluation:
+      status: untried
+      review: reviews/langgraph.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-langgraph-cell-9381/reviews/langgraph.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1519,6 +1530,7 @@ cells:
       rationale: Study a web command center attached to a separate agent runtime — role dispatch, checkpoints, and a human greenlight — as desks in a 2D and 3D office.
       rationale: Study a local GUI and TUI workbench where design, documents, and multi-agent rooms share one task record, while humans still pin rules and accept deliveries.
       rationale: Study tool desks, agent loops, and graph handoffs as staffing on a 2D floor and in a walkable office
+      rationale: Study graph state, checkpoints, interrupts, and time travel as the schedule and routing under Deep Agents, which sits on this runtime
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

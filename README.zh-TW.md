@@ -6,6 +6,12 @@
   <a href="README.md">English</a>
   &nbsp;·&nbsp;
   <strong>繁體中文</strong>
+  &nbsp;·&nbsp;
+  <a href="README.ja.md">日本語</a>
+  &nbsp;·&nbsp;
+  <a href="README.ko.md">한국어</a>
+  &nbsp;·&nbsp;
+  <a href="README.es.md">Español</a>
 </p>
 
 <p align="center">
@@ -45,7 +51,7 @@ context、execution environments 與 human oversight 如何被組織，以及這
 - 寫一篇洞察筆記，並把它放進編排團隊的一個席位。
 - 修正已經在目錄裡的 Cell：過時資訊、失效連結，或放錯的席位。
 
-從 [貢獻準則](CONTRIBUTING.md) 開始。一個新產品一個 pull request。還沒實際用過也可以寫，把 status 留在 `untried`。倉庫預設首頁是英文 [README.md](README.md)。新增一列時，中英文各加一次，席位相同。
+從 [貢獻準則](CONTRIBUTING.md) 開始。一個新產品一個 pull request。還沒實際用過也可以寫，把 status 留在 `untried`。倉庫預設首頁是英文 [README.md](README.md)。新增一列時，同一個席位、同一條連結也要寫進首頁，以及 [README.ja.md](README.ja.md)、[README.ko.md](README.ko.md)、[README.es.md](README.es.md)。
 
 ## 目錄
 
@@ -88,6 +94,9 @@ context、execution environments 與 human oversight 如何被組織，以及這
 
 - [`README.md`](README.md)：同一份目錄的英文版，也是倉庫預設首頁。
 - [`README.zh-TW.md`](README.zh-TW.md)：這份繁體中文目錄。
+- [`README.ja.md`](README.ja.md)：日文目錄。
+- [`README.ko.md`](README.ko.md)：韓文目錄。
+- [`README.es.md`](README.es.md)：西班牙文目錄。
 - [`CONTRIBUTING.md`](CONTRIBUTING.md)：如何提案、新增或修正一個 Cell。
 - [`cells.yaml`](cells.yaml)：所有 Cells 的結構化 metadata。
 - [`reviews/README.md`](reviews/README.md)：共同評測規則與證據標準。

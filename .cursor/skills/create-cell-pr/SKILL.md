@@ -43,7 +43,7 @@ README，也不是把 upstream 程式碼放進本 repo。對人說明的同一�
 
 - 一份洞察筆記：`reviews/<slug>.md`
 - catalog 中的一筆 Cell
-- `README.md`（英文預設首頁）席位表的一列，並在 `README.zh-TW.md` 的同一個席位加繁體中文一列
+- `README.md`（英文預設首頁）席位表的一列，並在 `README.zh-TW.md`、`README.ja.md`、`README.ko.md`、`README.es.md` 的同一個席位各加一列。連結相同，性質與貢獻寫該語言
 - 一條專用 branch 和一個 draft PR
 
 ## Hard rules
@@ -185,7 +185,7 @@ Slug 用小寫、連字號，例如 `gstack`、`gbrain`、`sandcastle`。
 - `evaluation.review`：`reviews/<slug>.md`
 - `evaluation.review_web`：GitHub 渲染 URL（見下方網頁閱讀）
 
-同步更新 `README.md`（英文預設首頁）與 `README.zh-TW.md` 的席位表，一列只代表一個 Cell，放進同一個主要席位。英文欄位是：
+同步更新五份 README 的席位表，一列只代表一個 Cell，放進同一個主要席位，Cell 連結相同。英文欄位是：
 
 | Cell | Nature | Contribution |
 | --- | --- | --- |
@@ -194,6 +194,9 @@ Slug 用小寫、連字號，例如 `gstack`、`gbrain`、`sandcastle`。
 - **Nature**：這個產品是什麼的英文短語，例如 `desktop ADE`、`orchestration framework`、`long-term memory`。
 - **Contribution**：一句英文，寫它在該席位補上的能力。跨到其他席位的部分也寫在這一句，不另開一列。
 - `README.zh-TW.md` 用同樣的 Cell 連結和同一個席位。欄位是 Cell、性質、貢獻，性質與貢獻寫繁體中文。
+- `README.ja.md` 欄位是 Cell、種類、貢献，種類與貢献寫日文。
+- `README.ko.md` 欄位是 Cell、성질、기여，성질與기여寫韓文。
+- `README.es.md` 欄位是 Cell、Naturaleza、Contribución，性質與貢獻寫西班牙文。
 - Cell 名稱連到 **GitHub 渲染**，不要用相對路徑 `reviews/<slug>.md`（避免在 IDE 開 raw Markdown）。
 - 這張表不放 Tested revision、Runtime、Status。實測狀態仍寫在筆記與 `evaluation.status`。
 
@@ -242,7 +245,7 @@ PR 應讓人先看到洞察筆記，再決定 merge。PR 描述裡也應附上 *
 - [ ] 沒有把 upstream 放進本 repo
 - [ ] `reviews/<slug>.md` 有五個核心段落
 - [ ] Cell ID 是唯一的 canonical URL
-- [ ] catalog 和 README 已更新（含網頁閱讀連結與 `review_web`）
+- [ ] catalog 和五份 README（`README.md`、`README.zh-TW.md`、`README.ja.md`、`README.ko.md`、`README.es.md`）已更新（含網頁閱讀連結與 `review_web`）
 - [ ] 只有這個 Cell 的專用 PR
 - [ ] 對話結尾已附上 GitHub 渲染閱讀連結
 - [ ] 用簡單的話寫出可學習的重點，而不是翻譯官方文件

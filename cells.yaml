@@ -1186,6 +1186,12 @@ cells:
       - https://microsoft.github.io/autogen/
       - https://github.com/microsoft/agent-framework
     license: CC-BY-4.0
+  - id: https://github.com/topoteretes/cognee
+    name: Cognee
+    source_type: repository
+    aliases:
+      - https://www.cognee.ai
+    license: Apache-2.0
     fork_url: null
     checkout:
       directory: null
@@ -1350,6 +1356,11 @@ cells:
       status: untried
       review: reviews/claude-squad.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-claude-squad-cell-80a8/reviews/claude-squad.md
+      notes: Python 3.10–3.14 package. Official local path can ingest and retrieve text without an LLM key via the bundled GLiNER demo and local embeddings. Optional Docker API on 8000, UI on 3000, MCP on 8001. Not tried.
+    evaluation:
+      status: untried
+      review: reviews/cognee.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-cognee-cell-fb52/reviews/cognee.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1389,6 +1400,7 @@ cells:
       rationale: Study a self-hosted relay where humans and agents share rooms, keys, and one signed event log
       rationale: Study bounded recall, compaction handoff, and sleep closing commitments as archive-room roles on a floor
       rationale: Study one-task-one-worktree supervision, including pause-to-human checkout and screen-scraped auto-accept.
+      rationale: Study dataset-scoped graph memory, session notes versus permanent lessons, and recall as what an employee consults when sitting down
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

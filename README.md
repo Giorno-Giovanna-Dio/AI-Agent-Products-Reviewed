@@ -143,6 +143,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [Buzz](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-buzz-cell-80a8/reviews/buzz.md) | [https://github.com/block/buzz](https://github.com/block/buzz) | 尚未測試 | Rust relay + Tauri desktop | `untried` |
 | [Cashew](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-cashew-cell-ca43/reviews/cashew.md) | [https://github.com/rajkripal/cashew](https://github.com/rajkripal/cashew) | 尚未測試 | Python 3.10+ CLI；單一 SQLite 記憶 | `untried` |
 | [Claude Squad](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-claude-squad-cell-80a8/reviews/claude-squad.md) | [https://github.com/smtg-ai/claude-squad](https://github.com/smtg-ai/claude-squad) | 尚未測試 | Go TUI（tmux + git worktree） | `untried` |
+| [Cognee](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-cognee-cell-fb52/reviews/cognee.md) | [https://github.com/topoteretes/cognee](https://github.com/topoteretes/cognee) | 尚未測試 | Python memory platform；知識圖譜 | `untried` |
 
 狀態值：
 

@@ -169,6 +169,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [PocketFlow Codebase Knowledge](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pocketflow-codebase-tutorial-cell-ca43/reviews/pocketflow-tutorial-codebase-knowledge.md) | [https://github.com/The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge](https://github.com/The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge) | 尚未測試 | Python CLI（PocketFlow 教學流程） | `untried` |
 | [Youtube Made Simple](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pocketflow-youtube-tutorial-cell-ca43/reviews/pocketflow-tutorial-youtube-made-simple.md) | [https://github.com/The-Pocket/PocketFlow-Tutorial-Youtube-Made-Simple](https://github.com/The-Pocket/PocketFlow-Tutorial-Youtube-Made-Simple) | 尚未測試 | Python script（PocketFlow 教學） | `untried` |
 | [Pragma](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pragma-cell-80a8/reviews/pragma.md) | [https://github.com/pqpo/pragma](https://github.com/pqpo/pragma) | 尚未測試 | macOS Desktop 預覽＋CLI／SDK | `untried` |
+| [Qwen-Agent](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-qwen-agent-cell-9381/reviews/qwen-agent.md) | [https://github.com/QwenLM/Qwen-Agent](https://github.com/QwenLM/Qwen-Agent) | 尚未測試 | Python agent framework | `untried` |
 
 狀態值：
 

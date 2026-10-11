@@ -1295,6 +1295,12 @@ cells:
     source_type: repository
     aliases: []
     license: AGPL-3.0
+  - id: https://github.com/QwenLM/Qwen-Agent
+    name: Qwen-Agent
+    source_type: repository
+    aliases:
+      - https://qwenlm.github.io/Qwen-Agent/en/
+    license: Apache-2.0
     fork_url: null
     checkout:
       directory: null
@@ -1678,6 +1684,11 @@ cells:
       status: untried
       review: reviews/pragma.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pragma-cell-80a8/reviews/pragma.md
+      notes: Python library; optional Gradio GUI, BM25 RAG, MCP subprocesses, Docker code interpreter
+    evaluation:
+      status: untried
+      review: reviews/qwen-agent.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-qwen-agent-cell-9381/reviews/qwen-agent.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1743,6 +1754,7 @@ cells:
       rationale: Study a codebase compiled into indexed concepts and ordered chapters, as stations on a 2D floor and desks in a 3D office
       rationale: A hallway of stations fills one shared clipboard, turning a long transcript into topic cards and one simple page.
       rationale: Study a portable agent-team definition that binds a different harness per step, with a mission whiteboard and human-approved memory
+      rationale: Study how an agent, its tools, and retrieved document snippets are composed, and how a person would see that in a place of work
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

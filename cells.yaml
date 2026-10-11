@@ -1010,6 +1010,8 @@ cells:
     license: MIT
   - id: https://github.com/mycelium-io/mycelium
     name: Mycelium
+  - id: https://github.com/zai-org/Open-AutoGLM
+    name: Open-AutoGLM
     source_type: repository
     aliases: []
     license: Apache-2.0
@@ -1597,6 +1599,11 @@ cells:
       status: untried
       review: reviews/mycelium.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-mycelium-cell-ca43/reviews/mycelium.md
+      notes: Python Phone Agent on a computer; phone via ADB, HDC, or WebDriverAgent; vision model is a separate OpenAI-compatible service
+    evaluation:
+      status: untried
+      review: reviews/open-autoglm.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-open-autoglm-cell-ca43/reviews/open-autoglm.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1655,6 +1662,7 @@ cells:
       rationale: Study agent versus workflow, checkpoint resume, and human approval as who is at which desk
       rationale: Study harness permissions, file-based research handoff, and chain versus DAG staffing as an office floor
       rationale: A shared room where peer agents sit at board desks, and a mediator comes in when they disagree
+      rationale: A phone clerk looks, makes one gesture, then looks again, and waits at the desk for a person on payment or login
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

@@ -1234,6 +1234,13 @@ cells:
     aliases:
       - https://www.kun-agent.com
     license: PolyForm Noncommercial 1.0.0
+  - id: https://github.com/Ryder-Sun/Meldwork
+    name: Meldwork
+    source_type: repository
+    aliases:
+      - https://ryder-sun.github.io/Meldwork/
+      - https://github.com/Ryder-MHumble/Meldwork
+    license: Apache-2.0
     fork_url: null
     checkout:
       directory: null
@@ -1498,6 +1505,11 @@ cells:
       status: untried
       review: reviews/livekit-agents.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-livekit-agents-cell-9381/reviews/livekit-agents.md
+      notes: Electron desktop for Apple silicon macOS; calls installed local agent CLIs
+    evaluation:
+      status: untried
+      review: reviews/meldwork.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-meldwork-cell-80a8/reviews/meldwork.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1548,6 +1560,7 @@ cells:
       rationale: Study tool desks, agent loops, and graph handoffs as staffing on a 2D floor and in a walkable office
       rationale: Study graph state, checkpoints, interrupts, and time travel as the schedule and routing under Deep Agents, which sits on this runtime
       rationale: A dispatched job joins a room as a participant, so presence, the speaking turn, and human takeover are workplace events
+      rationale: A local review loop that freezes one task snapshot, keeps each agent's dissent visible, and requires a human adoption gate before workspace writes.
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

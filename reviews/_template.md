@@ -8,7 +8,7 @@
 >
 > Status：`untried`
 >
-> Category：
+> Category：（席位＋性質。席位擇一：指揮／治理／工作台／在場／員工／記憶／方法／邊界／驗證／交付表面）
 >
 > Last updated：
 

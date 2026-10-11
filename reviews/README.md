@@ -62,8 +62,9 @@ upstream 或 fork；Cell review 只挑出對未來 2D／3D AI agent workspace �
 orchestration team 裡的席位。每篇筆記的 Category 對齊其中一個席位，再補上性質。
 席位是：指揮、治理、工作台、在場、員工、記憶、方法、邊界、驗證、交付表面。
 
-使用 [`_template.md`](_template.md) 建立新的產品 review。
+使用 [`_template.md`](_template.md) 建立新的產品 review。完整的收錄範圍、
+席位怎麼選、以及一個 PR 放幾個 Cell，見 [`CONTRIBUTING.md`](../CONTRIBUTING.md)。
 
-若要把一個 GitHub repo 或產品網址整理成 Cell 並開獨立 PR，呼叫
+若要把一個 GitHub repo 或產品網址整理成 Cell 並開獨立 PR，也可以呼叫
 [`/create-cell-pr`](../.cursor/skills/create-cell-pr/SKILL.md)。一個來源只
 建立一個 Cell PR；多個來源請平行呼叫多次。

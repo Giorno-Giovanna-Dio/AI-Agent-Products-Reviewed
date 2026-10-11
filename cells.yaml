@@ -1251,6 +1251,13 @@ cells:
     aliases:
       - https://amux.io
     license: MIT + Commons Clause
+  - id: https://github.com/i365dev/free4chat
+    name: Free4chat
+    source_type: repository
+    aliases:
+      - https://www.free4.chat
+      - https://free4.chat
+    license: MIT
     fork_url: null
     checkout:
       directory: null
@@ -1375,6 +1382,14 @@ cells:
       status: untried
       review: reviews/daem0n-mcp.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-daem0n-mcp-cell-ca43/reviews/daem0n-mcp.md
+      command: free4chat-agent
+      ports: []
+      data_paths: []
+      notes: Hosted temporary rooms at free4.chat (Cloudflare Workers, per-room Durable Object, Realtime SFU). Optional local Go runtime free4chat-agent on macOS/Linux; Windows support is deferred. Not run in this review.
+    evaluation:
+      status: untried
+      review: reviews/free4chat.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-free4chat-cell-fb52/reviews/free4chat.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1416,6 +1431,7 @@ cells:
       rationale: Study one-task-one-worktree supervision, including pause-to-human checkout and screen-scraped auto-accept.
       rationale: Study dataset-scoped graph memory, session notes versus permanent lessons, and recall as what an employee consults when sitting down
       rationale: Study a long-running MCP daemon as the office clerk who stays for briefing, counsel, decision handoff, and idle review
+      rationale: Study ephemeral rooms for humans and independent agents — who is present, what survives when the room closes, and how a human steers — against a persistent office
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

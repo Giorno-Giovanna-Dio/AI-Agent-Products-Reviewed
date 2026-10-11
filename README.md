@@ -145,6 +145,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [Claude Squad](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-claude-squad-cell-80a8/reviews/claude-squad.md) | [https://github.com/smtg-ai/claude-squad](https://github.com/smtg-ai/claude-squad) | 尚未測試 | Go TUI（tmux + git worktree） | `untried` |
 | [Cognee](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-cognee-cell-fb52/reviews/cognee.md) | [https://github.com/topoteretes/cognee](https://github.com/topoteretes/cognee) | 尚未測試 | Python memory platform；知識圖譜 | `untried` |
 | [Daem0nMCP](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-daem0n-mcp-cell-ca43/reviews/daem0n-mcp.md) | [https://github.com/9thLevelSoftware/Daem0n-MCP](https://github.com/9thLevelSoftware/Daem0n-MCP) | 尚未測試 | Python >=3.10 MCP daemon | `untried` |
+| [Free4chat](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-free4chat-cell-fb52/reviews/free4chat.md) | [https://github.com/i365dev/free4chat](https://github.com/i365dev/free4chat) | 尚未測試 | 臨時 Room（瀏覽器 + 本機 runtime） | `untried` |
 
 狀態值：
 

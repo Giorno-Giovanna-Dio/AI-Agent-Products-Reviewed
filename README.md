@@ -11,7 +11,7 @@
 <p align="center">
   <a href="#目錄">目錄</a>
   &nbsp;·&nbsp;
-  <a href="CONTRIBUTING.md">貢獻</a>
+  <a href="#歡迎貢獻">貢獻</a>
   &nbsp;·&nbsp;
   <a href="CODE_OF_CONDUCT.md">共事準則</a>
   &nbsp;·&nbsp;
@@ -29,12 +29,21 @@ team 裡補上的部分。
 context、execution environments 與 human oversight 如何被組織，以及這些
 概念放進 2D／3D AI agent workspace 時會變成什麼。
 
-歡迎補上還沒被收進來的產品。作法、席位怎麼選、一個 PR 放幾個 Cell，見
-[貢獻準則](CONTRIBUTING.md)。授權是 [MIT](LICENSE)。共事方式見
-[共事準則](CODE_OF_CONDUCT.md)。
+授權是 [MIT](LICENSE)。共事方式見 [共事準則](CODE_OF_CONDUCT.md)。
+
+## 歡迎貢獻
+
+**新來的貢獻者也很歡迎。** 這份目錄要靠大家把散落各地的 AI agent products 補進來。
+
+- 提出一個還沒收錄的產品。
+- 寫一篇洞察筆記，並把它放進編排團隊的一個席位。
+- 修正已經在目錄裡的 Cell：過時資訊、失效連結，或放錯的席位。
+
+從 [貢獻準則](CONTRIBUTING.md) 開始。一個新產品一個 pull request。還沒實際用過也可以寫，把 status 留在 `untried`。
 
 ## 目錄
 
+- [歡迎貢獻](#歡迎貢獻)
 - [研究問題](#research-goals)
 - [Repository 結構](#repository-結構)
 - [Cell](#cell-model)

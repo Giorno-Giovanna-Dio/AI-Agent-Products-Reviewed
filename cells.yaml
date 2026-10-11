@@ -869,6 +869,13 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/doobidoo/mcp-memory-service
+    name: MCP Memory Service
+    source_type: repository
+    aliases:
+      - https://codeberg.org/doobidoo/mcp-memory-service
+      - https://mcpmemory.services
+    license: Apache-2.0
   - id: https://github.com/MemoriLabs/Memori
     name: Memori
     source_type: repository
@@ -926,6 +933,15 @@ cells:
       tested_version: null
     runtime:
       method: native
+      command: memory
+      ports:
+        - 8000
+      data_paths: []
+      notes: Python 3.10+ self-hosted memory service (PyPI mcp-memory-service 11.15.0). MCP for coding clients; HTTP for agent pipelines. Backends include sqlite-vec, Cloudflare, hybrid, and Milvus. Not run in this review.
+    evaluation:
+      status: untried
+      review: reviews/mcp-memory-service.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-mcp-memory-service-cell-fb52/reviews/mcp-memory-service.md
       command: null
       ports: []
       data_paths: []
@@ -1165,6 +1181,7 @@ cells:
       updated_at: 2026-10-10
     discovery:
       source: user /create-cell-pr
+      rationale: Study MCP as the door any employee uses to read and write shared memory, including tags, consolidation, and local drawers versus the synced cabinet
       rationale: Study entity, process, and session attribution, and recall-before-answer, as desk notes in a 2D/3D office
       rationale: See what memory-as-an-OS adds beyond storage — layers, janitor schedules, and source authority — for a future agent office
       rationale: Study how messages, pipelines, and human confirmation move work between agents

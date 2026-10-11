@@ -869,6 +869,12 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/MemoriLabs/Memori
+    name: Memori
+    source_type: repository
+    aliases:
+      - https://memorilabs.ai
+    license: Apache-2.0
   - id: https://github.com/ClaudioDrews/memory-os
     name: Memory OS
   - id: https://github.com/agentscope-ai/agentscope
@@ -923,6 +929,11 @@ cells:
       command: null
       ports: []
       data_paths: []
+      notes: Python and TypeScript SDK wrapping LLM clients; BYODB SQL or Memori Cloud. Not executed.
+    evaluation:
+      status: untried
+      review: reviews/memori.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memori-cell-fb52/reviews/memori.md
       notes: Electron desktop plus local server. Default engine is an OpenCode sidecar; optional Codex Harness and DeepSeek Harness adapters. Source builds need Node.js 22+ and pnpm 11. Orchestrator CLI can optionally run sidecars in Docker or Apple container. Not executed.
     evaluation:
       status: untried
@@ -1154,6 +1165,7 @@ cells:
       updated_at: 2026-10-10
     discovery:
       source: user /create-cell-pr
+      rationale: Study entity, process, and session attribution, and recall-before-answer, as desk notes in a 2D/3D office
       rationale: See what memory-as-an-OS adds beyond storage — layers, janitor schedules, and source authority — for a future agent office
       rationale: Study how messages, pipelines, and human confirmation move work between agents
       rationale: Study a markdown journal plus rebuildable search index as an office archive employees query, distinct from learning memory and knowledge graphs.

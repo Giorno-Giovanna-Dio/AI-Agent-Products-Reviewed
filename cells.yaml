@@ -869,6 +869,11 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/zilliztech/memsearch
+    name: memsearch
+    source_type: repository
+    aliases:
+      - https://zilliztech.github.io/memsearch/
   - id: https://github.com/EKKOLearnAI/ekko-studio
     name: Ekko Studio
     source_type: repository
@@ -1013,6 +1018,12 @@ cells:
       method: native
       command: null
       ports: []
+      data_paths: []
+      notes: Python CLI and plugins for Claude Code, Codex, DeepSeek Harness, OpenClaw, and OpenCode. Markdown journals are the memory; Milvus is a rebuildable index. Not a desktop workspace.
+    evaluation:
+      status: untried
+      review: reviews/memsearch.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memsearch-cell-fb52/reviews/memsearch.md
       data_paths:
         - ~/.claude
       notes: Electron desktop (macOS/Windows/Linux) around the bundled Bun CLI claude-haha and a local REST/WebSocket server. Computer Use documents a macOS native helper and a Windows Python helper; no Linux executor in the docs. Not run.
@@ -1116,6 +1127,7 @@ cells:
       updated_at: 2026-10-10
     discovery:
       source: user /create-cell-pr
+      rationale: Study a markdown journal plus rebuildable search index as an office archive employees query, distinct from learning memory and knowledge graphs.
       rationale: Separate the Vue Flow workflow studio from the chat and group rooms where people work, and treat node handoff as a narrow packet rather than shared memory
       rationale: Study session aggregation and cold-start cross-agent handoff as memory and room assignment, separate from an ADE dashboard
       notes: TypeScript monorepo on Cloudflare Workers (Durable Objects, Dynamic Workers, Facets) and workerd. Local quick start is pnpm run-local via wrangler. Not executed.

@@ -1377,6 +1377,10 @@ cells:
     source_type: repository
     aliases:
       - https://openai.github.io/openai-agents-python/
+  - id: https://github.com/The-Pocket/PocketFlow-Tutorial-Youtube-Made-Simple
+    name: Youtube Made Simple
+    source_type: repository
+    aliases: []
     license: MIT
     fork_url: null
     checkout:
@@ -1659,6 +1663,11 @@ cells:
       status: untried
       review: reviews/pocketflow-tutorial-codebase-knowledge.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pocketflow-codebase-tutorial-cell-ca43/reviews/pocketflow-tutorial-codebase-knowledge.md
+      notes: Python tutorial on PocketFlow; checked-in LLM wrapper calls Anthropic Vertex. Not installed.
+    evaluation:
+      status: untried
+      review: reviews/pocketflow-tutorial-youtube-made-simple.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pocketflow-youtube-tutorial-cell-ca43/reviews/pocketflow-tutorial-youtube-made-simple.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1722,6 +1731,7 @@ cells:
       rationale: Study conversation-scoped sandboxes, confirmation pauses, and a control-room GUI over a software-engineer agent runtime
       rationale: Study graph nodes, action paths, and a shared store as desks, corridors, and a common cabinet in a 2D floor and a walkable 3D office
       rationale: Study a codebase compiled into indexed concepts and ordered chapters, as stations on a 2D floor and desks in a 3D office
+      rationale: A hallway of stations fills one shared clipboard, turning a long transcript into topic cards and one simple page.
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

@@ -1265,6 +1265,14 @@ cells:
       - https://www.free4.chat
       - https://free4.chat
     license: MIT
+  - id: https://github.com/datawhalechina/hello-agents
+    name: Hello-Agents
+    source_type: repository
+    aliases:
+      - http://github.com/datawhalechina/hello-agents
+      - https://hello-agents.datawhale.cc
+      - https://datawhalechina.github.io/hello-agents/
+    license: CC-BY-NC-SA-4.0
     fork_url: null
     checkout:
       directory: null
@@ -1405,6 +1413,15 @@ cells:
       status: untried
       review: reviews/harbor.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-harbor-cell-ad04/reviews/harbor.md
+      method: unknown
+      command: null
+      ports: []
+      data_paths: []
+      notes: Datawhale tutorial and chapter samples. Installable HelloAgents framework is a separate repo. Not run.
+    evaluation:
+      status: untried
+      review: reviews/hello-agents.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-hello-agents-cell-ca43/reviews/hello-agents.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1448,6 +1465,7 @@ cells:
       rationale: Study a long-running MCP daemon as the office clerk who stays for briefing, counsel, decision handoff, and idle review
       rationale: Study ephemeral rooms for humans and independent agents — who is present, what survives when the room closes, and how a human steers — against a persistent office
       rationale: Study trials, sandboxes, verifiers, and scores as exam rooms a person can compare, watch, and regrade.
+      rationale: Study the tutorial path — paradigms, tool-wall, memory, context packets, and sequential handoff — as desks on a training floor.
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

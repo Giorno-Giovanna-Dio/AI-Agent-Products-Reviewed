@@ -147,6 +147,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [Daem0nMCP](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-daem0n-mcp-cell-ca43/reviews/daem0n-mcp.md) | [https://github.com/9thLevelSoftware/Daem0n-MCP](https://github.com/9thLevelSoftware/Daem0n-MCP) | 尚未測試 | Python >=3.10 MCP daemon | `untried` |
 | [Free4chat](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-free4chat-cell-fb52/reviews/free4chat.md) | [https://github.com/i365dev/free4chat](https://github.com/i365dev/free4chat) | 尚未測試 | 臨時 Room（瀏覽器 + 本機 runtime） | `untried` |
 | [Harbor](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-harbor-cell-ad04/reviews/harbor.md) | [https://github.com/harbor-framework/harbor](https://github.com/harbor-framework/harbor) | 尚未測試 | Python 評測 harness（預設 Docker sandbox；不是容器倉庫） | `untried` |
+| [Hello-Agents](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-hello-agents-cell-ca43/reviews/hello-agents.md) | [https://github.com/datawhalechina/hello-agents](https://github.com/datawhalechina/hello-agents) | 尚未測試 | Datawhale 教程與章節程式 | `untried` |
 
 狀態值：
 

@@ -1,3 +1,23 @@
+<p align="center">
+  <img src="assets/banner.jpg" alt="AI Agent Products Reviewed. A public catalog of AI agent products." width="100%">
+</p>
+
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-3d3a36" alt="MIT License"></a>
+  <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-3d3a36" alt="PRs welcome"></a>
+  <a href="https://github.com/sponsors/Giorno-Giovanna-Dio"><img src="https://img.shields.io/badge/sponsor-GitHub%20Sponsors-ea4aaa?logo=githubsponsors&logoColor=white" alt="GitHub Sponsors"></a>
+</p>
+
+<p align="center">
+  <a href="#目錄">目錄</a>
+  &nbsp;·&nbsp;
+  <a href="CONTRIBUTING.md">貢獻</a>
+  &nbsp;·&nbsp;
+  <a href="CODE_OF_CONDUCT.md">共事準則</a>
+  &nbsp;·&nbsp;
+  <a href="#支持這個目錄">支持</a>
+</p>
+
 # AI Agent Products Reviewed
 
 這是一個公開的 AI agent products 蒐集樞紐。產品、框架、工作台、記憶層和
@@ -12,6 +32,15 @@ context、execution environments 與 human oversight 如何被組織，以及這
 歡迎補上還沒被收進來的產品。作法、席位怎麼選、一個 PR 放幾個 Cell，見
 [貢獻準則](CONTRIBUTING.md)。授權是 [MIT](LICENSE)。共事方式見
 [共事準則](CODE_OF_CONDUCT.md)。
+
+## 目錄
+
+- [研究問題](#research-goals)
+- [Repository 結構](#repository-結構)
+- [Cell](#cell-model)
+- [評測流程](#評測流程)
+- [在編排團隊裡的位置](#在編排團隊裡的位置)
+- [支持這個目錄](#支持這個目錄)
 
 可自行執行的候選專案會 clone 到本 repository 以外的獨立實驗區；這裡只
 保存來源資訊、產品與 feature 分析、實際體驗，以及對 2D／3D workspace 的
@@ -272,3 +301,14 @@ Cell 名稱連到該篇洞察筆記的 GitHub 渲染。Cell ID 寫在筆記開�
 
 - `untried`：已收錄，但尚未實際使用。
 - `tried`：已經實際體驗過。
+
+## 支持這個目錄
+
+這份目錄以 MIT 授權公開。維持它有兩種方式。
+
+- 補上還沒收錄的產品，或修正一個已經在目錄裡的 Cell。作法見 [貢獻準則](CONTRIBUTING.md)。
+- 用 [GitHub Sponsors](https://github.com/sponsors/Giorno-Giovanna-Dio) 資助維護。倉庫頁的 Sponsor 按鈕讀的是 [`.github/FUNDING.yml`](.github/FUNDING.yml)。
+
+<p align="center">
+  <a href="https://github.com/sponsors/Giorno-Giovanna-Dio"><img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="Sponsor on GitHub"></a>
+</p>

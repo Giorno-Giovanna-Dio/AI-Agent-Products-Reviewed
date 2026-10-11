@@ -132,3 +132,8 @@ branch；合併進 `main` 時改成 `main`。`cells.yaml` 的 `evaluation.review
 - 不確定的地方寫了「尚未確認」。
 
 維護者可能會請你把席位移到另一節，或把重複的來源併進既有 Cell 的 `aliases`。
+
+## 支持這個目錄
+
+補上一個 Cell，就是在支持這份目錄。若要資助維護，用
+[GitHub Sponsors](https://github.com/sponsors/Giorno-Giovanna-Dio)。

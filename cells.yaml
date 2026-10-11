@@ -1209,6 +1209,12 @@ cells:
     aliases:
       - https://www.cognee.ai
     license: Apache-2.0
+  - id: https://github.com/KunAgent/Kun
+    name: Kun
+    source_type: repository
+    aliases:
+      - https://www.kun-agent.com
+    license: PolyForm Noncommercial 1.0.0
     fork_url: null
     checkout:
       directory: null
@@ -1447,6 +1453,13 @@ cells:
       status: untried
       review: reviews/hermes-workspace.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-hermes-workspace-cell-ad04/reviews/hermes-workspace.md
+      data_paths:
+        - ~/.kun/data
+      notes: Electron desktop plus bundled TUI; TypeScript. Default data dir ~/.kun/data. Each client owns its runtime unless attached with kun tui --no-start. Not executed.
+    evaluation:
+      status: untried
+      review: reviews/kun.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-kun-cell-ad04/reviews/kun.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1493,6 +1506,7 @@ cells:
       rationale: Study the tutorial path — paradigms, tool-wall, memory, context packets, and sequential handoff — as desks on a training floor.
       rationale: One desk splits session, profile, and task memory; a subagent side room keeps its own notepad while sharing the tool bench
       rationale: Study a web command center attached to a separate agent runtime — role dispatch, checkpoints, and a human greenlight — as desks in a 2D and 3D office.
+      rationale: Study a local GUI and TUI workbench where design, documents, and multi-agent rooms share one task record, while humans still pin rules and accept deliveries.
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

@@ -869,6 +869,8 @@ cells:
       rationale: Study goal-auditor loops, parallel-run fusion, and diff walkthroughs as supervision around a single OpenCode runtime
       rationale: Study role, task, and process primitives for multi-agent crews
 
+  - id: https://github.com/longyangxi/OpenOffice
+    name: Open Office
   - id: https://github.com/Mng-dev-ai/agentrove
     name: Agentrove
     source_type: repository
@@ -920,6 +922,17 @@ cells:
     runtime:
       method: native
       command: null
+      ports:
+        - 9090
+        - 9099
+      data_paths:
+        - ~/.open-office
+        - ~/.open-office-dev
+      notes: TypeScript. Next.js + PixiJS top-down pixel office; Node gateway package bit-office (dev WebSocket 9099, default 9090). Optional Tauri desktop and Telegram. Not run.
+    evaluation:
+      status: untried
+      review: reviews/openoffice.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openoffice-cell-c2d2/reviews/openoffice.md
       ports: []
       data_paths: []
       notes: VS Code extension panel plus standalone Node 20+ browser office. Claude Code is the shipped provider. Not run.
@@ -1085,6 +1098,7 @@ cells:
       updated_at: 2026-10-09
     discovery:
       source: user /create-cell-pr
+      rationale: Study a shared 2D pixel floor where a lead, developers, and a reviewer hand work through phases and per-agent worktrees.
       rationale: Personas, sub-thread handoff, and per-workspace ACP sandboxes as staffing inside one coding room
       rationale: Local Claude Code desktop shell with worktrees, a skill marketplace, in-harness model switching, and remote IM on one CLI kernel.
       rationale: Study a Workers workspace where a sandboxed gadget, the agent, and capability gatekeepers share one place, then place that on a 2D floor and a walkable office.

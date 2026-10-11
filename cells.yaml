@@ -1083,6 +1083,13 @@ cells:
     source_type: repository
     aliases:
       - https://framework.beeai.dev
+  - id: https://github.com/sipyourdrink-ltd/bernstein
+    name: Bernstein
+    source_type: repository
+    aliases:
+      - https://github.com/marketplace/actions/bernstein-multi-agent-orchestration
+      - https://bernstein.run
+      - https://github.com/chernistry/bernstein
     license: Apache-2.0
     fork_url: null
     checkout:
@@ -1305,6 +1312,11 @@ cells:
       status: untried
       review: reviews/beeai-framework.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-beeai-framework-cell-ad04/reviews/beeai-framework.md
+      notes: GitHub Action installs the bernstein CLI; orchestration is a local Python scheduler, not a hosted workspace
+    evaluation:
+      status: untried
+      review: reviews/bernstein.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-bernstein-cell-80a8/reviews/bernstein.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1340,6 +1352,7 @@ cells:
       rationale: Study shared conversation teams, handoff, and runtime as who is in the room and where work moves, while keeping this cell distinct from Microsoft Agent Framework.
       rationale: Study one desk per task — visible context versus the full trace — as a place in a 2D or 3D office.
       rationale: Study requirement rules, handoff-as-tool, and permission gates as visible constraints in a multi-agent office
+      rationale: Study a deterministic scheduler that splits one goal across isolated worktrees, and the thinner GitHub Action that only starts that scheduler
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

@@ -1312,6 +1312,12 @@ cells:
     source_type: repository
     aliases:
       - https://qwenlm.github.io/Qwen-Agent/en/
+  - id: https://github.com/dream-num/univer-workspace
+    name: Univer Workspace
+    source_type: repository
+    aliases:
+      - https://univer.ai
+      - https://space.univer.ai
     license: Apache-2.0
     fork_url: null
     checkout:
@@ -1717,6 +1723,11 @@ cells:
       status: untried
       review: reviews/univer.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-univer-cell-80a8/reviews/univer.md
+      notes: Node.js 24+ Browser and Server; local DSH Workspace Agent; univer-workspace-cli. Not run.
+    evaluation:
+      status: untried
+      review: reviews/univer-workspace.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-univer-workspace-cell-80a8/reviews/univer-workspace.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1785,6 +1796,7 @@ cells:
       rationale: Study how an agent, its tools, and retrieved document snippets are composed, and how a person would see that in a place of work
       rationale: A voice session is an extension graph. Desks are listeners, models, speakers, and turn-taking; connections route the work.
       rationale: The office-document runtime agents and humans would share, distinct from the workspace product
+      rationale: Documents are the shared artifact surface where humans and agents create, isolate drafts, and review before merge
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

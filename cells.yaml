@@ -1279,6 +1279,11 @@ cells:
     aliases:
       - https://ms-agent-en.readthedocs.io
     license: Apache-2.0
+  - id: https://github.com/The-Pocket/PocketFlow
+    name: PocketFlow
+    source_type: repository
+    aliases: []
+    license: MIT
     fork_url: null
     checkout:
       directory: null
@@ -1632,6 +1637,11 @@ cells:
       status: untried
       review: reviews/openhands.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-openhands-cell-80a8/reviews/openhands.md
+      notes: Python package; stdlib-only core (99 lines on main). Not an office UI. PyPI 0.0.3 not checked against main.
+    evaluation:
+      status: untried
+      review: reviews/pocketflow.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pocketflow-cell-ca43/reviews/pocketflow.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1693,6 +1703,7 @@ cells:
       rationale: A phone clerk looks, makes one gesture, then looks again, and waits at the desk for a person on payment or login
       rationale: Study who keeps the visitor when work moves — a handoff changes the active desk, while an agent-as-tool leaves the manager in place
       rationale: Study conversation-scoped sandboxes, confirmation pauses, and a control-room GUI over a software-engineer agent runtime
+      rationale: Study graph nodes, action paths, and a shared store as desks, corridors, and a common cabinet in a 2D floor and a walkable 3D office
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

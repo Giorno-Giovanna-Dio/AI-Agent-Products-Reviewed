@@ -989,6 +989,11 @@ cells:
     source_type: repository
     aliases:
       - https://github.com/DasBluEyedDevil/Daem0n-MCP
+  - id: https://github.com/outsourc-e/hermes-workspace
+    name: Hermes Workspace
+    source_type: repository
+    aliases:
+      - https://hermes-workspace.com
     license: MIT
     fork_url: null
     checkout:
@@ -1431,6 +1436,17 @@ cells:
       status: untried
       review: reviews/helloagents.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-helloagents-cell-ca43/reviews/helloagents.md
+      method: native
+      command: null
+      ports:
+        - 3000
+      data_paths:
+        - ~/.hermes/workspace-overrides.json
+      notes: Web command center for a separate Hermes Agent runtime (NousResearch/hermes-agent). pnpm dev on :3000; expects gateway :8642 and dashboard :9119. Docker Compose can run both images. Not executed.
+    evaluation:
+      status: untried
+      review: reviews/hermes-workspace.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-hermes-workspace-cell-ad04/reviews/hermes-workspace.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1476,6 +1492,7 @@ cells:
       rationale: Study trials, sandboxes, verifiers, and scores as exam rooms a person can compare, watch, and regrade.
       rationale: Study the tutorial path — paradigms, tool-wall, memory, context packets, and sequential handoff — as desks on a training floor.
       rationale: One desk splits session, profile, and task memory; a subagent side room keeps its own notepad while sharing the tool bench
+      rationale: Study a web command center attached to a separate agent runtime — role dispatch, checkpoints, and a human greenlight — as desks in a 2D and 3D office.
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

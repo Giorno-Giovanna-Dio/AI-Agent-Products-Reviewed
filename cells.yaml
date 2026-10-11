@@ -1146,6 +1146,13 @@ cells:
     source_type: repository
     aliases: []
     license: MIT
+  - id: https://github.com/microsoft/autogen
+    name: AutoGen
+    source_type: repository
+    aliases:
+      - https://microsoft.github.io/autogen/
+      - https://github.com/microsoft/agent-framework
+    license: CC-BY-4.0
     fork_url: null
     checkout:
       directory: null
@@ -1273,6 +1280,11 @@ cells:
       status: untried
       review: reviews/autoagent.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-autoagent-cell-ca43/reviews/autoagent.md
+      notes: Maintenance-mode Python/.NET framework. LICENSE is CC BY 4.0 for docs; LICENSE-CODE is MIT for code. Not a desktop workspace.
+    evaluation:
+      status: untried
+      review: reviews/autogen.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-autogen-cell-9381/reviews/autogen.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1305,6 +1317,7 @@ cells:
       rationale: Study a shared board with atomic claims, layered memory, and origin-stamped handoff as the office around many CLI workers
       rationale: Study schema-aligned handoffs, context boards versus turn drawers, and visible dispatch as how work moves between desks
       rationale: Study triage handoff, event listen-and-join, and natural-language hiring as desks in a sandbox office.
+      rationale: Study shared conversation teams, handoff, and runtime as who is in the room and where work moves, while keeping this cell distinct from Microsoft Agent Framework.
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

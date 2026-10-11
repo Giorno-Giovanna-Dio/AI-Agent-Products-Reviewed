@@ -128,6 +128,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [Golutra](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/golutra.md) | [https://github.com/golutra/golutra](https://github.com/golutra/golutra) | 尚未測試 | Tauri 桌面；本機 CLI 行程 | `untried` |
 | [Claude Code Bridge](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/claude-codex-bridge.md) | [https://github.com/SeemSeam/claude_codex_bridge](https://github.com/SeemSeam/claude_codex_bridge) | 尚未測試 | Python CLI + tmux（Windows beta 用 Herdr） | `untried` |
 | [Cloudflare OS](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/main/reviews/cloudflare-os.md) | [https://github.com/cloudflare/cloudflare-os](https://github.com/cloudflare/cloudflare-os) | 尚未測試 | Workers／workerd；Gadgets Workshop | `untried` |
+| [Agency Swarm](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agency-swarm-cell-ad04/reviews/agency-swarm.md) | [https://github.com/VRSEN/agency-swarm](https://github.com/VRSEN/agency-swarm) | 尚未測試 | Python 3.12+ agency framework | `untried` |
 
 狀態值：
 

@@ -1057,6 +1057,10 @@ cells:
     source_type: repository
     aliases:
       - https://phodal.github.io/routa/
+  - id: https://github.com/VRSEN/agency-swarm
+    name: Agency Swarm
+    source_type: repository
+    aliases: []
     license: MIT
     fork_url: null
     checkout:
@@ -1177,6 +1181,11 @@ cells:
       status: untried
       review: reviews/codeg.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-codeg-cell-fb52/reviews/codeg.md
+      notes: Python 3.12+ framework on the OpenAI Agents SDK; terminal UI via npx. Not executed.
+    evaluation:
+      status: untried
+      review: reviews/agency-swarm.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agency-swarm-cell-ad04/reviews/agency-swarm.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1201,6 +1210,7 @@ cells:
       rationale: Personas, sub-thread handoff, and per-workspace ACP sandboxes as staffing inside one coding room
       rationale: Local Claude Code desktop shell with worktrees, a skill marketplace, in-harness model switching, and remote IM on one CLI kernel.
       rationale: Study a Workers workspace where a sandboxed gadget, the agent, and capability gatekeepers share one place, then place that on a 2D floor and a walkable office.
+      rationale: Study directional communication flows — task slips that return versus handoffs that move the visitor — as the floor plan of an agency office.
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

@@ -112,6 +112,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [Oh My OpenCode](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-oh-my-opencode-cell-103e/reviews/oh-my-opencode.md) | [https://github.com/opensoft/oh-my-opencode](https://github.com/opensoft/oh-my-opencode) | 尚未測試 | OpenCode 外掛（2026-01 快照） | `untried` |
 | [OpenCode](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-opencode-cell-9e0b/reviews/opencode.md) | [https://github.com/anomalyco/opencode](https://github.com/anomalyco/opencode) | 尚未測試 | Terminal TUI + local HTTP server | `untried` |
 | [iPolloWork](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ipollowork-cell-c2d2/reviews/ipollowork.md) | [https://github.com/Devin-AXIS/iPolloWork](https://github.com/Devin-AXIS/iPolloWork) | 尚未測試 | Electron 桌面；OpenCode 預設 sidecar | `untried` |
+| [Pixel Agents](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pixel-agents-cell-c2d2/reviews/pixel-agents.md) | [https://github.com/pixel-agents-hq/pixel-agents](https://github.com/pixel-agents-hq/pixel-agents) | 尚未測試 | VS Code 面板；Node 20+ 瀏覽器辦公室 | `untried` |
 
 狀態值：
 

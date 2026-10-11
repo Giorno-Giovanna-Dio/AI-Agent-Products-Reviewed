@@ -1023,6 +1023,12 @@ cells:
       - https://github.com/All-Hands-AI/OpenHands
       - https://openhands.dev
     license: MIT
+  - id: https://github.com/TEN-framework/ten-framework
+    name: TEN Framework
+    source_type: repository
+    aliases:
+      - https://theten.ai
+    license: Apache-2.0 with additional conditions
     fork_url: null
     checkout:
       directory: null
@@ -1689,6 +1695,13 @@ cells:
       status: untried
       review: reviews/qwen-agent.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-qwen-agent-cell-9381/reviews/qwen-agent.md
+      ports: []
+      data_paths: []
+      notes: Agent Examples use Docker Compose; tman can run apps such as the transcriber demo. Not tried.
+    evaluation:
+      status: untried
+      review: reviews/ten-framework.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-ten-framework-cell-9381/reviews/ten-framework.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1755,6 +1768,7 @@ cells:
       rationale: A hallway of stations fills one shared clipboard, turning a long transcript into topic cards and one simple page.
       rationale: Study a portable agent-team definition that binds a different harness per step, with a mission whiteboard and human-approved memory
       rationale: Study how an agent, its tools, and retrieved document snippets are composed, and how a person would see that in a place of work
+      rationale: A voice session is an extension graph. Desks are listeners, models, speakers, and turn-taking; connections route the work.
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

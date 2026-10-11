@@ -1290,6 +1290,11 @@ cells:
       - https://github.com/The-Pocket/Tutorial-Codebase-Knowledge
       - https://code2tutorial.com/
     license: MIT
+  - id: https://github.com/pqpo/pragma
+    name: Pragma
+    source_type: repository
+    aliases: []
+    license: AGPL-3.0
     fork_url: null
     checkout:
       directory: null
@@ -1668,6 +1673,11 @@ cells:
       status: untried
       review: reviews/pocketflow-tutorial-youtube-made-simple.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pocketflow-youtube-tutorial-cell-ca43/reviews/pocketflow-tutorial-youtube-made-simple.md
+      notes: macOS Desktop preview plus CLI and SDK; not executed
+    evaluation:
+      status: untried
+      review: reviews/pragma.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-pragma-cell-80a8/reviews/pragma.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1732,6 +1742,7 @@ cells:
       rationale: Study graph nodes, action paths, and a shared store as desks, corridors, and a common cabinet in a 2D floor and a walkable 3D office
       rationale: Study a codebase compiled into indexed concepts and ordered chapters, as stations on a 2D floor and desks in a 3D office
       rationale: A hallway of stations fills one shared clipboard, turning a long transcript into topic cards and one simple page.
+      rationale: Study a portable agent-team definition that binds a different harness per step, with a mission whiteboard and human-approved memory
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

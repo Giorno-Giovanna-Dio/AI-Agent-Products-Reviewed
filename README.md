@@ -133,6 +133,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [Agent Squad](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agent-squad-cell-ad04/reviews/agent-squad.md) | [https://github.com/2FastLabs/agent-squad](https://github.com/2FastLabs/agent-squad) | 尚未測試 | Python／TypeScript／Swift 對話路由 | `untried` |
 | [Agenta](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agenta-cell-ad04/reviews/agenta.md) | [https://github.com/Agenta-AI/agenta](https://github.com/Agenta-AI/agenta) | 尚未測試 | Docker Compose；agent runner | `untried` |
 | [AgentSpace](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agentspace-cell-80a8/reviews/agentspace.md) | [https://github.com/HKUDS/AgentSpace](https://github.com/HKUDS/AgentSpace) | 尚未測試 | Next.js web workspace + daemon | `untried` |
+| [Amux](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-amux-cell-80a8/reviews/amux.md) | [https://github.com/mixpeek/amux](https://github.com/mixpeek/amux) | 尚未測試 | Self-hosted Rust server + tmux | `untried` |
 
 狀態值：
 

@@ -1184,6 +1184,12 @@ cells:
     aliases:
       - https://hire-an-agent.online/
     license: Apache-2.0
+  - id: https://github.com/mixpeek/amux
+    name: Amux
+    source_type: repository
+    aliases:
+      - https://amux.io
+    license: MIT + Commons Clause
     fork_url: null
     checkout:
       directory: null
@@ -1238,6 +1244,11 @@ cells:
       status: untried
       review: reviews/agentspace.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-agentspace-cell-80a8/reviews/agentspace.md
+      notes: Self-hosted Rust binary and embedded dashboard on port 8824; workers run in tmux by default
+    evaluation:
+      status: untried
+      review: reviews/amux.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-amux-cell-80a8/reviews/amux.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1267,6 +1278,7 @@ cells:
       rationale: Study per-turn classifier routing, per-agent conversation drawers, and supervisor parallel ask as office dispatch.
       rationale: Study a shared job-shaped coworker — approval pauses, unattended first messages, and desk-to-desk handoff — as presence in a 2D or 3D office.
       rationale: Study shared channels, typed document handoffs, and approval gates that put humans and digital employees on the same tasks.
+      rationale: Study a shared board with atomic claims, layered memory, and origin-stamped handoff as the office around many CLI workers
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #

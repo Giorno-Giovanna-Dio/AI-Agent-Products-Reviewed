@@ -156,6 +156,7 @@ execution environments 與 human oversight，並萃取可用於未來 workspace
 | [LiveKit Agents](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-livekit-agents-cell-9381/reviews/livekit-agents.md) | [https://github.com/livekit/agents](https://github.com/livekit/agents) | 尚未測試 | Python realtime voice framework | `untried` |
 | [Meldwork](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-meldwork-cell-80a8/reviews/meldwork.md) | [https://github.com/Ryder-Sun/Meldwork](https://github.com/Ryder-Sun/Meldwork) | 尚未測試 | Electron 桌面（Apple silicon）；呼叫本機 CLI | `untried` |
 | [Memlayer](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memlayer-cell-ca43/reviews/memlayer.md) | [https://github.com/divagr18/memlayer](https://github.com/divagr18/memlayer) | 尚未測試 | Python 3.10+ memory library | `untried` |
+| [Memora](https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memora-cell-fb52/reviews/memora.md) | [https://github.com/agentic-box/memora](https://github.com/agentic-box/memora) | 尚未測試 | Python MCP 記憶 server | `untried` |
 
 狀態值：
 

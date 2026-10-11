@@ -1318,6 +1318,11 @@ cells:
     name: Memlayer
     source_type: repository
     aliases: []
+  - id: https://github.com/agentic-box/memora
+    name: Memora
+    source_type: repository
+    aliases:
+      - https://pypi.org/project/memora-mcp/
     license: MIT
     fork_url: null
     checkout:
@@ -1520,6 +1525,15 @@ cells:
       status: untried
       review: reviews/memlayer.md
       review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memlayer-cell-ca43/reviews/memlayer.md
+      command: memora-server
+      ports: []
+      data_paths:
+        - ~/.local/share/memora/memories.db
+      notes: Python MCP memory server (package memora-mcp). GitHub main is v0.4.6; latest GitHub Release is v0.5.5, with tags through v0.5.7 not merged to main. PyPI memora-mcp was 0.3.3 on 2026-10-10. Default local DB path above.
+    evaluation:
+      status: untried
+      review: reviews/memora.md
+      review_web: https://github.com/Giorno-Giovanna-Dio/AI-Agent-Products-Reviewed/blob/cursor/add-memora-cell-fb52/reviews/memora.md
       tested_at: null
       updated_at: 2026-10-10
     discovery:
@@ -1572,6 +1586,7 @@ cells:
       rationale: A dispatched job joins a room as a participant, so presence, the speaking turn, and human takeover are workplace events
       rationale: A local review loop that freezes one task snapshot, keeps each agent's dissent visible, and requires a human adoption gate before workspace writes.
       rationale: Study memory as the layer between desk agents and storage, so a person can see salience writeback, tiered recall, and due reminders in the office.
+      rationale: Study a shared MCP memory store — database, project, and tool-surface scopes — against digest handoff and file-level sync
 
 # 新增 Cell 時複製以下範本並移除行首的註解符號：
 #
